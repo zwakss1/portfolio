@@ -1,0 +1,97 @@
+/* --- 1. RESET GLOBAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- 2. LE CORPS DE LA PAGE --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    background-color: #121212; 
+    color: white;
+}
+
+/* --- 3. LA BANDE DU HAUT --- */
+.BandeHaut {
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #007bff; 
+}
+
+/* --- 4. LE CONTENEUR DES BOUTONS --- */
+.conteneurBoutons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 1%;
+}
+
+/* --- 5. GESTION DES SOUS-MENUS (PARENTS) --- */
+.parentMenu {
+    position: relative;
+}
+
+/* --- 6. STYLE DES BOUTONS PRINCIPAUX --- */
+.boutonBande {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: block;
+    font-weight: bold;
+}
+
+.boutonBande:hover {
+    background-color: #333;
+}
+
+/* --- 7. APPARENCE DU SOUS-MENU --- */
+.sousMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2b2b2b;
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+/* --- 8. STYLE DES LIENS DANS LE SOUS-MENU --- */
+.sousMenu li a {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #444;
+}
+
+.iconeMenu {
+    width: 20px;           
+    height: 20px;          
+    object-fit: contain;   
+}
+.sousMenu li:last-child a {
+    border-bottom: none;
+}
+
+.sousMenu li a:hover {
+    background-color: #007bff;
+}
+
+/* --- 9. LOGIQUE D'AFFICHAGE AU SURVOL --- */
+.parentMenu:hover .sousMenu {
+    display: block;
+}
+
+/* --- 10. LA FLECHE --- */
+.fleche {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
