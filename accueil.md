@@ -1,33 +1,58 @@
-# BIENVENUE SUR MON SITE
+# MALHEUDE Lucas 🚀
+### Étudiant en BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique - option B : Electronique et Réseaux)
 
-Salut, moi c'est Lucas ! Bienvenue sur mon espace personnel. 
-Ici, je rassemble mes bidouillages informatiques, mes lectures et mes avis sur les jeux qui me marquent.
-
----
-
-## 🛠️ Mes Projets Tech & Hardware
-
-Un aperçu de mon installation et de mes expérimentations du moment :
-
-* **Mon setup Bazzite OS :** Comment j'ai configuré mon PC (i5 14400f, RTX 3060, 32Go RAM) pour une expérience gaming optimale sous cet OS.
-* **Serveur Maison :** Mise en place, gestion et sauvegarde de mes données sur mon NAS Synology.
-* **Écosystème portable :** Optimisation de ma bibliothèque de jeux pour profiter au maximum de l'écran du Steam Deck OLED.
+Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je partage ici mes projets techniques et mes réflexions sur les œuvres qui m'ont marqué.
 
 ---
 
-## 📝 Analyses et Critiques
+## 💼 Parcours Professionnel & Études
 
-Mes réflexions détaillées sur la pop-culture, le manga et le jeu vidéo.
+### Mon Profil
+* **Compétences :**
+    * Conception Électronique (ECAD) : utilisation de KiCAD (conception de circuits imprimés) et notions sur Proteus.
+    * Hardware & IoT : Programmation sur IDE Arduino  et utilisation du fer à braser.
+    * Maintenance & Réseaux : Diagnostic matériel, masterisation via Ivanti / PXE Boot et maintenance curative.
+    * Notions en gestion de version avec GitHub.
+    * application de consignes techniques
+* **Certification :** 
+    * Sauveteur Secouriste du Travail (SST) - 2024.
+    * Certification pix
 
-### Masterclass narrative : Danganronpa
-> Une plongée au cœur de l'écriture de cette licence incroyable. Comment le jeu parvient à manier l'espoir et le désespoir avec autant d'efficacité.
+### Expériences
+* **2025 :** Stage (6 semaines) au **Conseil départemental de la Gironde** (Service des Usages Numériques - SUN).
+    * Masterisation de postes informatiques (Windows 10 et 11) via la solution **Ivanti** et le boot **PXE**.
+    * Maintenance matérielle curative : diagnostic de pannes, remplacement de dalles LCD (Lenovo L13), de batteries et de composants internes.
+    * Déploiement et installation physique de matériel informatique dans les collèges girondins.
+* **2024 :** Stage (4 semaines) chez **Maxinfoweb** (Neuil-en-Thelle).
+* **2021 - 2023 :** Stages (12 semaines total) chez **Store Mobile** (Pont-Sainte-Maxence).
+* **2021 :** Stage (2 semaines) chez **PCexpresse** (Pont-Sainte-Maxence).
 
-### Dragon Ball Super : La revanche du format papier
-Pourquoi le traitement de la transformation en Super Saiyan Blue (SSB) dans le manga est, à mon sens, largement sous-estimé et bien supérieur à ce qu'a proposé l'anime.
-
-### Rétrospective : La 7ème génération de Pokémon
-Retour sur ma génération préférée de la saga et petite déclaration d'amour à Oratoria, un starter souvent mal compris mais qui cache un excellent potentiel.
+### Formation
+* **BTS CIEL** (En cours) au Lycée Paul-Langevin, Beauvais.
+* **Bac Pro Systèmes Numériques** - Lycée des métiers Roberval à Breuil-le-Vert.
+* **Brevet des Collèges** - Collège René Cassin à Brenouille.
 
 ---
 
-**[Me contacter](mailto:ton.email@exemple.com)** | **[Mon profil Steam](https://steamcommunity.com/)**
+## 🛠️ Hardware & Projets Tech
+
+### Mon Setup
+* **Système d'exploitation :** Bazzite OS (Linux)
+* **Carte graphique :** RTX 3060 12GO
+* **Processeur :** i5 14400f
+* **PC Principal :** Configuration équilibrée pour une expérience de jeu et de travail fluide.
+* **Stockage & Serveur :** Gestion d'un **NAS Synology** pour la centralisation et la sauvegarde automatique des données.
+* **Gaming Nomade :** Optimisation logicielle du **Steam Deck OLED** pour maximiser les performances de l'écran.
+
+---
+
+## 📝 Analyses & Critiques
+
+Sur ce portfolio je vais partager mes avis et faire des analyses, sur essentiellement des jeux video et musique lier
+à ces derniers qui m'ont marqué durant mon expérience 
+
+---
+
+
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas.malheude14@gmail.com)
+[![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/profiles/76561199013599584/)
