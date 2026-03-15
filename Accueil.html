@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio de Lucas</title>
-  
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +13,13 @@
   <header class="BandeHaut">
     <nav>
       <ul class="conteneurBoutons">
-
+        
+        <li class="parentMenu">
+          <a href="Accueil.html" class="boutonBande">
+            <img src="img/house.png" class="logoAccueil" alt="Accueil">
+          </a>
+        </li>
+        
         <li class="parentMenu">
           <a href="Projet" class="boutonBande">Projets <span class="fleche">▼</span></a>
           <ul class="sousMenu">
@@ -32,10 +37,18 @@
         </li>
 
         <li class="parentMenu">
-          <a href="Analyse" class="boutonBande">Analyses <span class="fleche">▼</span></a>
+          <a href="Analyse" class="boutonBande">Analyse/Critique <span class="fleche">▼</span></a>
           <ul class="sousMenu">
-            <li><a href="#">Jeux vidéo</a></li>
-            <li><a href="#">Musique</a></li>
+            <li>
+              <a href="#">
+              <img src="img/gamepad-2.png" class="iconeMenu iconeBlanche" alt="JV"> Jeux vidéo              
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/music-2.png" class="iconeMenu iconeBlanche" alt="Musique"> Musique
+              </a>
+            </li>
           </ul>
         </li>
 
@@ -43,6 +56,17 @@
     </nav>
   </header>
 
-</body>
+  <div id="content" class="feuille-texte"></div> 
 
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch('accueil.md')
+      .then(response => response.text())
+      .then(text => {
+        document.getElementById('content').innerHTML = marked.parse(text);
+      })
+      .catch(error => console.error('Erreur lors du chargement du Markdown:', error));
+  </script>
+
+</body>
 </html>

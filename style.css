@@ -8,7 +8,7 @@
 /* --- 2. LE CORPS DE LA PAGE --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 25px; /* Note: Pense à vérifier si ce n'est pas trop gros sur grand écran */
     background-color: #121212; 
     color: white;
 }
@@ -23,8 +23,7 @@ body {
 .conteneurBoutons {
     list-style: none;
     display: flex;
-    justify-content: center;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Nettoyé : il y avait un doublon ici */
     padding-left: 1%;
 }
 
@@ -40,10 +39,12 @@ body {
     padding: 20px 30px;
     display: block;
     font-weight: bold;
+    transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
-.boutonBande:hover {
-    background-color: #333;
+.parentMenu:hover .boutonBande {
+    transform: scale(1.15); 
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.6)); 
 }
 
 /* --- 7. APPARENCE DU SOUS-MENU --- */
@@ -51,14 +52,15 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 15px; 
     background-color: #2b2b2b;
-    min-width: 200px;
+    min-width: 220px; 
     list-style: none;
-    padding: 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    border-radius: 5%;
-    overflow: hidden;
+    padding: 10px 0; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8); 
+    border-radius: 8px; 
+    border: 1px solid #444; 
+    z-index: 10; 
 }
 
 /* --- 8. STYLE DES LIENS DANS LE SOUS-MENU --- */
@@ -66,17 +68,13 @@ body {
     color: #eee;
     display: flex;
     align-items: center;
+    gap: 10px; /* Ajouté : crée un bel espace entre l'icône et le texte */
     padding: 15px;
     text-decoration: none;
-    display: block;
     border-bottom: 1px solid #444;
+    /* Nettoyé : le display: block qui annulait le flex a été retiré */
 }
 
-.iconeMenu {
-    width: 20px;           
-    height: 20px;          
-    object-fit: contain;   
-}
 .sousMenu li:last-child a {
     border-bottom: none;
 }
@@ -94,4 +92,80 @@ body {
 .fleche {
     font-size: 0.8em;
     margin-left: 5px;
+}
+
+/* --- 11. ICÔNES --- */
+.logoAccueil {
+    width: 25px; 
+    height: 25px;
+    object-fit: contain;
+    vertical-align: middle;
+    filter: invert(1); 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.boutonBande:hover .logoAccueil {
+    transform: scale(1.15); 
+    filter: invert(1) drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.6)); 
+}
+
+.iconeMenu {
+    width: 20px;           
+    height: 20px;          
+    object-fit: contain;
+    /* J'ai retiré le filter: invert(1) d'ici */
+}
+
+/* Nouvelle classe à ajouter juste en dessous */
+.iconeBlanche {
+    filter: invert(1);
+}
+
+/* --- 12. LA FEUILLE DE TEXTE CENTRÉE (Style GitHub Dark) --- */
+.feuille-texte {
+    background-color: #1c2128; 
+    border: 1px solid #444c56; 
+    border-radius: 8px; 
+    
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 40px; 
+    
+    font-size: 18px; 
+    line-height: 1.6;
+    color: #adbac7; 
+}
+
+/* --- 13. LE STYLE DU TEXTE DANS LA FEUILLE --- */
+.feuille-texte h1, 
+.feuille-texte h2 {
+    color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #373e47; 
+}
+
+.feuille-texte hr {
+    height: 4px;
+    background-color: #373e47;
+    border: none;
+    margin: 24px 0;
+    border-radius: 2px;
+}
+
+.feuille-texte ul {
+    padding-left: 2em; 
+    margin-bottom: 16px;
+}
+
+.feuille-texte li {
+    margin-bottom: 8px; 
+}
+
+.feuille-texte blockquote {
+    border-left: 4px solid #444c56;
+    padding-left: 16px;
+    color: #8b949e;
+    margin-left: 0;
 }
