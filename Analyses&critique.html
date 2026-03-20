@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,43 +9,51 @@
 
 <body>
 
-  <header class="BandeHaut">
+  <header class="bande-haut">
     <nav>
-      <ul class="conteneurBoutons">
-        
-        <li class="parentMenu">
-          <a href="Accueil.html" class="boutonBande">
-            <img src="img/house.png" class="logoAccueil" alt="Accueil">
+      <ul class="conteneur-boutons">
+
+        <li class="parent-menu">
+          <a href="Accueil.html" class="bouton-bande">
+            <img src="img/house.png" class="icone-menu icone-blanche" alt="Accueil">
           </a>
         </li>
-        
-        <li class="parentMenu">
-          <a href="Projet" class="boutonBande">Projets <span class="fleche"></span></a>
-          <ul class="sousMenu">
+
+        <li class="parent-menu">
+          <a href="Projet.html" class="bouton-bande">
+            <img src="img/folder-dot.png" class="icone-menu icone-blanche" alt="Projets">
+          </a>
+
+          <ul class="sous-menu">
+            <li class="titre-sous-menu">Projets</li>
             <li>
               <a href="#">
-                <img src="img/chargement.png" class="iconeMenu" alt="En cours"> En cours
+                <img src="img/chargement.png" class="icone-menu icone-original-blanche" alt="En cours"> En cours
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/fini.png" class="iconeMenu" alt="Terminé"> Terminé
+                <img src="img/fini.png" class="icone-menu" alt="Terminé"> Terminé
               </a>
             </li>
           </ul>
         </li>
 
-        <li class="parentMenu">
-          <a href="Analyse" class="boutonBande">Analyses & Critiques <span class="fleche"></span></a>
-          <ul class="sousMenu">
+        <li class="parent-menu">
+          <a href="Analyses&critique.html" class="bouton-bande">
+            <img src="img/logoanalyse.png" class="icone-menu icone-blanche" alt="Analyses">
+          </a>
+
+          <ul class="sous-menu">
+            <li class="titre-sous-menu">Analyse & critique</li>
             <li>
               <a href="#">
-              <img src="img/gamepad-2.png" class="iconeMenu iconeBlanche" alt="JV"> Jeux vidéo              
+                <img src="img/gamepad-2.png" class="icone-menu icone-blanche" alt="Jeux vidéo"> Jeux vidéo
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/music-2.png" class="iconeMenu iconeBlanche" alt="Musique"> Musique
+                <img src="img/music-2.png" class="icone-menu icone-blanche" alt="Musique"> Musique
               </a>
             </li>
           </ul>
@@ -54,4 +61,44 @@
 
       </ul>
     </nav>
+    
+    <button id="bouton-theme" class="bouton-theme" aria-label="Changer de thème">☀️</button>
   </header>
+
+  <main id="content" class="feuille-texte"></main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch('accueil.md')
+      .then(response => {
+        if (!response.ok) throw new Error("Document introuvable");
+        return response.text();
+      })
+      .then(text => {
+        document.getElementById('content').innerHTML = marked.parse(text);
+      })
+      .catch(error => console.error('Erreur lors du chargement du Markdown :', error));
+
+    const btnTheme = document.getElementById('bouton-theme');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'light') {
+      body.classList.add('theme-light');
+      btnTheme.textContent = '🌙';
+    }
+
+    btnTheme.addEventListener('click', () => {
+      body.classList.toggle('theme-light');
+      
+      if (body.classList.contains('theme-light')) {
+        btnTheme.textContent = '🌙'; 
+        localStorage.setItem('theme', 'light'); 
+      } else {
+        btnTheme.textContent = '☀️'; 
+        localStorage.setItem('theme', 'dark'); 
+      }
+    });
+  </script>
+
+</body>
+</html>
