@@ -1,0 +1,25 @@
+<script>
+    const btnTheme = document.getElementById('bouton-theme');
+    const body = document.body;
+
+    // Optionnel mais recommandé : on vérifie si l'utilisateur avait déjà choisi le thème clair lors de sa dernière visite
+    if (localStorage.getItem('theme') === 'light') {
+      body.classList.add('theme-light');
+      btnTheme.textContent = '🌙';
+    }
+
+    // Ce qu'il se passe quand on clique sur le bouton
+    btnTheme.addEventListener('click', () => {
+      body.classList.toggle('theme-light');
+      
+      // Si on vient de passer en thème clair
+      if (body.classList.contains('theme-light')) {
+        btnTheme.textContent = '🌙'; // On affiche la lune pour proposer le retour au sombre
+        localStorage.setItem('theme', 'light'); // On sauvegarde le choix
+      } else {
+        // Si on revient au thème sombre
+        btnTheme.textContent = '☀️'; // On affiche le soleil
+        localStorage.setItem('theme', 'dark'); // On sauvegarde le choix
+      }
+    });
+  </script>

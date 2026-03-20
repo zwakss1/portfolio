@@ -34,7 +34,7 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je par
 
 ---
 
-## 🛠️ Hardware & Projets Tech
+## 🛠️ Hardware/Software
 
 ### Mon Setup
 * **Système d'exploitation :** Bazzite OS (Linux)

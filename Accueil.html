@@ -25,9 +25,10 @@
           </a>
 
           <ul class="sous-menu">
+            <li class="titre-sous-menu">Projets</li>
             <li>
               <a href="#">
-                <img src="img/chargement.png" class="icone-menu" alt="En cours"> En cours
+                <img src="img/chargement.png" class="icone-menu icone-original-blanche" alt="En cours"> En cours
               </a>
             </li>
             <li>
@@ -44,6 +45,7 @@
           </a>
 
           <ul class="sous-menu">
+            <li class="titre-sous-menu">Analyse & critique</li>
             <li>
               <a href="#">
                 <img src="img/gamepad-2.png" class="icone-menu icone-blanche" alt="Jeux vidéo"> Jeux vidéo
@@ -59,6 +61,8 @@
 
       </ul>
     </nav>
+    
+    <button id="bouton-theme" class="bouton-theme" aria-label="Changer de thème">☀️</button>
   </header>
 
   <main id="content" class="feuille-texte"></main>
@@ -74,6 +78,26 @@
         document.getElementById('content').innerHTML = marked.parse(text);
       })
       .catch(error => console.error('Erreur lors du chargement du Markdown :', error));
+
+    const btnTheme = document.getElementById('bouton-theme');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'light') {
+      body.classList.add('theme-light');
+      btnTheme.textContent = '🌙';
+    }
+
+    btnTheme.addEventListener('click', () => {
+      body.classList.toggle('theme-light');
+      
+      if (body.classList.contains('theme-light')) {
+        btnTheme.textContent = '🌙'; 
+        localStorage.setItem('theme', 'light'); 
+      } else {
+        btnTheme.textContent = '☀️'; 
+        localStorage.setItem('theme', 'dark'); 
+      }
+    });
   </script>
 
 </body>

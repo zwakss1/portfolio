@@ -1,4 +1,4 @@
-/* --- 0. VARIABLES (Pour une maintenance facile) --- */
+/* --- 0. VARIABLES --- */
 :root {
     --couleur-fond: #121212;
     --couleur-texte: white;
@@ -6,13 +6,11 @@
     --couleur-sous-menu: #2b2b2b;
     --couleur-bordure: #444;
     
-    /* Variables Markdown (Style GitHub) */
     --md-fond: #1c2128;
     --md-bordure: #444c56;
     --md-texte: #bdc8d4;
     --md-citation: #8b949e;
 
-    /* Tailles */
     --largeur-sidebar: 60px;
 }
 
@@ -26,9 +24,19 @@
 /* --- 2. LE CORPS DE LA PAGE --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px; /* Attention: 25px est très grand pour du texte classique */
-    background-color: var(--couleur-fond);
-    color: var(--couleur-texte);
+    background-color: var(--couleur-fond); 
+    color: var(--couleur-texte);           
+    margin: 0;                             
+}
+
+body, 
+.bande-haut, 
+.sous-menu, 
+.feuille-texte,
+.feuille-texte h1,
+.feuille-texte h2,
+.feuille-texte hr {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 
 /* --- 3. LA BANDE DU HAUT (SIDEBAR) --- */
@@ -38,12 +46,10 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
     border-right: 2px solid var(--couleur-accent);
     background-color: var(--couleur-fond);
     z-index: 50;
@@ -58,7 +64,7 @@ body {
     list-style: none;
 }
 
-/* --- 5. GESTION DES SOUS-MENUS (PARENTS) --- */
+/* --- 5. GESTION DES SOUS-MENUS --- */
 .parent-menu {
     position: relative;
     width: 100%;
@@ -84,9 +90,7 @@ body {
     display: none;
     position: absolute;
     top: 0;      
-    /* On utilise calc() au lieu de margin pour gérer l'espacement */
     left: calc(100% + 17px); 
-    
     background-color: var(--couleur-sous-menu);
     min-width: 220px;
     list-style: none;
@@ -97,27 +101,41 @@ body {
     z-index: 10;
 }
 
-/* Le pont invisible qui relie la barre au sous-menu */
 .sous-menu::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -17px; /* Recule de 17px pour combler exactement le vide */
-    width: 17px; /* La largeur de l'espace */
+    left: -17px; 
+    width: 17px; 
     height: 100%;
     background-color: transparent; 
 }
-/* --- 8. STYLE DES LIENS DANS LE SOUS-MENU --- */
+
+/* --- LE TITRE DU SOUS-MENU --- */
+.titre-sous-menu {
+    color: var(--couleur-accent); 
+    font-size: 14px; 
+    text-transform: uppercase; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 15px 5px 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--couleur-bordure);
+    cursor: default; 
+    pointer-events: none; 
+}
+
+/* --- 8. STYLE DES LIENS SOUS-MENU --- */
 .sous-menu li a {
-    color: #eee;
+    color: var(--couleur-texte);
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 15px;
     text-decoration: none;
     border-bottom: 1px solid var(--couleur-bordure);
-    font-size: 18px; /* Plus lisible pour un menu */
-    transition: background-color 0.2s ease;
+    font-size: 18px; 
+    transition: background-color 0.2s ease, color 0.5s ease; 
 }
 
 .sous-menu li:last-child a {
@@ -126,9 +144,10 @@ body {
 
 .sous-menu li a:hover {
     background-color: var(--couleur-accent);
+    color: #ffffff; 
 }
 
-/* --- 9. LOGIQUE D'AFFICHAGE AU SURVOL --- */
+/* --- 9. LOGIQUE D'AFFICHAGE --- */
 .parent-menu:hover .sous-menu {
     display: block;
 }
@@ -150,32 +169,20 @@ body {
     filter: invert(1) drop-shadow(0px 0px 8px rgba(255,255,255,0.6));
 }
 
-/* --- 11. LA FEUILLE DE TEXTE CENTRÉE (Style GitHub) --- */
-#content {
-    margin-left: calc(var(--largeur-sidebar) + 250px); 
-    padding: 40px 20px;
-}
-
 /* --- 11. LA FEUILLE DE TEXTE --- */
 .feuille-texte {
     background-color: var(--md-fond);
     border: 1px solid var(--md-bordure);
     border-radius: 8px;
-    
-    /* On passe de 900px à 1400px pour étirer vers la droite sans rendre le texte illisible */
     max-width: 1400px; 
-    
-
-    margin: 40px 40px 40px calc(var(--largeur-sidebar) + 40px);
-    
+    margin: 40px 40px 40px calc(var(--largeur-sidebar) + 250px);
     padding: 50px; 
-    
     font-size: 18px;
     line-height: 1.6;
     color: var(--md-texte);
 }
 
-/* --- 12. LE STYLE DU TEXTE DANS LA FEUILLE --- */
+/* --- 12. TEXTE DANS LA FEUILLE --- */
 .feuille-texte h1,
 .feuille-texte h2 {
     color: var(--couleur-texte);
@@ -216,4 +223,42 @@ body {
     border-left: 4px solid var(--md-bordure);
     padding-left: 16px;
     color: var(--md-citation);
+}
+
+/* --- BOUTON THÈME --- */
+.bouton-theme {
+    margin-top: auto; 
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    font-size: 28px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.bouton-theme:hover {
+    transform: scale(1.2); 
+}
+
+/* --- VARIABLES DU THÈME CLAIR --- */
+body.theme-light {
+    --couleur-fond: #f0f2f5;
+    --couleur-texte: #121212;
+    --couleur-sous-menu: #ffffff;
+    --couleur-bordure: #d0d7de;
+    
+    --md-fond: #ffffff;
+    --md-bordure: #d0d7de;
+    --md-texte: #24292f;
+    --md-citation: #57606a;
+}
+
+/* Les icônes de base noires redeviennent noires */
+body.theme-light .icone-blanche {
+    filter: invert(0) !important; 
+}
+
+/* L'icône de base blanche devient noire UNIQUEMENT en thème clair */
+body.theme-light .icone-original-blanche {
+    filter: invert(1) !important; 
 }
