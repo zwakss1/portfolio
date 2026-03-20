@@ -1,3 +1,21 @@
+/* --- 0. VARIABLES (Pour une maintenance facile) --- */
+:root {
+    --couleur-fond: #121212;
+    --couleur-texte: white;
+    --couleur-accent: #007bff;
+    --couleur-sous-menu: #2b2b2b;
+    --couleur-bordure: #444;
+    
+    /* Variables Markdown (Style GitHub) */
+    --md-fond: #1c2128;
+    --md-bordure: #444c56;
+    --md-texte: #bdc8d4;
+    --md-citation: #8b949e;
+
+    /* Tailles */
+    --largeur-sidebar: 60px;
+}
+
 /* --- 1. RESET GLOBAL --- */
 * {
     margin: 0;
@@ -8,179 +26,194 @@
 /* --- 2. LE CORPS DE LA PAGE --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px; /* Note: Pense à vérifier si ce n'est pas trop gros sur grand écran */
-    background-color: #121212; 
-    color: white;
+    font-size: 25px; /* Attention: 25px est très grand pour du texte classique */
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
 }
 
-/* --- 3. LA BANDE DU HAUT --- */
-.BandeHaut {
-    background-color: #1a1a1a;
-    border-bottom: 2px solid #007bff; 
+/* --- 3. LA BANDE DU HAUT (SIDEBAR) --- */
+.bande-haut {
+    width: var(--largeur-sidebar);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-right: 2px solid var(--couleur-accent);
+    background-color: var(--couleur-fond);
+    z-index: 50;
 }
 
 /* --- 4. LE CONTENEUR DES BOUTONS --- */
-.conteneurBoutons {
-    list-style: none;
+.conteneur-boutons {
     display: flex;
-    justify-content: flex-start; /* Nettoyé : il y avait un doublon ici */
-    padding-left: 1%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    list-style: none;
 }
 
 /* --- 5. GESTION DES SOUS-MENUS (PARENTS) --- */
-.parentMenu {
+.parent-menu {
     position: relative;
+    width: 100%;
 }
 
 /* --- 6. STYLE DES BOUTONS PRINCIPAUX --- */
-.boutonBande {
-    color: white;
-    text-decoration: none;
-    padding: 20px 30px;
-    display: block;
-    font-weight: bold;
-    transition: transform 0.3s ease, filter 0.3s ease; 
+.bouton-bande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 0; 
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.parentMenu:hover .boutonBande {
-    transform: scale(1.15); 
-    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.6)); 
+.parent-menu:hover .bouton-bande {
+    transform: scale(1.15);
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.6));
 }
 
 /* --- 7. APPARENCE DU SOUS-MENU --- */
-.sousMenu {
+.sous-menu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 15px; 
-    background-color: #2b2b2b;
-    min-width: 220px; 
+    top: 0;      
+    /* On utilise calc() au lieu de margin pour gérer l'espacement */
+    left: calc(100% + 17px); 
+    
+    background-color: var(--couleur-sous-menu);
+    min-width: 220px;
     list-style: none;
-    padding: 10px 0; 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.8); 
+    padding: 10px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
     border-radius: 8px; 
-    border: 1px solid #444; 
-    z-index: 10; 
+    border: 1px solid var(--couleur-bordure);
+    z-index: 10;
 }
 
+/* Le pont invisible qui relie la barre au sous-menu */
+.sous-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -17px; /* Recule de 17px pour combler exactement le vide */
+    width: 17px; /* La largeur de l'espace */
+    height: 100%;
+    background-color: transparent; 
+}
 /* --- 8. STYLE DES LIENS DANS LE SOUS-MENU --- */
-.sousMenu li a {
+.sous-menu li a {
     color: #eee;
     display: flex;
     align-items: center;
-    gap: 10px; /* Ajouté : crée un bel espace entre l'icône et le texte */
+    gap: 10px;
     padding: 15px;
     text-decoration: none;
-    border-bottom: 1px solid #444;
-    /* Nettoyé : le display: block qui annulait le flex a été retiré */
+    border-bottom: 1px solid var(--couleur-bordure);
+    font-size: 18px; /* Plus lisible pour un menu */
+    transition: background-color 0.2s ease;
 }
 
-.sousMenu li:last-child a {
+.sous-menu li:last-child a {
     border-bottom: none;
 }
 
-.sousMenu li a:hover {
-    background-color: #007bff;
+.sous-menu li a:hover {
+    background-color: var(--couleur-accent);
 }
 
 /* --- 9. LOGIQUE D'AFFICHAGE AU SURVOL --- */
-.parentMenu:hover .sousMenu {
+.parent-menu:hover .sous-menu {
     display: block;
 }
 
-/* --- 10. LA FLECHE --- */
-.fleche {
-    font-size: 0.8em;
-    margin-left: 5px;
-}
-
-/* --- 11. ICÔNES --- */
-.logoAccueil {
-    width: 25px; 
-    height: 25px;
+/* --- 10. ICÔNES --- */
+.icone-menu {
+    width: 28px;
+    height: 28px;
     object-fit: contain;
-    vertical-align: middle;
-    filter: invert(1); 
-    transition: transform 0.3s ease, filter 0.3s ease; 
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.boutonBande:hover .logoAccueil {
-    transform: scale(1.15); 
-    filter: invert(1) drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.6)); 
-}
-
-.iconeMenu {
-    width: 20px;           
-    height: 20px;          
-    object-fit: contain;
-    /* J'ai retiré le filter: invert(1) d'ici */
-}
-
-/* Nouvelle classe à ajouter juste en dessous */
-.iconeBlanche {
+.icone-blanche {
     filter: invert(1);
 }
 
-/* --- 12. LA FEUILLE DE TEXTE CENTRÉE (Style GitHub Dark) --- */
-.feuille-texte {
-    background-color: #1c2128; 
-    border: 1px solid #444c56; 
-    border-radius: 8px; 
-    
-    max-width: 900px; 
-    margin: 40px auto; 
-    padding: 40px; 
-    
-    font-size: 18px; 
-    line-height: 1.6;
-    color: #bdc8d4; 
+.bouton-bande:hover .icone-menu {
+    transform: scale(1.15);
+    filter: invert(1) drop-shadow(0px 0px 8px rgba(255,255,255,0.6));
 }
 
-/* --- 13. LE STYLE DU TEXTE DANS LA FEUILLE --- */
-.feuille-texte h1, 
+/* --- 11. LA FEUILLE DE TEXTE CENTRÉE (Style GitHub) --- */
+#content {
+    margin-left: calc(var(--largeur-sidebar) + 250px); 
+    padding: 40px 20px;
+}
+
+/* --- 11. LA FEUILLE DE TEXTE --- */
+.feuille-texte {
+    background-color: var(--md-fond);
+    border: 1px solid var(--md-bordure);
+    border-radius: 8px;
+    
+    /* On passe de 900px à 1400px pour étirer vers la droite sans rendre le texte illisible */
+    max-width: 1400px; 
+    
+
+    margin: 40px 40px 40px calc(var(--largeur-sidebar) + 40px);
+    
+    padding: 50px; 
+    
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--md-texte);
+}
+
+/* --- 12. LE STYLE DU TEXTE DANS LA FEUILLE --- */
+.feuille-texte h1,
 .feuille-texte h2 {
-    color: #ffffff;
+    color: var(--couleur-texte);
     margin-top: 24px;
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #373e47; 
+    border-bottom: 2px solid #373e47;
+}
+
+.feuille-texte h2,
+.feuille-texte h3 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.feuille-texte p {
+    margin-bottom: 25px;
 }
 
 .feuille-texte hr {
     height: 4px;
-    background-color: #007bff;
+    background-color: var(--couleur-accent);
     border: none;
     margin: 24px 0;
     border-radius: 2px;
 }
 
 .feuille-texte ul {
-    padding-left: 2em; 
+    padding-left: 2em;
     margin-bottom: 16px;
 }
 
 .feuille-texte li {
-    margin-bottom: 8px; 
+    margin-bottom: 12px;
 }
 
 .feuille-texte blockquote {
-    border-left: 4px solid #444c56;
+    border-left: 4px solid var(--md-bordure);
     padding-left: 16px;
-    color: #8b949e;
-    margin-left: 0;
-}
-
-/* --- AJUSTEMENT DE L'ESPACEMENT --- */
-
-.feuille-texte p {
-    margin-bottom: 25px; /* Ajoute de l'espace sous chaque paragraphe */
-}
-
-.feuille-texte h2, .feuille-texte h3 {
-    margin-top: 45px;    /* Plus d'espace AU-DESSUS des titres pour bien séparer les sections */
-    margin-bottom: 20px; /* Un peu d'espace sous le titre */
-}
-
-.feuille-texte li {
-    margin-bottom: 12px; /* Espace les éléments des listes à puces */
+    color: var(--md-citation);
 }

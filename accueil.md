@@ -1,4 +1,4 @@
-# MALHEUDE Lucas 🚀
+# MALHEUDE Lucas 
 ### Étudiant en BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique - option B : Electronique et Réseaux)
 
 Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je partage ici mes projets techniques et mes réflexions sur les œuvres qui m'ont marqué.
@@ -10,13 +10,13 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je par
 ### Mon Profil
 * **Compétences :**
     * Conception Électronique (ECAD) : utilisation de KiCAD (conception de circuits imprimés) et notions sur Proteus.
-    * Hardware & IoT : Programmation sur IDE Arduino  et utilisation du fer à braser.
+    * Hardware & IoT : Programmation sur IDE Arduino et utilisation du fer à braser.
     * Maintenance & Réseaux : Diagnostic matériel, masterisation via Ivanti / PXE Boot et maintenance curative.
-    * Notions en gestion de version avec GitHub.
-    * application de consignes techniques
+    * Notions en gestion de versions avec GitHub.
+    * Application de consignes techniques
 * **Certification :** 
     * Sauveteur Secouriste du Travail (SST) - 2024.
-    * Certification pix
+    * Certification Pix
 
 ### Expériences
 * **2025 :** Stage (6 semaines) au **Conseil départemental de la Gironde** (Service des Usages Numériques - SUN).
@@ -30,7 +30,7 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je par
 ### Formation
 * **BTS CIEL** (En cours) au Lycée Paul-Langevin, Beauvais.
 * **Bac Pro Systèmes Numériques** - Lycée des métiers Roberval à Breuil-le-Vert.
-* **Brevet des Collèges** - Collège René Cassin à Brenouille.
+* **Brevet des collèges** - Collège René Cassin à Brenouille.
 
 ---
 
@@ -38,18 +38,18 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je par
 
 ### Mon Setup
 * **Système d'exploitation :** Bazzite OS (Linux)
-* **Carte graphique :** RTX 3060 12GO
-* **Processeur :** i5 14400f
+* **Carte graphique :** RTX 3060 12Go
+* **Processeur :** i5-14400F
 * **PC Principal :** Configuration équilibrée pour une expérience de jeu et de travail fluide.
 * **Stockage & Serveur :** Gestion d'un **NAS Synology** pour la centralisation et la sauvegarde automatique des données.
-* **Gaming Nomade :** Optimisation logicielle du **Steam Deck OLED** pour maximiser les performances de l'écran.
+* **Gaming nomade :** Optimisation logicielle du **Steam Deck OLED** pour maximiser les performances de l'écran.
 
 ---
 
 ## 📝 Analyses & Critiques
 
-Sur ce portfolio je vais partager mes avis et faire des analyses, sur essentiellement des jeux video et musique lier
-à ces derniers qui m'ont marqué durant mon expérience 
+Sur ce portfolio je vais partager mes avis et faire des analyses, sur essentiellement des Jeux vidéo et musique liée
+à ces derniers qui m'ont marqué durant mon expérience.
 
 ---
 
