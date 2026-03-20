@@ -1,27 +1,49 @@
-/* --- 0. VARIABLES --- */
+/* ==========================================================================
+   0. VARIABLES & THÈMES
+   ========================================================================== */
 :root {
+    /* Thème Sombre (Par défaut) */
     --couleur-fond: #121212;
     --couleur-texte: white;
     --couleur-accent: #007bff;
     --couleur-sous-menu: #2b2b2b;
     --couleur-bordure: #444;
+    --glow-color: rgba(255, 255, 255, 0.6);
     
+    /* Variables Markdown (Style GitHub Sombre) */
     --md-fond: #1c2128;
     --md-bordure: #444c56;
     --md-texte: #bdc8d4;
     --md-citation: #8b949e;
 
+    /* Tailles globales */
     --largeur-sidebar: 60px;
 }
 
-/* --- 1. RESET GLOBAL --- */
+body.theme-light {
+    /* Thème Clair */
+    --couleur-fond: #f0f2f5;
+    --couleur-texte: #121212;
+    --couleur-sous-menu: #ffffff;
+    --couleur-bordure: #d0d7de;
+    --glow-color: rgba(0, 0, 0, 0.3);
+    
+    /* Variables Markdown (Style GitHub Clair) */
+    --md-fond: #ffffff;
+    --md-bordure: #d0d7de;
+    --md-texte: #24292f;
+    --md-citation: #57606a;
+}
+
+/* ==========================================================================
+   1. RESET GLOBAL & BASE
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- 2. LE CORPS DE LA PAGE --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--couleur-fond); 
@@ -29,6 +51,7 @@ body {
     margin: 0;                             
 }
 
+/* Transitions douces pour le changement de thème */
 body, 
 .bande-haut, 
 .sous-menu, 
@@ -39,7 +62,9 @@ body,
     transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 
-/* --- 3. LA BANDE DU HAUT (SIDEBAR) --- */
+/* ==========================================================================
+   2. LA BANDE DU HAUT (SIDEBAR) & BOUTONS PRINCIPAUX
+   ========================================================================== */
 .bande-haut {
     width: var(--largeur-sidebar);
     height: 100vh;
@@ -55,7 +80,6 @@ body,
     z-index: 50;
 }
 
-/* --- 4. LE CONTENEUR DES BOUTONS --- */
 .conteneur-boutons {
     display: flex;
     flex-direction: column;
@@ -64,13 +88,11 @@ body,
     list-style: none;
 }
 
-/* --- 5. GESTION DES SOUS-MENUS --- */
 .parent-menu {
     position: relative;
     width: 100%;
 }
 
-/* --- 6. STYLE DES BOUTONS PRINCIPAUX --- */
 .bouton-bande {
     display: flex;
     justify-content: center;
@@ -82,10 +104,12 @@ body,
 
 .parent-menu:hover .bouton-bande {
     transform: scale(1.15);
-    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.6));
+    filter: drop-shadow(0px 0px 8px var(--glow-color));
 }
 
-/* --- 7. APPARENCE DU SOUS-MENU --- */
+/* ==========================================================================
+   3. SOUS-MENUS
+   ========================================================================== */
 .sous-menu {
     display: none;
     position: absolute;
@@ -101,6 +125,12 @@ body,
     z-index: 10;
 }
 
+/* Affichage au survol */
+.parent-menu:hover .sous-menu {
+    display: block;
+}
+
+/* Le pont invisible qui relie la barre au sous-menu */
 .sous-menu::before {
     content: "";
     position: absolute;
@@ -111,7 +141,6 @@ body,
     background-color: transparent; 
 }
 
-/* --- LE TITRE DU SOUS-MENU --- */
 .titre-sous-menu {
     color: var(--couleur-accent); 
     font-size: 14px; 
@@ -125,7 +154,6 @@ body,
     pointer-events: none; 
 }
 
-/* --- 8. STYLE DES LIENS SOUS-MENU --- */
 .sous-menu li a {
     color: var(--couleur-texte);
     display: flex;
@@ -147,12 +175,9 @@ body,
     color: #ffffff; 
 }
 
-/* --- 9. LOGIQUE D'AFFICHAGE --- */
-.parent-menu:hover .sous-menu {
-    display: block;
-}
-
-/* --- 10. ICÔNES --- */
+/* ==========================================================================
+   4. GESTION DES ICÔNES
+   ========================================================================== */
 .icone-menu {
     width: 28px;
     height: 28px;
@@ -160,16 +185,45 @@ body,
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Icônes de base (Thème sombre) */
 .icone-blanche {
     filter: invert(1);
 }
 
 .bouton-bande:hover .icone-menu {
     transform: scale(1.15);
-    filter: invert(1) drop-shadow(0px 0px 8px rgba(255,255,255,0.6));
+    filter: invert(1) drop-shadow(0px 0px 8px var(--glow-color));
 }
 
-/* --- 11. LA FEUILLE DE TEXTE --- */
+/* Gestion des icônes pour le thème clair */
+body.theme-light .icone-blanche {
+    filter: invert(0) !important; 
+}
+
+body.theme-light .icone-original-blanche {
+    filter: invert(1) !important; 
+}
+
+/* ==========================================================================
+   5. BOUTON THÈME
+   ========================================================================== */
+.bouton-theme {
+    margin-top: auto; 
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    font-size: 28px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.bouton-theme:hover {
+    transform: scale(1.2); 
+}
+
+/* ==========================================================================
+   6. ZONE DE CONTENU MARKDOWN
+   ========================================================================== */
 .feuille-texte {
     background-color: var(--md-fond);
     border: 1px solid var(--md-bordure);
@@ -182,7 +236,6 @@ body,
     color: var(--md-texte);
 }
 
-/* --- 12. TEXTE DANS LA FEUILLE --- */
 .feuille-texte h1,
 .feuille-texte h2 {
     color: var(--couleur-texte);
@@ -223,42 +276,4 @@ body,
     border-left: 4px solid var(--md-bordure);
     padding-left: 16px;
     color: var(--md-citation);
-}
-
-/* --- BOUTON THÈME --- */
-.bouton-theme {
-    margin-top: auto; 
-    margin-bottom: 20px;
-    background: none;
-    border: none;
-    font-size: 28px; 
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.bouton-theme:hover {
-    transform: scale(1.2); 
-}
-
-/* --- VARIABLES DU THÈME CLAIR --- */
-body.theme-light {
-    --couleur-fond: #f0f2f5;
-    --couleur-texte: #121212;
-    --couleur-sous-menu: #ffffff;
-    --couleur-bordure: #d0d7de;
-    
-    --md-fond: #ffffff;
-    --md-bordure: #d0d7de;
-    --md-texte: #24292f;
-    --md-citation: #57606a;
-}
-
-/* Les icônes de base noires redeviennent noires */
-body.theme-light .icone-blanche {
-    filter: invert(0) !important; 
-}
-
-/* L'icône de base blanche devient noire UNIQUEMENT en thème clair */
-body.theme-light .icone-original-blanche {
-    filter: invert(1) !important; 
 }
