@@ -54,5 +54,4 @@ Sur ce portfolio je vais partager mes avis et faire des analyses, sur essentiell
 ---
 
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas.malheude14@gmail.com)
 [![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/profiles/76561199013599584/)
