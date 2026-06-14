@@ -118,6 +118,14 @@
       <div class="article-infos" id="article-infos"></div>
     </div>
 
+    <!-- Avertissement : analyse de paroles, pas d'analyse musicale -->
+    <div class="article-warning" id="article-warning" style="display:none">
+      <span class="article-warning-icone">⚠️</span>
+      <div class="article-warning-texte">
+        <strong>Précision :</strong> cette analyse ne porte pas sur la composition musicale (instrumentation, production, etc.), mais sur une <strong>interprétation des paroles</strong> mises en lien avec le jeu et le moment où ce morceau intervient.
+      </div>
+    </div>
+
     <!-- Corps de l'article (rendu Markdown) -->
     <article class="article-corps feuille-texte" id="article-corps"></article>
 
@@ -253,6 +261,9 @@
 
       document.getElementById("article-infos").innerHTML =
         [noteHtml, genreHtml, dateHtml, lectureHtml].filter(Boolean).join('<span class="sep">·</span>');
+
+      // Avertissement : uniquement pour les analyses musicales
+      document.getElementById("article-warning").style.display = (cat === "mu") ? "" : "none";
 
       // Corps : supprimer le H1 du contenu (déjà affiché dans le header)
       const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();
