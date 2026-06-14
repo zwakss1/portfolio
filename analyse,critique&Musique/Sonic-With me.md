@@ -5,7 +5,7 @@ banniere: img/Banniere-Sonic-and-the-black-knight.png
 categorie: mu
 genre: Hard Rock · Power Metal · Heavy Metal
 date: 13 juin 2026
-statut: en-cours
+statut: ✅
 ---
 
 # OST — With Me
@@ -46,7 +46,7 @@ Pour cette analyse, ce sera la version de **All Ends**, donc la version original
 > ⚠️ **Attention, cette analyse comporte des spoilers.**
 
 
-Cette OST intervient pendant le combat final face à la Reine Noire, le boss final du jeu, qui est bien sûr **Merlina**. Elle a atteint cette forme grâce au fourreau que Sonic lui a remis. Cette musique raconte essentiellement le point du vu de la Reine noir mais aussi certain vers qui pourrais etre tout aussi  bien dite par Sonic.
+Cette OST intervient pendant le combat final face à la Reine Noire, le boss final du jeu, qui est bien sûr **Merlina**. Elle a atteint cette forme grâce au fourreau que Sonic lui a remis. Cette musique raconte essentiellement le point de vue de la Reine noire mais aussi certains vers qui pourraient être tout aussi bien dits par Sonic.
 
 Sur ce commencons par le 1er Couplet :
 
@@ -83,7 +83,7 @@ Pré-refrain 1
 >*Spells beyond you*  
 >(sortilèges au-delà de toi)  
 
->*As I watch you crawl*
+>*As I watch you crawl*  
 >(Alors que je t'observe ramper)
 
 >*Do you dare to fight (dare to fight)*  
@@ -108,27 +108,48 @@ Ensuite, les derniers vers sont chantés par la Reine. Elle essaye de l'intimide
 
 Refrain 1 
 
-My eyes (my eyes) are filled with curiosity  
+>*My eyes (my eyes) are filled with curiosity*  
+>(Mes yeux sont pleins de curiosité)
 
-You think (you think) that you have power over me  
+>*You think (you think) that you have power over me*  
+>(Tu penses avoir l'ascendant sur moi)
 
-In this life (this life), there's no room for you and me  
+>*In this life (this life), there's no room for you and me*  
+>(Dans cette vie, il n'y a pas de place pour toi et moi)
 
-So, turn away or face this day with me (face the day with me)  
+>*So, turn away or face this day with me (face the day with me)*  
+>(Bien, fais demi-tour ou fais face au temps avec moi)
 
-With me (face the day with me)  
+>*With me (face the day with me)*  
+>(Avec moi)
+
+Les deux premiers vers, la Reine dit qu'elle est quand même curieuse de voir jusqu'où peut aller Sonic, mais elle le remet à sa place en disant qu'elle est toujours au-dessus de lui. Ensuite, elle dit que dans ce monde, il n'y a pas de place pour elle et Sonic, et elle lui demande de faire un choix.
+
+Soit de faire demi-tour, ce que Sonic ne fera jamais, que ce soit en tant que chevalier ou en tant que personne qui veut sauver Merlina.
+Ensuite, dans la deuxième partie du vers ("fais face au temps avec moi"), on pourrait croire que la Reine Noire voudrait avoir Sonic à ses côtés mais ça n'a pas de sens, car elle dit qu'il n'y a pas de place pour les deux dans ce monde. Je pense qu'ici, elle demande à Sonic de combattre avec elle dans cet espace infini créé par elle, et que l'issue du combat décidera dans quelle dimension ou quel temps le royaume va se diriger.
+
 
 ---
 
 Couplet 2
 
-You know, every world will have its test (have its test)
+>*You know, every world will have its test (have its test)*  
+>(Tu sais, chaque monde aura son épreuve)  
 
-Don't blame for what I have become
+>*Don't blame for what I have become*  
+>(Ne me blâme pas pour ce que je suis devenu)  
 
-You know every world will come to end (come to end)
+>*You know every world will come to end (come to end)*  
+>(Tu sais que chaque monde a une fin)  
 
-And I'll create your final rest
+>*And I'll create your final rest*  
+>(et je créerai ton repos final)  
+
+Pour le premier vers, la Reine dit que chaque monde a son épreuve et que tout le jeu lui-même est une épreuve, surtout le combat final qui est le test ultime.
+
+En second, elle demande de ne pas la blâmer pour ce qu'elle est devenue, que ce soit physiquement comme le monstre géant (l'illusion du Roi Arthur que Sonic a battu), ou en tant que Reine Noire.
+
+Pour le troisième vers, Sonic pourrait très bien l'avoir dit, mais ça pourrait aussi être la Reine, pour dire que le royaume part vers de nouveaux jours et qu'il n'est plus prisonnier de son éphémérité. En créant le repos éternel pour Sonic, elle montre qu'elle est prête à le tuer pour sauver son royaume.
 
 ---
 
@@ -189,3 +210,11 @@ In this life (this life) there's no room for you and me
 So, turn away or face this day with me (face the day with me)
 
 With me...
+
+## Conclusion 
+
+En définitive, With Me est moins une simple chanson qu'un véritable combat idéologique entre deux personnages diamétralement opposés. D'un côté, un hérisson libre comme l'air, qui parcourt les plaines et les forêts à toute vitesse en quête d'aventure, vivant au jour le jour. De l'autre, une Reine terrifiée par la fin de son royaume, prête à tout pour le sauver, quitte à devenir le monstre qu'elle est pendant le combat final et à figer son monde dans le temps, sans but ni finalité.
+
+Durant ce combat, du point de vue de Merlina, Sonic est le véritable méchant et elle est décidée à le tuer. Lorsqu'elle lui lance "Ton égoïsme causera notre perte à tous", elle croit dur comme fer qu'il est l'antagoniste de son histoire.
+
+Mais Sonic n'est pas de cet avis. Pour lui, la fin fait naturellement partie de toutes choses et il l'accepte paisiblement, un peu comme il l'avait rappelé avec Chip dans Sonic Unleashed. C'est justement parce que notre temps est compté qu'il a autant de valeur et qu'il faut en profiter au maximum : c'est cette philosophie de vie qui lui donne la force de triompher face au rêve fou de la Reine. 

@@ -494,7 +494,7 @@ body.theme-light .badge-wip {
     color: var(--meta-color);
     font-style: italic;
     margin-top: -2px;
-    padding-left: 24px;
+    padding-left: 2px;
 }
 
 /* ── Sous-titre jeu dans la vue article ── */
