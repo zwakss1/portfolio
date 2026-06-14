@@ -1,0 +1,570 @@
+/* ==========================================================================
+   ANALYSES & CRITIQUE — Style GitHub Explore
+   Complète style.css (ne pas utiliser sans style.css)
+   ========================================================================== */
+
+/* ── Variables spécifiques ── */
+:root {
+    --tag-jv-bg:    #1a3a2a;
+    --tag-jv-text:  #3fb950;
+    --tag-jv-border:#238636;
+    --tag-mu-bg:    #1a2a3a;
+    --tag-mu-text:  #58a6ff;
+    --tag-mu-border:#1f6feb;
+    --tag-note-bg:  #2b2200;
+    --tag-note-text:#e3b341;
+    --card-bg:      var(--md-fond);
+    --card-border:  var(--md-bordure);
+    --meta-color:   var(--md-citation);
+}
+
+body.theme-light {
+    --tag-jv-bg:    #d1fae5;
+    --tag-jv-text:  #166534;
+    --tag-jv-border:#86efac;
+    --tag-mu-bg:    #dbeafe;
+    --tag-mu-text:  #1d4ed8;
+    --tag-mu-border:#93c5fd;
+    --tag-note-bg:  #fef9c3;
+    --tag-note-text:#713f12;
+    --meta-color:   var(--md-citation);
+}
+
+/* ── Thème clair : ajustements cards ── */
+body.theme-light .card-analyse {
+    background: #ffffff;
+}
+
+body.theme-light .card-analyse:hover {
+    background: #f6f8fa;
+}
+
+body.theme-light .card-titre {
+    color: #0969da;
+}
+
+body.theme-light .card-jeu {
+    color: #57606a;
+}
+
+body.theme-light .card-desc {
+    color: #57606a;
+}
+
+body.theme-light .card-meta {
+    color: #6e7781;
+}
+
+body.theme-light .grille-cards {
+    background: #d0d7de;
+    border-color: #d0d7de;
+}
+
+body.theme-light .stats-bar {
+    background: #f6f8fa;
+    border-color: #d0d7de;
+}
+
+body.theme-light .filtre-badge {
+    background: #eaeef2;
+    border-color: #d0d7de;
+    color: #57606a;
+}
+
+body.theme-light .analyses-count {
+    background: #eaeef2;
+    border-color: #d0d7de;
+}
+
+body.theme-light .section-label {
+    color: #57606a;
+}
+
+body.theme-light .section-label::after {
+    background: #d0d7de;
+}
+
+body.theme-light .dot-jv { background: #1a7f37; }
+body.theme-light .dot-mu { background: #0969da; }
+
+/* ── Layout principal ── */
+.page-analyses {
+    margin-left: calc(var(--largeur-sidebar) + 24px);
+    padding: 32px 32px 64px;
+    max-width: 1100px;
+}
+
+/* ── En-tête de page ── */
+.analyses-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--couleur-bordure);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+}
+
+.analyses-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--couleur-texte);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.analyses-title svg {
+    opacity: 0.7;
+}
+
+.analyses-count {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--meta-color);
+    background: var(--couleur-sous-menu);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-left: 8px;
+}
+
+/* ── Barre de filtres (style onglets GitHub) ── */
+.filtres-bar {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--couleur-bordure);
+}
+
+.filtre-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--meta-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.filtre-btn:hover {
+    color: var(--couleur-texte);
+}
+
+.filtre-btn.actif {
+    color: var(--couleur-texte);
+    border-bottom-color: #f78166;
+}
+
+.filtre-badge {
+    background: var(--couleur-sous-menu);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 20px;
+    font-size: 11px;
+    padding: 0 7px;
+    line-height: 18px;
+    color: var(--meta-color);
+}
+
+/* ── Grille de cards ── */
+.grille-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--couleur-bordure);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ── Card individuelle (style liste GitHub) ── */
+.card-analyse {
+    background: var(--card-bg);
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-analyse:hover {
+    background-color: var(--couleur-sous-menu);
+}
+
+
+
+/* Titre de la card */
+.card-titre {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--couleur-accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.card-analyse:hover .card-titre {
+    text-decoration: underline;
+}
+
+
+
+/* Description */
+.card-desc {
+    font-size: 13px;
+    color: var(--meta-color);
+    line-height: 1.5;
+    max-width: 680px;
+}
+
+/* Métadonnées bas de card */
+.card-meta {
+    font-size: 12px;
+    color: var(--meta-color);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+.card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+
+/* Dot "language color" comme GitHub */
+.dot-lang {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.dot-jv { background: #3fb950; }
+.dot-mu { background: #58a6ff; }
+
+/* Badge "En cours" */
+.badge-wip {
+    font-size: 11px;
+    padding: 2px 8px;
+    background: #2d1b00;
+    color: #f0883e;
+    border: 1px solid #f0883e55;
+    border-radius: 20px;
+    font-family: 'Consolas', monospace;
+}
+
+body.theme-light .badge-wip {
+    background: #fff7ed;
+    color: #c2410c;
+    border-color: #fdba74;
+}
+
+/* ── Séparateur de section ── */
+.section-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--meta-color);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin: 28px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--couleur-bordure);
+}
+
+/* ── Barre de statistiques ── */
+.stats-bar {
+    display: flex;
+    gap: 24px;
+    background: var(--couleur-sous-menu);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    color: var(--meta-color);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stat-val {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--couleur-texte);
+    font-family: 'Consolas', monospace;
+}
+
+/* ── État vide ── */
+.etat-vide {
+    display: none;
+    padding: 48px 24px;
+    text-align: center;
+    color: var(--meta-color);
+    font-size: 14px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 680px) {
+    .page-analyses {
+        margin-left: calc(var(--largeur-sidebar) + 8px);
+        padding: 16px;
+    }
+    .card-ligne1 {
+        flex-wrap: wrap;
+    }
+    .stats-bar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+
+/* ==========================================================================
+   VUE ARTICLE
+   ========================================================================== */
+
+.page-article {
+    margin-left: calc(var(--largeur-sidebar) + 24px);
+    padding: 28px 32px 80px;
+    max-width: 860px;
+}
+
+/* ── Barre de navigation (breadcrumb + retour) ── */
+.article-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+    font-size: 13px;
+    color: var(--meta-color);
+    font-family: 'Consolas', monospace;
+}
+
+.btn-retour {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 13px;
+    color: var(--couleur-texte);
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-retour:hover {
+    background-color: var(--couleur-sous-menu);
+    border-color: var(--couleur-accent);
+    color: var(--couleur-accent);
+}
+
+.breadcrumb-sep {
+    opacity: 0.4;
+}
+
+.breadcrumb-titre {
+    opacity: 0.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+}
+
+/* ── En-tête de l'article ── */
+.article-header {
+    border-bottom: 1px solid var(--couleur-bordure);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+}
+
+.article-meta-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.article-titre {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--couleur-texte);
+    line-height: 1.25;
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+}
+
+.article-infos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--meta-color);
+    font-family: 'Consolas', monospace;
+}
+
+.article-info-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.note-inline {
+    color: var(--tag-note-text);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sep {
+    opacity: 0.35;
+    font-size: 16px;
+}
+
+/* ── Corps de l'article ── */
+.article-corps {
+    /* Hérite de .feuille-texte mais on corrige le margin */
+    margin: 0 !important;
+    border-radius: 8px;
+    max-width: 100% !important;
+}
+
+/* ==========================================================================
+   CHARGEMENT
+   ========================================================================== */
+.chargement-cards {
+    padding: 32px;
+    text-align: center;
+    color: var(--meta-color);
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   RESPONSIVE — vue article
+   ========================================================================== */
+@media (max-width: 680px) {
+    .page-article {
+        margin-left: calc(var(--largeur-sidebar) + 8px);
+        padding: 16px 16px 60px;
+    }
+    .article-titre {
+        font-size: 22px;
+    }
+    .breadcrumb-titre {
+        display: none;
+    }
+}
+
+/* ── Sous-titre jeu sur la card ── */
+.card-jeu {
+    font-size: 12px;
+    color: var(--meta-color);
+    font-style: italic;
+    margin-top: -2px;
+    padding-left: 24px;
+}
+
+/* ── Sous-titre jeu dans la vue article ── */
+.article-sous-titre {
+    font-size: 15px;
+    color: var(--meta-color);
+    font-style: italic;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}
+
+/* ── Bannière en fond à droite de la card ── */
+.card-avec-banniere {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-avec-banniere::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background-image: var(--banniere);
+    background-size: cover;
+    background-position: center;
+    /* Fondu vers la gauche */
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.85) 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.85) 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Tout le contenu passe au-dessus de la bannière */
+.card-avec-banniere .card-titre,
+.card-avec-banniere .card-jeu,
+.card-avec-banniere .card-desc,
+.card-avec-banniere .card-meta {
+    position: relative;
+    z-index: 1;
+}
+
+/* ==========================================================================
+   TABLEAUX MARKDOWN (dans .article-corps / .feuille-texte)
+   ========================================================================== */
+.article-corps table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 25px;
+    font-size: 15px;
+}
+
+.article-corps th,
+.article-corps td {
+    border: 1px solid var(--md-bordure);
+    padding: 10px 16px;
+    text-align: left;
+}
+
+.article-corps th {
+    background-color: var(--couleur-sous-menu);
+    color: var(--couleur-texte);
+    font-weight: 600;
+}
+
+.article-corps tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+body.theme-light .article-corps tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.02);
+}

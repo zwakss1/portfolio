@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Analyses & Critiques — Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="analyses.css">
 </head>
 
 <body>
@@ -12,92 +13,430 @@
   <header class="bande-haut">
     <nav>
       <ul class="conteneur-boutons">
-
         <li class="parent-menu">
           <a href="Accueil.html" class="bouton-bande">
             <img src="img/house.png" class="icone-menu icone-blanche" alt="Accueil">
           </a>
         </li>
-
         <li class="parent-menu">
           <a href="Projet.html" class="bouton-bande">
             <img src="img/folder-dot.png" class="icone-menu icone-blanche" alt="Projets">
           </a>
-
           <ul class="sous-menu">
             <li class="titre-sous-menu">Projets</li>
-            <li>
-              <a href="#">
-                <img src="img/chargement.png" class="icone-menu icone-original-blanche" alt="En cours"> En cours
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/fini.png" class="icone-menu" alt="Terminé"> Terminé
-              </a>
-            </li>
+            <li><a href="#"><img src="img/chargement.png" class="icone-menu icone-original-blanche" alt="En cours"> En cours</a></li>
+            <li><a href="#"><img src="img/fini.png" class="icone-menu" alt="Terminé"> Terminé</a></li>
           </ul>
         </li>
-
         <li class="parent-menu">
           <a href="Analyses&critique.html" class="bouton-bande">
             <img src="img/logoanalyse.png" class="icone-menu icone-blanche" alt="Analyses">
           </a>
-
           <ul class="sous-menu">
             <li class="titre-sous-menu">Analyse & critique</li>
-            <li>
-              <a href="#">
-                <img src="img/gamepad-2.png" class="icone-menu icone-blanche" alt="Jeux vidéo"> Jeux vidéo
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/music-2.png" class="icone-menu icone-blanche" alt="Musique"> Musique
-              </a>
-            </li>
+            <li><a href="#" data-filtre="jv"><img src="img/gamepad-2.png" class="icone-menu icone-blanche" alt="Jeux vidéo"> Jeux vidéo</a></li>
+            <li><a href="#" data-filtre="mu"><img src="img/music-2.png" class="icone-menu icone-blanche" alt="Musique"> Musique</a></li>
           </ul>
         </li>
-
       </ul>
     </nav>
-    
     <button id="bouton-theme" class="bouton-theme" aria-label="Changer de thème">☀️</button>
   </header>
 
-  <main id="content" class="feuille-texte"></main>
+  <!-- ═══════════════════════════════════════════
+       VUE LISTE (index des analyses)
+  ════════════════════════════════════════════ -->
+  <main class="page-analyses" id="vue-liste">
+
+    <div class="analyses-header">
+      <h1 class="analyses-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        Analyses &amp; Critiques
+        <span class="analyses-count" id="compteur">0</span>
+      </h1>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <span class="stat-val" id="stat-jv">0</span>&nbsp;Jeux vidéo
+      </div>
+      <div class="stat-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        <span class="stat-val" id="stat-mu">0</span>&nbsp;Musique
+      </div>
+      <div class="stat-item" style="margin-left:auto">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Mise à jour :&nbsp;<span id="stat-date">—</span>
+      </div>
+    </div>
+
+    <div class="filtres-bar" role="tablist">
+      <button class="filtre-btn actif" data-cat="tous" role="tab">Tout <span class="filtre-badge" id="badge-tous">0</span></button>
+      <button class="filtre-btn" data-cat="jv" role="tab">🎮 Jeux vidéo <span class="filtre-badge" id="badge-jv">0</span></button>
+      <button class="filtre-btn" data-cat="mu" role="tab">🎵 Musique <span class="filtre-badge" id="badge-mu">0</span></button>
+    </div>
+
+    <div class="section-label">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      À la une
+    </div>
+
+    <div class="grille-cards" id="grille">
+      <div class="chargement-cards">Chargement des analyses…</div>
+    </div>
+
+    <div class="etat-vide" id="etat-vide">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:12px;opacity:0.4"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <p>Aucune analyse dans cette catégorie pour l'instant.</p>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       VUE ARTICLE (lecture d'une analyse)
+  ════════════════════════════════════════════ -->
+  <main class="page-article" id="vue-article" style="display:none">
+
+    <!-- Breadcrumb + retour -->
+    <div class="article-nav">
+      <button class="btn-retour" id="btn-retour">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        Retour aux analyses
+      </button>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-titre" id="breadcrumb-titre">—</span>
+    </div>
+
+    <!-- En-tête de l'article -->
+    <div class="article-header" id="article-header">
+      <div class="article-meta-top" id="article-meta-top"></div>
+      <h1 class="article-titre" id="article-titre"></h1>
+      <p class="article-sous-titre" id="article-sous-titre" style="display:none"></p>
+      <div class="article-infos" id="article-infos"></div>
+    </div>
+
+    <!-- Corps de l'article (rendu Markdown) -->
+    <article class="article-corps feuille-texte" id="article-corps"></article>
+
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    fetch('accueil.md')
-      .then(response => {
-        if (!response.ok) throw new Error("Document introuvable");
-        return response.text();
-      })
-      .then(text => {
-        document.getElementById('content').innerHTML = marked.parse(text);
-      })
-      .catch(error => console.error('Erreur lors du chargement du Markdown :', error));
 
-    const btnTheme = document.getElementById('bouton-theme');
-    const body = document.body;
+    /* ================================================================
+       LISTE DES FICHIERS .md
+       → Ajoute juste le nom ici quand tu crées un nouveau .md
+       ================================================================ */
+    const FICHIERS_MD = [
+      "analyse,critique&Musique/nier-automata.md",
+      "analyse,critique&Musique/persona5-ost.md",
+      "analyse,critique&Musique/hollow-knight.md",
+      "analyse,critique&Musique/hollow-knight-ost.md",
+      "analyse,critique&Musique/Sonic-With me.md",
+      // "analyse,critique&Musique/mon-prochain-jeu.md",
+    ];
 
-    if (localStorage.getItem('theme') === 'light') {
-      body.classList.add('theme-light');
-      btnTheme.textContent = '🌙';
+
+    /* ── Icônes SVG ── */
+    const ICONE_JV    = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`;
+    const ICONE_MU    = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
+    const ICONE_CAL   = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
+    const ICONE_CLOCK = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
+    const ICONE_STAR  = `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+
+
+    /* ================================================================
+       PARSING FRONTMATTER
+       ================================================================ */
+    function parseFrontmatter(texte) {
+      const meta = { titre:"Sans titre", categorie:"jv", genre:"", note:null, date:"", lecture:"", statut:"publié", description:"" };
+
+      const match = texte.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+      if (!match) return { meta, contenu: texte };
+
+      const contenu = texte.slice(match[0].length).trim();
+      match[1].split(/\r?\n/).forEach(ligne => {
+        const sep = ligne.indexOf(":");
+        if (sep === -1) return;
+        const cle = ligne.slice(0, sep).trim();
+        const val = ligne.slice(sep + 1).trim();
+        if (cle) meta[cle] = val;
+      });
+
+      // Description = 1er paragraphe après le H1
+      const lignes = contenu.split(/\r?\n/);
+      let apresH1 = false;
+      for (const l of lignes) {
+        if (l.startsWith("# ")) { apresH1 = true; continue; }
+        if (apresH1 && l.trim() && !l.startsWith("#")) { meta.description = l.trim(); break; }
+      }
+      if (!meta.description) {
+        for (const l of lignes) {
+          if (l.trim() && !l.startsWith("#")) { meta.description = l.trim(); break; }
+        }
+      }
+      return { meta, contenu };
     }
 
-    btnTheme.addEventListener('click', () => {
-      body.classList.toggle('theme-light');
-      
-      if (body.classList.contains('theme-light')) {
-        btnTheme.textContent = '🌙'; 
-        localStorage.setItem('theme', 'light'); 
+
+    /* ================================================================
+       GÉNÉRATION CARD
+       ================================================================ */
+    function genererCard(meta, fichier) {
+      const cat      = meta.categorie === "mu" ? "mu" : "jv";
+      const icone    = cat === "mu" ? ICONE_MU : ICONE_JV;
+      const tagClass = cat === "mu" ? "tag-mu" : "tag-jv";
+      const tagLabel = cat === "mu" ? "🎵 Musique" : "🎮 Jeux vidéo";
+      const dotClass = cat === "mu" ? "dot-mu" : "dot-jv";
+      const enCours  = meta.statut === "en-cours";
+
+      const badgeWip    = enCours ? `<span class="badge-wip">En cours</span>` : "";
+      const noteBadge   = (meta.note && !enCours) ? `<span class="note-badge">★ ${meta.note}/10</span>` : "";
+      const metaDate    = meta.date ? `<span class="card-meta-item">${ICONE_CAL} ${meta.date}</span>` : "";
+      const metaLecture = meta.lecture && !enCours
+        ? `<span class="card-meta-item">${ICONE_CLOCK} ${meta.lecture} de lecture</span>`
+        : enCours ? `<span class="card-meta-item">${ICONE_CLOCK} À venir</span>` : "";
+      const metaGenre   = meta.genre ? `<span class="card-meta-item"><span class="dot-lang ${dotClass}"></span> ${meta.genre}</span>` : "";
+
+      const sousTitreJeu = meta.jeu
+        ? `<span class="card-jeu">— ${meta.jeu}</span>` : "";
+
+      const banniereStyle = meta.banniere
+        ? `style="--banniere: url('${meta.banniere}')"` : "";
+      const banniereClass = meta.banniere ? " card-avec-banniere" : "";
+
+      return `
+      <a href="#" class="card-analyse${banniereClass}" data-cat="${cat}" data-fichier="${fichier}" ${banniereStyle}>
+        <div class="card-titre">${icone} ${meta.titre} ${badgeWip}</div>
+        ${sousTitreJeu}
+        <div class="card-desc">${meta.description}</div>
+        <div class="card-meta">${metaGenre} ${metaDate} ${metaLecture}</div>
+      </a>`;
+    }
+
+
+    /* ================================================================
+       VUE ARTICLE — affichage d'une analyse
+       ================================================================ */
+    function afficherArticle(meta, contenu, fichier, majHash = true) {
+      const cat      = meta.categorie === "mu" ? "mu" : "jv";
+      const tagClass = cat === "mu" ? "tag-mu" : "tag-jv";
+      const tagLabel = cat === "mu" ? "🎵 Musique" : "🎮 Jeux vidéo";
+      const enCours  = meta.statut === "en-cours";
+
+      // Breadcrumb
+      document.getElementById("breadcrumb-titre").textContent = meta.titre;
+
+      // Meta top (badge catégorie)
+      document.getElementById("article-meta-top").innerHTML = `
+        <span class="tag ${tagClass}">${tagLabel}</span>
+        ${enCours ? `<span class="badge-wip">En cours</span>` : ""}
+      `;
+
+      // Titre + sous-titre jeu
+      document.getElementById("article-titre").textContent = meta.titre;
+      const sousTitreEl = document.getElementById("article-sous-titre");
+      if (meta.jeu) {
+        sousTitreEl.textContent = meta.jeu;
+        sousTitreEl.style.display = "";
       } else {
-        btnTheme.textContent = '☀️'; 
-        localStorage.setItem('theme', 'dark'); 
+        sousTitreEl.style.display = "none";
       }
+
+      // Infos (note, genre, date, lecture)
+      const noteHtml = (meta.note && !enCours)
+        ? `<span class="article-info-item note-inline">${ICONE_STAR} ${meta.note}<span style="font-weight:400;opacity:.6">/10</span></span>`
+        : "";
+      const genreHtml = meta.genre
+        ? `<span class="article-info-item">${meta.genre}</span>` : "";
+      const dateHtml = meta.date
+        ? `<span class="article-info-item">${ICONE_CAL} ${meta.date}</span>` : "";
+      const lectureHtml = (meta.lecture && !enCours)
+        ? `<span class="article-info-item">${ICONE_CLOCK} ${meta.lecture} de lecture</span>` : "";
+
+      document.getElementById("article-infos").innerHTML =
+        [noteHtml, genreHtml, dateHtml, lectureHtml].filter(Boolean).join('<span class="sep">·</span>');
+
+      // Corps : supprimer le H1 du contenu (déjà affiché dans le header)
+      const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();
+      document.getElementById("article-corps").innerHTML = marked.parse(contenuSansH1);
+
+      // Basculer les vues
+      document.getElementById("vue-liste").style.display  = "none";
+      document.getElementById("vue-article").style.display = "";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      // Mémoriser l'article dans l'URL (survit au rafraîchissement)
+      if (majHash) {
+        const hashCible = "#article=" + encodeURIComponent(fichier);
+        if (window.location.hash !== hashCible) {
+          history.pushState(null, "", hashCible);
+        }
+      }
+    }
+
+
+    /* ================================================================
+       CHARGEMENT PRINCIPAL
+       ================================================================ */
+    const cache = {}; // mémorise les fichiers déjà chargés
+
+    async function chargerAnalyses() {
+      const grille   = document.getElementById("grille");
+      const etatVide = document.getElementById("etat-vide");
+
+      const resultats = await Promise.allSettled(
+        FICHIERS_MD.map(f =>
+          fetch(f).then(r => {
+            if (!r.ok) throw new Error(f);
+            return r.text().then(t => ({ texte: t, fichier: f }));
+          })
+        )
+      );
+
+      grille.innerHTML = "";
+      const cards = [];
+
+      resultats.forEach(res => {
+        if (res.status === "rejected") { console.warn("Introuvable :", res.reason.message); return; }
+        const { texte, fichier } = res.value;
+        const { meta, contenu } = parseFrontmatter(texte);
+        cache[fichier] = { meta, contenu };
+        cards.push({ meta, fichier });
+        grille.insertAdjacentHTML("beforeend", genererCard(meta, fichier));
+      });
+
+      if (cards.length === 0) { etatVide.style.display = "block"; return; }
+
+      // Compteurs
+      const allCards = Array.from(grille.querySelectorAll(".card-analyse"));
+      const total = allCards.length;
+      const nbJV  = allCards.filter(c => c.dataset.cat === "jv").length;
+      const nbMU  = allCards.filter(c => c.dataset.cat === "mu").length;
+
+      document.getElementById("compteur").textContent   = total;
+      document.getElementById("stat-jv").textContent    = nbJV;
+      document.getElementById("stat-mu").textContent    = nbMU;
+      document.getElementById("badge-tous").textContent = total;
+      document.getElementById("badge-jv").textContent   = nbJV;
+      document.getElementById("badge-mu").textContent   = nbMU;
+      document.getElementById("stat-date").textContent  =
+        new Date().toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
+
+      // Clic sur une card → vue article
+      allCards.forEach(card => {
+        card.addEventListener("click", async e => {
+          e.preventDefault();
+          const fichier = card.dataset.fichier;
+          if (!cache[fichier]) {
+            const r = await fetch(fichier);
+            const t = await r.text();
+            const parsed = parseFrontmatter(t);
+            cache[fichier] = parsed;
+          }
+          const { meta, contenu } = cache[fichier];
+          afficherArticle(meta, contenu, fichier);
+        });
+      });
+
+      // Filtres
+      document.querySelectorAll(".filtre-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".filtre-btn").forEach(b => b.classList.remove("actif"));
+          btn.classList.add("actif");
+          const cat = btn.dataset.cat;
+          let visible = 0;
+          allCards.forEach(card => {
+            const show = cat === "tous" || card.dataset.cat === cat;
+            card.style.display = show ? "" : "none";
+            if (show) visible++;
+          });
+          etatVide.style.display = visible === 0 ? "block" : "none";
+          document.getElementById("compteur").textContent = visible;
+        });
+      });
+
+      // Filtre depuis sidebar
+      document.querySelectorAll("[data-filtre]").forEach(link => {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          retourListe();
+          document.querySelector(`.filtre-btn[data-cat="${link.dataset.filtre}"]`).click();
+        });
+      });
+
+      // Restaurer la vue depuis l'URL (rafraîchissement / lien direct)
+      ouvrirDepuisHash();
+    }
+
+
+    /* ── Ouvre l'article correspondant au hash de l'URL, si présent ── */
+    async function ouvrirDepuisHash() {
+      const hash = window.location.hash;
+      const prefixe = "#article=";
+
+      if (!hash.startsWith(prefixe)) {
+        retourListe(false);
+        return;
+      }
+
+      const fichier = decodeURIComponent(hash.slice(prefixe.length));
+
+      if (!cache[fichier]) {
+        try {
+          const r = await fetch(fichier);
+          if (!r.ok) throw new Error(fichier);
+          const t = await r.text();
+          cache[fichier] = parseFrontmatter(t);
+        } catch (e) {
+          console.warn("Article introuvable pour le hash :", fichier);
+          retourListe(false);
+          return;
+        }
+      }
+
+      const { meta, contenu } = cache[fichier];
+      afficherArticle(meta, contenu, fichier, false);
+    }
+
+
+    /* ── Retour vers la liste ── */
+    function retourListe(majHash = true) {
+      document.getElementById("vue-article").style.display = "none";
+      document.getElementById("vue-liste").style.display   = "";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      if (majHash && window.location.hash) {
+        history.pushState(null, "", window.location.pathname + window.location.search);
+      }
+    }
+
+    document.getElementById("btn-retour").addEventListener("click", () => retourListe());
+
+    // Navigation arrière/avant du navigateur
+    window.addEventListener("popstate", () => {
+      ouvrirDepuisHash();
     });
+
+
+    /* ── Thème ── */
+    const btnTheme = document.getElementById("bouton-theme");
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("theme-light");
+      btnTheme.textContent = "🌙";
+    }
+    btnTheme.addEventListener("click", () => {
+      document.body.classList.toggle("theme-light");
+      const clair = document.body.classList.contains("theme-light");
+      btnTheme.textContent = clair ? "🌙" : "☀️";
+      localStorage.setItem("theme", clair ? "light" : "dark");
+    });
+
+    chargerAnalyses();
+
   </script>
 
 </body>
