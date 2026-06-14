@@ -494,7 +494,7 @@ body.theme-light .badge-wip {
     color: var(--meta-color);
     font-style: italic;
     margin-top: -2px;
-    padding-left: 2px;
+    padding-left: 24px;
 }
 
 /* ── Sous-titre jeu dans la vue article ── */
@@ -567,4 +567,37 @@ body.theme-light .badge-wip {
 
 body.theme-light .article-corps tr:nth-child(even) td {
     background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* ==========================================================================
+   AVERTISSEMENT — analyse de paroles (et non musicale)
+   ========================================================================== */
+.article-warning {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: rgba(227, 179, 65, 0.08);
+    border: 1px solid #e3b34155;
+    border-left: 4px solid #e3b341;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--md-texte);
+}
+
+.article-warning-icone {
+    font-size: 18px;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.article-warning-texte strong {
+    color: var(--couleur-texte);
+}
+
+body.theme-light .article-warning {
+    background: rgba(227, 179, 65, 0.12);
+    color: #57606a;
 }
