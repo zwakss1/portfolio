@@ -1,9 +1,7 @@
 # MALHEUDE Lucas 
 ### Étudiant en BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique - option B : Electronique et Réseaux)
 
-Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je partage ici mes projets techniques et mes réflexions sur les œuvres qui m'ont marqué.
-
----
+Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo (fan absolu de licences comme Danganronpa), je partage ici mes projets techniques et mes réflexions sur les œuvres qui m'ont marqué.
 
 ## 💼 Parcours Professionnel & Études
 
@@ -13,10 +11,10 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je par
     * Hardware & IoT : Programmation sur IDE Arduino et utilisation du fer à braser.
     * Maintenance & Réseaux : Diagnostic matériel, masterisation via Ivanti / PXE Boot et maintenance curative.
     * Notions en gestion de versions avec GitHub.
-    * Application de consignes techniques
-* **Certification :** 
+    * Application de consignes techniques.
+* **Certifications :** 
     * Sauveteur Secouriste du Travail (SST) - 2024.
-    * Certification Pix
+    * Certification Pix.
 
 ### Expériences
 * **2025 :** Stage (6 semaines) au **Conseil départemental de la Gironde** (Service des Usages Numériques - SUN).
@@ -32,26 +30,20 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je par
 * **Bac Pro Systèmes Numériques** - Lycée des métiers Roberval à Breuil-le-Vert.
 * **Brevet des collèges** - Collège René Cassin à Brenouille.
 
----
-
 ## 🛠️ Hardware/Software
 
 ### Mon Setup
-* **Système d'exploitation :** Bazzite OS (Linux)
+* **Système d'exploitation :** Fedora KDE 44
 * **Carte graphique :** RTX 3060 12Go
-* **Processeur :** i5-14400F
-* **PC Principal :** Configuration équilibrée pour une expérience de jeu et de travail fluide.
+* **Processeur :** Intel Core i5-14400F
+* **Carte Mère & RAM :** MSI Pro B760M-P avec 32 Go de RAM DDR5 (Dual Channel)
+* **Stockage Local :** SSD NVMe 2 To, HDD 1 To et SSD SATA 256 Go
 * **Stockage & Serveur :** Gestion d'un **NAS Synology** pour la centralisation et la sauvegarde automatique des données.
-* **Gaming nomade :** Optimisation logicielle du **Steam Deck OLED** pour maximiser les performances de l'écran.
-
----
 
 ## 📝 Analyses & Critiques
 
-Sur ce portfolio je vais partager mes avis et faire des analyses, sur essentiellement des Jeux vidéo et musique liée
-à ces derniers qui m'ont marqué durant mon expérience.
+Sur ce portfolio, je vais partager mes avis et faire des analyses, essentiellement sur des jeux vidéo et des musiques liées à ces derniers qui m'ont marqué durant mon expérience.
 
----
-
+<br>
 
 [![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/profiles/76561199013599584/)

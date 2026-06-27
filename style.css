@@ -73,11 +73,11 @@ body,
     top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    border-right: 2px solid var(--couleur-accent);
+    border-right: 1px solid var(--md-bordure); 
     background-color: var(--couleur-fond);
     z-index: 50;
+    padding-top: 16px; 
 }
 
 .conteneur-boutons {
@@ -86,27 +86,30 @@ body,
     align-items: center;
     width: 100%;
     list-style: none;
+    gap: 8px; 
 }
 
 .parent-menu {
     position: relative;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .bouton-bande {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 28px 0; 
-    width: 100%;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    width: 44px;  
+    height: 44px;
+    border-radius: 8px; 
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .parent-menu:hover .bouton-bande {
-    transform: scale(1.15);
-    filter: drop-shadow(0px 0px 8px var(--glow-color));
+    background-color: var(--couleur-sous-menu);
+    transform: scale(1.05); 
 }
-
 /* ==========================================================================
    3. SOUS-MENUS
    ========================================================================== */
@@ -179,29 +182,26 @@ body,
    4. GESTION DES ICÔNES
    ========================================================================== */
 .icone-menu {
-    width: 28px;
-    height: 28px;
+    width: 24px; 
+    height: 24px;
     object-fit: contain;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: filter 0.3s ease, opacity 0.2s ease;
 }
 
-/* Icônes de base (Thème sombre) */
 .icone-blanche {
     filter: invert(1);
 }
 
-.bouton-bande:hover .icone-menu {
-    transform: scale(1.15);
-    filter: invert(1) drop-shadow(0px 0px 8px var(--glow-color));
-}
-
-/* Gestion des icônes pour le thème clair */
 body.theme-light .icone-blanche {
-    filter: invert(0) !important; 
+    filter: invert(0) !important;
 }
 
 body.theme-light .icone-original-blanche {
     filter: invert(1) !important; 
+}
+
+.bouton-bande:hover .icone-menu {
+    opacity: 0.8;
 }
 
 /* ==========================================================================
@@ -222,58 +222,124 @@ body.theme-light .icone-original-blanche {
 }
 
 /* ==========================================================================
-   6. ZONE DE CONTENU MARKDOWN
+   6. ZONE DE CONTENU MARKDOWN (Typographie de base pour les articles)
    ========================================================================== */
 .feuille-texte {
-    background-color: var(--md-fond);
-    border: 1px solid var(--md-bordure);
-    border-radius: 8px;
-    max-width: 1400px; 
-    margin: 40px 40px 40px calc(var(--largeur-sidebar) + 250px);
-    padding: 50px; 
-    font-size: 18px;
+    background: transparent;
+    border: none;
+    max-width: 950px; 
+    margin: 60px auto 60px calc(var(--largeur-sidebar) + 60px);
+    padding: 0 20px; 
+    font-size: 16px;
     line-height: 1.6;
     color: var(--md-texte);
+    cursor: default;
 }
 
-.feuille-texte h1,
-.feuille-texte h2 {
+/* Styles par défaut pour le texte (restaurés pour tes analyses) */
+.feuille-texte h1, .feuille-texte h2 {
+    color: var(--couleur-texte);
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--md-bordure);
+}
+.feuille-texte h3 {
     color: var(--couleur-texte);
     margin-top: 24px;
     margin-bottom: 16px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #373e47;
 }
-
-.feuille-texte h2,
-.feuille-texte h3 {
-    margin-top: 45px;
-    margin-bottom: 20px;
+.feuille-texte p { 
+    margin-bottom: 16px; 
 }
-
-.feuille-texte p {
-    margin-bottom: 25px;
+.feuille-texte ul { 
+    padding-left: 2em; 
+    margin-bottom: 16px; 
 }
-
+.feuille-texte li { 
+    margin-bottom: 8px; 
+}
 .feuille-texte hr {
-    height: 4px;
-    background-color: var(--couleur-accent);
+    height: 1px;
+    background-color: var(--md-bordure);
     border: none;
-    margin: 24px 0;
-    border-radius: 2px;
+    margin: 32px 0;
 }
 
-.feuille-texte ul {
-    padding-left: 2em;
+/* ==========================================================================
+   7. STYLE DASHBOARD BENTO (Uniquement pour l'accueil)
+   ========================================================================== */
+/* En ciblant #content, on s'assure que ça ne casse plus tes articles ! */
+
+#content h1 {
+    font-size: 3rem;
+    border-bottom: none;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    letter-spacing: -1px;
+}
+#content h1 + h3 {
+    font-size: 1.15rem;
+    color: var(--couleur-accent);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+#content p:first-of-type {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+#content h2 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+#content h2 ~ h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#content > ul {
+    background: var(--md-fond);
+    border: 1px solid var(--md-bordure);
+    border-radius: 12px;
+    padding: 24px 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    margin-bottom: 32px;
+}
+body.theme-light #content > ul {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+#content > ul > li {
     margin-bottom: 16px;
 }
-
-.feuille-texte li {
-    margin-bottom: 12px;
+#content > ul > li > strong {
+    color: var(--couleur-accent);
+    font-size: 1.05rem;
+    margin-right: 6px;
 }
-
-.feuille-texte blockquote {
-    border-left: 4px solid var(--md-bordure);
+#content ul ul {
+    list-style-type: none;
     padding-left: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#content ul ul li {
+    margin-bottom: 8px;
+    padding-left: 12px;
+    border-left: 2px solid var(--md-bordure);
     color: var(--md-citation);
+    transition: border-color 0.2s;
+}
+#content ul ul li:hover {
+    border-left-color: var(--couleur-accent);
+    color: var(--md-texte);
+}
+#content hr {
+    display: none;
 }

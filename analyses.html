@@ -331,7 +331,6 @@
       document.getElementById("stat-date").textContent  =
         new Date().toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
 
-      // Clic sur une card → vue article
       allCards.forEach(card => {
         card.addEventListener("click", async e => {
           e.preventDefault();
@@ -378,7 +377,7 @@
     }
 
 
-    /* ── Ouvre l'article correspondant au hash de l'URL, si présent ── */
+    /* ── Ouvre l'article correspondant au hash de l'URL ── */
     async function ouvrirDepuisHash() {
       const hash = window.location.hash;
       const prefixe = "#article=";
