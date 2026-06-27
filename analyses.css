@@ -4,88 +4,90 @@
    ========================================================================== */
 
 /* ── Variables spécifiques ── */
+/* ==========================================================================
+   VARIABLES DE THÈME (SOmbre par défaut / Clair surchargé)
+   ========================================================================== */
 :root {
-    --tag-jv-bg:    #1a3a2a;
-    --tag-jv-text:  #3fb950;
-    --tag-jv-border:#238636;
-    --tag-mu-bg:    #1a2a3a;
-    --tag-mu-text:  #58a6ff;
-    --tag-mu-border:#1f6feb;
-    --tag-note-bg:  #2b2200;
-    --tag-note-text:#e3b341;
-    --card-bg:      var(--md-fond);
-    --card-border:  var(--md-bordure);
-    --meta-color:   var(--md-citation);
+    /* ── Tags existants ── */
+    --tag-jv-bg:        #1a3a2a;
+    --tag-jv-text:      #3fb950;
+    --tag-jv-border:    #238636;
+    --tag-mu-bg:        #1a2a3a;
+    --tag-mu-text:      #58a6ff;
+    --tag-mu-border:    #1f6feb;
+    --tag-note-bg:      #2b2200;
+    --tag-note-text:    #e3b341;
+
+    /* ── Cartes & Grille (Cards) ── */
+    --card-bg:          var(--md-fond);
+    --card-bg-hover:    var(--couleur-sous-menu);
+    --card-titre-color: var(--couleur-accent);
+    --card-jeu-color:   var(--md-citation);
+    --card-desc-color:  var(--md-citation);
+    --card-meta-color:  var(--md-citation);
+    --grille-bg:        var(--couleur-bordure);
+    --grille-border:    var(--couleur-bordure);
+
+    /* ── Éléments d'interface (UI) ── */
+    --stats-bg:         var(--couleur-sous-menu);
+    --stats-border:     var(--couleur-bordure);
+    --badge-bg:         var(--couleur-sous-menu);
+    --badge-border:     var(--couleur-bordure);
+    --badge-text:       var(--md-citation);
+    --label-text:       var(--md-citation);
+    --label-line:       var(--couleur-bordure);
+
+    /* ── Indicateurs & Badges spécifiques ── */
+    --dot-jv-bg:        #3fb950;
+    --dot-mu-bg:        #58a6ff;
+    --badge-wip-bg:     #2d1b00;
+    --badge-wip-text:   #f0883e;
+    --badge-wip-border: #f0883e55;
+    --warning-bg:       rgba(227, 179, 65, 0.08);
+    --warning-text:     var(--md-texte);
+    --table-bg-pair: rgba(255, 255, 255, 0.02);
 }
 
 body.theme-light {
-    --tag-jv-bg:    #d1fae5;
-    --tag-jv-text:  #166534;
-    --tag-jv-border:#86efac;
-    --tag-mu-bg:    #dbeafe;
-    --tag-mu-text:  #1d4ed8;
-    --tag-mu-border:#93c5fd;
-    --tag-note-bg:  #fef9c3;
-    --tag-note-text:#713f12;
-    --meta-color:   var(--md-citation);
-}
+    /* ── Tags ── */
+    --tag-jv-bg:        #d1fae5;
+    --tag-jv-text:      #166534;
+    --tag-jv-border:    #86efac;
+    --tag-mu-bg:        #dbeafe;
+    --tag-mu-text:      #1d4ed8;
+    --tag-mu-border:    #93c5fd;
+    --tag-note-bg:      #fef9c3;
+    --tag-note-text:    #713f12;
 
-/* ── Thème clair : ajustements cards ── */
-body.theme-light .card-analyse {
-    background: #ffffff;
-}
+    /* ── Cartes & Grille (Changements Thème Clair) ── */
+    --card-bg:          #ffffff;
+    --card-bg-hover:    #f6f8fa;
+    --card-titre-color: #0969da;
+    --card-jeu-color:   #57606a;
+    --card-desc-color:  #57606a;
+    --card-meta-color:  #6e7781;
+    --grille-bg:        #d0d7de;
+    --grille-border:    #d0d7de;
 
-body.theme-light .card-analyse:hover {
-    background: #f6f8fa;
-}
+    /* ── Éléments d'interface ── */
+    --stats-bg:         #f6f8fa;
+    --stats-border:     #d0d7de;
+    --badge-bg:         #eaeef2;
+    --badge-border:     #d0d7de;
+    --badge-text:       #57606a;
+    --label-text:       #57606a;
+    --label-line:       #d0d7de;
 
-body.theme-light .card-titre {
-    color: #0969da;
+    /* ── Indicateurs & Badges spécifiques ── */
+    --dot-jv-bg:        #1a7f37;
+    --dot-mu-bg:        #0969da;
+    --badge-wip-bg:     #fff7ed;
+    --badge-wip-text:   #c2410c;
+    --badge-wip-border: #fdba74;
+    --warning-bg:       rgba(227, 179, 65, 0.12);
+    --warning-text:     #57606a;
+    --table-stripe-bg: rgba(0, 0, 0, 0.02);
 }
-
-body.theme-light .card-jeu {
-    color: #57606a;
-}
-
-body.theme-light .card-desc {
-    color: #57606a;
-}
-
-body.theme-light .card-meta {
-    color: #6e7781;
-}
-
-body.theme-light .grille-cards {
-    background: #d0d7de;
-    border-color: #d0d7de;
-}
-
-body.theme-light .stats-bar {
-    background: #f6f8fa;
-    border-color: #d0d7de;
-}
-
-body.theme-light .filtre-badge {
-    background: #eaeef2;
-    border-color: #d0d7de;
-    color: #57606a;
-}
-
-body.theme-light .analyses-count {
-    background: #eaeef2;
-    border-color: #d0d7de;
-}
-
-body.theme-light .section-label {
-    color: #57606a;
-}
-
-body.theme-light .section-label::after {
-    background: #d0d7de;
-}
-
-body.theme-light .dot-jv { background: #1a7f37; }
-body.theme-light .dot-mu { background: #0969da; }
 
 /* ── Layout principal ── */
 .page-analyses {
@@ -173,19 +175,8 @@ body.theme-light .dot-mu { background: #0969da; }
 }
 
 /* ── Grille de cards ── */
-.grille-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1px;
-    background: var(--couleur-bordure);
-    border: 1px solid var(--couleur-bordure);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-/* ── Card individuelle (style liste GitHub) ── */
 .card-analyse {
-    background: var(--card-bg);
+    background: var(--card-bg); 
     padding: 20px 24px;
     display: flex;
     flex-direction: column;
@@ -197,16 +188,13 @@ body.theme-light .dot-mu { background: #0969da; }
 }
 
 .card-analyse:hover {
-    background-color: var(--couleur-sous-menu);
+    background-color: var(--card-bg-hover); 
 }
 
-
-
-/* Titre de la card */
 .card-titre {
     font-size: 16px;
     font-weight: 600;
-    color: var(--couleur-accent);
+    color: var(--card-titre-color); 
     display: flex;
     align-items: center;
     gap: 8px;
@@ -265,17 +253,11 @@ body.theme-light .dot-mu { background: #0969da; }
 .badge-wip {
     font-size: 11px;
     padding: 2px 8px;
-    background: #2d1b00;
-    color: #f0883e;
-    border: 1px solid #f0883e55;
+    background: var(--badge-wip-bg);
+    color: var(--badge-wip-text);
+    border: 1px solid var(--badge-wip-border);
     border-radius: 20px;
     font-family: 'Consolas', monospace;
-}
-
-body.theme-light .badge-wip {
-    background: #fff7ed;
-    color: #c2410c;
-    border-color: #fdba74;
 }
 
 /* ── Séparateur de section ── */
@@ -512,6 +494,16 @@ body.theme-light .badge-wip {
     overflow: hidden;
 }
 
+/* On limite la largeur du texte pour éviter qu'il n'aille trop sur l'image */
+.card-avec-banniere .card-titre,
+.card-avec-banniere .card-jeu,
+.card-avec-banniere .card-desc,
+.card-avec-banniere .card-meta {
+    position: relative;
+    z-index: 1;
+    max-width: 60%; 
+}
+
 .card-avec-banniere::after {
     content: "";
     position: absolute;
@@ -521,23 +513,13 @@ body.theme-light .badge-wip {
     height: 100%;
     background-image: var(--banniere);
     background-size: cover;
-    background-position: center;
-    /* Fondu vers la gauche */
-    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.85) 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.85) 100%);
+    background-position: right center; 
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 100%);
+    opacity: 0.95; 
     pointer-events: none;
     z-index: 0;
 }
-
-/* Tout le contenu passe au-dessus de la bannière */
-.card-avec-banniere .card-titre,
-.card-avec-banniere .card-jeu,
-.card-avec-banniere .card-desc,
-.card-avec-banniere .card-meta {
-    position: relative;
-    z-index: 1;
-}
-
 /* ==========================================================================
    TABLEAUX MARKDOWN (dans .article-corps / .feuille-texte)
    ========================================================================== */
@@ -562,11 +544,7 @@ body.theme-light .badge-wip {
 }
 
 .article-corps tr:nth-child(even) td {
-    background-color: rgba(255, 255, 255, 0.02);
-}
-
-body.theme-light .article-corps tr:nth-child(even) td {
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: var(--table-bg-pair); /* On utilise la variable ici ! */
 }
 
 /* ==========================================================================
@@ -576,7 +554,7 @@ body.theme-light .article-corps tr:nth-child(even) td {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    background: rgba(227, 179, 65, 0.08);
+    background: var(--warning-bg);
     border: 1px solid #e3b34155;
     border-left: 4px solid #e3b341;
     border-radius: 6px;
@@ -584,7 +562,7 @@ body.theme-light .article-corps tr:nth-child(even) td {
     margin-bottom: 28px;
     font-size: 14px;
     line-height: 1.6;
-    color: var(--md-texte);
+    color: var(--warning-text);
 }
 
 .article-warning-icone {
@@ -597,7 +575,17 @@ body.theme-light .article-corps tr:nth-child(even) td {
     color: var(--couleur-texte);
 }
 
-body.theme-light .article-warning {
-    background: rgba(227, 179, 65, 0.12);
-    color: #57606a;
+/*Restaurer le style des citations (paroles de chansons) */
+.article-corps blockquote {
+    border-left: 4px solid var(--couleur-accent); /* La barre verticale à gauche */
+    padding: 16px 20px;
+    color: var(--md-citation);
+    margin: 24px 0;
+    background: rgba(255, 255, 255, 0.03); /* Petit fond très léger pour ressortir */
+    border-radius: 0 8px 8px 0;
 }
+
+body.theme-light .article-corps blockquote {
+    background: rgba(0, 0, 0, 0.03);
+}
+
