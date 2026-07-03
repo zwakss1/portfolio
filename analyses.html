@@ -257,6 +257,48 @@
 
 
     /* ================================================================
+       SCREENSHOTS — image statique à droite du paragraphe concerné
+       ================================================================
+       Syntaxe à utiliser dans les .md :
+
+         [[screenshot: img/analyse-critique/mon-image.png]]
+
+         Le paragraphe qui suit ce marqueur (séparé par une ligne
+         vide, comme n'importe quel paragraphe Markdown) sera affiché
+         à côté de cette image, à l'endroit précis où il se trouve
+         dans le texte. L'image ne bouge pas au scroll, elle reste
+         simplement là où le paragraphe se trouve. Les autres
+         paragraphes de l'article ne sont pas affectés.
+       ================================================================ */
+    function activerScrollytelling(conteneur) {
+      const REGEX_MARQUEUR = /^\[\[screenshot:\s*(.+?)\]\]$/;
+
+      Array.from(conteneur.querySelectorAll("p")).forEach(p => {
+        const m = p.textContent.trim().match(REGEX_MARQUEUR);
+        if (!m) return;
+        const image = m[1].trim();
+        const cible = p.nextElementSibling;
+        p.remove();
+        if (!cible) return;
+
+        // On enveloppe uniquement CE paragraphe avec son image, en conservant
+        // sa position exacte dans le flux — le reste de l'article n'est pas touché.
+        const bloc = document.createElement("div");
+        bloc.className = "screenshot-bloc";
+        cible.parentNode.insertBefore(bloc, cible);
+        bloc.appendChild(cible);
+
+        const img = document.createElement("img");
+        img.src = image;
+        img.alt = "Capture d'écran de l'analyse";
+        img.className = "screenshot-img";
+        img.loading = "lazy";
+        bloc.appendChild(img);
+      });
+    }
+
+
+    /* ================================================================
        VUE ARTICLE — affichage d'une analyse
        ================================================================ */
     function afficherArticle(meta, contenu, fichier, majHash = true) {
@@ -301,9 +343,59 @@
       // Avertissement : uniquement pour les analyses musicales
       document.getElementById("article-warning").style.display = (cat === "mu") ? "" : "none";
 
-      // Corps : supprimer le H1 du contenu (déjà affiché dans le header)
-      const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();
-      document.getElementById("article-corps").innerHTML = marked.parse(contenuSansH1);
+// 1. Préparation du contenu
+const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();
+let htmlFinal = marked.parse(contenuSansH1);
+
+// 2. Injection du lecteur (si audio présent)
+if (meta.audio) {
+  htmlFinal = `
+    <audio id="lecteur-audio" controls class="lecteur-audio-sticky">
+      <source src="${meta.audio}" type="audio/mpeg">
+    </audio>
+  ` + htmlFinal;
+}
+
+document.getElementById("article-corps").innerHTML = htmlFinal;
+
+// 2bis. Activation du scrollytelling (screenshots qui suivent les paragraphes marqués)
+activerScrollytelling(document.getElementById("article-corps"));
+
+// 3. Configuration du lecteur (Volume + Restauration de la position)
+if (meta.audio) {
+  const lecteur = document.getElementById("lecteur-audio");
+  
+  // Réglage du volume par défaut
+  lecteur.volume = 0.2;
+
+  // Restauration de la position si elle existe
+  const posSauvegardee = sessionStorage.getItem('audioPos_' + window.location.href);
+  if (posSauvegardee) {
+      lecteur.currentTime = parseFloat(posSauvegardee);
+  }
+
+  // Synchronisation du karaoké (timeupdate)
+  lecteur.addEventListener("timeupdate", () => {
+    const tempsActuel = lecteur.currentTime;
+    const lignes = document.querySelectorAll(".parole-sync");
+    lignes.forEach(ligne => {
+      const tempsLigne = parseFloat(ligne.getAttribute("data-time"));
+      if (tempsActuel >= tempsLigne) {
+        lignes.forEach(l => l.classList.remove("active"));
+        ligne.classList.add("active");
+      }
+    });
+  });
+}
+
+// 4. Sauvegarde de la position avant de quitter ou rafraîchir
+window.addEventListener('beforeunload', () => {
+    const lecteur = document.getElementById("lecteur-audio");
+    if (lecteur) {
+        sessionStorage.setItem('audioPos_' + window.location.href, lecteur.currentTime);
+    }
+});
+
 
       // Basculer les vues
       document.getElementById("vue-liste").style.display  = "none";
