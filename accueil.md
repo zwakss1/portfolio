@@ -1,7 +1,7 @@
 # MALHEUDE Lucas 
 ### Étudiant en BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique - option B : Electronique et Réseaux)
 
-Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo (fan absolu de licences comme Danganronpa), je partage ici mes projets techniques et mes réflexions sur les œuvres qui m'ont marqué.
+Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je partage ici mes projets techniques et mes réflexions sur les œuvres qui m'ont marqué.
 
 ## 💼 Parcours Professionnel & Études
 
@@ -17,6 +17,10 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo (fan ab
     * Certification Pix.
 
 ### Expériences
+* **2025 - 2026 :** Projet Technique — **Station Météo Connectée** (Opération nationale « Météo à l'École »).
+    * Conception, routage et modélisation sous **KiCad** de deux cartes électroniques (PCB Alimentation et PCB Communication RF 868 MHz).
+    * Programmation en langage C (**Arduino IDE**) sur ATmega328P pour le traitement des trames capteurs et la transmission LoRaWAN.
+    * Implémentation d'un chiffrement par décalage (ROT13) pour la sécurisation locale des données.
 * **2025 :** Stage (6 semaines) au **Conseil départemental de la Gironde** (Service des Usages Numériques - SUN).
     * Masterisation de postes informatiques (Windows 10 et 11) via la solution **Ivanti** et le boot **PXE**.
     * Maintenance matérielle curative : diagnostic de pannes, remplacement de dalles LCD (Lenovo L13), de batteries et de composants internes.
@@ -26,9 +30,9 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo (fan ab
 * **2021 :** Stage (2 semaines) chez **PCexpresse** (Pont-Sainte-Maxence).
 
 ### Formation
-* **BTS CIEL** (En cours) au Lycée Paul-Langevin, Beauvais.
-* **Bac Pro Systèmes Numériques** - Lycée des métiers Roberval à Breuil-le-Vert.
-* **Brevet des collèges** - Collège René Cassin à Brenouille.
+* **2024 - 2026 : BTS CIEL** — Lycée Paul-Langevin, Beauvais.
+* **2021 - 2024 : Bac Pro Systèmes Numériques** (Option B) — Obtenu avec Mention, Lycée des métiers Roberval.
+* **2021 : Brevet des collèges** — Collège René Cassin à Brenouille.
 
 ## 🛠️ Hardware/Software
 
@@ -38,7 +42,7 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo (fan ab
 * **Processeur :** Intel Core i5-14400F
 * **Carte Mère & RAM :** MSI Pro B760M-P avec 32 Go de RAM DDR5 (Dual Channel)
 * **Stockage Local :** SSD NVMe 2 To, HDD 1 To et SSD SATA 256 Go
-* **Stockage & Serveur :** Gestion d'un **NAS Synology** pour la centralisation et la sauvegarde automatique des données.
+* **Stockage & Serveur :** Gestion d'un **NAS Synology** pour la centralisation et la sauvegarde automatique des données familiales.
 
 ## 📝 Analyses & Critiques
 

@@ -10,65 +10,69 @@
 <body>
 
   <header class="bande-haut">
-    <nav>
-      <ul class="conteneur-boutons">
+  <nav>
+    <ul class="conteneur-boutons">
 
-        <li class="parent-menu">
-          <a href="index.html" class="bouton-bande">
-            <img src="img/house.png" class="icone-menu icone-blanche" alt="Accueil">
-          </a>
-        </li>
+      <!-- Bouton Accueil -->
+      <li class="parent-menu">
+        <a href="index.html" class="bouton-bande">
+          <img src="img/house.png" class="icone-menu icone-blanche" alt="Accueil">
+        </a>
+      </li>
 
-        <li class="parent-menu">
-          <a href="Projet.html" class="bouton-bande">
-            <img src="img/folder-dot.png" class="icone-menu icone-blanche" alt="Projets">
-          </a>
+      <!-- Bouton Projets (affiche l'info-bulle "Projets" au survol) -->
+      <li class="parent-menu">
+        <a href="Projet.html" class="bouton-bande">
+          <img src="img/folder-dot.png" class="icone-menu icone-blanche" alt="Projets">
+        </a>
+        <ul class="sous-menu">
+          <li class="titre-sous-menu">Projets</li>
+        </ul>
+      </li>
 
-          <ul class="sous-menu">
-            <li class="titre-sous-menu">Projets</li>
-            <li>
-              <a href="#">
-                <img src="img/chargement.png" class="icone-menu icone-original-blanche" alt="En cours"> En cours
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/fini.png" class="icone-menu" alt="Terminé"> Terminé
-              </a>
-            </li>
-          </ul>
-        </li>
+      <!-- Bouton Analyses (affiche l'info-bulle "Analyse & critique" au survol) -->
+      <li class="parent-menu">
+        <a href="analyses.html" class="bouton-bande">
+          <img src="img/logoanalyse.png" class="icone-menu icone-blanche" alt="Analyses">
+        </a>
+        <ul class="sous-menu">
+          <li class="titre-sous-menu">Analyse &amp; critique</li>
+        </ul>
+      </li>
 
-        <li class="parent-menu">
-          <a href="analyses.html" class="bouton-bande">
-            <img src="img/logoanalyse.png" class="icone-menu icone-blanche" alt="Analyses">
-          </a>
+    </ul>
+  </nav>
+  
+  <button id="bouton-theme" class="bouton-theme" aria-label="Changer de thème">☀️</button>
+</header>
 
-          <ul class="sous-menu">
-            <li class="titre-sous-menu">Analyse & critique</li>
-            <li>
-              <a href="#">
-                <img src="img/gamepad-2.png" class="icone-menu icone-blanche" alt="Jeux vidéo"> Jeux vidéo
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/music-2.png" class="icone-menu icone-blanche" alt="Musique"> Musique
-              </a>
-            </li>
-          </ul>
-        </li>
-
-      </ul>
-    </nav>
-    
-    <button id="bouton-theme" class="bouton-theme" aria-label="Changer de thème">☀️</button>
-  </header>
-
-  <main id="content" class="feuille-texte"></main>
+<main id="content" class="feuille-texte"></main>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
+    /* ================================================================
+       SAUVEGARDE ET RESTAURATION DU SCROLL (Anti-bug de hauteur)
+       ================================================================ */
+    window.addEventListener('beforeunload', () => {
+        sessionStorage.setItem('scrollPos_' + window.location.href, window.scrollY);
+    });
+
+    const scrollObserver = new MutationObserver(() => {
+        const savedScroll = sessionStorage.getItem('scrollPos_' + window.location.href);
+        if (savedScroll !== null) {
+            // On laisse 50ms au navigateur pour calculer la hauteur réelle du Markdown injecté
+            setTimeout(() => {
+                window.scrollTo({ top: parseInt(savedScroll, 10), behavior: 'instant' });
+                scrollObserver.disconnect();
+                sessionStorage.removeItem('scrollPos_' + window.location.href);
+            }, 50);
+        }
+    });
+    scrollObserver.observe(document.body, { childList: true, subtree: true });
+
+    /* ================================================================
+       CHARGEMENT DE TON ACCUEIL MARKDOWN
+       ================================================================ */
     fetch('accueil.md')
       .then(response => {
         if (!response.ok) throw new Error("Document introuvable");
@@ -79,6 +83,7 @@
       })
       .catch(error => console.error('Erreur lors du chargement du Markdown :', error));
 
+    /* ── Gestionnaire de Thème ── */
     const btnTheme = document.getElementById('bouton-theme');
     const body = document.body;
 
@@ -89,7 +94,6 @@
 
     btnTheme.addEventListener('click', () => {
       body.classList.toggle('theme-light');
-      
       if (body.classList.contains('theme-light')) {
         btnTheme.textContent = '🌙'; 
         localStorage.setItem('theme', 'light'); 
