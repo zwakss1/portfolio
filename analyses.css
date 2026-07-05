@@ -618,12 +618,24 @@ body.theme-light .screenshot-img {
         flex-shrink: 0;
     }
 
-    /* -- Cards : padding réduit, bannière décorative désactivée (plus la place) -- */
+    /* -- Cards : padding réduit ; la bannière passe en pleine largeur, en haut,
+       avec un fondu vers le bas (plutôt que le fondu latéral, qui écraserait
+       le texte sur un écran étroit) -- */
     .card-analyse {
         padding: 16px;
     }
+    .card-avec-banniere {
+        padding-top: 130px;
+    }
     .card-avec-banniere::after {
-        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 150px;
+        background-position: center 25%;
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 55%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 55%, transparent 100%);
     }
     .card-avec-banniere .card-titre,
     .card-avec-banniere .card-jeu,
