@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analyses & Critiques — Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=4">
-  <link rel="stylesheet" href="analyses.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="analyses.css?v=5">
   <script>
     // Si on charge directement sur un article (F5, lien direct), on masque la page
     // le temps de positionner correctement le scroll, pour éviter tout flash "retour en haut".
@@ -373,19 +373,6 @@ if (meta.audio) {
   if (posSauvegardee) {
       lecteur.currentTime = parseFloat(posSauvegardee);
   }
-
-  // Synchronisation du karaoké (timeupdate)
-  lecteur.addEventListener("timeupdate", () => {
-    const tempsActuel = lecteur.currentTime;
-    const lignes = document.querySelectorAll(".parole-sync");
-    lignes.forEach(ligne => {
-      const tempsLigne = parseFloat(ligne.getAttribute("data-time"));
-      if (tempsActuel >= tempsLigne) {
-        lignes.forEach(l => l.classList.remove("active"));
-        ligne.classList.add("active");
-      }
-    });
-  });
 }
 
 // 4. Sauvegarde de la position avant de quitter ou rafraîchir

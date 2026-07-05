@@ -534,22 +534,12 @@ body.theme-light .article-corps blockquote {
     z-index: 100;
     width: 100%;
     margin-bottom: 24px;
-    border-radius: 1px;
+    border-radius: 30px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
     background-color: var(--md-fond);
 }
 body.theme-light .lecteur-audio-sticky {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* ── Karaoké synchronisé ── */
-.parole-sync {
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-    display: inline-block;
-}
-.parole-sync.active {
-    color: var(--couleur-accent);
-    font-weight: 700;
 }
 
 /* ── Screenshots : image placée dans l'espace vide à droite du texte ── */
