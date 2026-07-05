@@ -3,41 +3,22 @@
    Complète style.css (ne pas utiliser sans style.css)
    ========================================================================== */
 
-/* ── Variables spécifiques ── */
 /* ==========================================================================
-   VARIABLES DE THÈME (SOmbre par défaut / Clair surchargé)
+   0. VARIABLES DE THÈME (Sombre par défaut / Clair surchargé)
    ========================================================================== */
 :root {
-    /* ── Tags existants ── */
     --tag-jv-bg:        #1a3a2a;
     --tag-jv-text:      #3fb950;
     --tag-jv-border:    #238636;
     --tag-mu-bg:        #1a2a3a;
     --tag-mu-text:      #58a6ff;
     --tag-mu-border:    #1f6feb;
-    --tag-note-bg:      #2b2200;
     --tag-note-text:    #e3b341;
 
-    /* ── Cartes & Grille (Cards) ── */
     --card-bg:          var(--md-fond);
     --card-bg-hover:    var(--couleur-sous-menu);
     --card-titre-color: var(--couleur-accent);
-    --card-jeu-color:   var(--md-citation);
-    --card-desc-color:  var(--md-citation);
-    --card-meta-color:  var(--md-citation);
-    --grille-bg:        var(--couleur-bordure);
-    --grille-border:    var(--couleur-bordure);
 
-    /* ── Éléments d'interface (UI) ── */
-    --stats-bg:         var(--couleur-sous-menu);
-    --stats-border:     var(--couleur-bordure);
-    --badge-bg:         var(--couleur-sous-menu);
-    --badge-border:     var(--couleur-bordure);
-    --badge-text:       var(--md-citation);
-    --label-text:       var(--md-citation);
-    --label-line:       var(--couleur-bordure);
-
-    /* ── Indicateurs & Badges spécifiques ── */
     --dot-jv-bg:        #3fb950;
     --dot-mu-bg:        #58a6ff;
     --badge-wip-bg:     #2d1b00;
@@ -45,40 +26,22 @@
     --badge-wip-border: #f0883e55;
     --warning-bg:       rgba(227, 179, 65, 0.08);
     --warning-text:     var(--md-texte);
-    --table-bg-pair: rgba(255, 255, 255, 0.02);
+    --table-bg-pair:    rgba(255, 255, 255, 0.02);
 }
 
 body.theme-light {
-    /* ── Tags ── */
     --tag-jv-bg:        #d1fae5;
     --tag-jv-text:      #166534;
     --tag-jv-border:    #86efac;
     --tag-mu-bg:        #dbeafe;
     --tag-mu-text:      #1d4ed8;
     --tag-mu-border:    #93c5fd;
-    --tag-note-bg:      #fef9c3;
     --tag-note-text:    #713f12;
 
-    /* ── Cartes & Grille (Changements Thème Clair) ── */
     --card-bg:          #ffffff;
     --card-bg-hover:    #f6f8fa;
     --card-titre-color: #0969da;
-    --card-jeu-color:   #57606a;
-    --card-desc-color:  #57606a;
-    --card-meta-color:  #6e7781;
-    --grille-bg:        #d0d7de;
-    --grille-border:    #d0d7de;
 
-    /* ── Éléments d'interface ── */
-    --stats-bg:         #f6f8fa;
-    --stats-border:     #d0d7de;
-    --badge-bg:         #eaeef2;
-    --badge-border:     #d0d7de;
-    --badge-text:       #57606a;
-    --label-text:       #57606a;
-    --label-line:       #d0d7de;
-
-    /* ── Indicateurs & Badges spécifiques ── */
     --dot-jv-bg:        #1a7f37;
     --dot-mu-bg:        #0969da;
     --badge-wip-bg:     #fff7ed;
@@ -86,17 +49,18 @@ body.theme-light {
     --badge-wip-border: #fdba74;
     --warning-bg:       rgba(227, 179, 65, 0.12);
     --warning-text:     #57606a;
-    --table-stripe-bg: rgba(0, 0, 0, 0.02);
+    --table-bg-pair:    rgba(0, 0, 0, 0.02);
 }
 
-/* ── Layout principal ── */
+/* ==========================================================================
+   1. VUE LISTE — En-tête, stats, filtres
+   ========================================================================== */
 .page-analyses {
     margin-left: calc(var(--largeur-sidebar) + 24px);
     padding: 32px 32px 64px;
     max-width: 1100px;
 }
 
-/* ── En-tête de page ── */
 .analyses-header {
     display: flex;
     align-items: flex-end;
@@ -123,12 +87,38 @@ body.theme-light {
 .analyses-count {
     font-size: 13px;
     font-weight: 400;
-    color: var(--meta-color);
+    color: var(--md-citation);
     background: var(--couleur-sous-menu);
     border: 1px solid var(--couleur-bordure);
     border-radius: 20px;
     padding: 2px 10px;
     margin-left: 8px;
+}
+
+/* ── Barre de statistiques ── */
+.stats-bar {
+    display: flex;
+    gap: 24px;
+    background: var(--couleur-sous-menu);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    font-size: 13px;
+    color: var(--md-citation);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stat-val {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--couleur-texte);
+    font-family: 'Consolas', monospace;
 }
 
 /* ── Barre de filtres (style onglets GitHub) ── */
@@ -147,7 +137,7 @@ body.theme-light {
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 500;
-    color: var(--meta-color);
+    color: var(--md-citation);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -171,100 +161,14 @@ body.theme-light {
     font-size: 11px;
     padding: 0 7px;
     line-height: 18px;
-    color: var(--meta-color);
-}
-
-/* ── Grille de cards ── */
-.card-analyse {
-    background: var(--card-bg); 
-    padding: 20px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    transition: background-color 0.15s ease;
-    text-decoration: none;
-    color: inherit;
-}
-
-.card-analyse:hover {
-    background-color: var(--card-bg-hover); 
-}
-
-.card-titre {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--card-titre-color); 
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.2s;
-    flex-shrink: 1;
-    min-width: 0;
-}
-
-.card-analyse:hover .card-titre {
-    text-decoration: underline;
-}
-
-
-
-/* Description */
-.card-desc {
-    font-size: 13px;
-    color: var(--meta-color);
-    line-height: 1.5;
-    max-width: 680px;
-}
-
-/* Métadonnées bas de card */
-.card-meta {
-    font-size: 12px;
-    color: var(--meta-color);
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    font-family: 'Consolas', 'Courier New', monospace;
-    flex-wrap: wrap;
-    margin-top: 2px;
-}
-
-.card-meta-item {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-
-
-/* Dot "language color" comme GitHub */
-.dot-lang {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-}
-
-.dot-jv { background: #3fb950; }
-.dot-mu { background: #58a6ff; }
-
-/* Badge "En cours" */
-.badge-wip {
-    font-size: 11px;
-    padding: 2px 8px;
-    background: var(--badge-wip-bg);
-    color: var(--badge-wip-text);
-    border: 1px solid var(--badge-wip-border);
-    border-radius: 20px;
-    font-family: 'Consolas', monospace;
+    color: var(--md-citation);
 }
 
 /* ── Séparateur de section ── */
 .section-label {
     font-size: 13px;
     font-weight: 600;
-    color: var(--meta-color);
+    color: var(--md-citation);
     text-transform: uppercase;
     letter-spacing: 0.6px;
     margin: 28px 0 12px;
@@ -280,105 +184,149 @@ body.theme-light {
     background: var(--couleur-bordure);
 }
 
-/* ── Barre de statistiques ── */
-.stats-bar {
-    display: flex;
-    gap: 24px;
-    background: var(--couleur-sous-menu);
-    border: 1px solid var(--couleur-bordure);
-    border-radius: 8px;
-    padding: 14px 20px;
-    margin-bottom: 28px;
-    font-size: 13px;
-    color: var(--meta-color);
-}
-
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.stat-val {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--couleur-texte);
-    font-family: 'Consolas', monospace;
-}
-
-/* ── État vide ── */
+/* ── État vide / chargement ── */
 .etat-vide {
     display: none;
     padding: 48px 24px;
     text-align: center;
-    color: var(--meta-color);
+    color: var(--md-citation);
     font-size: 14px;
 }
 
-/* ── Responsive ── */
-@media (max-width: 680px) {
-    .page-analyses {
-        margin-left: 0;
-        padding: 16px 16px calc(90px + env(safe-area-inset-bottom));
-    }
-    .card-ligne1 {
-        flex-wrap: wrap;
-    }
-    .stats-bar {
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    /* En-tête : le titre, le compteur et les stats passent à la ligne au besoin */
-    .analyses-header {
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    .analyses-title {
-        font-size: 18px;
-        flex-wrap: wrap;
-    }
-
-    /* Barre de filtres : défilement horizontal plutôt que retour à la ligne écrasé */
-    .filtres-bar {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        flex-wrap: nowrap;
-        scrollbar-width: none;
-    }
-    .filtres-bar::-webkit-scrollbar {
-        display: none;
-    }
-    .filtre-btn {
-        flex-shrink: 0;
-    }
-
-    /* Le 3ᵉ item (date de mise à jour) passe sous les deux autres au lieu de forcer la largeur */
-    .stats-bar .stat-item[style*="margin-left:auto"] {
-        margin-left: 0 !important;
-    }
-
-    /* Cards : on réduit le padding et on désactive la bannière décorative,
-       qui n'a plus la place de s'afficher proprement sur un écran étroit */
-    .card-analyse {
-        padding: 16px 16px;
-    }
-    .card-avec-banniere::after {
-        display: none;
-    }
-    .card-avec-banniere .card-titre,
-    .card-avec-banniere .card-jeu,
-    .card-avec-banniere .card-desc,
-    .card-avec-banniere .card-meta {
-        max-width: 100%;
-    }
+.chargement-cards {
+    padding: 32px;
+    text-align: center;
+    color: var(--md-citation);
+    font-size: 14px;
+    font-style: italic;
 }
 
+/* ==========================================================================
+   2. CARDS
+   ========================================================================== */
+.card-analyse {
+    background: var(--card-bg);
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-analyse:hover {
+    background-color: var(--card-bg-hover);
+}
+
+.card-titre {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--card-titre-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.card-analyse:hover .card-titre {
+    text-decoration: underline;
+}
+
+.card-jeu {
+    font-size: 12px;
+    color: var(--md-citation);
+    font-style: italic;
+    margin-top: -2px;
+    padding-left: 24px;
+}
+
+.card-desc {
+    font-size: 13px;
+    color: var(--md-citation);
+    line-height: 1.5;
+    max-width: 680px;
+}
+
+.card-meta {
+    font-size: 12px;
+    color: var(--md-citation);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+.card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Dot "language color" comme GitHub — suit le thème via les variables */
+.dot-lang {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.dot-jv { background: var(--dot-jv-bg); }
+.dot-mu { background: var(--dot-mu-bg); }
+
+/* Badge "En cours" */
+.badge-wip {
+    font-size: 11px;
+    padding: 2px 8px;
+    background: var(--badge-wip-bg);
+    color: var(--badge-wip-text);
+    border: 1px solid var(--badge-wip-border);
+    border-radius: 20px;
+    font-family: 'Consolas', monospace;
+}
+
+/* ── Bannière en fond à droite de la card ── */
+.card-avec-banniere {
+    position: relative;
+    overflow: hidden;
+}
+
+/* On limite la largeur du texte pour éviter qu'il n'aille trop sur l'image */
+.card-avec-banniere .card-titre,
+.card-avec-banniere .card-jeu,
+.card-avec-banniere .card-desc,
+.card-avec-banniere .card-meta {
+    position: relative;
+    z-index: 1;
+    max-width: 60%;
+}
+
+.card-avec-banniere::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background-image: var(--banniere);
+    background-size: cover;
+    background-position: right center;
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 100%);
+    opacity: 0.95;
+    pointer-events: none;
+    z-index: 0;
+}
 
 /* ==========================================================================
-   VUE ARTICLE
+   3. VUE ARTICLE
    ========================================================================== */
-
 .page-article {
     margin-left: calc(var(--largeur-sidebar) + 24px);
     padding: 28px 32px 80px;
@@ -392,7 +340,7 @@ body.theme-light {
     gap: 10px;
     margin-bottom: 32px;
     font-size: 13px;
-    color: var(--meta-color);
+    color: var(--md-citation);
     font-family: 'Consolas', monospace;
 }
 
@@ -443,6 +391,27 @@ body.theme-light {
     margin-bottom: 14px;
 }
 
+/* Badges de catégorie ("Jeux vidéo" / "Musique", ou "Électronique" / "Réseau" selon la page) */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-family: 'Consolas', monospace;
+}
+.tag-jv {
+    background: var(--tag-jv-bg);
+    color: var(--tag-jv-text);
+    border: 1px solid var(--tag-jv-border);
+}
+.tag-mu {
+    background: var(--tag-mu-bg);
+    color: var(--tag-mu-text);
+    border: 1px solid var(--tag-mu-border);
+}
+
 .article-titre {
     font-size: 32px;
     font-weight: 700;
@@ -452,13 +421,21 @@ body.theme-light {
     letter-spacing: -0.3px;
 }
 
+.article-sous-titre {
+    font-size: 15px;
+    color: var(--md-citation);
+    font-style: italic;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}
+
 .article-infos {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
     font-size: 13px;
-    color: var(--meta-color);
+    color: var(--md-citation);
     font-family: 'Consolas', monospace;
 }
 
@@ -468,15 +445,16 @@ body.theme-light {
     gap: 4px;
 }
 
+.sep {
+    opacity: 0.35;
+    font-size: 16px;
+}
+
+/* Note "/10" affichée dans les analyses (pas utilisée sur la page Projets) */
 .note-inline {
     color: var(--tag-note-text);
     font-size: 15px;
     font-weight: 700;
-}
-
-.sep {
-    opacity: 0.35;
-    font-size: 16px;
 }
 
 /* ── Corps de l'article ── */
@@ -487,99 +465,7 @@ body.theme-light {
     max-width: 100% !important;
 }
 
-/* ==========================================================================
-   CHARGEMENT
-   ========================================================================== */
-.chargement-cards {
-    padding: 32px;
-    text-align: center;
-    color: var(--meta-color);
-    font-size: 14px;
-    font-style: italic;
-}
-
-/* ==========================================================================
-   RESPONSIVE — vue article
-   ========================================================================== */
-@media (max-width: 680px) {
-    .page-article {
-        margin-left: 0;
-        padding: 16px 16px calc(90px + env(safe-area-inset-bottom));
-    }
-    .article-titre {
-        font-size: 22px;
-    }
-    .breadcrumb-titre {
-        display: none;
-    }
-
-    /* Les tableaux Markdown défilent horizontalement plutôt que de déborder */
-    .article-corps {
-        overflow-x: auto;
-    }
-    .article-corps table {
-        min-width: 480px;
-    }
-
-    /* Le lecteur audio flottant garde une taille raisonnable */
-    .lecteur-audio-sticky {
-        top: 8px;
-    }
-}
-
-/* ── Sous-titre jeu sur la card ── */
-.card-jeu {
-    font-size: 12px;
-    color: var(--meta-color);
-    font-style: italic;
-    margin-top: -2px;
-    padding-left: 24px;
-}
-
-/* ── Sous-titre jeu dans la vue article ── */
-.article-sous-titre {
-    font-size: 15px;
-    color: var(--meta-color);
-    font-style: italic;
-    margin-top: -8px;
-    margin-bottom: 16px;
-}
-
-/* ── Bannière en fond à droite de la card ── */
-.card-avec-banniere {
-    position: relative;
-    overflow: hidden;
-}
-
-/* On limite la largeur du texte pour éviter qu'il n'aille trop sur l'image */
-.card-avec-banniere .card-titre,
-.card-avec-banniere .card-jeu,
-.card-avec-banniere .card-desc,
-.card-avec-banniere .card-meta {
-    position: relative;
-    z-index: 1;
-    max-width: 60%; 
-}
-
-.card-avec-banniere::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background-image: var(--banniere);
-    background-size: cover;
-    background-position: right center; 
-    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 100%);
-    opacity: 0.95; 
-    pointer-events: none;
-    z-index: 0;
-}
-/* ==========================================================================
-   TABLEAUX MARKDOWN (dans .article-corps / .feuille-texte)
-   ========================================================================== */
+/* ── Tableaux Markdown ── */
 .article-corps table {
     width: 100%;
     border-collapse: collapse;
@@ -601,12 +487,23 @@ body.theme-light {
 }
 
 .article-corps tr:nth-child(even) td {
-    background-color: var(--table-bg-pair); /* On utilise la variable ici ! */
+    background-color: var(--table-bg-pair);
 }
 
-/* ==========================================================================
-   AVERTISSEMENT — analyse de paroles (et non musicale)
-   ========================================================================== */
+/* ── Citations (paroles de chansons) ── */
+.article-corps blockquote {
+    border-left: 4px solid var(--couleur-accent);
+    padding: 16px 20px;
+    color: var(--md-citation);
+    margin: 24px 0;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0 8px 8px 0;
+}
+body.theme-light .article-corps blockquote {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+/* ── Avertissement (analyse de paroles, et non musicale) ── */
 .article-warning {
     display: flex;
     align-items: flex-start;
@@ -621,77 +518,48 @@ body.theme-light {
     line-height: 1.6;
     color: var(--warning-text);
 }
-
 .article-warning-icone {
     font-size: 18px;
     line-height: 1.4;
     flex-shrink: 0;
 }
-
 .article-warning-texte strong {
     color: var(--couleur-texte);
 }
 
-/*Restaurer le style des citations (paroles de chansons) */
-.article-corps blockquote {
-    border-left: 4px solid var(--couleur-accent); /* La barre verticale à gauche */
-    padding: 16px 20px;
-    color: var(--md-citation);
-    margin: 24px 0;
-    background: rgba(255, 255, 255, 0.03); /* Petit fond très léger pour ressortir */
-    border-radius: 0 8px 8px 0;
-}
-
-body.theme-light .article-corps blockquote {
-    background: rgba(0, 0, 0, 0.03);
-}
-
-/* ==========================================================================
-   LECTEUR AUDIO FLOTTANT
-   ========================================================================== */
+/* ── Lecteur audio flottant ── */
 .lecteur-audio-sticky {
     position: sticky;
     top: 20px;
     z-index: 100;
     width: 100%;
     margin-bottom: 24px;
-    border-radius: 30px;
+    border-radius: 1px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
     background-color: var(--md-fond);
 }
-
-/* Ajustement de l'ombre pour le thème clair */
 body.theme-light .lecteur-audio-sticky {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* ==========================================================================
-   KARAOKÉ SYNCHRONISÉ
-   ========================================================================== */
+/* ── Karaoké synchronisé ── */
 .parole-sync {
     transition: color 0.3s ease, text-shadow 0.3s ease;
-    display: inline-block; /* Permet que l'effet s'applique bien sur tout le bloc */
+    display: inline-block;
 }
-
-/* L'état quand la phrase est en train d'être chantée */
 .parole-sync.active {
     color: var(--couleur-accent);
     font-weight: 700;
 }
 
-/* ==========================================================================
-   SCREENSHOTS — image placée dans l'espace vide à droite du texte
-   ========================================================================== */
+/* ── Screenshots : image placée dans l'espace vide à droite du texte ── */
 .screenshot-bloc {
     position: relative;
     margin: 20px 0;
 }
-
 .screenshot-bloc p {
     margin: 0;
 }
-
-/* Par défaut (pas assez de place à droite) : l'image passe sous le paragraphe */
 .screenshot-img {
     display: block;
     width: 100%;
@@ -702,13 +570,11 @@ body.theme-light .lecteur-audio-sticky {
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
-
 body.theme-light .screenshot-img {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
-
-/* ── À partir d'une largeur d'écran suffisante : l'image part se loger
-     dans l'espace vide à droite de la colonne de texte, sans y toucher ── */
+/* À partir d'une largeur d'écran suffisante : l'image part se loger
+   dans l'espace vide à droite de la colonne de texte, sans y toucher */
 @media (min-width: 1150px) {
     .screenshot-img {
         position: absolute;
@@ -717,5 +583,85 @@ body.theme-light .screenshot-img {
         margin: 0 0 0 40px;
         width: 300px;
         max-width: none;
+    }
+}
+
+/* ==========================================================================
+   4. RESPONSIVE — MOBILE (≤ 680px)
+   Un seul bloc regroupant vue liste + vue article, pour éviter les
+   media queries dupliquées façon "usine à gaz".
+   ========================================================================== */
+@media (max-width: 680px) {
+
+    /* -- Vue liste -- */
+    .page-analyses {
+        margin-left: 0;
+        padding: 16px 16px calc(90px + env(safe-area-inset-bottom));
+    }
+    .analyses-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .analyses-title {
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+    .stats-bar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    /* Le 3ᵉ item (date de mise à jour) passe sous les deux autres au lieu de forcer la largeur */
+    .stats-bar .stat-item[style*="margin-left:auto"] {
+        margin-left: 0 !important;
+    }
+    /* Barre de filtres : défilement horizontal plutôt que retour à la ligne écrasé */
+    .filtres-bar {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    }
+    .filtres-bar::-webkit-scrollbar {
+        display: none;
+    }
+    .filtre-btn {
+        flex-shrink: 0;
+    }
+
+    /* -- Cards : padding réduit, bannière décorative désactivée (plus la place) -- */
+    .card-analyse {
+        padding: 16px;
+    }
+    .card-avec-banniere::after {
+        display: none;
+    }
+    .card-avec-banniere .card-titre,
+    .card-avec-banniere .card-jeu,
+    .card-avec-banniere .card-desc,
+    .card-avec-banniere .card-meta {
+        max-width: 100%;
+    }
+
+    /* -- Vue article -- */
+    .page-article {
+        margin-left: 0;
+        padding: 16px 16px calc(90px + env(safe-area-inset-bottom));
+    }
+    .article-titre {
+        font-size: 22px;
+    }
+    .breadcrumb-titre {
+        display: none;
+    }
+    /* Les tableaux Markdown défilent horizontalement plutôt que de déborder */
+    .article-corps {
+        overflow-x: auto;
+    }
+    .article-corps table {
+        min-width: 480px;
+    }
+    /* Le lecteur audio flottant garde une taille raisonnable */
+    .lecteur-audio-sticky {
+        top: 8px;
     }
 }
