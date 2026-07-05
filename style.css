@@ -124,9 +124,9 @@ body,
     top: 0;      
     left: calc(100% + 17px); 
     background-color: var(--couleur-sous-menu);
-    min-width: 220px;
+    white-space: nowrap; /* la boîte s'ajuste à la largeur du texte, plus de min-width fixe */
     list-style: none;
-    padding: 10px 0;
+    padding: 0;
     box-shadow: 0 8px 20px rgba(0,0,0,0.8);
     border-radius: 8px; 
     border: 1px solid var(--couleur-bordure);
@@ -155,9 +155,7 @@ body,
     text-transform: uppercase; 
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 10px 15px 5px 15px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid var(--couleur-bordure);
+    padding: 12px 18px;
     cursor: default; 
     pointer-events: none; 
 }
