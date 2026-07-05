@@ -358,33 +358,55 @@ body.theme-light #content > ul {
 /* ── Tablettes / mobiles (≤ 680px) ── */
 @media (max-width: 680px) {
 
-    :root {
-        --largeur-sidebar: 50px;
-    }
-
     /* Le zoom 120% du thème clair devient contre-productif sur petit écran */
     body.theme-light {
         zoom: 100%;
     }
 
-    /* -- Sidebar -- */
+    /* -- Sidebar → barre de navigation en bas, pleine largeur --
+       Sur mobile, une colonne verticale mange trop de largeur utile pour
+       seulement 3 icônes. On la couche en bas de l'écran : le texte récupère
+       toute la largeur, et la navigation reste tout aussi accessible au pouce. */
     .bande-haut {
-        padding-top: 10px;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 14px calc(8px + env(safe-area-inset-bottom));
+        border-right: none;
+        border-top: 1px solid var(--md-bordure);
+        /* Remplace le hack anti-décrochage utilisé pour la version colonne : une
+           barre ancrée en bas n'est pas sujette au bug de 100vh sur mobile. */
+        -webkit-transform: none;
+        transform: none;
     }
+
     .conteneur-boutons {
-        gap: 4px;
+        flex-direction: row;
+        width: auto;
+        gap: 6px;
     }
+
     .bouton-bande {
-        width: 38px;
-        height: 38px;
+        width: 42px;
+        height: 42px;
     }
     .icone-menu {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
+
     .bouton-theme {
         font-size: 22px;
-        margin-bottom: 12px;
+        margin: 0 0 0 8px;
+        padding-left: 10px;
+        border-left: 1px solid var(--couleur-bordure);
     }
 
     /* Les sous-menus reposent sur le survol (:hover), inexistant au toucher :
@@ -393,10 +415,12 @@ body.theme-light #content > ul {
         display: none !important;
     }
 
-    /* -- Zone de contenu Markdown -- */
+    /* -- Zone de contenu Markdown --
+       Plus de sidebar à gauche : la largeur est libre. On garde en revanche
+       un padding-bottom généreux pour ne pas passer sous la barre du bas. */
     .feuille-texte {
-        margin: 32px auto 40px calc(var(--largeur-sidebar) + 16px);
-        padding: 0 12px;
+        margin: 24px auto 0;
+        padding: 0 16px calc(90px + env(safe-area-inset-bottom));
         font-size: 15px;
     }
     .feuille-texte h1, .feuille-texte h2 {
@@ -427,21 +451,19 @@ body.theme-light #content > ul {
 /* ── Très petits écrans (≤ 400px) ── */
 @media (max-width: 400px) {
 
-    :root {
-        --largeur-sidebar: 44px;
-    }
-
     .bouton-bande {
-        width: 32px;
-        height: 32px;
+        width: 38px;
+        height: 38px;
     }
     .icone-menu {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
+    }
+    .bouton-theme {
+        font-size: 20px;
     }
     .feuille-texte {
-        margin-left: calc(var(--largeur-sidebar) + 10px);
-        padding: 0 8px;
+        padding: 0 10px calc(84px + env(safe-area-inset-bottom));
         font-size: 14.5px;
     }
     #content h1 {
