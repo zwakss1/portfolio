@@ -534,7 +534,8 @@ body.theme-light .article-corps blockquote {
     z-index: 100;
     width: 100%;
     margin-bottom: 24px;
-    border-radius: 1px;
+    border-radius: 30px;
+    overflow: hidden; /* coupe le rendu natif du lecteur (rectangulaire) à la forme ronde */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
     background-color: var(--md-fond);
 }
