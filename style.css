@@ -345,3 +345,101 @@ body.theme-light #content > ul {
 #content hr {
     display: none;
 }
+
+/* ==========================================================================
+   8. RESPONSIVE — APPAREILS MOBILES
+   ========================================================================== */
+
+/* ── Tablettes / mobiles (≤ 680px) ── */
+@media (max-width: 680px) {
+
+    :root {
+        --largeur-sidebar: 50px;
+    }
+
+    /* Le zoom 120% du thème clair devient contre-productif sur petit écran */
+    body.theme-light {
+        zoom: 100%;
+    }
+
+    /* -- Sidebar -- */
+    .bande-haut {
+        padding-top: 10px;
+    }
+    .conteneur-boutons {
+        gap: 4px;
+    }
+    .bouton-bande {
+        width: 38px;
+        height: 38px;
+    }
+    .icone-menu {
+        width: 20px;
+        height: 20px;
+    }
+    .bouton-theme {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    /* Les sous-menus reposent sur le survol (:hover), inexistant au toucher :
+       on les masque, le tap sur l'icône navigue déjà directement vers la page. */
+    .sous-menu {
+        display: none !important;
+    }
+
+    /* -- Zone de contenu Markdown -- */
+    .feuille-texte {
+        margin: 32px auto 40px calc(var(--largeur-sidebar) + 16px);
+        padding: 0 12px;
+        font-size: 15px;
+    }
+    .feuille-texte h1, .feuille-texte h2 {
+        margin-top: 24px;
+    }
+
+    /* -- Dashboard bento (accueil) -- */
+    #content h1 {
+        font-size: 1.9rem;
+        letter-spacing: -0.5px;
+    }
+    #content h1 + h3 {
+        font-size: 1rem;
+    }
+    #content p:first-of-type {
+        font-size: 1rem;
+    }
+    #content h2 {
+        font-size: 1.1rem;
+        margin-top: 3rem;
+        margin-bottom: 1.2rem;
+    }
+    #content > ul {
+        padding: 16px 18px;
+    }
+}
+
+/* ── Très petits écrans (≤ 400px) ── */
+@media (max-width: 400px) {
+
+    :root {
+        --largeur-sidebar: 44px;
+    }
+
+    .bouton-bande {
+        width: 32px;
+        height: 32px;
+    }
+    .icone-menu {
+        width: 18px;
+        height: 18px;
+    }
+    .feuille-texte {
+        margin-left: calc(var(--largeur-sidebar) + 10px);
+        padding: 0 8px;
+        font-size: 14.5px;
+    }
+    #content h1 {
+        font-size: 1.6rem;
+    }
+}

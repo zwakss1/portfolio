@@ -328,6 +328,50 @@ body.theme-light {
         flex-wrap: wrap;
         gap: 12px;
     }
+
+    /* En-tête : le titre, le compteur et les stats passent à la ligne au besoin */
+    .analyses-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .analyses-title {
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    /* Barre de filtres : défilement horizontal plutôt que retour à la ligne écrasé */
+    .filtres-bar {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    }
+    .filtres-bar::-webkit-scrollbar {
+        display: none;
+    }
+    .filtre-btn {
+        flex-shrink: 0;
+    }
+
+    /* Le 3ᵉ item (date de mise à jour) passe sous les deux autres au lieu de forcer la largeur */
+    .stats-bar .stat-item[style*="margin-left:auto"] {
+        margin-left: 0 !important;
+    }
+
+    /* Cards : on réduit le padding et on désactive la bannière décorative,
+       qui n'a plus la place de s'afficher proprement sur un écran étroit */
+    .card-analyse {
+        padding: 16px 16px;
+    }
+    .card-avec-banniere::after {
+        display: none;
+    }
+    .card-avec-banniere .card-titre,
+    .card-avec-banniere .card-jeu,
+    .card-avec-banniere .card-desc,
+    .card-avec-banniere .card-meta {
+        max-width: 100%;
+    }
 }
 
 
@@ -467,6 +511,19 @@ body.theme-light {
     }
     .breadcrumb-titre {
         display: none;
+    }
+
+    /* Les tableaux Markdown défilent horizontalement plutôt que de déborder */
+    .article-corps {
+        overflow-x: auto;
+    }
+    .article-corps table {
+        min-width: 480px;
+    }
+
+    /* Le lecteur audio flottant garde une taille raisonnable */
+    .lecteur-audio-sticky {
+        top: 8px;
     }
 }
 
