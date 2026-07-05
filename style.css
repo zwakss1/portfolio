@@ -69,17 +69,22 @@ body,
    ========================================================================== */
 .bande-haut {
     width: var(--largeur-sidebar);
-    height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
+    bottom: 0; /* remplace height:100vh : reste ancrée au bas réel du viewport,
+                  même quand la barre d'interface du navigateur (mobile) apparaît/disparaît */
     display: flex;
     flex-direction: column;
     align-items: center;
     border-right: 1px solid var(--md-bordure); 
     background-color: var(--couleur-fond);
     z-index: 50;
-    padding-top: 16px; 
+    padding-top: 16px;
+    /* Force une couche de rendu dédiée : évite les bugs de "décrochage" du fixed
+       pendant le scroll sur certains navigateurs in-app mobiles (X, Instagram, etc.) */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .conteneur-boutons {
