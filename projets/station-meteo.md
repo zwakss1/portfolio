@@ -258,4 +258,4 @@ Bien que le réseau n'ait pas été déployé à 100 % sur l'ensemble des établ
 * **Conception CAO & Routage (KiCad) :** Validation matérielle réelle réussie du bloc d'alimentation régulé, stabilisé et protégé.
 * **Développement Embarqué & Métrologie :** Écriture de primitives SPI pour le module LAMBDA68, gestion des modes basse consommation de l'ATmega et diagnostics physiques avancés à l'oscilloscope.
 
-La réussite d'un projet IoT dépend avant tout de la définition rigoureuse d'un protocole d'interconnexion matériel et d'un budget temporel partagé. Ce travail pose des bases solides pour mes futures interventions en tant que technicien supérieur.
+Au final, ce projet montre qu'en IoT, la clé réside dans la communication : tant sur le plan technique pour interconnecter les cartes que sur le plan humain pour synchroniser l'équipe. Les compétences pratiques acquises durant cette session constituent un excellent tremplin pour ma future carrière de technicien supérieur.
