@@ -127,13 +127,8 @@
       <div class="article-infos" id="article-infos"></div>
     </div>
 
-    <!-- Avertissement : analyse de paroles, pas d'analyse musicale -->
-    <div class="article-warning" id="article-warning" style="display:none">
-      <span class="article-warning-icone">⚠️</span>
-      <div class="article-warning-texte">
-        <strong>Précision :</strong> cette analyse ne porte pas sur la composition musicale (instrumentation, production, etc.), mais sur une <strong>interprétation des paroles</strong> mises en lien avec le jeu et le moment où ce morceau intervient.
-      </div>
-    </div>
+    <!-- Avertissements dynamiques (spoiler, méthodologie, paroles...) -->
+    <div class="article-warnings" id="article-warnings"></div>
 
     <!-- Corps de l'article (rendu Markdown) -->
     <article class="article-corps feuille-texte" id="article-corps"></article>
@@ -175,6 +170,7 @@
        ================================================================ */
     const FICHIERS_MD = [
       "analyse-critique/sonic-with-me.md",
+      "analyse-critique/Pokemon-USUL.md",
     ];
 
 
@@ -187,10 +183,64 @@
 
 
     /* ================================================================
+       AVERTISSEMENTS — bandeaux réutilisables en tête d'article
+       ================================================================
+       Pour en afficher un ou plusieurs sur une analyse, ajoute dans le
+       frontmatter du .md une ligne :
+
+         avertissements: spoiler, subjectivite
+
+       (liste séparée par des virgules, parmi les clés ci-dessous)
+       ================================================================ */
+    const AVERTISSEMENTS = {
+      paroles: {
+        titre: "Précision",
+        classe: "",
+        texte: `cette analyse ne porte pas sur la composition musicale (instrumentation, production, etc.), mais sur une <strong>interprétation des paroles</strong> mises en lien avec le jeu et le moment où ce morceau intervient.`
+      },
+      spoiler: {
+        titre: "Spoilers",
+        classe: "warning-spoiler",
+        texte: `cette analyse aborde en détail des éléments d'intrigue et de déroulement du jeu. Si tu n'as pas terminé le jeu concerné, certains passages peuvent te spoiler.`
+      },
+      subjectivite: {
+        titre: "Précision méthodologique",
+        classe: "",
+        texte: `cette critique assume une <strong>subjectivité déclarée</strong> : elle repose sur mon analyse et mon ressenti personnels, pas sur une prétention à l'objectivité ou à une vérité universelle sur le jeu, mon but est de chercher une certaine impartialité et être proportionnel tout en prenant les choses dans leur contexte quelque soit le jeu.`
+      },
+      shaders: {
+        titre: "Note technique",
+        classe: "",
+        texte: `Les séquences vidéo ont été capturées sur émulateur. Quelques légères micro-saccades d'une fraction de seconde peuvent apparaître lors du chargement des <strong>shaders</strong> en direct ; ce ne sont pas des bugs du jeu original, mais bien de mon émulateur qui les charge pour la première fois.`
+      }
+    };
+
+    function genererAvertissements(meta, cat) {
+      let liste = (meta.avertissements || "").split(",").map(s => s.trim()).filter(Boolean);
+
+      // Rétrocompatibilité : les analyses musicales sans champ explicite
+      // gardent l'avertissement "paroles" par défaut.
+      if (liste.length === 0 && cat === "mu") liste = ["paroles"];
+
+      return liste.map(id => {
+        const av = AVERTISSEMENTS[id];
+        if (!av) { console.warn("Type d'avertissement inconnu :", id); return ""; }
+        return `
+          <div class="article-warning ${av.classe}">
+            <span class="article-warning-icone">⚠️</span>
+            <div class="article-warning-texte">
+              <strong>${av.titre} :</strong> ${av.texte}
+            </div>
+          </div>`;
+      }).join("");
+    }
+
+
+    /* ================================================================
        PARSING FRONTMATTER
        ================================================================ */
     function parseFrontmatter(texte) {
-      const meta = { titre:"Sans titre", categorie:"jv", genre:"", note:null, date:"", lecture:"", statut:"publié", description:"" };
+      const meta = { titre:"Sans titre", categorie:"jv", genre:"", note:null, date:"", lecture:"", statut:"publié", description:"", avertissements:"" };
 
       const match = texte.match(/^---\r?\n([\s\S]*?)\r?\n---/);
       if (!match) return { meta, contenu: texte };
@@ -257,43 +307,127 @@
 
 
     /* ================================================================
-       SCREENSHOTS — image statique à droite du paragraphe concerné
+       SCREENSHOTS & VIDÉOS — média statique à droite du paragraphe concerné
        ================================================================
-       Syntaxe à utiliser dans les .md :
+       Syntaxes à utiliser dans les .md :
 
          [[screenshot: img/analyse-critique/mon-image.png]]
+         [[screenshot: img/analyse-critique/image1.png, img/analyse-critique/image2.png]]
+         [[video: img/analyse-critique/mon-clip.mp4]]
+         [[youtube: dQw4w9WgXcQ]]
 
-         Le paragraphe qui suit ce marqueur (séparé par une ligne
+         Le paragraphe qui suit le marqueur (séparé par une ligne
          vide, comme n'importe quel paragraphe Markdown) sera affiché
-         à côté de cette image, à l'endroit précis où il se trouve
-         dans le texte. L'image ne bouge pas au scroll, elle reste
-         simplement là où le paragraphe se trouve. Les autres
-         paragraphes de l'article ne sont pas affectés.
+         à côté du média, à l'endroit précis où il se trouve dans le
+         texte. Le média ne bouge pas au scroll, il reste simplement
+         là où le paragraphe se trouve. Les autres paragraphes de
+         l'article ne sont pas affectés.
+
+         - screenshot : image statique
+         - video      : fichier vidéo local (mp4, webm…), lecteur natif
+         - youtube    : identifiant de la vidéo YouTube (la partie
+                        après "v=" dans l'URL, ou après youtu.be/)
        ================================================================ */
+    /* ================================================================
+       LIGHTBOX — zoom plein écran au clic sur une image d'analyse
+       ================================================================ */
+    let lightboxOverlay = null;
+
+    function ouvrirLightbox(src) {
+      if (lightboxOverlay) fermerLightbox();
+
+      lightboxOverlay = document.createElement("div");
+      lightboxOverlay.className = "lightbox-overlay";
+
+      const img = document.createElement("img");
+      img.src = src;
+      img.className = "lightbox-img";
+      img.alt = "Capture d'écran en plein écran";
+      // Empêche le clic sur l'image elle-même de fermer la lightbox
+      // via le clic sur l'overlay (voir plus bas).
+      img.addEventListener("click", (e) => e.stopPropagation());
+
+      lightboxOverlay.appendChild(img);
+      lightboxOverlay.addEventListener("click", fermerLightbox);
+      document.addEventListener("keydown", fermerLightboxEchap);
+
+      document.body.appendChild(lightboxOverlay);
+      document.body.style.overflow = "hidden"; // empêche le scroll de la page en arrière-plan
+
+      // Forcer un reflow avant d'ajouter la classe, pour que la transition CSS s'applique
+      requestAnimationFrame(() => lightboxOverlay.classList.add("visible"));
+    }
+
+    function fermerLightbox() {
+      if (!lightboxOverlay) return;
+      lightboxOverlay.classList.remove("visible");
+      document.removeEventListener("keydown", fermerLightboxEchap);
+      document.body.style.overflow = "";
+      const overlayÀSupprimer = lightboxOverlay;
+      lightboxOverlay = null;
+      setTimeout(() => overlayÀSupprimer.remove(), 200); // laisse la transition de fermeture se jouer
+    }
+
+    function fermerLightboxEchap(e) {
+      if (e.key === "Escape") fermerLightbox();
+    }
+
     function activerScrollytelling(conteneur) {
-      const REGEX_MARQUEUR = /^\[\[screenshot:\s*(.+?)\]\]$/;
+      const REGEX_MARQUEUR = /^\[\[(screenshot|video|youtube):\s*(.+?)\]\]$/;
 
       Array.from(conteneur.querySelectorAll("p")).forEach(p => {
         const m = p.textContent.trim().match(REGEX_MARQUEUR);
         if (!m) return;
-        const image = m[1].trim();
-        const cible = p.nextElementSibling;
+        const type   = m[1];
+        const valeur = m[2].trim();
+        const cible  = p.nextElementSibling;
         p.remove();
         if (!cible) return;
 
-        // On enveloppe uniquement CE paragraphe avec son image, en conservant
+        // On enveloppe uniquement CE paragraphe avec son média, en conservant
         // sa position exacte dans le flux — le reste de l'article n'est pas touché.
         const bloc = document.createElement("div");
-        bloc.className = "screenshot-bloc";
+        bloc.className = (type === "screenshot") ? "screenshot-bloc" : "video-bloc";
         cible.parentNode.insertBefore(bloc, cible);
         bloc.appendChild(cible);
 
-        const img = document.createElement("img");
-        img.src = image;
-        img.alt = "Capture d'écran de l'analyse";
-        img.className = "screenshot-img";
-        img.loading = "lazy";
-        bloc.appendChild(img);
+        if (type === "screenshot") {
+          // Plusieurs images séparées par des virgules : [[screenshot: a.png, b.png]]
+          // Toutes regroupées dans un conteneur "stack" pour être empilées
+          // proprement (et non superposées au même endroit).
+          const stack = document.createElement("div");
+          stack.className = "screenshot-stack";
+          valeur.split(",").map(s => s.trim()).filter(Boolean).forEach(src => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = "Capture d'écran de l'analyse";
+            img.className = "screenshot-img";
+            img.loading = "lazy";
+            img.addEventListener("click", () => ouvrirLightbox(src));
+            stack.appendChild(img);
+          });
+          bloc.appendChild(stack);
+
+        } else if (type === "video") {
+          const video = document.createElement("video");
+          video.src = valeur;
+          video.controls = true;
+          video.preload = "metadata";
+          video.className = "video-media";
+          bloc.appendChild(video);
+
+        } else if (type === "youtube") {
+          const wrap = document.createElement("div");
+          wrap.className = "video-embed-wrap";
+          const iframe = document.createElement("iframe");
+          iframe.src = `https://www.youtube-nocookie.com/embed/${valeur}`;
+          iframe.title = "Vidéo YouTube";
+          iframe.loading = "lazy";
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+          iframe.allowFullscreen = true;
+          wrap.appendChild(iframe);
+          bloc.appendChild(wrap);
+        }
       });
     }
 
@@ -340,8 +474,8 @@
       document.getElementById("article-infos").innerHTML =
         [noteHtml, genreHtml, dateHtml, lectureHtml].filter(Boolean).join('<span class="sep">·</span>');
 
-      // Avertissement : uniquement pour les analyses musicales
-      document.getElementById("article-warning").style.display = (cat === "mu") ? "" : "none";
+      // Avertissements (spoiler, méthodologie, paroles...) selon le frontmatter
+      document.getElementById("article-warnings").innerHTML = genererAvertissements(meta, cat);
 
 // 1. Préparation du contenu
 const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();

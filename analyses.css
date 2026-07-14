@@ -464,6 +464,15 @@ body.theme-light {
     border-radius: 8px;
     max-width: 100% !important;
 }
+/* Les screenshots/vidéos flottants (position: absolute) ne comptent pas
+   dans la hauteur de la page. Si un de ces blocs est le dernier élément
+   de l'article, sans cette marge la page peut s'arrêter avant la fin
+   du média flottant, le rendant inatteignable au scroll. */
+@media (min-width: 1150px) {
+    .article-corps {
+        padding-bottom: 200px;
+    }
+}
 
 /* ── Tableaux Markdown ── */
 .article-corps table {
@@ -523,6 +532,12 @@ body.theme-light .article-corps blockquote {
     line-height: 1.4;
     flex-shrink: 0;
 }
+
+/* Variante rouge pour les avertissements de type spoiler */
+.article-warning.warning-spoiler {
+    border-color: #e3414155;
+    border-left-color: #e34141;
+}
 .article-warning-texte strong {
     color: var(--couleur-texte);
 }
@@ -556,23 +571,143 @@ body.theme-light .lecteur-audio-sticky {
     width: 100%;
     max-width: 420px;
     height: auto;
+    max-height: 480px;
+    object-fit: contain;
     margin: 16px auto 4px;
     border: 1px solid var(--md-bordure);
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    cursor: zoom-in;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.screenshot-img:hover {
+    transform: scale(1.015);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
 }
 body.theme-light .screenshot-img {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
-/* À partir d'une largeur d'écran suffisante : l'image part se loger
-   dans l'espace vide à droite de la colonne de texte, sans y toucher */
+
+/* ── Lightbox : zoom plein écran au clic sur une image ── */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    z-index: 1000;
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.lightbox-overlay.visible {
+    opacity: 1;
+}
+.lightbox-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    cursor: default;
+    transform: scale(0.96);
+    transition: transform 0.2s ease;
+}
+.lightbox-overlay.visible .lightbox-img {
+    transform: scale(1);
+}
+@media (max-width: 680px) {
+    .lightbox-overlay {
+        padding: 16px;
+    }
+}
+/* Conteneur qui regroupe une ou plusieurs images d'un même marqueur.
+   Sur mobile il reste en flux normal (les images s'empilent naturellement
+   via leur propre margin). Sur grand écran c'est LUI qui part se loger
+   à droite de la colonne de texte — pas chaque image individuellement —
+   pour que plusieurs images s'empilent proprement dedans au lieu de se
+   superposer au même endroit. */
 @media (min-width: 1150px) {
-    .screenshot-img {
+    .screenshot-stack {
         position: absolute;
         top: 0;
         left: 100%;
         margin: 0 0 0 40px;
         width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .screenshot-stack .screenshot-img {
+        width: 100%;
+        max-width: none;
+        max-height: 400px;
+        margin: 0;
+    }
+}
+
+/* ── Vidéos : même logique que les screenshots (voir ci-dessus), mais en 16:9 ──
+   Deux cas : fichier vidéo local ([[video: ...]]) ou embed YouTube ([[youtube: ...]]) */
+.video-bloc {
+    position: relative;
+    margin: 20px 0;
+}
+.video-bloc p {
+    margin: 0;
+}
+
+/* Cas 1 : fichier vidéo local, lecteur natif */
+.video-media {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 16px auto 4px;
+    border: 1px solid var(--md-bordure);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    background: #000;
+}
+body.theme-light .video-media {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Cas 2 : embed YouTube — conteneur en ratio 16:9 forcé pour l'iframe */
+.video-embed-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 16 / 9;
+    margin: 16px auto 4px;
+    border: 1px solid var(--md-bordure);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+body.theme-light .video-embed-wrap {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.video-embed-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* À partir d'une largeur d'écran suffisante : la vidéo part se loger
+   dans l'espace vide à droite de la colonne de texte, un peu plus large
+   qu'un screenshot car un format 16:9 lisible demande plus de place */
+@media (min-width: 1150px) {
+    .video-media,
+    .video-embed-wrap {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin: 0 0 0 40px;
+        width: 340px;
         max-width: none;
     }
 }
