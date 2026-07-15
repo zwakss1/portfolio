@@ -204,20 +204,29 @@ body.theme-light {
 /* ==========================================================================
    2. CARDS
    ========================================================================== */
+.grille-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .card-analyse {
     background: var(--card-bg);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 12px;
     padding: 20px 24px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    transition: background-color 0.15s ease;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
     text-decoration: none;
     color: inherit;
 }
 
 .card-analyse:hover {
     background-color: var(--card-bg-hover);
+    border-color: var(--couleur-accent);
 }
 
 .card-titre {
@@ -710,6 +719,33 @@ body.theme-light .video-embed-wrap {
         width: 340px;
         max-width: none;
     }
+}
+
+/* ── Boutons de téléchargement (fichiers de projet) ── */
+.download-bar {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 20px 0 28px;
+}
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--couleur-sous-menu);
+    border: 1px solid var(--couleur-bordure);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--couleur-texte);
+    text-decoration: none;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.btn-download:hover {
+    background-color: var(--couleur-accent);
+    border-color: var(--couleur-accent);
+    color: #ffffff;
 }
 
 /* ==========================================================================

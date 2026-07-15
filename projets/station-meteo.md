@@ -58,6 +58,8 @@ Pour mener à bien mes livrables (Alimenter, protéger, émettre en LoRaWAN et r
 
 ### 1. LE BLOC ALIMENTATION & PROTECTION (PCB 1)
 
+[[screenshot: img/SYSML.png]]
+
 #### 1.1 Diagramme d'Exigences & Architecture Interne
 Ce bloc doit recevoir la tension fluctuante de la batterie 12V et générer des lignes d'alimentation stables indispensables au reste de la station. Il se structure de la manière suivante :
 * **Protection fusible :** Calibrée à 1A pour couper le circuit en cas de surintensité majeure.
@@ -65,6 +67,8 @@ Ce bloc doit recevoir la tension fluctuante de la batterie 12V et générer des 
 * **Protection contre les surtensions :** Mise en œuvre via une diode d'écrêtage TVS Transil P6KE15A.
 * **Étage de régulation +5V :** Géré par un régulateur linéaire L7805.
 * **Étage de régulation +3,3V :** Géré par un régulateur LM1117T-3.3 câblé en cascade derrière la ligne 5V pour limiter la dissipation thermique.
+
+[[screenshot: img/alimV1.png, img/alimV2.png]]
 
 #### 1.2 Évolution du Schéma Électronique (KiCad)
 Lors de la première revue de conception (le 18 mars 2026), le premier schéma présentait plusieurs défauts majeurs de lisibilité : les liaisons de masse (GND) étaient toutes tracées manuellement, créant des croisements de câbles laborieux, et l'utilisation des labels manquait de clarté.
@@ -112,6 +116,26 @@ L'analyse des fiches techniques des constructeurs a permis d'isoler la consommat
 * **Consommation totale à vide de la carte :** ~9,3 mA.
 
 > ⚠️ **Note thermique importante :** S'agissant d'une régulation purement linéaire, l'énergie excédentaire liée à l'abaissement de tension (12V → 5V) est intégralement dissipée sous forme de chaleur par effet Joule. Bien que la batterie puisse fournir une intensité élevée, la sécurité thermique est bridée par les limites des boîtiers (1,5A max pour le L7805 et 0,8A pour le LM1117) sous la protection du fusible d'entrée de 1A.
+
+
+
+#### 1.5 Routage, Modélisation 3D et PCB Réel (Alimentation)
+
+Stratégie de Routage :
+
+Largeur des pistes : Les pistes transportant la puissance (ligne d'entrée 12V, lignes régulées 5V et 3.3V) ont été dimensionnées à une largeur minimale de 1,0 mm afin de supporter de forts appels de courant sans échauffement de la piste de cuivre. Les signaux de référence et de test sont routés en 0,4 mm.
+
+[[screenshot: img/PCBalim.png]]
+
+Plan de masse : Un plan de masse continu (GND) a été coulé sur la couche inférieure (Bottom Copper) pour minimiser l'impédance de retour et faire office de dissipateur thermique pour les boîtiers TO-220 des régulateurs.
+
+Séparation physique : Les condensateurs de découplage (C1, C2, C5, C6) ont été placés au plus près des broches d'entrée/sortie des régulateurs de tension pour maximiser leur efficacité contre les parasites haute fréquence.
+
+📸 Visualisation CAO & Réalisation :
+
+Modèle 3D (KiCad) : L'intégration des empreintes 3D (boîtiers TO-220 verticaux pour le L7805 et le LM1117, borniers à vis bleus au pas de 5,08 mm, et porte-fusible traversant) a permis de valider l'absence de collision mécanique et de vérifier l'espacement pour l'insertion des tournevis sur les borniers.
+
+PCB Réel : Après gravure et perçage, le circuit imprimé double face finalisé présente un étamage propre et sans bavure. Les pistes d'alimentation principales sont bien isolées du plan de masse par une marge de garde de sécurité (clearance) de 0,5 mm afin de prévenir tout pont de soudure ou arc électrique accidentel.
 
 ---
 
@@ -172,6 +196,27 @@ void setup() {
   configurerWatchdog();
 }
 ```
+<br>
+
+ #### 2.5 Routage, Modélisation 3D et PCB Réel (Communication)
+
+ [[screenshot: img/PCBcom.png]]
+
+La carte de communication intègre des signaux numériques à haute fréquence (SPI à 8 MHz et signal RF à 868 MHz). Son routage a requis une attention particulière pour éviter l'effet d'antenne parasite et l'atténuation du signal.
+
+Contraintes de Routage :
+
+Ligne RF (Antenne) : La piste reliant la sortie RF du module LAMBDA68 à l'embase d'antenne SMA a été routée de la manière la plus courte et rectiligne possible, en évitant les angles droits (privilégiant des virages à 135° ou des courbes) pour minimiser les ruptures d'impédance.
+
+Adaptation de niveau et ponts diviseurs : Les résistances de conversion logique (4,7 kΩ et 10 kΩ) ont été groupées de manière compacte juste à côté des entrées logiques du module LAMBDA68 pour garder des lignes de transmission SPI propres.
+
+Plan de masse : Présence d'un plan de masse maillé et renforcé autour de la puce radio pour assurer un blindage électromagnétique efficace contre les rayonnements parasites.
+
+📸 Visualisation CAO & Réalisation :
+
+Modèle 3D (KiCad) : La modélisation 3D intègre le support DIP-28 pour l'ATmega328P (permettant un remplacement rapide du contrôleur en cas de panne), le connecteur Sub-D DB9 femelle monté à angle droit, et l'empreinte spécifique CMS du module LAMBDA68-8D soudé en surface.
+
+PCB Réel : Le circuit imprimé de communication finalisé met en valeur la compacité requise par l'intégration sur le mât de la station météo. Le brasage du module CMS LAMBDA68 à pas fin a été réalisé sous loupe binoculaire pour garantir des liaisons parfaites sans micro-court-circuit, respectant scrupuleusement la norme de qualité exigée.
 
 
 ## 📋 III. SPÉCIFICATIONS DE DIAGNOSTIC & MAINTENANCE

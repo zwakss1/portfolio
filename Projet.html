@@ -161,8 +161,7 @@
        ================================================================ */
     const FICHIERS_MD = [
       "projets/station-meteo.md",
-      "projets/deploiement-gironde.md",
-      "projets/home-lab.md"
+      "projets/esp32-s3-protoshield.md",
     ];
 
     /* ── Configuration des Icônes ── */
@@ -254,6 +253,112 @@
     }
 
     /* ================================================================
+       SCREENSHOTS & VIDÉOS — média statique à droite du paragraphe concerné
+       ================================================================
+       Syntaxes à utiliser dans les .md :
+
+         [[screenshot: img/mon-image.png]]
+         [[screenshot: img/image1.png, img/image2.png]]
+         [[video: img/mon-clip.mp4]]
+         [[youtube: dQw4w9WgXcQ]]
+       ================================================================ */
+    /* ================================================================
+       LIGHTBOX — zoom plein écran au clic sur une image de projet
+       ================================================================ */
+    let lightboxOverlay = null;
+
+    function ouvrirLightbox(src) {
+      if (lightboxOverlay) fermerLightbox();
+
+      lightboxOverlay = document.createElement("div");
+      lightboxOverlay.className = "lightbox-overlay";
+
+      const img = document.createElement("img");
+      img.src = src;
+      img.className = "lightbox-img";
+      img.alt = "Capture d'écran en plein écran";
+      img.addEventListener("click", (e) => e.stopPropagation());
+
+      lightboxOverlay.appendChild(img);
+      lightboxOverlay.addEventListener("click", fermerLightbox);
+      document.addEventListener("keydown", fermerLightboxEchap);
+
+      document.body.appendChild(lightboxOverlay);
+      document.body.style.overflow = "hidden";
+
+      requestAnimationFrame(() => lightboxOverlay.classList.add("visible"));
+    }
+
+    function fermerLightbox() {
+      if (!lightboxOverlay) return;
+      lightboxOverlay.classList.remove("visible");
+      document.removeEventListener("keydown", fermerLightboxEchap);
+      document.body.style.overflow = "";
+      const overlayÀSupprimer = lightboxOverlay;
+      lightboxOverlay = null;
+      setTimeout(() => overlayÀSupprimer.remove(), 200);
+    }
+
+    function fermerLightboxEchap(e) {
+      if (e.key === "Escape") fermerLightbox();
+    }
+
+    function activerScrollytelling(conteneur) {
+      const REGEX_MARQUEUR = /^\[\[(screenshot|video|youtube):\s*(.+?)\]\]$/;
+
+      Array.from(conteneur.querySelectorAll("p")).forEach(p => {
+        const m = p.textContent.trim().match(REGEX_MARQUEUR);
+        if (!m) return;
+        const type   = m[1];
+        const valeur = m[2].trim();
+        const cible  = p.nextElementSibling;
+        p.remove();
+        if (!cible) return;
+
+        const bloc = document.createElement("div");
+        bloc.className = (type === "screenshot") ? "screenshot-bloc" : "video-bloc";
+        cible.parentNode.insertBefore(bloc, cible);
+        bloc.appendChild(cible);
+
+        if (type === "screenshot") {
+          const stack = document.createElement("div");
+          stack.className = "screenshot-stack";
+          valeur.split(",").map(s => s.trim()).filter(Boolean).forEach(src => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = "Capture d'écran du projet";
+            img.className = "screenshot-img";
+            img.loading = "lazy";
+            img.addEventListener("click", () => ouvrirLightbox(src));
+            stack.appendChild(img);
+          });
+          bloc.appendChild(stack);
+
+        } else if (type === "video") {
+          const video = document.createElement("video");
+          video.src = valeur;
+          video.controls = true;
+          video.preload = "metadata";
+          video.className = "video-media";
+          bloc.appendChild(video);
+
+        } else if (type === "youtube") {
+          const wrap = document.createElement("div");
+          wrap.className = "video-embed-wrap";
+          const iframe = document.createElement("iframe");
+          iframe.src = `https://www.youtube-nocookie.com/embed/${valeur}`;
+          iframe.title = "Vidéo YouTube";
+          iframe.loading = "lazy";
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+          iframe.allowFullscreen = true;
+          wrap.appendChild(iframe);
+          bloc.appendChild(wrap);
+        }
+      });
+    }
+
+
+    /* ================================================================
        VUE ARTICLE
        ================================================================ */
     function afficherArticle(meta, contenu, fichier, majHash = true) {
@@ -286,6 +391,7 @@
 
       const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();
       document.getElementById("article-corps").innerHTML = marked.parse(contenuSansH1);
+      activerScrollytelling(document.getElementById("article-corps"));
 
       document.getElementById("vue-liste").style.display  = "none";
       document.getElementById("vue-article").style.display = "";
