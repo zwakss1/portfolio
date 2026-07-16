@@ -6,8 +6,10 @@ categorie: mu
 genre: Hard Rock · Power Metal · Heavy Metal
 date: 13 juin 2026
 statut: publié
-audio: musique/with-me.mp3
+audio: musique/with-me.mp3s
+avertissements: paroles, spoiler
 ---
+
 
 # OST — With Me
 
@@ -44,7 +46,6 @@ J'ai joué récemment à *Sonic and the Black Knight*, et comme je suis fan de c
 
 Pour cette analyse, ce sera la version de **All Ends**, donc la version originale in-game.
 
-> ⚠️ **Attention, cette analyse comporte des spoilers.**
 
 Cette OST intervient pendant le combat final face à la Reine Noire, le boss final du jeu, qui est bien sûr **Merlina**. Elle a atteint cette forme grâce au fourreau que Sonic lui a remis. Cette musique raconte essentiellement le point de vue de la Reine noire mais aussi certains vers qui pourraient être tout aussi bien dits par Sonic.
 

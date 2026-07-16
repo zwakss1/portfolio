@@ -199,10 +199,6 @@ body.theme-light .icone-blanche {
     filter: invert(0) !important;
 }
 
-body.theme-light .icone-original-blanche {
-    filter: invert(1) !important; 
-}
-
 .bouton-bande:hover .icone-menu {
     opacity: 0.8;
 }

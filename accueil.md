@@ -1,7 +1,7 @@
 # MALHEUDE Lucas 
 ### Étudiant en BTS CIEL (Cybersécurité, Informatique et Réseaux, Électronique - option B : Electronique et Réseaux)
 
-Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je partage ici mes projets techniques et mes réflexions sur les œuvres qui m'ont marqué.
+Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je partage ici mes projets techniques et mes réflexions sur les œuvres et musiques qui m'ont marqué.
 
 ## 💼 Parcours Professionnel & Études
 
