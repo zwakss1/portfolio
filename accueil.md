@@ -3,6 +3,9 @@
 
 Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je partage ici mes projets techniques et mes réflexions sur les œuvres et musiques qui m'ont marqué.
 
+[![GitHub Profile](https://img.shields.io/badge/Mon_Profil-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zwakss1)
+[![GitHub Repo](https://img.shields.io/badge/Code_Source-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zwakss1/portfolio)
+[![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/profiles/76561199013599584/)
 ## 💼 Parcours Professionnel & Études
 
 ### Mon Profil
@@ -47,7 +50,3 @@ Salut ! Passionné d'informatique, de hardware et de culture Jeux vidéo, je par
 ## 📝 Analyses & Critiques
 
 Sur ce portfolio, je vais partager mes avis et faire des analyses, essentiellement sur des jeux vidéo et des musiques liées à ces derniers qui m'ont marqué durant mon expérience.
-
-<br>
-
-[![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/profiles/76561199013599584/)

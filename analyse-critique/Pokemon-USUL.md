@@ -155,7 +155,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 
 [[screenshot: img/route-1.jpg, img/397px-Route_1_printemps_NB.png, img/658px-Route_20_N2B2.png]]
 
-> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont que de simples lignes droites, à l'exception de la granite île. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
+> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont que de simples lignes droites, à l'exception de Poni. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
 
 | Critère | Noir / Blanc 1 & 2 (Unys) | Ultra-Soleil / Ultra-Lune (Alola) |
 | :--- | :--- | :--- |
