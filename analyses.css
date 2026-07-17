@@ -807,7 +807,7 @@ body.theme-light .video-embed-wrap {
    Un seul bloc regroupant vue liste + vue article, pour éviter les
    media queries dupliquées façon "usine à gaz".
    ========================================================================== */
-@media (max-width: 680px) {
+@media (max-width: 960px) {
 
     /* -- Vue liste -- */
     .page-analyses {
