@@ -55,10 +55,10 @@ Pour équiper les 5 platines, l'approvisionnement des barrettes de connexion s'e
 ---
 
 <div class="download-bar">
-  <a class="btn-download" href="/projets/KICAD/ESP32S3-ProtoShield - Kicad-10.0.zip" download>
+  <a class="btn-download" href="projets/KICAD/ESP32S3-ProtoShield - Kicad-10.0.zip" download>
     ⬇️ Projet KiCad (.zip)
   </a>
-  <a class="btn-download" href="/projets/KICAD/Gerber/esp32-s3-protoshield-gerbers.zip" download>
+  <a class="btn-download" href="projets/KICAD/Gerber/esp32-s3-protoshield-gerbers.zip" download>
     ⬇️ Gerbers JLCPCB (.zip)
   </a>
 </div>
