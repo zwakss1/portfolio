@@ -441,43 +441,49 @@ body.theme-light #content > ul {
 
 
 /* ==========================================================================
-   RESPONSIVE — TABLETTES (681px à 1024px)
+   RESPONSIVE — TABLETTES (681px à 1280px)
+   Menu flottant VERTICAL en bas à droite pour le confort du pouce
    ========================================================================== */
 @media (min-width: 681px) and (max-width: 1280px) {
 
     body {
         font-size: 17px; 
-        zoom: normal; /* Force l'annulation du zoom PC pour le mode Light */
+        zoom: normal;
     }
 
-    /* Le menu passe en îlot flottant bas-droite pour tout cet intervalle */
+    /* ── Îlot flottant VERTICAL ── */
     .bande-haut {
         top: auto;
         left: auto;
-        right: 24px;
+        right: 24px;  
         bottom: 24px;
         width: auto;
         height: auto;
-        flex-direction: row;
-        padding: 10px 16px;
+        flex-direction: column; 
+        padding: 16px 10px;    
         background-color: var(--couleur-sous-menu);
         border: 1px solid var(--couleur-bordure);
-        border-radius: 30px;
+        border-radius: 30px;    
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
         gap: 12px;
     }
 
     .conteneur-boutons {
-        flex-direction: row;
+        flex-direction: column; 
         width: auto;
         gap: 12px;
     }
 
+    /* Ajustement du bouton thème pour se placer en dessous de la pile */
     .bouton-theme {
         margin: 0;
-        padding-left: 12px;
-        border-left: 1px solid var(--couleur-bordure);
+        padding-top: 12px;       
+        padding-left: 0;
+        border-left: none;      
+        border-top: 1px solid var(--couleur-bordure); 
         font-size: 24px;
+        width: 100%;
+        text-align: center;
     }
 
     .sous-menu {
@@ -490,7 +496,7 @@ body.theme-light #content > ul {
         margin-left: auto !important;
         margin-right: auto !important;
         max-width: 760px;
-        padding-bottom: 120px !important; 
+        padding-bottom: 140px !important; 
     }
 }
 
