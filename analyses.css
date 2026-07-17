@@ -142,7 +142,7 @@ body.theme-light {
     display: flex;
     align-items: center;
     gap: 6px;
-    transition: color 0.2s, border-color 0.2s;
+    transition: color 0.5s, border-color 0.5s;
 }
 
 .filtre-btn:hover {
@@ -236,7 +236,7 @@ body.theme-light {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: color 0.2s;
+    transition: color 0.5s;
     flex-shrink: 1;
     min-width: 0;
 }
@@ -364,7 +364,7 @@ body.theme-light {
     font-size: 13px;
     color: var(--couleur-texte);
     cursor: pointer;
-    transition: background-color 0.15s, border-color 0.15s;
+    transition: background-color 0.5s, border-color 0.5s;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -641,7 +641,7 @@ body.theme-light .lecteur-audio-sticky {
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
     cursor: zoom-in;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 .screenshot-img:hover {
     transform: scale(1.015);
@@ -794,7 +794,7 @@ body.theme-light .video-embed-wrap {
     font-weight: 600;
     color: var(--couleur-texte);
     text-decoration: none;
-    transition: background-color 0.15s ease, border-color 0.15s ease;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
 }
 .btn-download:hover {
     background-color: var(--couleur-accent);
@@ -842,6 +842,7 @@ body.theme-light .video-embed-wrap {
     }
     .filtre-btn {
         flex-shrink: 0;
+        transition: color 0.5s, border-color 0.5s;
     }
 
     /* -- Cards : padding réduit ; la bannière passe en pleine largeur, en haut,
