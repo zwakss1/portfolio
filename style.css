@@ -443,14 +443,14 @@ body.theme-light #content > ul {
 /* ==========================================================================
    RESPONSIVE — TABLETTES (681px à 1024px)
    ========================================================================== */
-@media (min-width: 681px) and (max-width: 1024px) {
+@media (min-width: 681px) and (max-width: 1280px) {
 
     body {
-        /* On remplace le zoom instable par une augmentation propre de la police */
         font-size: 17px; 
+        zoom: normal; /* Force l'annulation du zoom PC pour le mode Light */
     }
 
-    /* ── Transformation de la sidebar en îlot flottant ── */
+    /* Le menu passe en îlot flottant bas-droite pour tout cet intervalle */
     .bande-haut {
         top: auto;
         left: auto;
@@ -480,13 +480,10 @@ body.theme-light #content > ul {
         font-size: 24px;
     }
 
-    /* CORRECTIF : On masque complètement les sous-menus sur tablette.
-       Le tactile ne gère pas le hover, cela évitera les comportements erratiques. */
     .sous-menu {
         display: none !important;
     }
 
-    /* ── Redressement des marges globales du contenu ── */
     .feuille-texte, 
     .page-analyses, 
     .page-article {
