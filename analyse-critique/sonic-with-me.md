@@ -6,7 +6,7 @@ categorie: mu
 genre: Hard Rock · Power Metal · Heavy Metal
 date: 13 juin 2026
 statut: publié
-audio: musique/with-me.mp3s
+audio: musique/with-me.mp3
 avertissements: paroles, spoiler
 ---
 
