@@ -19,7 +19,7 @@
     --largeur-sidebar: 60px;
 }
 
-body.theme-light {
+html.theme-light {
     /* Thème Clair */
     --couleur-fond: #f0f2f5;
     --couleur-texte: #121212;
@@ -40,6 +40,21 @@ body.theme-light {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Transition universelle pour le changement de thème : s'applique à TOUS les
+   éléments, présents ou futurs, sans avoir besoin d'ajouter la transition
+   manuellement sur chaque nouveau bloc/badge/composant.
+   Volontairement limité aux propriétés de couleur (fond, texte, bordure,
+   ombre) : transform/opacity restent gérés au cas par cas (hover, lightbox,
+   animations d'interaction) pour ne pas les ralentir inutilement. */
+*, *::before, *::after {
+    transition: background-color 0.5s ease,
+                color 0.5s ease,
+                border-color 0.5s ease,
+                box-shadow 0.5s ease,
+                fill 0.5s ease,
+                stroke 0.5s ease;
 }
 
 body {
@@ -194,7 +209,7 @@ body,
     filter: invert(1);
 }
 
-body.theme-light .icone-blanche {
+html.theme-light .icone-blanche {
     filter: invert(0) !important;
 }
 
@@ -309,8 +324,9 @@ body.theme-light .icone-blanche {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     list-style-type: none;
     margin-bottom: 32px;
+    transition: background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
 }
-body.theme-light #content > ul {
+html.theme-light #content > ul {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 #content > ul > li {
@@ -320,6 +336,7 @@ body.theme-light #content > ul {
     color: var(--couleur-accent);
     font-size: 1.05rem;
     margin-right: 6px;
+    transition: color 0.5s ease;
 }
 #content ul ul {
     list-style-type: none;
@@ -332,7 +349,7 @@ body.theme-light #content > ul {
     padding-left: 12px;
     border-left: 2px solid var(--md-bordure);
     color: var(--md-citation);
-    transition: border-color 0.2s;
+    transition: border-color 0.5s;
 }
 #content ul ul li:hover {
     border-left-color: var(--couleur-accent);

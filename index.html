@@ -2,6 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <script>
+    /* Applique le thème AVANT le premier affichage pour éviter le flash sombre→clair */
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('theme-light');
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css?v=12">
@@ -85,16 +91,15 @@
 
     /* ── Gestionnaire de Thème ── */
     const btnTheme = document.getElementById('bouton-theme');
-    const body = document.body;
+    const racine = document.documentElement;
 
-    if (localStorage.getItem('theme') === 'light') {
-      body.classList.add('theme-light');
+    if (racine.classList.contains('theme-light')) {
       btnTheme.textContent = '🌙';
     }
 
     btnTheme.addEventListener('click', () => {
-      body.classList.toggle('theme-light');
-      if (body.classList.contains('theme-light')) {
+      racine.classList.toggle('theme-light');
+      if (racine.classList.contains('theme-light')) {
         btnTheme.textContent = '🌙'; 
         localStorage.setItem('theme', 'light'); 
       } else {

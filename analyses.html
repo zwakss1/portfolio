@@ -2,6 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <script>
+    /* Applique le thème AVANT le premier affichage pour éviter le flash sombre→clair */
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('theme-light');
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analyses & Critiques — Portfolio</title>
   <link rel="stylesheet" href="style.css?v=12">
@@ -743,13 +749,13 @@ window.addEventListener('beforeunload', () => {
 
     /* ── Thème ── */
     const btnTheme = document.getElementById("bouton-theme");
-    if (localStorage.getItem("theme") === "light") {
-      document.body.classList.add("theme-light");
+    const racine = document.documentElement;
+    if (racine.classList.contains("theme-light")) {
       btnTheme.textContent = "🌙";
     }
     btnTheme.addEventListener("click", () => {
-      document.body.classList.toggle("theme-light");
-      const clair = document.body.classList.contains("theme-light");
+      racine.classList.toggle("theme-light");
+      const clair = racine.classList.contains("theme-light");
       btnTheme.textContent = clair ? "🌙" : "☀️";
       localStorage.setItem("theme", clair ? "light" : "dark");
     });

@@ -29,7 +29,7 @@
     --table-bg-pair:    rgba(255, 255, 255, 0.02);
 }
 
-body.theme-light {
+html.theme-light {
     --tag-jv-bg:        #d1fae5;
     --tag-jv-text:      #166534;
     --tag-jv-border:    #86efac;
@@ -106,6 +106,7 @@ body.theme-light {
     margin-bottom: 28px;
     font-size: 13px;
     color: var(--md-citation);
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 
 .stat-item {
@@ -119,6 +120,7 @@ body.theme-light {
     font-weight: 700;
     color: var(--couleur-texte);
     font-family: 'Consolas', monospace;
+    transition: color 0.5s ease;
 }
 
 /* ── Barre de filtres (style onglets GitHub) ── */
@@ -162,6 +164,7 @@ body.theme-light {
     padding: 0 7px;
     line-height: 18px;
     color: var(--md-citation);
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
 }
 
 /* ── Séparateur de section ── */
@@ -517,7 +520,7 @@ body.theme-light {
     background: rgba(255, 255, 255, 0.03);
     border-radius: 0 8px 8px 0;
 }
-body.theme-light .article-corps blockquote {
+html.theme-light .article-corps blockquote {
     background: rgba(0, 0, 0, 0.03);
 }
 
@@ -589,7 +592,7 @@ body.theme-light .article-corps blockquote {
     border-radius: 4px;
     overflow: hidden;
 }
-body.theme-light .critere-barre-fond {
+html.theme-light .critere-barre-fond {
     background: rgba(0, 0, 0, 0.06);
 }
 .critere-barre-remplie {
@@ -617,7 +620,7 @@ body.theme-light .critere-barre-fond {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
     background-color: var(--md-fond);
 }
-body.theme-light .lecteur-audio-sticky {
+html.theme-light .lecteur-audio-sticky {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -647,7 +650,7 @@ body.theme-light .lecteur-audio-sticky {
     transform: scale(1.015);
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
 }
-body.theme-light .screenshot-img {
+html.theme-light .screenshot-img {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
@@ -732,7 +735,7 @@ body.theme-light .screenshot-img {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
     background: #000;
 }
-body.theme-light .video-media {
+html.theme-light .video-media {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
@@ -748,7 +751,7 @@ body.theme-light .video-media {
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
-body.theme-light .video-embed-wrap {
+html.theme-light .video-embed-wrap {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 .video-embed-wrap iframe {
