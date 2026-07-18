@@ -53,7 +53,7 @@ Le jeu commence de manière classique : le joueur est dans sa chambre, doit alle
 
 [[screenshot: img/alolaKanto.png, img/alolaKanto2.png]]
 
-Ce que le jeu fait beaucoup, ce sont des références aux anciens jeux, particulièrement à Kanto. On y voit un Miaouss de Kanto, un autographe du Major Bob, le personnage vient de Kanto, et toutes les formes régionales viennent de Kanto.
+Ce que le jeu fait beaucoup trop, ce sont des références aux anciens jeux, particulièrement à Kanto. On y voit un Miaouss de Kanto, un autographe du Major Bob, le personnage vient de Kanto, et toutes les formes régionales viennent de Kanto.
 
 Bref, ce n'est pas la dernière fois que le jeu parle de Kanto. Personnellement, je préfère quand le jeu assume ses nouveautés quitte à délaisser les anciennes générations, comme l'a fait Noir et Blanc, mais je peux comprendre qu'on se sente peut-être plus rassuré et pas trahi en quelque sorte.
 
@@ -107,6 +107,8 @@ On croise, à l'entrée de Lili'i, l'Ultra-Commando. Ils parlent d'aura et du fa
 Enfin, on affronte Tili pour Tokorico (car il aime les combats et pour découvrir pourquoi Tokorico nous a donné cette Gemme Lumière), mais aussi parce que les enfants, à l'âge de 11 ans, partent pour le tour des îles à la découverte des autres et d'eux-mêmes. Bref, après la défaite de Tili, le Doyen nous donne le Super Bracelet Z et une Amulette du tour des îles, symbole de participation à cette épopée.
 
 Dans un second temps, on revoit l'Ultra-Commando : malgré leur technologie, ils sont incapables de contrôler la lumière du Grand Radieux. Le Super Bracelet Z dégage apparemment un niveau d'aura « phénoménal ».
+
+Après tout ça, Lilie, devant la boutique de vêtements, demande au protagoniste si c'est lui qui choisit ses habits ou sa mère. En baissant le regard, Lilie confie qu'elle porte uniquement ce que sa mère lui dit de porter. Le jeu a pour thème la famille, et ce dialogue montre déjà une certaine emprise parentale de sa mère sur elle. Enfin, on part trouver Tili et, pour la 1re fois, on croise des sbires de la Team Skull qui ne cherchent que la destruction. On les bat et ils s'en vont.
 
 ---
 
@@ -181,11 +183,11 @@ Mais attention, elles sont quand même meilleures que les Méga-Évolutions dans
 
 ---
 
-[[screenshot: img/violette.png, img/doyen.png]]
-
 ### ⚡ L'intégration de la mécanique : Capacité Z vs Méga-Évolution
 
 Contrairement à la Méga-Évolution dans *X/Y* (qui est quasi absente chez les champions), les Capacités Z sont intégrées **dès la première île** avec le Doyen Pectorius. 
+
+[[screenshot: img/violette.png, img/doyen.png]]
 
 Pour mesurer le fossé de difficulté et de finition entre la 6G et la 7G dès le premier boss majeur, il suffit de comparer l'équipe du Doyen Pectorius à celle de Violette, la championne de Neuvartault dans *X/Y* :
 
@@ -284,8 +286,6 @@ En accumulant des points grâce à la qualité des clichés, le Poké Scope mont
 ---
 
 ### 👕 La Personnalisation dans USUL
-
-Après tout ça, Lilie, devant la boutique de vêtements, demande au protagoniste si c'est lui qui choisit ses habits ou sa mère. En baissant le regard, Lilie confie qu'elle porte uniquement ce que sa mère lui dit de porter. Le jeu a pour thème la famille, et ce dialogue montre déjà une certaine emprise parentale de sa mère sur elle. Enfin, on part trouver Tili et, pour la 1re fois, on croise des sbires de la Team Skull qui ne cherchent que la destruction. On les bat et ils s'en vont.
 
 #### 🌴 Un style unique... mais imposé
 Si le système de customisation est repris de la 6G (*X / Y*), la direction artistique d'Alola lui impose un cadre très strict : **l'ambiance 100 % vacances et plage**. 

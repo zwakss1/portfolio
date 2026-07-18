@@ -10,7 +10,7 @@ statut: en-cours
 # ESP32-S3 ProtoShield
 
 ## I. CONTEXTE
-Pourquoi ce shield : le câblage répété au Dupont volant pour chaque projet ESP32-S3 devenait une vraie perte de temps. J'ai donc conçu ce support standardisé, propre et réutilisable.
+Pourquoi ce shield : le câblage répété au Dupont volant pour chaque projet ESP32-S3 devenait pénible. J'ai donc conçu ce support standardisé, propre et réutilisable.
 
 ---
 

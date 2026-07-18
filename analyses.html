@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analyses & Critiques — Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=12">
-  <link rel="stylesheet" href="analyses.css?v=12">
+  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="analyses.css?v=8">
   <script>
     // Si on charge directement sur un article (F5, lien direct), on masque la page
     // le temps de positionner correctement le scroll, pour éviter tout flash "retour en haut".
@@ -130,9 +130,6 @@
     <!-- Avertissements dynamiques (spoiler, méthodologie, paroles...) -->
     <div class="article-warnings" id="article-warnings"></div>
 
-    <!-- Critères notés par aspect (gameplay, scénario...), si définis dans le frontmatter -->
-    <div class="criteres-box" id="article-criteres" style="display:none"></div>
-
     <!-- Corps de l'article (rendu Markdown) -->
     <article class="article-corps feuille-texte" id="article-corps"></article>
 
@@ -240,63 +237,10 @@
 
 
     /* ================================================================
-       CRITÈRES NOTÉS PAR ASPECT (barres colorées, rouge → bleu)
-       ================================================================
-       Pour en afficher sur une analyse, ajoute dans le frontmatter du .md
-       une ligne, avec autant de critères que pertinent pour ce jeu :
-
-         criteres: Gameplay:70, Scénario:55, Exploration:80, DA:90
-
-       (nom:valeur de 0 à 100, séparés par des virgules — libre à toi de
-       choisir des critères différents selon le jeu analysé)
-       ================================================================ */
-    const DEGRADE_CRITERES = ["#ff1a1a", "#e02020", "#ff8c1a", "#ffd60a", "#8ce68c", "#34c759", "#1f7a3d", "#0a84ff"];
-
-    function hexVersRgb(hex) {
-      const n = parseInt(hex.slice(1), 16);
-      return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
-    }
-
-    function couleurCritere(valeur) {
-      const nbSegments = DEGRADE_CRITERES.length - 1;
-      const position = (valeur / 100) * nbSegments;
-      const index = Math.min(Math.floor(position), nbSegments - 1);
-      const t = position - index;
-      const c1 = hexVersRgb(DEGRADE_CRITERES[index]);
-      const c2 = hexVersRgb(DEGRADE_CRITERES[index + 1]);
-      const r = Math.round(c1.r + (c2.r - c1.r) * t);
-      const g = Math.round(c1.g + (c2.g - c1.g) * t);
-      const b = Math.round(c1.b + (c2.b - c1.b) * t);
-      return `rgb(${r}, ${g}, ${b})`;
-    }
-
-    function genererCriteres(meta) {
-      const paires = (meta.criteres || "").split(",").map(s => s.trim()).filter(Boolean);
-      if (paires.length === 0) return "";
-
-      const lignes = paires.map(p => {
-        const [nom, valBrute] = p.split(":").map(s => s.trim());
-        const valeur = Math.max(0, Math.min(100, parseInt(valBrute) || 0));
-        if (!nom) return "";
-        return `
-          <div class="critere-ligne">
-            <div class="critere-label">${nom}</div>
-            <div class="critere-barre-fond">
-              <div class="critere-barre-remplie" style="width:${valeur}%; background:${couleurCritere(valeur)};"></div>
-            </div>
-            <div class="critere-valeur">${valeur}%</div>
-          </div>`;
-      }).join("");
-
-      return `<div class="criteres-titre">Critères</div>${lignes}`;
-    }
-
-
-    /* ================================================================
        PARSING FRONTMATTER
        ================================================================ */
     function parseFrontmatter(texte) {
-      const meta = { titre:"Sans titre", categorie:"jv", genre:"", note:null, date:"", lecture:"", statut:"publié", description:"", avertissements:"", criteres:"" };
+      const meta = { titre:"Sans titre", categorie:"jv", genre:"", note:null, date:"", lecture:"", statut:"publié", description:"", avertissements:"" };
 
       const match = texte.match(/^---\r?\n([\s\S]*?)\r?\n---/);
       if (!match) return { meta, contenu: texte };
@@ -338,6 +282,7 @@
       const enCours  = meta.statut === "en-cours";
 
       const badgeWip    = enCours ? `<span class="badge-wip">En cours</span>` : "";
+      const noteBadge   = (meta.note && !enCours) ? `<span class="note-badge">★ ${meta.note}/10</span>` : "";
       const metaDate    = meta.date ? `<span class="card-meta-item">${ICONE_CAL} ${meta.date}</span>` : "";
       const metaLecture = meta.lecture && !enCours
         ? `<span class="card-meta-item">${ICONE_CLOCK} ${meta.lecture} de lecture</span>`
@@ -383,50 +328,6 @@
          - youtube    : identifiant de la vidéo YouTube (la partie
                         après "v=" dans l'URL, ou après youtu.be/)
        ================================================================ */
-    /* ================================================================
-       LIGHTBOX — zoom plein écran au clic sur une image d'analyse
-       ================================================================ */
-    let lightboxOverlay = null;
-
-    function ouvrirLightbox(src) {
-      if (lightboxOverlay) fermerLightbox();
-
-      lightboxOverlay = document.createElement("div");
-      lightboxOverlay.className = "lightbox-overlay";
-
-      const img = document.createElement("img");
-      img.src = src;
-      img.className = "lightbox-img";
-      img.alt = "Capture d'écran en plein écran";
-      // Empêche le clic sur l'image elle-même de fermer la lightbox
-      // via le clic sur l'overlay (voir plus bas).
-      img.addEventListener("click", (e) => e.stopPropagation());
-
-      lightboxOverlay.appendChild(img);
-      lightboxOverlay.addEventListener("click", fermerLightbox);
-      document.addEventListener("keydown", fermerLightboxEchap);
-
-      document.body.appendChild(lightboxOverlay);
-      document.body.style.overflow = "hidden"; // empêche le scroll de la page en arrière-plan
-
-      // Forcer un reflow avant d'ajouter la classe, pour que la transition CSS s'applique
-      requestAnimationFrame(() => lightboxOverlay.classList.add("visible"));
-    }
-
-    function fermerLightbox() {
-      if (!lightboxOverlay) return;
-      lightboxOverlay.classList.remove("visible");
-      document.removeEventListener("keydown", fermerLightboxEchap);
-      document.body.style.overflow = "";
-      const overlayÀSupprimer = lightboxOverlay;
-      lightboxOverlay = null;
-      setTimeout(() => overlayÀSupprimer.remove(), 200); // laisse la transition de fermeture se jouer
-    }
-
-    function fermerLightboxEchap(e) {
-      if (e.key === "Escape") fermerLightbox();
-    }
-
     function activerScrollytelling(conteneur) {
       const REGEX_MARQUEUR = /^\[\[(screenshot|video|youtube):\s*(.+?)\]\]$/;
 
@@ -458,7 +359,6 @@
             img.alt = "Capture d'écran de l'analyse";
             img.className = "screenshot-img";
             img.loading = "lazy";
-            img.addEventListener("click", () => ouvrirLightbox(src));
             stack.appendChild(img);
           });
           bloc.appendChild(stack);
@@ -531,12 +431,6 @@
 
       // Avertissements (spoiler, méthodologie, paroles...) selon le frontmatter
       document.getElementById("article-warnings").innerHTML = genererAvertissements(meta, cat);
-
-      // Critères notés par aspect (gameplay, scénario...) selon le frontmatter
-      const critHtml = genererCriteres(meta);
-      const critBox = document.getElementById("article-criteres");
-      critBox.innerHTML = critHtml;
-      critBox.style.display = critHtml ? "" : "none";
 
 // 1. Préparation du contenu
 const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();
@@ -757,6 +651,9 @@ window.addEventListener('beforeunload', () => {
     chargerAnalyses();
 
   </script>
+
+  <script data-goatcounter="https://zwakss1.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 
 </body>
 </html>
