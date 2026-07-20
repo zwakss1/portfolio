@@ -417,3 +417,18 @@ Sur la console d'origine, le jeu souffre de **ralentissements massifs et de chut
 
 ### 🎵 La bande-son et les musiques
 
+| Rang | Titre du thème | Lieu / Contexte | Écoute |
+| :--- | :--- | :--- | :--- |
+| ex-æquo | Ultra Necrozma | Combat final, Ultra-Mégalopole | [mp3](musique/ultra-necrozma-battle.mp3) |
+| ex-æquo | Elsa-Mina | Combat, Paradis Æther | [mp3](musique/Elsa-Mina.mp3) |
+| 2 | Ultra Commando  | Combat | [mp3](musique/Ultra-Commando.mp3) |
+| 3 | Ultra Chimère  | Combat contre une Ultra-Chimère | [mp3](musique/Ultra-Chimère.mp3) |
+| 4 | Grand Canyon de Poni | Exploration | [mp3](musique/Grand-Canyon-de-Poni-OST.mp3) |
+
+Mentions honorables :
+
+- **Combat contre un Pokémon sauvage USUL et SL**
+- **Combat contre Red/Blue**
+- **Thème de Lilie (1 & 2)**
+
+---

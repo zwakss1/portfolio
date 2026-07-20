@@ -624,6 +624,21 @@ html.theme-light .lecteur-audio-sticky {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* ── Lecteur audio inline (ex: colonne "Écoute" d'un tableau OST) ── */
+.lecteur-audio-inline {
+    height: 32px;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 16px;
+    vertical-align: middle;
+}
+@media (max-width: 680px) {
+    .lecteur-audio-inline {
+        width: 100%;
+        min-width: 160px;
+    }
+}
+
 /* ── Screenshots : image placée dans l'espace vide à droite du texte ── */
 .screenshot-bloc {
     position: relative;

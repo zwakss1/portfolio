@@ -433,6 +433,32 @@
       if (e.key === "Escape") fermerLightbox();
     }
 
+    /* ================================================================
+       LECTEURS AUDIO INLINE — transforme tout lien vers un .mp3
+       (ex: dans un tableau "meilleures musiques") en mini lecteur
+       jouable directement, plutôt qu'un lien de téléchargement.
+       ================================================================ */
+    function activerLecteursInline(conteneur) {
+      conteneur.querySelectorAll('a[href$=".mp3"]').forEach(lien => {
+        const audio = document.createElement("audio");
+        audio.controls = true;
+        audio.preload = "none";
+        audio.className = "lecteur-audio-inline";
+        audio.src = lien.getAttribute("href");
+        audio.volume = 0.15;
+        lien.replaceWith(audio);
+      });
+      document.addEventListener('play', function(e) {
+    const tousLesLecteurs = document.querySelectorAll('audio');
+    
+    tousLesLecteurs.forEach(lecteur => {
+        if (lecteur !== e.target) {
+            lecteur.pause();
+        }
+    });
+}, true);
+}
+
     function activerScrollytelling(conteneur) {
       const REGEX_MARQUEUR = /^\[\[(screenshot|video|youtube):\s*(.+?)\]\]$/;
 
@@ -561,13 +587,14 @@ document.getElementById("article-corps").innerHTML = htmlFinal;
 
 // 2bis. Activation du scrollytelling (screenshots qui suivent les paragraphes marqués)
 activerScrollytelling(document.getElementById("article-corps"));
+activerLecteursInline(document.getElementById("article-corps"));
 
 // 3. Configuration du lecteur (Volume + Restauration de la position)
 if (meta.audio) {
   const lecteur = document.getElementById("lecteur-audio");
   
   // Réglage du volume par défaut
-  lecteur.volume = 0.2;
+  lecteur.volume = 0.1;
 
   // Restauration de la position si elle existe
   const posSauvegardee = sessionStorage.getItem('audioPos_' + window.location.href);
