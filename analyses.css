@@ -319,14 +319,12 @@ html.theme-light {
     max-width: 60%;
 }
 
-.card-avec-banniere::after {
-    content: "";
+.card-banniere-bg {
     position: absolute;
     top: 0;
     right: 0;
     width: 45%;
     height: 100%;
-    background-image: var(--banniere);
     background-size: cover;
     background-position: right center;
     mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.8) 100%);
@@ -872,7 +870,7 @@ html.theme-light .video-embed-wrap {
     .card-avec-banniere {
         padding-top: 130px;
     }
-    .card-avec-banniere::after {
+    .card-banniere-bg {
         top: 0;
         left: 0;
         right: 0;

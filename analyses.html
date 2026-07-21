@@ -353,12 +353,13 @@
       const sousTitreJeu = meta.jeu
         ? `<span class="card-jeu">— ${meta.jeu}</span>` : "";
 
-      const banniereStyle = meta.banniere
-        ? `style="--banniere: url('${meta.banniere}')"` : "";
+      const banniereDiv = meta.banniere
+        ? `<div class="card-banniere-bg" style="background-image:url('${meta.banniere}')"></div>` : "";
       const banniereClass = meta.banniere ? " card-avec-banniere" : "";
 
       return `
-      <a href="#" class="card-analyse${banniereClass}" data-cat="${cat}" data-fichier="${fichier}" ${banniereStyle}>
+      <a href="#" class="card-analyse${banniereClass}" data-cat="${cat}" data-fichier="${fichier}">
+        ${banniereDiv}
         <div class="card-titre">${icone} ${meta.titre} ${badgeWip}</div>
         ${sousTitreJeu}
         <div class="card-desc">${meta.description}</div>
