@@ -42,6 +42,10 @@ html.theme-light {
     box-sizing: border-box;
 }
 
+html, body, button, a, .card-analyse, .filtre-btn, .bouton-bande {
+    touch-action: manipulation;
+}
+
 /* Transition universelle pour le changement de thème : s'applique à TOUS les
    éléments, présents ou futurs, sans avoir besoin d'ajouter la transition
    manuellement sur chaque nouveau bloc/badge/composant.

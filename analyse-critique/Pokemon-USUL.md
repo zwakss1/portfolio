@@ -53,11 +53,13 @@ Le jeu commence de manière classique : le joueur est dans sa chambre, doit alle
 
 [[screenshot: img/alolaKanto.png, img/alolaKanto2.png]]
 
-Ce que le jeu fait beaucoup trop, ce sont des références aux anciens jeux, particulièrement à Kanto. On y voit un Miaouss de Kanto, un autographe du Major Bob, le personnage vient de Kanto, et toutes les formes régionales viennent de Kanto.
+Ce que le jeu multiplie jusqu'à l'excès, ce sont les références appuyées aux anciens jeux, et plus particulièrement à Kanto : un Miaouss original dans le salon, un autographe du Major Bob accroché au mur, un personnage venu tout droit de la 1G, sans oublier les formes régionales qui puisent exclusivement dans le bestiaire de Kanto. Et ce n'est clairement pas la dernière fois que le jeu va jouer cette carte. 
 
-Bref, ce n'est pas la dernière fois que le jeu parle de Kanto. Personnellement, je préfère quand le jeu assume ses nouveautés quitte à délaisser les anciennes générations, comme l'a fait Noir et Blanc, mais je peux comprendre qu'on se sente peut-être plus rassuré et pas trahi en quelque sorte.
+Noir et Blanc avait tenté l'inverse : exclure la quasi-totalité des anciens Pokémon du Pokédex régional pour imposer une identité neuve. Un choix qui avait du panache sur le moment, mais qui s'est ««payé»» sur la durée, le Pokédex d'Unys étant l'un des plus restreints de la série, on finissait par affronter en boucle les mêmes espèces avant de débloquer le reste.  USUL, avec ses 403 entrées régionales, évite ce piège de la répétition simplement en ayant suffisamment de matière à répartir sur les routes et chez les dresseurs. Mais la vraie question dépasse la taille du Pokédex : c'est ce que le jeu choisit de mettre sous le feu des projecteurs. Et sur ce point, le titre fait un choix cohérent : toutes les nouvelles Capacités Z exclusives (Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala, Ultra-Necrozma) sont réservées à des espèces inédites de la 7G, et tous les Pokémon Dominants sont soit des créatures inédites, soit des formes d'Alola, jamais un Pokémon générique recyclé tel quel. Le jeu sait mettre en scène ses nouveautés quand il le veut. 
+ 
+Le problème ne vient donc pas d'un manque de confiance dans ses propres ajouts : dans sa boucle de gameplay centrale (épreuves, Capacités Z, Dominants), USUL met systématiquement en avant ses créatures inédites ou ses formes régionales. Mais dès qu'on s'éloigne de ce cœur de jeu, la nostalgie revient au galop : le combat post-game contre Red et Blue, l'épisode Rainbow Rocket réunissant les boss du passé, et les innombrables clins d'œil à Kanto essaimés dans les dialogues. USUL avance ainsi avec deux visages : un gameplay principal qui assume pleinement la 7G, et un contenu périphérique, scénario compris, qui ne peut s'empêcher de regarder en arriére. 
 
-Après être sorti de la maison, le joueur est « libre ». J'expliquerai plus tard, mais le jeu est linéaire comme tous les jeux de la série ; c'est plutôt dans le fond, le contenu, que se situe le problème. Ce n'est pas something de spécialement lié au jeu, mais qu'on retrouve depuis X/Y et dans tous les jeux principaux (sauf Légendes) jusqu'à la 9G.
+Après être sorti de la maison, le joueur est « libre ». J'expliquerai plus tard, mais le jeu est linéaire comme tous les jeux de la série ; c'est plutôt dans le fond, le contenu, que se situe le problème. Ce n'est pas quelque chose de spécialement lié au jeu, mais qu'on retrouve depuis X/Y et dans tous les jeux principaux (sauf Légendes) jusqu'à la 9G.
 
 En suivant la route, le joueur est confronté à un Pokémon qui l'attaque, mais les trois starters viennent le sauver. Ensuite, le professeur Euphorbe arrive, se présente, lui explique deux-trois trucs classiques, puis le joueur peut choisir son starter.
 
@@ -311,6 +313,184 @@ Tout n'est pas à jeter pour autant, le jeu apporte de superbes améliorations p
 
 > **En résumé :** USUL gagne en fonctionnalités pratiques (Studio Photo, teintures, lentilles) mais perd en diversité par rapport à Kalos, tout en conservant un gros déséquilibre de garde-robe au détriment du personnage masculin.
 
+#### 🍬 La Poké Détente
+
+[[screenshot: img/Soins.png]]
+
+La Poké Détente vient directement de XY (anciennement la Poké Récré), sur le papier l'idée est cool : pouvoir donner des friandises, caresser les Pokémon, jouer à des mini-jeux, c'est plutôt sympa, mais avant, voici les nouveautés qu'amène la 7G :
+
+Soigner ses Pokémon après le combat : Si le Pokémon termine un combat sali ou touché par un problème de statut (brûlure, poison, paralysie, etc.), une option « Soins » apparaît immédiatement sur l'écran tactile. Vous pouvez alors le brosser, le nettoyer ou le sécher pour le remettre sur pied gratuitement, sans dépenser un médicament.
+
+| accessoire  | Effet |
+| :---: | :--- |
+| **Soins** | Permet de soigner les altérations de statut | 
+| **Peigne** | Permet de coiffer les Pokémon | 
+| **Torchon** | Permet d'essuyer les salissures | 
+| **Brosse** | Permet d'enlever la poussière | 
+| **Sèche-cheveux** | Permet de sécher les Pokémon mouillés | 
+
+[[screenshot: img/affection.png]]
+
+Les Pofiteroles sont remplacées par des Poké-Fèves : Ces fèves s'obtiennent principalement via le Poké Loisir (l'Îlot Pousse-Fèves) ou dans les Centres Pokémon, ce qui évite de devoir farmer des mini-jeux.
+
+Ces petites choses sont plutôt sympas, mais dans XY, il y est introduit « Affection » (rien à voir avec le bonheur), c'est une jauge qui monte du niveau 0 à 5 selon le nombre de cœurs obtenus grâce aux caresses, aux fèves et au nettoyage de votre Pokémon après un combat, voici le tableau, venant du site Pokébip :
+
+Je n'ai pas de problème avec le niveau 2, donner 20% d'exp en plus c'est bien, par contre pouvoir survivre à un KO dès le niveau suivant, y a pas un souci ? En plus, au niveau 4, le Pokémon peut esquiver plus facilement les attaques et peut guérir des problèmes de statut, ensuite le niveau 5, c'est pouvoir faire + de coup critique, le Pokémon a accès à une ceinture force passive trop facilement en plus des autres qui sont carrément trop.
+
+[[screenshot: img/poke-loisir.png]]
+
+#### 🏝️ La Poké Loisir 
+
+
+Entretenu par Mohn, c'est un archipel de cinq îlots, elles peuvent etre ameliorer selon le nombre de poké feves et pokemon dans la boite PC comme indiquer sur ce tableau:
+
+
+| Installation | Nombre de Poké Fèves nécessaires | Nombre de Pokémon nécessaires |
+| :---: | :---: | :---: |
+| **Îlot Relax niveau 1** | Disponible dès le départ | Disponible dès le départ |
+| **Îlot Relax niveau 2** | 30 | 15 |
+| **Îlot Relax niveau 3** | 90 | 30 |
+| **Îlot Poupousse niveau 1** | 15 | 15 |
+| **Îlot Poupousse niveau 2** | 60 | 30 |
+| **Îlot Poupousse niveau 3** | 135 | 45 |  
+| **Îlot Farfouille niveau 1** | 30 | 30 |
+| **Îlot Farfouille niveau 2** | 90 | 45 |
+| **Îlot Farfouille niveau 3** | 180 | 60 |
+| **Îlot Biscoteaux niveau 1** | 45 | 45 |
+| **Îlot Biscoteaux niveau 2** | 120 | 60 |
+| **Îlot Biscoteaux niveau 3** | 225 | 75 |
+| **Îlot Bubulle niveau 1** | 60 | 60 |
+| **Îlot Bubulle niveau 2** | 150 | 75 |
+| **Îlot Bubulle niveau 3** | 270 | 90 |
+
+[[screenshot: img/lvl-ilot.png]]
+
+
+Et c'est ici qu'on peut obtenir des Poké Fèves avec la 1er îlot: 
+
+**L'Îlot Relax** cette Îlot abrite l'arbre à Poké Fèves qui laisse tomber des feves quand on la touche, la vitesse à laquelle il produit des Poké Fèves dépend du niveau de l'îlot et du nombre de Pokémon dans la Boîtes PC. Le maximum de Poké Fèves qu'il est possible de récolter en une seule fois est de 256.
+
+Mais, elle attire aussi des pokemon sauvage, pokémon qui ont plus de chance d'apparaitre grace au feves qu'on met dans la caisse dispo dans chaque îlot, avec chacun leurs effets.
+
+
+**L'Îlot Poupousse**
+
+[[screenshot: img/baiepokéloisir.jpg]]
+
+Sur cette Iles un peu a l'instars du Plante-Baies (HGSS) mais avec des grosse ameliorations.
+
+| Caractéristique | Plante-Baies (HGSS) | Îlot Poupousse (USUL) |
+| :---: | :---: | :---: |
+| **Accès** | Objet Rare directement dans le Sac. | Menu dédié du Poké Loisir. |
+| **Capacité maximum** | 4 baies en même temps. | 18 baies en même temps (si l'îlot est niveau 3). |
+| **Entretien (Arrosage)** | Actif : vérifier l'humidité de la terre et arroser manuellement sinon mauvaise récolte. | Zéro arrosage. On plantes, et ça pousse tout seul à 100 % de rendement. |
+| **Boost de croissance** | Différents Engrais à mélanger à la terre. | Les Poké Fèves placées dans la caisse doublent la vitesse de pousse. |
+
+**L'Îlot Farfouille**
+
+[[screenshot: img/objetrare.jpg]]
+
+Les pokémon sur cette Îlot explore une grotte pour travers divers objets comme: 
+
+- objet pour la revente
+- rappel
+- tout type de pierre(évolution, stase, dure...)
+- Fossile
+- Tesson
+- Lumargile
+
+[[screenshot: img/ilot-biscoteaux.png]]
+
+Les Poké Fèves placées dans la caisse permette l'exploration 2 fois plus vite.
+
+**L'Îlot Biscoteaux**
+
+Les pokemon peuvent s'entrainer pour de l'exp et des EV, il faut touchez le panneau planté dans le camp d'exercice et faites glisser les Pokémon à entraîner.
+
+Puis choisir la boisson auprès de Mohn, pour augmenter l'une des 6 stats de base ou pour monter de niveau, et choisir le nombre de session qui dure 30min mais 
+grace a la caisse les Pokémon font leurs sessions 2 fois plus vite.
+
+
+**Îlot Bubulle**
+
+[[screenshot: img/ilot-bubulle.png]]
+
+Cette Îlot permet d'augmenter le bonheur passivement par contre il ne faut pas laisser les pokemon plus de 24h d'affilée.
+
+Mais surtout cette Îlot sert aussi de garderie pour les oeufs 
+
+- Les Œufs accumulent des "pas" passivement au fil du temps sans avoir besoin d'enfourcher Tauros pour faire des allers-retours.
+
+- Quand un Œuf est prêt à éclore, un point d'exclamation apparaît au-dessus de lui.
+
+> **Toutes les images des îlots viennent de pokebip.**
+
+#### 🏝️ La Place Festival: La Galerie Concorde d'aliexpress
+
+La place festival est un marché evolutif comme noir et blanc 2.
+
+- L'Intégration dans le Monde et le Mode d'Accès
+
+   - Galerie Concorde : C'est un lieu physique réel situé directement sur la carte d'Unys (la rue couverte entre la Route 4 et Méanville). Le joueur y passe naturellement à pied au cours de son aventure.
+
+   - Place Festival : C'est une dimension / zone virtuelle isolée. Pour y accéder, il faut obligatoirement passer par le menu du jeu (ou l'écran tactile), ce qui déclenche un temps de chargement et coupe le joueur de son exploration sur Alola.
+
+- Le Rôle Multijoueur et les Fonctionnalités en Ligne
+
+    - Galerie Concorde : C'était une fonctionnalité purement secondaire axée sur le commerce. Le multijoueur principal (C-Gear / GTS) restait géré par d'autres interfaces du jeu.
+
+    - Place Festival : Game Freak y a centralisé l'intégralité des fonctions réseau de la 7G (Échanges Link, GTS, Échanges Miracles, Combats en ligne / Battle Spot, Game Sync). Cela signifie que l'accès au multijoueur nécessite d'ouvrir la Place Festival.
+
+- L'Origine et la Gestion des Visiteurs
+
+    - Galerie Concorde : Les visiteurs sont soit des PNJ générés par le jeu (tes « fans »), soit de véritables joueurs croisés via la connexion sans fil locale, le C-Gear ou les échanges la GTS (comme le fameux Magnemite Loop). Le joueur doit guider chaque client vers le stand qui correspond à sa demande (ou lui proposer d'ouvrir sa propre échoppe) pour gagner de la popularité.
+
+    - Place Festival : Les visiteurs sont générés via la connexion Internet ou StreetPass. Au lieu d'associer un client à une boutique, le joueur gagne des Festipièces (FP) en répondant à de petits questionnaires simples au-dessus de la tête des PNJ ou en participant à des mini-jeux collectifs (les Missions).
+
+| Boutique / Fonctionnalité | Galerie Concorde (N2B2) | Place Festival (USUL) |
+| :---: | :---: | :---: |
+| **Monnaie utilisée** | Pokédollars habituels (avec réductions par rang) | Festipièces (FP) exclusives |
+| **Salle de Sport / Dojo** | Augmentation directe des EV et du Niveau | Tables d'orientation (Entraînement des EV) |
+| **Restaurant** | Repas augmentant les Niveaux, EV et le Bonheur | Stands de restauration (Plats de Niveaux et EV) |
+| **Salon de Beauté** | Augmentation du Bonheur et baisse des EV | Tables de massage & Soins (Bonheur) |
+| **Crèche / Éclosion** | Réduction massive du temps d'éclosion des Œufs | Absent (Boutique remplacée par l'Îlot Bubulle du Poké Loisir) |
+| **Bazar / Supérette** | Achat en gros de soins (Lait Meumeu, Eau Fraîche, Miel) | Stands d'objets (Packs de Soins et Potion) |
+| **Jardinerie** | Achat de Baies par lots et d'engrais | Absent (Baies déportées sur l'Îlot Poupousse du Poké Loisir) |
+| **Brocante** | Achat d'objets mystères (Pierres évolutives, Tessons, Pépites) | Maisons hantées (Exploration pour objets rares et Capsules) |
+| **Loterie** | Tirage quotidien gratuit (Master Ball au 1er prix) | Stands de loterie (Master Ball, Capsules d'Or) |
+| **Personnalisation** | Aucune | Ateliers de teinture (Changement de couleur des vêtements) |
+| **Combat Stratégique** | Aucun | Agence de Combat (Location de Pokémon en combat solo) |
+
+**Une progression vivante et gratifiante :**
+
+N2B2 : La Galerie change véritablement d'aspect visuel au fur et à mesure que son niveau augmente (les lumières s'allument, des tapis sont déroulés, de nouveaux décors apparaissent, et la musique devient de plus en plus épique). Tu as un vrai sentiment de construction et de réussite.
+
+USUL : Le château central et les stands restent visuellement très similaires du niveau 1 au niveau 100, ce qui rend l'ascension beaucoup plus monotone.
+
+**L'économie du jeu respectée (Pas de monnaie parallèle) :**
+
+N2B2 : Tout s'achète en Pokédollars (avec des remises par rang). Cela redonnait une vraie utilité à l'argent accumulé durant le scénario et le post-game.
+
+USUL : L'obligation de farmer une monnaie virtuelle fermée (les Festipièces) via des mini-jeux ou des dialogues répétitifs crée un sentiment de "grind" artificiel.
+
+**Une meilleure autonomie en Solo :**
+
+N2B2 : Même sans connexion Internet, la Galerie se remplissait de PNJ générés par le jeu chaque jour. On pouvait la monter au niveau maximum en pur solo sans problème.
+
+USUL : Sans connexion en ligne active ou StreetPass, faire monter le niveau de sa Place Festival en solo devenait atrocement long.
+
+**L'Agence de Combat (Le mode stratégique Solo) :**
+
+    USUL : La Place intègre l'Agence de Combat, qui permet de louer des Pokémon surpuissants (souvent stratégiques ou Légendaires) pour faire des séries de combats solo. C'est un excellent ajout qui n'existait tout simplement pas dans la Galerie Concorde et qui donne une raison d'y revenir régulièrement.
+
+**Les Missions Générales & Événements Mondiaux :**
+
+    USUL : La Place Festival organisait des mini-jeux collectifs en temps réel (ex: "attraper le plus de Pokémon en 3 minutes") ainsi que des "Missions Mondiales" à l'échelle de la planète organisées par Game Freak (ex: "capturer 100 millions de Pokémon collectivement"). Cela apportait une dimension communautaire très sympa à l'époque de la sortie du jeu.
+
+**Les Ateliers de Teinture (Unicité visuelle) :**
+
+    USUL : Permettre de teindre ses vêtements avec les baies de son sac directement dans la Place ajoutait un aspect personnalisation
+
 ---
 
 ## 📈📉 PARTIE 5 : Le Grand Changement — Comparaison SL vs USUL
@@ -396,10 +576,12 @@ La direction artistique réussit parfaitement à retransmettre une ambiance de v
 
 [[screenshot: img/zamazenta.gif]]
 
-Cependant, la mise en scène souffre d'un point noir majeur : l'absence totale d'expressions faciales chez le protagoniste. Peu importe la gravité de la situation — que le monde soit menacé par Necrozma ou qu'un personnage traverse un moment tragique —, le héros affiche constamment un sourire vide et figé. C'est un défaut que l'on retrouve d'ailleurs dans la totalité des jeux principaux.
+Cependant, la mise en scène souffre d'un point noir majeur : l'absence totale d'expressions faciales chez le protagoniste. Peu importe la gravité de la situation — que le monde soit menacé par Necrozma ou qu'un personnage traverse un moment tragique, le héros affiche constamment un sourire vide et figé. C'est un défaut que l'on retrouve d'ailleurs dans la totalité des jeux principaux.
 
 
 Pour l'anecdote, bien que GAME FREAK ait promis pour les générations suivantes (notamment la 8G) un travail approfondi sur l'expressivité des visages, ce syndrome du protagoniste inexpressif est resté un problème récurrent dans la série, avec des animations hors cinématique plates et sans vie. De plus, ce syndrome impacte aussi les autres personnages. C'est peut-être un peu moins flagrant sur eux, mais en revanche, toutes les animations des personnages, secondaires ou non, restent particulièrement robotiques.
+
+Même aujourd'hui pour moi ça reste quand meme le plus beau jeu pokémon dans la série de la série principale.
 
 
 ### ⚙️ La technique et les performances : un moteur à bout de souffle
@@ -413,9 +595,18 @@ Sur la console d'origine, le jeu souffre de **ralentissements massifs et de chut
 > Cependant, preuve ultime de la mauvaise optimisation historique du titre : **même sur émulateur, des pertes de FPS surviennent encore lors de certains combats**. Le code d'origine de GAME FREAK est si lourd et mal géré que même la puissance brute d'un PC moderne ne suffit pas toujours à lisser complètement les chutes de framerate.
 
 
+
 ### 📱 L'interface et l'ergonomie
 
-### 🎵 La bande-son et les musiques
+USUL apporte plusieurs petites améliorations de confort, sans qu'aucune ne soit à proprement parler exceptionnelle, mais qui sont sympathiques à l'usage.
+
+Première découverte personnelle : pas besoin d'appuyer sur B pour fermer une interface, mieux vaut utiliser X. Le bouton B ne ferme pas l'écran instantanément, il faut attendre l'animation de la petite bulle en bas à gauche avant que l'action se déclenche, alors que X saute directement cette étape.
+
+Le jeu ajoute aussi un système de favoris dans le sac pour regrouper les objets les plus utilisés, un raccourci de sauvegarde rapide, ainsi qu'un raccourci pour lancer directement une Poké Ball en combat sans passer par le menu complet du sac. Rien de révolutionnaire, mais ça évite quelques allers-retours inutiles dans les menus.
+
+Enfin, une poche dédiée aux Cristaux Z fait son apparition dans le sac, une nouveauté que ne proposaient ni X/Y, ni Rubis Oméga/Saphir Alpha, ni Soleil/Lune pour les Méga-Gemmes, ces dernières restant mélangées avec les autres objets à tenir.
+
+### 🎵 Les musiques
 
 | Rang | Titre du thème | Lieu / Contexte | Écoute |
 | :--- | :--- | :--- | :--- |
@@ -430,5 +621,7 @@ Mentions honorables :
 - **Combat contre un Pokémon sauvage USUL et SL**
 - **Combat contre Red/Blue**
 - **Thème de Lilie (1 & 2)**
+
+> **Mon avis : j'adore l'OST de ce jeu, c'est de très loin ma préférée parmi les jeux principaux.**
 
 ---
