@@ -37,7 +37,7 @@ Pour ma première critique, j'ai décidé de la faire sur mon jeu vidéo préfé
 
 ## 📖 PARTIE 1 : L'Introduction et l'Écriture des Personnages
 
-### <span style="color: #6bff57;">Melemele, un tutoriel géant</span>
+### <span style="color: #6bff57;">Mele-Mele, un tutoriel géant</span>
 
 [[video: video/USUL/IntroUSUL.mkv]]
 
@@ -85,7 +85,7 @@ Tili, lui, est tout le temps en retard par rapport au joueur. Il passe l'épreuv
 
 ---
 
-### Lili'i, l'intrigue de Cosmog et l'Ultra-Commando
+### <span style="color: #b19cd9;">Lili'i, l'intrigue de Cosmog et l'Ultra-Commando</span>
 
 Un peu plus loin, on arrive au village Lili'i avec Tili et Euphorbe. Ce dernier nous explique que les habitants vénèrent des gardiens, chaque île en comportant un : 
 
@@ -155,7 +155,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 
 ---
 
-### Le bridage du level design
+### <span style="color: #ff9640;">Le bridage du level design</span>
 
 [[screenshot: img/route-1.jpg, img/397px-Route_1_printemps_NB.png, img/658px-Route_20_N2B2.png]]
 
@@ -173,7 +173,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 
 ## ⚔️ PARTIE 3 : Les Épreuves et le Système de Combat
 
-### 💎 Les capacités Z
+### <span style="color: #2dd4bf;">💎 Les capacités Z</span>
 
 Les capacités Z sont la mécanique de la 7ème génération. Si le dresseur possède un bracelet Z ou un super bracelet Z et que le Pokémon connaît une capacité du même type que le cristal, alors il peut lancer une capacité puissante. Et USUL en amène de nouvelles pour Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala et Ultra-Necrozma.
 
@@ -185,7 +185,7 @@ Mais attention, elles sont quand même meilleures que les Méga-Évolutions dans
 
 ---
 
-### ⚡ L'intégration de la mécanique : Capacité Z vs Méga-Évolution
+### <span style="color: #9333ea;">⚡ L'intégration de la mécanique : Capacité Z vs Méga-Évolution</span>
 
 Contrairement à la Méga-Évolution dans *X/Y* (qui est quasi absente chez les champions), les Capacités Z sont intégrées **dès la première île** avec le Doyen Pectorius. 
 
@@ -210,7 +210,7 @@ Pour mesurer le fossé de difficulté et de finition entre la 6G et la 7G dès l
 
 ---
 
-### 🌴 Les épreuves, des énigmes d'arène
+### <span style="color: #d4af37;">🌴 Les épreuves, des énigmes d'arène</span>
 
 Au fond, les épreuves sont des arènes déguisées. Un Capitaine organise un puzzle ou un mini-jeu (l'équivalent du bâtiment d'arène à traverser), le combat final se fait contre un Pokémon Dominant plutôt que contre le Capitaine lui-même, puis le vrai combat de Champion arrive séparément avec le Doyen via la Grande Épreuve : c'est lui qui débloque réellement le passage à l'île suivante, exactement comme un badge débloquait l'accès à la zone suivante dans les jeux précédents.
 
@@ -234,7 +234,7 @@ Personnellement, voici ce que je pense des épreuves, individuellement :
 
 ## 🎲 PARTIE 4 : Les Fonctionnalités Secondaires et Activités
 
-### 🔍 Scanner QR et Scanner des Îles
+### <span style="color: #06b6d4;">🔍 Scanner QR et Scanner des Îles</span>
 
 Le scanner QR permet d'enregistrer la fiche d'un Pokémon dans son Pokédex pour localiser son habitat. Mais son principal intérêt réside dans le **Scanner des Îles**, une fonctionnalité qui permet de débusquer des Pokémon normalement introuvables dans le Pokédex d'Alola (selon le jour de la semaine et l'île où l'on se trouve).
 
@@ -287,7 +287,7 @@ En accumulant des points grâce à la qualité des clichés, le Poké Scope mont
 
 ---
 
-### 👕 La Personnalisation dans USUL
+### <span style="color: #ff6ec7;">👕 La Personnalisation dans USUL</span>
 
 #### 🌴 Un style unique... mais imposé
 Si le système de customisation est repris de la 6G (*X / Y*), la direction artistique d'Alola lui impose un cadre très strict : **l'ambiance 100 % vacances et plage**. 
@@ -313,7 +313,7 @@ Tout n'est pas à jeter pour autant, le jeu apporte de superbes améliorations p
 
 > **En résumé :** USUL gagne en fonctionnalités pratiques (Studio Photo, teintures, lentilles) mais perd en diversité par rapport à Kalos, tout en conservant un gros déséquilibre de garde-robe au détriment du personnage masculin.
 
-#### 🍬 La Poké Détente
+### <span style="color: #ff8fa3;">🍬 La Poké Détente</span>
 
 [[screenshot: img/Soins.png]]
 
@@ -339,7 +339,7 @@ Je n'ai pas de problème avec le niveau 2, donner 20% d'exp en plus c'est bien, 
 
 [[screenshot: img/poke-loisir.png]]
 
-#### 🏝️ La Poké Loisir 
+### <span style="color: #34d399;">🏝️ La Poké Loisir</span>
 
 
 Entretenu par Mohn, c'est un archipel de cinq îlots, elles peuvent etre ameliorer selon le nombre de poké feves et pokemon dans la boite PC comme indiquer sur ce tableau:
@@ -425,7 +425,7 @@ Mais surtout cette Îlot sert aussi de garderie pour les oeufs
 
 > **Toutes les images des îlots viennent de pokebip.**
 
-#### 🏝️ La Place Festival: La Galerie Concorde d'aliexpress
+### <span style="color: #c084fc;">🏝️ La Place Festival : La Galerie Concorde d'aliexpress</span>
 
 La place festival est un marché evolutif comme noir et blanc 2.
 
@@ -568,7 +568,7 @@ Le taux peut ainsi grimper jusqu'à **36%** de chances de tomber sur un Pokémon
 
 ## 🎨 PARTIE 6 : Direction Artistique et Graphismes
 
-### 👁️ Les choix visuels et l'ambiance d'Alola
+### <span style="color: #fb923c;">👁️ Les choix visuels et l'ambiance d'Alola</span>
 
 La plus grande évolution visuelle de cette génération est l'abandon des proportions « Chibi » (les personnages à grosse tête et petit corps des opus 3DS précédents) au profit de proportions humaines réelles. Les personnages ont enfin une taille normale.
 
@@ -584,7 +584,7 @@ Pour l'anecdote, bien que GAME FREAK ait promis pour les générations suivantes
 Même aujourd'hui pour moi ça reste quand meme le plus beau jeu pokémon dans la série de la série principale.
 
 
-### ⚙️ La technique et les performances : un moteur à bout de souffle
+### <span style="color: #94a3b8;">⚙️ La technique et les performances : un moteur à bout de souffle</span>
 
 
 Sur la console d'origine, le jeu souffre de **ralentissements massifs et de chutes de framerate** (le nombre d'images par seconde) dès que l'écran est surchargé. C'est particulièrement flagrant lors des combats doubles, du mode Battle Royal, ou lorsque les Pokémon Dominants entourent leur corps d'une aura d'énergie. Le moteur de la console est alors à bout de souffle. Pour grappiller de la puissance, Game Freak a même dû utiliser des textures de premier plan (sols, herbes, décors proches) en basse résolution, ce qui donne un rendu assez flou.
@@ -596,7 +596,7 @@ Sur la console d'origine, le jeu souffre de **ralentissements massifs et de chut
 
 
 
-### 📱 L'interface et l'ergonomie
+### <span style="color: #818cf8;">📱 L'interface et l'ergonomie</span>
 
 USUL apporte plusieurs petites améliorations de confort, sans qu'aucune ne soit à proprement parler exceptionnelle, mais qui sont sympathiques à l'usage.
 
@@ -604,9 +604,9 @@ Première découverte personnelle : pas besoin d'appuyer sur B pour fermer une i
 
 Le jeu ajoute aussi un système de favoris dans le sac pour regrouper les objets les plus utilisés, un raccourci de sauvegarde rapide, ainsi qu'un raccourci pour lancer directement une Poké Ball en combat sans passer par le menu complet du sac. Rien de révolutionnaire, mais ça évite quelques allers-retours inutiles dans les menus.
 
-Enfin, une poche dédiée aux Cristaux Z fait son apparition dans le sac, une nouveauté que ne proposaient ni X/Y, ni Rubis Oméga/Saphir Alpha, ni Soleil/Lune pour les Méga-Gemmes, ces dernières restant mélangées avec les autres objets à tenir.
+Enfin, une poche dédiée aux Cristaux Z fait son apparition dans le sac dès la 7G, une nouveauté que ne proposaient ni X/Y ni Rubis Oméga/Saphir Alpha pour les Méga-Gemmes, ces dernières restant mélangées avec les autres objets à tenir.
 
-### 🎵 Les musiques
+### <span style="color: #e879f9;">🎵 Les musiques</span>
 
 | Rang | Titre du thème | Lieu / Contexte | Écoute |
 | :--- | :--- | :--- | :--- |
