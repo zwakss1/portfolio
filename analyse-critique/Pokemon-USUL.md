@@ -481,15 +481,15 @@ USUL : Sans connexion en ligne active ou StreetPass, faire monter le niveau de s
 
 **L'Agence de Combat (Le mode stratégique Solo) :**
 
-    USUL : La Place intègre l'Agence de Combat, qui permet de louer des Pokémon surpuissants (souvent stratégiques ou Légendaires) pour faire des séries de combats solo. C'est un excellent ajout qui n'existait tout simplement pas dans la Galerie Concorde et qui donne une raison d'y revenir régulièrement.
+USUL : La Place intègre l'Agence de Combat, qui permet de louer des Pokémon surpuissants (souvent stratégiques ou Légendaires) pour faire des séries de combats solo. C'est un excellent ajout qui n'existait tout simplement pas dans la Galerie Concorde et qui donne une raison d'y revenir régulièrement.
 
 **Les Missions Générales & Événements Mondiaux :**
 
-    USUL : La Place Festival organisait des mini-jeux collectifs en temps réel (ex: "attraper le plus de Pokémon en 3 minutes") ainsi que des "Missions Mondiales" à l'échelle de la planète organisées par Game Freak (ex: "capturer 100 millions de Pokémon collectivement"). Cela apportait une dimension communautaire très sympa à l'époque de la sortie du jeu.
+USUL : La Place Festival organisait des mini-jeux collectifs en temps réel (ex: "attraper le plus de Pokémon en 3 minutes") ainsi que des "Missions Mondiales" à l'échelle de la planète organisées par Game Freak (ex: "capturer 100 millions de Pokémon collectivement"). Cela apportait une dimension communautaire très sympa à l'époque de la sortie du jeu.
 
 **Les Ateliers de Teinture (Unicité visuelle) :**
 
-    USUL : Permettre de teindre ses vêtements avec les baies de son sac directement dans la Place ajoutait un aspect personnalisation
+USUL : Permettre de teindre ses vêtements avec les baies de son sac directement dans la Place ajoutait un aspect personnalisation
 
 ---
 
