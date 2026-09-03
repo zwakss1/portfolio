@@ -425,9 +425,13 @@ Mais surtout cette Îlot sert aussi de garderie pour les oeufs
 
 > **Toutes les images des îlots viennent de pokebip.**
 
+> **Mon avis sur le Poké Loisir :**  
+> Personnellement, je trouve que c'est une très bonne fonctionnalité : elle permet de valoriser les Pokémon qui dorment dans le PC, pour farmer des ressources tout en faisant autre chose.
+
+
 ### <span style="color: #c084fc;">🏝️ La Place Festival : La Galerie Concorde d'aliexpress</span>
 
-La place festival est un marché evolutif comme noir et blanc 2.
+La place festival est un marché évolutif comme Noir et Blanc 2.
 
 - L'Intégration dans le Monde et le Mode d'Accès
 
@@ -463,7 +467,7 @@ La place festival est un marché evolutif comme noir et blanc 2.
 
 **Une progression vivante et gratifiante :**
 
-N2B2 : La Galerie change véritablement d'aspect visuel au fur et à mesure que son niveau augmente (les lumières s'allument, des tapis sont déroulés, de nouveaux décors apparaissent, et la musique devient de plus en plus épique). Tu as un vrai sentiment de construction et de réussite.
+N2B2 : La Galerie change véritablement d'aspect visuel au fur et à mesure que son niveau augmente (les lumières s'allument, des tapis sont déroulés, de nouveaux décors apparaissent, et la musique devient de plus en plus épique). On a un vrai sentiment de construction et de réussite.
 
 USUL : Le château central et les stands restent visuellement très similaires du niveau 1 au niveau 100, ce qui rend l'ascension beaucoup plus monotone.
 
@@ -489,7 +493,7 @@ USUL : La Place Festival organisait des mini-jeux collectifs en temps réel (ex:
 
 **Les Ateliers de Teinture (Unicité visuelle) :**
 
-USUL : Permettre de teindre ses vêtements avec les baies de son sac directement dans la Place ajoutait un aspect personnalisation
+USUL : La possibilité de teindre ses vêtements avec les baies de son sac directement sur la Place ajoutait une touche de personnalisation.
 
 ---
 
