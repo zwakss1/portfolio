@@ -342,7 +342,7 @@ Je n'ai pas de problème avec le niveau 2, donner 20% d'exp en plus c'est bien, 
 ### <span style="color: #34d399;">🏝️ La Poké Loisir</span>
 
 
-Entretenu par Mohn, c'est un archipel de cinq îlots, elles peuvent etre ameliorer selon le nombre de poké feves et pokemon dans la boite PC comme indiquer sur ce tableau:
+Entretenu par Mohn, c'est un archipel de cinq îlots, ils peuvent etre ameliorer selon le nombre de poké feves et pokemon dans la boite PC comme indiquer sur ce tableau:
 
 
 | Installation | Nombre de Poké Fèves nécessaires | Nombre de Pokémon nécessaires |
@@ -368,7 +368,7 @@ Entretenu par Mohn, c'est un archipel de cinq îlots, elles peuvent etre amelior
 
 Et c'est ici qu'on peut obtenir des Poké Fèves avec la 1er îlot: 
 
-**L'Îlot Relax** cette Îlot abrite l'arbre à Poké Fèves qui laisse tomber des feves quand on la touche, la vitesse à laquelle il produit des Poké Fèves dépend du niveau de l'îlot et du nombre de Pokémon dans la Boîtes PC. Le maximum de Poké Fèves qu'il est possible de récolter en une seule fois est de 256.
+**L'Îlot Relax** cette Îlot abrite l'arbre à Poké Fèves qui laisse tomber des feves quand on le touche, la vitesse à laquelle il produit des Poké Fèves dépend du niveau de l'îlot et du nombre de Pokémon dans la Boîtes PC. Le maximum de Poké Fèves qu'il est possible de récolter en une seule fois est de 256.
 
 Mais, elle attire aussi des pokemon sauvage, pokémon qui ont plus de chance d'apparaitre grace au feves qu'on met dans la caisse dispo dans chaque îlot, avec chacun leurs effets.
 
@@ -383,14 +383,14 @@ Sur cette Iles un peu a l'instars du Plante-Baies (HGSS) mais avec des grosse am
 | :---: | :---: | :---: |
 | **Accès** | Objet Rare directement dans le Sac. | Menu dédié du Poké Loisir. |
 | **Capacité maximum** | 4 baies en même temps. | 18 baies en même temps (si l'îlot est niveau 3). |
-| **Entretien (Arrosage)** | Actif : vérifier l'humidité de la terre et arroser manuellement sinon mauvaise récolte. | Zéro arrosage. On plantes, et ça pousse tout seul à 100 % de rendement. |
+| **Entretien (Arrosage)** | Actif : vérifier l'humidité de la terre et arroser manuellement sinon mauvaise récolte. | Zéro arrosage. On plante, et ça pousse tout seul à 100 % de rendement. |
 | **Boost de croissance** | Différents Engrais à mélanger à la terre. | Les Poké Fèves placées dans la caisse doublent la vitesse de pousse. |
 
 **L'Îlot Farfouille**
 
 [[screenshot: img/objetrare.jpg]]
 
-Les pokémon sur cette Îlot explore une grotte pour travers divers objets comme: 
+Les pokémon sur cette Îlot explore une grotte pour trouvers divers objets comme: 
 
 - objet pour la revente
 - rappel
@@ -408,7 +408,7 @@ Les Poké Fèves placées dans la caisse permette l'exploration 2 fois plus vite
 Les pokemon peuvent s'entrainer pour de l'exp et des EV, il faut touchez le panneau planté dans le camp d'exercice et faites glisser les Pokémon à entraîner.
 
 Puis choisir la boisson auprès de Mohn, pour augmenter l'une des 6 stats de base ou pour monter de niveau, et choisir le nombre de session qui dure 30min mais 
-grace a la caisse les Pokémon font leurs sessions 2 fois plus vite.
+grâce à la caisse les Pokémon font leurs sessions 2 fois plus vite.
 
 
 **Îlot Bubulle**
