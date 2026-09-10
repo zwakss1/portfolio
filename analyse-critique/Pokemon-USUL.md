@@ -57,7 +57,7 @@ Ce que le jeu multiplie jusqu'à l'excès, ce sont les références appuyées au
 
 Noir et Blanc avait tenté l'inverse : exclure la quasi-totalité des anciens Pokémon du Pokédex régional pour imposer une identité neuve. Un choix qui avait du panache sur le moment, mais qui s'est ««payé»» sur la durée, le Pokédex d'Unys étant l'un des plus restreints de la série, on finissait par affronter en boucle les mêmes espèces avant de débloquer le reste.  USUL, avec ses 403 entrées régionales, évite ce piège de la répétition simplement en ayant suffisamment de matière à répartir sur les routes et chez les dresseurs. Mais la vraie question dépasse la taille du Pokédex : c'est ce que le jeu choisit de mettre sous le feu des projecteurs. Et sur ce point, le titre fait un choix cohérent : toutes les nouvelles Capacités Z exclusives (Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala, Ultra-Necrozma) sont réservées à des espèces inédites de la 7G, et tous les Pokémon Dominants sont soit des créatures inédites, soit des formes d'Alola, jamais un Pokémon générique recyclé tel quel. Le jeu sait mettre en scène ses nouveautés quand il le veut. 
  
-Le problème ne vient donc pas d'un manque de confiance dans ses propres ajouts : dans sa boucle de gameplay centrale (épreuves, Capacités Z, Dominants), USUL met systématiquement en avant ses créatures inédites ou ses formes régionales. Mais dès qu'on s'éloigne de ce cœur de jeu, la nostalgie revient au galop : le combat post-game contre Red et Blue, l'épisode Rainbow Rocket réunissant les boss du passé, et les innombrables clins d'œil à Kanto essaimés dans les dialogues. USUL avance ainsi avec deux visages : un gameplay principal qui assume pleinement la 7G, et un contenu périphérique, scénario compris, qui ne peut s'empêcher de regarder en arriére. 
+Le problème ne vient donc pas d'un manque de confiance dans ses propres ajouts : dans sa boucle de gameplay centrale (épreuves, Capacités Z, Dominants), USUL met systématiquement en avant ses créatures inédites ou ses formes régionales. Mais dès qu'on s'éloigne de ce cœur de jeu, la nostalgie revient au galop : le combat post-game contre Red et Blue, l'épisode Rainbow Rocket réunissant les boss du passé, et les innombrables clins d'œil à Kanto essaimés dans les dialogues. USUL avance ainsi avec deux visages : un gameplay principal qui assume pleinement la 7G, et un contenu périphérique, scénario compris, qui ne peut s'empêcher de regarder en arrière. 
 
 Après être sorti de la maison, le joueur est « libre ». J'expliquerai plus tard, mais le jeu est linéaire comme tous les jeux de la série ; c'est plutôt dans le fond, le contenu, que se situe le problème. Ce n'est pas quelque chose de spécialement lié au jeu, mais qu'on retrouve depuis X/Y et dans tous les jeux principaux (sauf Légendes) jusqu'à la 9G.
 
@@ -125,7 +125,7 @@ C'est d'ailleurs un standard que ce jeu met en place : dans les opus suivants, M
 Ce Pokédex prend place sur l'écran du bas de la 3DS et apporte diverses fonctionnalités. En interagissant régulièrement avec lui via le **Roto-Loto** (une forme de roue de la fortune tactile), on débloque des bonus temporaires : plus d'XP, plus d'argent après un combat, de meilleures chances de capture... Et à terme, Motisma peut même intervenir en combat pour déclencher la **Force Z**.
 
 > **Mon avis sur l'équilibrage :**  
-> Cette Force Z est complètement abusée, car elle donne accès ni plus ni moins à une **deuxième Capacité Z** au cours d'un même combat. C'est un avantage beaucoup trop gratuit. 
+> Cette Force Z est complètement abusée, car elle donne accès, ni plus ni moins, à une **deuxième Capacité Z** au cours d'un même combat. C'est un avantage beaucoup trop gratuit. 
 > 
 > Déjà que dans Pokémon, le joueur est avantagé en permanence :
 > - **Utilisation d'objets** en combat à volonté.
@@ -179,7 +179,7 @@ Les capacités Z sont la mécanique de la 7ème génération. Si le dresseur pos
 
 Sur le papier ça a l'air plutôt sympa, mais il y a plusieurs aspects qui le sont moins, à commencer par les animations. Pour les capacités qui ne sont pas customs au Pokémon, par exemple *Combo Hyper-Furie*, l'animation de l'attaque en elle-même est plutôt cool, mais l'animation du Pokémon rend le truc ridicule. Des fois ça passe bien car l'animation du Pokémon, par un heureux hasard, est correcte, mais pour la plupart des Pokémon elle ne matche pas bien ensemble.
 
-Autre point déjà plus pénible : TOUTES les capacités Z sont impassables, vous allez devoir à chaque fois la regarder. Et pour moi, c'est pour cela que cette mécanique est oubliable pour beaucoup. S'ils s'étaient plus concentrés sur les capacités Z signatures et une option pour passer, ça rendrait déjà cette mécanique bien meilleure.
+Autre point déjà plus pénible : TOUTES les capacités Z sont impassables, vous allez devoir à chaque fois les regarder. Et pour moi, c'est pour cela que cette mécanique est oubliable pour beaucoup. S'ils s'étaient plus concentrés sur les capacités Z signatures et une option pour passer, ça rendrait déjà cette mécanique bien meilleure.
 
 Mais attention, elles sont quand même meilleures que les Méga-Évolutions dans leur utilisation, de pas grand-chose, mais quand même.
 
@@ -333,16 +333,16 @@ Soigner ses Pokémon après le combat : Si le Pokémon termine un combat sali ou
 
 Les Pofiteroles sont remplacées par des Poké-Fèves : Ces fèves s'obtiennent principalement via le Poké Loisir (l'Îlot Pousse-Fèves) ou dans les Centres Pokémon, ce qui évite de devoir farmer des mini-jeux.
 
-Ces petites choses sont plutôt sympas, mais dans XY, il y est introduit « Affection » (rien à voir avec le bonheur), c'est une jauge qui monte du niveau 0 à 5 selon le nombre de cœurs obtenus grâce aux caresses, aux fèves et au nettoyage de votre Pokémon après un combat, voici le tableau, venant du site Pokébip :
+Ces petites choses sont plutôt sympas, mais dans XY est introduite « Affection » (rien à voir avec le bonheur) : une jauge qui monte du niveau 0 à 5 selon le nombre de cœurs obtenus grâce aux caresses, aux fèves et au nettoyage de votre Pokémon après un combat. Voici le tableau, venant du site Pokébip :
 
-Je n'ai pas de problème avec le niveau 2, donner 20% d'exp en plus c'est bien, par contre pouvoir survivre à un KO dès le niveau suivant, y a pas un souci ? En plus, au niveau 4, le Pokémon peut esquiver plus facilement les attaques et peut guérir des problèmes de statut, ensuite le niveau 5, c'est pouvoir faire + de coup critique, le Pokémon a accès à une ceinture force passive trop facilement en plus des autres qui sont carrément trop.
+Je n'ai pas de problème avec le niveau 2, donner 20% d'exp en plus c'est bien, par contre pouvoir survivre à un KO dès le niveau suivant, y a pas un souci ? En plus, au niveau 4, le Pokémon peut esquiver plus facilement les attaques et peut guérir des problèmes de statut, ensuite le niveau 5, c'est pouvoir faire + de coups critiques, le Pokémon a accès à une ceinture force passive trop facilement en plus des autres qui sont carrément trop.
 
 [[screenshot: img/poke-loisir.png]]
 
 ### <span style="color: #34d399;">🏝️ La Poké Loisir</span>
 
 
-Entretenu par Mohn, c'est un archipel de cinq îlots, ils peuvent etre ameliorer selon le nombre de poké feves et pokemon dans la boite PC comme indiquer sur ce tableau:
+Entretenu par Mohn, c'est un archipel de cinq îlots, qui peuvent être améliorés selon le nombre de Poké Fèves et de Pokémon dans la Boîte PC, comme indiqué sur ce tableau :
 
 
 | Installation | Nombre de Poké Fèves nécessaires | Nombre de Pokémon nécessaires |
@@ -366,18 +366,18 @@ Entretenu par Mohn, c'est un archipel de cinq îlots, ils peuvent etre ameliorer
 [[screenshot: img/lvl-ilot.png]]
 
 
-Et c'est ici qu'on peut obtenir des Poké Fèves avec la 1er îlot: 
+Et c'est ici qu'on peut obtenir des Poké Fèves avec le 1er îlot : 
 
-**L'Îlot Relax** cette Îlot abrite l'arbre à Poké Fèves qui laisse tomber des feves quand on le touche, la vitesse à laquelle il produit des Poké Fèves dépend du niveau de l'îlot et du nombre de Pokémon dans la Boîtes PC. Le maximum de Poké Fèves qu'il est possible de récolter en une seule fois est de 256.
+**L'Îlot Relax** : cet îlot abrite l'arbre à Poké Fèves qui laisse tomber des fèves quand on le touche, la vitesse à laquelle il produit des Poké Fèves dépend du niveau de l'îlot et du nombre de Pokémon dans la Boîte PC. Le maximum de Poké Fèves qu'il est possible de récolter en une seule fois est de 256.
 
-Mais, elle attire aussi des pokemon sauvage, pokémon qui ont plus de chance d'apparaitre grace au feves qu'on met dans la caisse dispo dans chaque îlot, avec chacun leurs effets.
+Mais elle attire aussi des Pokémon sauvages, des Pokémon qui ont plus de chances d'apparaître grâce aux fèves qu'on met dans la caisse dispo dans chaque îlot, chacune avec ses propres effets.
 
 
 **L'Îlot Poupousse**
 
 [[screenshot: img/baiepokéloisir.jpg]]
 
-Sur cette Iles un peu a l'instars du Plante-Baies (HGSS) mais avec des grosse ameliorations.
+Sur cette île, un peu à l'instar du Plante-Baies (HGSS), mais avec de grosses améliorations.
 
 | Caractéristique | Plante-Baies (HGSS) | Îlot Poupousse (USUL) |
 | :---: | :---: | :---: |
@@ -390,34 +390,34 @@ Sur cette Iles un peu a l'instars du Plante-Baies (HGSS) mais avec des grosse am
 
 [[screenshot: img/objetrare.jpg]]
 
-Les pokémon sur cette Îlot explore une grotte pour trouvers divers objets comme: 
+Les Pokémon sur cet îlot explorent une grotte pour trouver divers objets comme : 
 
 - objet pour la revente
 - rappel
-- tout type de pierre(évolution, stase, dure...)
+- tout type de pierre (évolution, stase, dure...)
 - Fossile
 - Tesson
 - Lumargile
 
 [[screenshot: img/ilot-biscoteaux.png]]
 
-Les Poké Fèves placées dans la caisse permette l'exploration 2 fois plus vite.
+Les Poké Fèves placées dans la caisse permettent l'exploration 2 fois plus vite.
 
 **L'Îlot Biscoteaux**
 
-Les pokemon peuvent s'entrainer pour de l'exp et des EV, il faut touchez le panneau planté dans le camp d'exercice et faites glisser les Pokémon à entraîner.
+Les Pokémon peuvent s'entraîner pour de l'exp et des EV : il faut toucher le panneau planté dans le camp d'exercice et faire glisser les Pokémon à entraîner.
 
-Puis choisir la boisson auprès de Mohn, pour augmenter l'une des 6 stats de base ou pour monter de niveau, et choisir le nombre de session qui dure 30min mais 
-grâce à la caisse les Pokémon font leurs sessions 2 fois plus vite.
+Puis choisir la boisson auprès de Mohn, pour augmenter l'une des 6 stats de base ou pour monter de niveau, et choisir le nombre de sessions qui dure 30 min, mais 
+grâce à la caisse, les Pokémon font leurs sessions 2 fois plus vite.
 
 
 **Îlot Bubulle**
 
 [[screenshot: img/ilot-bubulle.png]]
 
-Cette Îlot permet d'augmenter le bonheur passivement par contre il ne faut pas laisser les pokemon plus de 24h d'affilée.
+Cet îlot permet d'augmenter le bonheur passivement, par contre il ne faut pas laisser les Pokémon plus de 24h d'affilée.
 
-Mais surtout cette Îlot sert aussi de garderie pour les oeufs 
+Mais surtout, cet îlot sert aussi de garderie pour les œufs 
 
 - Les Œufs accumulent des "pas" passivement au fil du temps sans avoir besoin d'enfourcher Tauros pour faire des allers-retours.
 
@@ -431,7 +431,7 @@ Mais surtout cette Îlot sert aussi de garderie pour les oeufs
 
 ### <span style="color: #c084fc;">🏝️ La Place Festival : La Galerie Concorde d'aliexpress</span>
 
-La place festival est un marché évolutif comme Noir et Blanc 2.
+La Place Festival est un marché évolutif comme Noir et Blanc 2.
 
 - L'Intégration dans le Monde et le Mode d'Accès
 
@@ -585,7 +585,7 @@ Cependant, la mise en scène souffre d'un point noir majeur : l'absence totale d
 
 Pour l'anecdote, bien que GAME FREAK ait promis pour les générations suivantes (notamment la 8G) un travail approfondi sur l'expressivité des visages, ce syndrome du protagoniste inexpressif est resté un problème récurrent dans la série, avec des animations hors cinématique plates et sans vie. De plus, ce syndrome impacte aussi les autres personnages. C'est peut-être un peu moins flagrant sur eux, mais en revanche, toutes les animations des personnages, secondaires ou non, restent particulièrement robotiques.
 
-Même aujourd'hui pour moi ça reste quand meme le plus beau jeu pokémon dans la série de la série principale.
+Même aujourd'hui, pour moi, ça reste quand même le plus beau jeu Pokémon de la série principale.
 
 
 ### <span style="color: #94a3b8;">⚙️ La technique et les performances : un moteur à bout de souffle</span>
