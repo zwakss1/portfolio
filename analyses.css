@@ -13,6 +13,9 @@
     --tag-mu-bg:        #1a2a3a;
     --tag-mu-text:      #58a6ff;
     --tag-mu-border:    #1f6feb;
+    --tag-autre-bg:     #3a2a10;
+    --tag-autre-text:   #e3b341;
+    --tag-autre-border: #9e6a03;
     --tag-note-text:    #e3b341;
 
     --card-bg:          var(--md-fond);
@@ -21,6 +24,7 @@
 
     --dot-jv-bg:        #3fb950;
     --dot-mu-bg:        #58a6ff;
+    --dot-autre-bg:     #e3b341;
     --badge-wip-bg:     #2d1b00;
     --badge-wip-text:   #f0883e;
     --badge-wip-border: #f0883e55;
@@ -36,6 +40,9 @@ html.theme-light {
     --tag-mu-bg:        #dbeafe;
     --tag-mu-text:      #1d4ed8;
     --tag-mu-border:    #93c5fd;
+    --tag-autre-bg:     #fef3c7;
+    --tag-autre-text:   #92400e;
+    --tag-autre-border: #fcd34d;
     --tag-note-text:    #713f12;
 
     --card-bg:          #ffffff;
@@ -44,6 +51,7 @@ html.theme-light {
 
     --dot-jv-bg:        #1a7f37;
     --dot-mu-bg:        #0969da;
+    --dot-autre-bg:     #b45309;
     --badge-wip-bg:     #fff7ed;
     --badge-wip-text:   #c2410c;
     --badge-wip-border: #fdba74;
@@ -291,6 +299,7 @@ html.theme-light {
 
 .dot-jv { background: var(--dot-jv-bg); }
 .dot-mu { background: var(--dot-mu-bg); }
+.dot-autre { background: var(--dot-autre-bg); }
 
 /* Badge "En cours" */
 .badge-wip {
@@ -420,6 +429,11 @@ html.theme-light {
     background: var(--tag-mu-bg);
     color: var(--tag-mu-text);
     border: 1px solid var(--tag-mu-border);
+}
+.tag-autre {
+    background: var(--tag-autre-bg);
+    color: var(--tag-autre-text);
+    border: 1px solid var(--tag-autre-border);
 }
 
 .article-titre {
@@ -908,5 +922,196 @@ html.theme-light .video-embed-wrap {
     /* Le lecteur audio flottant garde une taille raisonnable */
     .lecteur-audio-sticky {
         top: 8px;
+    }
+}
+
+/* ==========================================================================
+   FRISE CHRONOLOGIQUE — Colonne unique à droite (place pour les vidéos)
+   ========================================================================== */
+.frise-chrono {
+    position: relative;
+    margin: 56px 0;
+    padding: 24px 0;
+    max-width: 760px;
+}
+
+/* Ligne fixe à gauche (fond, toujours visible en entier) */
+.frise-chrono::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 22px;
+    width: 4px;
+    margin-left: -2px;
+    background: var(--md-bordure);
+    border-radius: 2px;
+    z-index: 0;
+}
+
+/* Ligne de progression : se remplit au scroll, ne redescend jamais tant que la page
+   n'est pas rechargée (progression pilotée en JS via --frise-progress). */
+.frise-chrono::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 22px;
+    width: 4px;
+    margin-left: -2px;
+    height: calc(var(--frise-progress, 0) * 100%);
+    background: linear-gradient(to bottom, var(--couleur-accent), color-mix(in srgb, var(--couleur-accent) 60%, transparent));
+    border-radius: 2px;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--couleur-accent) 50%, transparent);
+    z-index: 1;
+    transition: height 0.15s linear;
+}
+
+/*
+ * Grille 2 colonnes : point (44px fixe) | contenu (le reste).
+ * Le contenu prend toute la largeur restante → beaucoup de place pour une vidéo.
+ */
+.frise-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    column-gap: 24px;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 88px; /* espace généreux, pensé pour des cases qui vont s'agrandir avec des vidéos */
+    z-index: 2; /* passe devant la ligne de progression (::after, z-index 1) */
+}
+.frise-item:last-child { margin-bottom: 0; }
+
+/* Conteneur du texte — fondu + léger glissement */
+.frise-content {
+    grid-column: 2;
+    position: relative;
+    min-width: 0;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.frise-item.frise-visible .frise-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Le point lumineux — simple apparition en fondu, sans glissement, toujours au premier plan */
+.frise-item::before {
+    content: '';
+    grid-column: 1;
+    justify-self: center;
+    position: relative;
+    top: 2px;
+    width: 22px;
+    height: 22px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    background: var(--couleur-fond);
+    border: 4px solid var(--couleur-accent);
+    box-shadow: 0 0 10px color-mix(in srgb, var(--couleur-accent) 55%, transparent);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+}
+.frise-item.frise-visible::before {
+    opacity: 1;
+}
+
+.frise-item:hover::before {
+    background: var(--couleur-accent);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--couleur-accent) 80%, transparent);
+}
+
+/* ----- DESIGN DES TEXTES ----- */
+.frise-date {
+    display: block;
+    font-family: 'Consolas', monospace;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--couleur-accent);
+    margin-bottom: 10px;
+}
+.frise-texte {
+    display: block;
+    background: var(--md-fond);
+    border: 1px solid var(--md-bordure);
+    padding: 20px 26px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: var(--md-texte);
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    transition: border-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+.frise-texte strong { color: var(--couleur-accent); font-size: 1.15em; font-weight: 800; }
+html.theme-light .frise-texte { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); }
+.frise-item:hover .frise-texte { border-color: var(--couleur-accent); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35); }
+html.theme-light .frise-item:hover .frise-texte { box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); }
+
+/* Liste à puces générée quand l'auteur sépare son texte avec ";;" */
+.frise-liste {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.frise-liste li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
+}
+.frise-liste li:last-child {
+    margin-bottom: 0;
+}
+.frise-liste li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--couleur-accent);
+    font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .frise-content, .frise-item::before { opacity: 1; transform: none; transition: none; }
+}
+
+/* ----- VIDÉOS DANS LA FRISE ----- */
+.frise-texte .video-embed-wrap.frise-video {
+    position: relative !important;
+    left: 0 !important;
+    margin: 16px 0 0 0 !important; 
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+html.theme-light .frise-texte .video-embed-wrap.frise-video {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ── RESPONSIVE (Mobiles) — même disposition, juste plus compacte ── */
+@media (max-width: 680px) {
+    .frise-chrono::before {
+        left: 18px;
+    }
+    .frise-item {
+        grid-template-columns: 36px minmax(0, 1fr);
+        column-gap: 16px;
+        margin-bottom: 64px;
+    }
+    .frise-item::before {
+        top: 0;
+        width: 18px;
+        height: 18px;
+    }
+    .frise-date {
+        font-size: 13px;
+    }
+    .frise-texte {
+        padding: 16px 20px;
     }
 }

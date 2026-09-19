@@ -13,7 +13,7 @@ avertissements: paroles, spoiler
 
 # OST — With Me
 
-Pour ma première analyse musicale, j'ai décidé de la consacrer à "With Me".
+Pour ma première analyse de paroles, j'ai décidé de la consacrer à "With Me".
 
 ---
 
@@ -150,7 +150,7 @@ Ensuite, dans la deuxième partie du vers ("fais face au temps avec moi"), on po
 
 Pour le premier vers, la Reine dit que chaque monde a son épreuve et que tout le jeu lui-même est une épreuve, surtout le combat final qui est le test ultime.
 
-Ensuite, elle demande de ne pas la blâmer pour ce qu'elle est devenue, que ce soit physiquement comme le monstre géant (l'illusion du Roi Arthur que Sonic a battu), ou en tant que Reine Noire.
+Ensuite, elle demande de ne pas la blâmer pour ce qu'elle est devenue, que ce soit physiquement comme le monstre géant, ou en tant que Reine Noire.
 
 Pour le troisième vers, Sonic pourrait très bien l'avoir dit, mais ça pourrait aussi être la Reine, pour dire que le royaume part vers de nouveaux jours et qu'il n'est plus prisonnier de son éphémérité. En créant le repos éternel pour Sonic, elle montre qu'elle est prête à le tuer pour sauver son royaume.
 
@@ -198,7 +198,6 @@ Pour le troisième vers, Sonic pourrait très bien l'avoir dit, mais ça pourrai
 > *So, turn away or face this day with me (face the day with me)*  
 > *With me...*  
 
----
 
 ## Conclusion 
 

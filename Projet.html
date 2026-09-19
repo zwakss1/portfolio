@@ -44,7 +44,7 @@
             <img src="img/logoanalyse.png" class="icone-menu icone-blanche" alt="Analyses">
           </a>
           <ul class="sous-menu">
-            <li class="titre-sous-menu">Analyse &amp; critique</li>
+            <li class="titre-sous-menu">Analyse,critique &amp; autres</li>
           </ul>
         </li>
       </ul>
@@ -166,8 +166,8 @@
        LISTE DE TES FICHIERS DE PROJETS .md
        ================================================================ */
     const FICHIERS_MD = [
-      "projets/station-meteo.md",
       "projets/esp32-s3-protoshield.md",
+      "projets/station-meteo.md",
     ];
 
     /* ── Configuration des Icônes ── */
@@ -363,6 +363,53 @@
       });
     }
 
+function activerFrises(conteneur) {
+    Array.from(conteneur.querySelectorAll("p")).forEach(p => {
+        if (p.textContent.includes("[[frise:")) {
+            const lignes = p.innerHTML.split(/<br\s*\/?>|\n/);
+            let estUniquementFrise = true;
+            
+            const friseConteneur = document.createElement("div");
+            friseConteneur.className = "frise-chrono";
+
+            lignes.forEach(ligne => {
+                const l = ligne.trim();
+                if (!l) return;
+                
+                const m = l.match(/^\[\[frise:\s*([^|]+?)\s*\|\s*(.+?)\]\]$/);
+                
+                if (m) {
+                    let dateText = m[1].trim();
+                    let descText = m[2].trim();
+
+                    // NOUVEAU : Transforme [[youtube: ID]] en lecteur vidéo dans la carte
+                    descText = descText.replace(/\[\[youtube:\s*([a-zA-Z0-9_-]+)\]\]/g, (match, ytId) => {
+                        return `<div class="video-embed-wrap frise-video">
+                                  <iframe src="https://www.youtube-nocookie.com/embed/${ytId}" title="Vidéo YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>`;
+                    });
+
+                    const item = document.createElement("div");
+                    item.className = "frise-item";
+                    item.innerHTML = `
+                        <div class="frise-date">${dateText}</div>
+                        <div class="frise-texte">${descText}</div>
+                    `;
+                    friseConteneur.appendChild(item);
+                } else {
+                    estUniquementFrise = false; 
+                }
+            });
+
+            if (estUniquementFrise && friseConteneur.children.length > 0) {
+                p.parentNode.insertBefore(friseConteneur, p);
+                p.remove();
+            }
+        }
+    });
+}
+
+
 
     /* ================================================================
        VUE ARTICLE
@@ -398,6 +445,7 @@
       const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();
       document.getElementById("article-corps").innerHTML = marked.parse(contenuSansH1);
       activerScrollytelling(document.getElementById("article-corps"));
+      activerFrises(document.getElementById("article-corps"));
 
       document.getElementById("vue-liste").style.display  = "none";
       document.getElementById("vue-article").style.display = "";

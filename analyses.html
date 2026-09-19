@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analyses & Critiques — Portfolio</title>
   <link rel="stylesheet" href="style.css?v=13">
-  <link rel="stylesheet" href="analyses.css?v=13">
+  <link rel="stylesheet" href="analyses.css?v=20">
   <script>
     // Si on charge directement sur un article (F5, lien direct), on masque la page
     // le temps de positionner correctement le scroll, pour éviter tout flash "retour en haut".
@@ -48,7 +48,7 @@
           <img src="img/logoanalyse.png" class="icone-menu icone-blanche" alt="Analyses">
         </a>
         <ul class="sous-menu">
-          <li class="titre-sous-menu">Analyse &amp; critique</li>
+          <li class="titre-sous-menu">Analyse,critique &amp; autres</li>
         </ul>
       </li>
 
@@ -68,7 +68,7 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
         </svg>
-        Analyses &amp; Critiques
+        Analyse,critique &amp; autres
         <span class="analyses-count" id="compteur">0</span>
       </h1>
     </div>
@@ -82,6 +82,10 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
         <span class="stat-val" id="stat-mu">0</span>&nbsp;Musique
       </div>
+      <div class="stat-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M17 4H7v5a5 5 0 0 0 10 0V4z"/><path d="M17 5h3a2 2 0 0 1-2 4M7 5H4a2 2 0 0 0 2 4"/></svg>
+        <span class="stat-val" id="stat-autre">0</span>&nbsp;Autres
+      </div>
       <div class="stat-item" style="margin-left:auto">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         Mise à jour :&nbsp;<span id="stat-date">—</span>
@@ -92,6 +96,7 @@
       <button class="filtre-btn actif" data-cat="tous" role="tab">Tout <span class="filtre-badge" id="badge-tous">0</span></button>
       <button class="filtre-btn" data-cat="jv" role="tab">🎮 Jeux vidéo <span class="filtre-badge" id="badge-jv">0</span></button>
       <button class="filtre-btn" data-cat="mu" role="tab">🎵 Musique <span class="filtre-badge" id="badge-mu">0</span></button>
+      <button class="filtre-btn" data-cat="autre" role="tab">🏆 Autres <span class="filtre-badge" id="badge-autre">0</span></button>
     </div>
 
     <div class="section-label">
@@ -180,12 +185,14 @@
     const FICHIERS_MD = [
       "analyse-critique/sonic-with-me.md",
       "analyse-critique/Pokemon-USUL.md",
+      "analyse-critique/speedrun.md",
     ];
 
 
     /* ── Icônes SVG ── */
     const ICONE_JV    = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`;
     const ICONE_MU    = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
+    const ICONE_AUTRE = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M17 4H7v5a5 5 0 0 0 10 0V4z"/><path d="M17 5h3a2 2 0 0 1-2 4M7 5H4a2 2 0 0 0 2 4"/></svg>`;
     const ICONE_CAL   = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
     const ICONE_CLOCK = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
     const ICONE_STAR  = `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
@@ -335,12 +342,19 @@
     /* ================================================================
        GÉNÉRATION CARD
        ================================================================ */
+    const CONFIG_CAT = {
+      jv:    { icone: ICONE_JV,    tag: "tag-jv",    label: "🎮 Jeux vidéo", dot: "dot-jv"    },
+      mu:    { icone: ICONE_MU,    tag: "tag-mu",    label: "🎵 Musique",    dot: "dot-mu"    },
+      autre: { icone: ICONE_AUTRE, tag: "tag-autre", label: "🏆 Autre",      dot: "dot-autre" }
+    };
+
     function genererCard(meta, fichier) {
-      const cat      = meta.categorie === "mu" ? "mu" : "jv";
-      const icone    = cat === "mu" ? ICONE_MU : ICONE_JV;
-      const tagClass = cat === "mu" ? "tag-mu" : "tag-jv";
-      const tagLabel = cat === "mu" ? "🎵 Musique" : "🎮 Jeux vidéo";
-      const dotClass = cat === "mu" ? "dot-mu" : "dot-jv";
+      const cat      = CONFIG_CAT[meta.categorie] ? meta.categorie : "jv";
+      const conf     = CONFIG_CAT[cat];
+      const icone    = conf.icone;
+      const tagClass = conf.tag;
+      const tagLabel = conf.label;
+      const dotClass = conf.dot;
       const enCours  = meta.statut === "en-cours";
 
       const badgeWip    = enCours ? `<span class="badge-wip">En cours</span>` : "";
@@ -520,6 +534,122 @@
     }
 
 
+function activerFrises(conteneur) {
+    Array.from(conteneur.querySelectorAll("p")).forEach(p => {
+        if (p.textContent.includes("[[frise:")) {
+            const lignes = p.innerHTML.split(/<br\s*\/?>|\n/);
+            let estUniquementFrise = true;
+            
+            const friseConteneur = document.createElement("div");
+            friseConteneur.className = "frise-chrono";
+
+            lignes.forEach(ligne => {
+                const l = ligne.trim();
+                if (!l) return;
+                
+                const m = l.match(/^\[\[frise:\s*([^|]+?)\s*\|\s*(.+?)\]\]$/);
+                
+                if (m) {
+                    let dateText = m[1].trim();
+                    let descText = m[2].trim();
+
+                    // NOUVEAU : Transforme [[youtube: ID]] en lecteur vidéo dans la carte
+                    descText = descText.replace(/\[\[youtube:\s*([a-zA-Z0-9_-]+)\]\]/g, (match, ytId) => {
+                        return `<div class="video-embed-wrap frise-video">
+                                  <iframe src="https://www.youtube-nocookie.com/embed/${ytId}" title="Vidéo YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>`;
+                    });
+
+                    // NOUVEAU : découpe le texte en liste à puces si l'auteur utilise ";;"
+                    // comme séparateur — permet de structurer une entrée sans avoir besoin
+                    // d'un vrai retour à la ligne (interdit dans une entrée de frise).
+                    let videoHtml = "";
+                    descText = descText.replace(/<div class="video-embed-wrap frise-video">[\s\S]*?<\/div>/, (match) => {
+                        videoHtml = match;
+                        return "";
+                    }).trim();
+
+                    if (descText.includes(";;")) {
+                        const points = descText.split(";;").map(s => s.trim()).filter(Boolean);
+                        descText = `<ul class="frise-liste">${points.map(pt => `<li>${pt}</li>`).join("")}</ul>`;
+                    }
+
+                    descText = descText + videoHtml;
+
+                    const item = document.createElement("div");
+                    item.className = "frise-item";
+                    item.innerHTML = `
+                        <div class="frise-content">
+                            <div class="frise-date">${dateText}</div>
+                            <div class="frise-texte">${descText}</div>
+                        </div>
+                    `;
+                    friseConteneur.appendChild(item);
+                } else {
+                    estUniquementFrise = false; 
+                }
+            });
+
+            if (estUniquementFrise && friseConteneur.children.length > 0) {
+                p.parentNode.insertBefore(friseConteneur, p);
+                p.remove();
+                observerFrise(friseConteneur);
+                activerLigneProgressive(friseConteneur);
+            }
+        }
+    });
+}
+
+/* Révèle chaque événement de la frise au fur et à mesure du scroll,
+   plutôt que d'afficher tout le bloc d'un coup. */
+function observerFrise(conteneur) {
+    const items = conteneur.querySelectorAll(".frise-item");
+    if (!("IntersectionObserver" in window)) {
+        items.forEach(i => i.classList.add("frise-visible"));
+        return;
+    }
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("frise-visible");
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+    items.forEach(item => obs.observe(item));
+}
+
+/* Fait "se dessiner" la ligne de la frise au fil du scroll : la progression
+   ne redescend jamais quand on remonte, seul un rechargement de page la réinitialise. */
+function activerLigneProgressive(conteneur) {
+    let maxProgress = 0;
+    let enAttente = false;
+
+    function miseAJour() {
+        const rect = conteneur.getBoundingClientRect();
+        const pointDeReference = window.innerHeight * 0.7;
+        let progression = (pointDeReference - rect.top) / rect.height;
+        progression = Math.max(0, Math.min(1, progression));
+        if (progression > maxProgress) {
+            maxProgress = progression;
+            conteneur.style.setProperty("--frise-progress", maxProgress);
+        }
+        enAttente = false;
+    }
+
+    function onScroll() {
+        if (!enAttente) {
+            requestAnimationFrame(miseAJour);
+            enAttente = true;
+        }
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    miseAJour();
+}
+
+
     /* ================================================================
        VUE ARTICLE — affichage d'une analyse
        ================================================================ */
@@ -589,6 +719,7 @@ document.getElementById("article-corps").innerHTML = htmlFinal;
 // 2bis. Activation du scrollytelling (screenshots qui suivent les paragraphes marqués)
 activerScrollytelling(document.getElementById("article-corps"));
 activerLecteursInline(document.getElementById("article-corps"));
+activerFrises(document.getElementById("article-corps"))
 
 // 3. Configuration du lecteur (Volume + Restauration de la position)
 if (meta.audio) {
@@ -673,14 +804,17 @@ window.addEventListener('beforeunload', () => {
       const allCards = Array.from(document.querySelectorAll(".card-analyse"));
 
       // Compteurs / barre de stats
-      const nbJv = cards.filter(c => (c.meta.categorie || "jv") === "jv").length;
-      const nbMu = cards.filter(c => c.meta.categorie === "mu").length;
+      const nbJv    = cards.filter(c => (c.meta.categorie || "jv") === "jv").length;
+      const nbMu    = cards.filter(c => c.meta.categorie === "mu").length;
+      const nbAutre = cards.filter(c => c.meta.categorie === "autre").length;
       document.getElementById("compteur").textContent  = cards.length;
       document.getElementById("badge-tous").textContent = cards.length;
       document.getElementById("badge-jv").textContent   = nbJv;
       document.getElementById("badge-mu").textContent   = nbMu;
+      document.getElementById("badge-autre").textContent = nbAutre;
       document.getElementById("stat-jv").textContent    = nbJv;
       document.getElementById("stat-mu").textContent    = nbMu;
+      document.getElementById("stat-autre").textContent = nbAutre;
       const dates = cards.map(c => c.meta.date).filter(Boolean).sort();
       if (dates.length) document.getElementById("stat-date").textContent = dates[dates.length - 1];
 
