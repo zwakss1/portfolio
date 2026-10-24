@@ -368,7 +368,7 @@
         ? `<span class="card-jeu">— ${meta.jeu}</span>` : "";
 
       const banniereDiv = meta.banniere
-        ? `<div class="card-banniere-bg" style="background-image:url('${meta.banniere}')"></div>` : "";
+      ? `<img class="card-banniere-bg" src="${meta.banniere}" loading="lazy" decoding="async" alt="" aria-hidden="true">` : "";
       const banniereClass = meta.banniere ? " card-avec-banniere" : "";
 
       return `

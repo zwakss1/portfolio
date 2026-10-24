@@ -47,7 +47,7 @@ J'ai joué récemment à *Sonic and the Black Knight*, et comme je suis fan de c
 Pour cette analyse, ce sera la version de **All Ends**, donc la version originale in-game.
 
 
-Cette OST intervient pendant le combat final face à la Reine Noire, le boss final du jeu, qui est bien sûr **Merlina**. Elle a atteint cette forme grâce au fourreau que Sonic lui a remis. Cette musique raconte essentiellement le point de vue de la Reine Noire mais aussi certains vers qui pourraient être tout aussi bien dits par Sonic.
+Cette OST intervient pendant le combat final face à la Reine Noire, le boss final du jeu, qui est bien sûr **Merlina**. Elle a atteint cette forme grâce au fourreau que Sonic lui a remis. Cette musique raconte essentiellement le point de vue de la Reine Noire mais aussi certains de Sonic ou les deux.
 
 Sur ce, commençons par le premier couplet :
 
@@ -160,8 +160,13 @@ Pour le troisième vers, Sonic pourrait très bien l'avoir dit, mais ça pourrai
 
 > *I can taste the day (taste the day)*  
 > *Savor night (savor night)*  
+
 > *Scream your dreams*  
+> (Crie tes rêves)  
+
 > *As you dare to fight, dare to fight*  
+
+Encore ici, je pense que c’est Sonic, car il n’a pas vraiment de rêve : il court et va là où il veut, sans but précis. Pour « Scream your dreams », Sonic lui dit de crier/hurler son rêve si elle en a le courage.
 
 ---
 
@@ -203,6 +208,6 @@ Pour le troisième vers, Sonic pourrait très bien l'avoir dit, mais ça pourrai
 
 En définitive, With Me est moins une simple chanson qu'un véritable combat idéologique entre deux personnages diamétralement opposés. D'un côté, un hérisson libre comme l'air, qui parcourt les plaines et les forêts à toute vitesse en quête d'aventure, vivant au jour le jour. De l'autre, une Reine terrifiée par la fin de son royaume, prête à tout pour le sauver, quitte à devenir le monstre qu'elle est pendant le combat final et à figer son monde dans le temps, sans but ni finalité.
 
-Durant ce combat, du point de vue de Merlina, Sonic est le véritable méchant et elle est décidée à le tuer. Lorsqu'elle lui lance "Ton égoïsme causera notre perte à tous", elle croit dur comme fer qu'il est l'antagoniste de son histoire.
+Durant ce combat, du point de vue de Merlina, Sonic est le véritable ennemi et elle est décidée à le tuer. Lorsqu'elle lui lance "Ton égoïsme causera notre perte à tous", elle croit dur comme fer qu'il est l'antagoniste de son histoire.
 
 Mais Sonic n'est pas de cet avis. Pour lui, la fin fait naturellement partie de toutes choses et il l'accepte paisiblement, un peu comme il l'avait rappelé avec Chip dans Sonic Unleashed. C'est justement parce que notre temps est compté qu'il a autant de valeur et qu'il faut en profiter au maximum : c'est cette philosophie de vie qui lui donne la force de triompher face au rêve fou de la Reine.

@@ -335,6 +335,7 @@
             img.alt = "Capture d'écran du projet";
             img.className = "screenshot-img";
             img.loading = "lazy";
+            img.decoding = "async";
             img.addEventListener("click", () => ouvrirLightbox(src));
             stack.appendChild(img);
           });
