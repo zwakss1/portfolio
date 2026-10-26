@@ -151,15 +151,16 @@ Entre-temps, Lilie nous dit que Doudou vient de loin et qu'il a déjà utilisé 
 
 Enfin, on arrive au premier « donjon » du jeu : **l'École Pokémon**. Le professeur nous donne le **Multi Exp**, et le but ici est de battre 4 dresseurs, puis la directrice. 
 
+
 Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : elle envoie un Pokémon niveau 10 fort contre notre Pokémon de départ. Je me suis donc retrouvé face à un **Brindibou** qui m'a battu deux fois. J'ai dû aller capturer un **Tadmorv d'Alola** pour l'empoisonner, avant de pouvoir achever le combat avec mon Otaquin.
+
+[[screenshot: img/route-1.jpg, img/397px-Route_1_printemps_NB.png, img/658px-Route_20_N2B2.png]]
 
 ---
 
 ### <span style="color: #ff9640;">Le bridage du level design</span>
 
-[[screenshot: img/route-1.jpg, img/397px-Route_1_printemps_NB.png, img/658px-Route_20_N2B2.png]]
-
-> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont pour la majorité des cas que de simples lignes droites, à l'exception de Poni. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
+> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont, pour la majorité des cas, que de simples lignes droites, à l'exception de Poni. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
 
 | Critère | Noir / Blanc 1 & 2 (Unys) | Ultra-Soleil / Ultra-Lune (Alola) |
 | :--- | :--- | :--- |
@@ -169,9 +170,58 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 | **Sentiment de progression** | Sensation d'ouvrir le monde et d'agrandir la carte. | Sensation d'ouvrir des petits coffres bonus. |
 | **Rythme & Guidage** | Progression autonome une fois le départ franchi. | Interruptions fréquentes par des cinématiques/tutoriels. |
 
+**Mais j'ai aussi un autre exemple encore plus parlant : la Route 6 de NB2 et la Route 11 de USUL.**
+
+Dont les niveaux des dresseurs et des Pokémon sauvages sont à peu près équivalents.
+
+Sur la Route 6, il y a 8 dresseurs au total, dont 5 qui possèdent 2 Pokémon. Les autres sont des dresseurs thématiques, par exemple un Scientifique avec deux Vivaldaim — un Pokémon qui change d'apparence selon la saison. Cette mécanique est d'ailleurs mise en valeur par la météo et la présence de deux dresseuses avec un Morphéo, ce qui est logique puisqu'on trouve sur la même route le Bureau des Saisons (qui nous offre justement un Vivaldaim), ainsi qu'une Éleveuse qu'il est possible de réaffronter.
+
+[[screenshot: img/800px-Route_11_USUL.png, img/29route6.jpg]]
+
+Ce n'est pas tout : il y a aussi des herbes sombres où l'on peut rencontrer les mêmes Pokémon que dans les herbes normales, mais en plus forts. On y trouve également deux grottes : la Grotte Électrolithe menant à Parsemille, et un accès par Surf (offert sur cette route) vers la Grotte Parsemille. Cette dernière fait office de petit donjon qui, en post-ligue, permet d'accéder à la Route Bardane, menant elle-même au Mont Foré, au Port Yoneuve ou aux Ruines Enfouies.
+
+Dans USUL, en revanche, la route ressemble un peu trop à mon goût à la Route 1. On n'y dénombre que 4 combats (dont un combat Duo, ce qui va encore faire ramer le jeu) : les 3 autres dresseurs n'ont qu'un seul Pokémon chacun, et rien d'autre. Cette route sert simplement de transition vers la Route 12.
+
+Ensuite, côté objets, la récolte est bien différente :
+* **Dans NB2 :** Élixir, Petit Champi, Pierre Lune, Hyper Ball, Pierre Éclat, Baie Pêcha, Protéine, CS03 (Surf), Écaillecœur, PP Plus, Gros Champi et la CT56 (Dégommage).
+* **Dans USUL :** Gros Champi x2, Petit Champi, Rapide Ball, CT74 (Gyroballe), CT66 (Représailles — uniquement dans USUL), sans oublier l'argent récupérable via le talent Ramassage de Mastouf, ainsi qu'1 Morceau d'Étoile, 2 Poussières Étoiles et 1 Cellule de Zygarde.
+
+Dans USUL sur cette route il y a 60% des items destiné a la vente et 40% d'utiles contre 83% des items utile contre 17% d'argent. Dont 1 item non present dans SL.
+
+### <span style="color: #2dd4bf;">🐴 Les Poké Montures</span>
+
+Les Poké Montures sont une mécanique qui, techniquement, existe depuis XY, mais dans ce jeu, c'était pour traverser la Route 9. Cependant, c'était uniquement pour cette zone, en plus d'être lent et d'avoir des Pokémon sauvages qui ralentissaient encore plus. Ou bien, dans certaines zones spécifiques, on pouvait monter un Chevroum, mais c'était en zone fermée.
+
+Dans la 7G, ça revient, mais cette fois, on peut les utiliser librement. Cette fonctionnalité sert principalement à remplacer les Capsules Secrètes, qui étaient pénibles et contraignantes, car forcer les joueurs à remplacer une attaque pour progresser est une mauvaise chose. Mais, en plus, elle n'est pas enlevable tant qu'on n'a pas accès à l'Effaceur de Capacités, alors que c'est notre Pokémon. Cela rallonge l'exploration pour rien, surtout en 4G avec son moteur lent.
+
+Mais, pour être précis, à partir de la 5G, AUCUNE CS, sauf une, n'est obligatoire pour la progression. C'est Coupe, par exemple, dans NB1, au tout début, qui sert justement de tutoriel. Techniquement, ils n'ont pas effacé le problème, mais l'ont plutôt déplacé. Dans XY, d'ailleurs, globalement, dans tout le jeu, ce n'est pas obligatoire, SAUF dans au moins une grotte où il faut Force, mais surtout sur la Route Victoire, où il faut obligatoirement Surf. Et personnellement, j'ai un problème avec ça, même si, heureusement, Surf est une bonne capacité. MAIS le problème revient ET en plus à la fin du jeu, juste avant la Ligue.
+
+Dans la 7G, les CS n'existent tout simplement plus au profit des Poké Montures, avec :
+
+Tauros : qui sert à aller plus vite et à casser des rochers.
+
+Mastouffe : qui, pareil, va plus vite que la course, mais moins vite que Tauros, et sert de remplacement au Cherch'Objet.
+
+Lokhlass : remplace Surf.
+
+Bourrinos : une sorte de remplacement au Rhinocorne de la Route 9 de XY, qui permet de marcher et de courir, cette fois, sur des zones rocailleuses.
+
+Sharpedo : permet de naviguer plus vite, de sauter et de briser des rochers dans l'eau.
+
+Mackogneur : remplace Force.
+
+Pour les utiliser, il faut appuyer sur Y et une interface s'ouvre avec la liste des montures, mais aussi la possibilité de les mettre en raccourci avec la croix directionnelle directement. Pour sortir de sa monture, soit il faut rouvrir l'interface et appuyer sur la monture actuelle, soit appuyer sur le raccourci. Ce qui est trés bien.
+
+Malgré tout, j'ai quelques petits reproches, comme Bourrinos, qui sert dans trop peu de zones. Ensuite, Lokhlass sert à pêcher et Sharpedo à aller plus vite et à casser des trucs. Cela me paraît être en conflit : avec Sharpedo, on ne peut pas pêcher, mais avec Lokhlass, si. Mais c'est pénible, car Lokhlass est lent pour eviter de faire fuir les zones de pèches avec l'eau qui bouge, et ne peut pas casser des rochers. Et justement, ces rochers n'apparaissent pas suffisamment à mon goût pour justifier de faire deux Poké Montures séparées.
+
+Mais dans tous les cas, personnellement, je prends totalement ce changement de la suppression des CS contre les Poké Montures.
+
+Ensuite, en ce qui concerne l'utilisation dans le level design, c'est comme dans les jeux précédents : elles reprennent exactement les mêmes usages. Des fois, c'est pour récupérer des objets, des fois, c'est pour accéder à une zone annexe ou pour poursuivre l'aventure.
+
+
 ---
 
-## ⚔️ PARTIE 3 : Les Épreuves et le Système de Combat
+## ⚔️ PARTIE 3 : Les Épreuves et la mécanique de la 7G
 
 ### <span style="color: #2dd4bf;">💎 Les capacités Z</span>
 
@@ -574,7 +624,7 @@ Le taux peut ainsi grimper jusqu'à **36%** de chances de tomber sur un Pokémon
 
 ### <span style="color: #fb923c;">👁️ Les choix visuels et l'ambiance d'Alola</span>
 
-La plus grande évolution visuelle de cette génération est l'abandon des proportions « Chibi » (les personnages à grosse tête et petit corps des opus 3DS précédents) au profit de proportions humaines réelles. Les personnages ont enfin une taille normale.
+La plus grande évolution visuelle de cette génération est l'abandon des proportions « Chibi » au profit de proportions humaines réelles. Les personnages ont enfin une taille normale.
 
 La direction artistique réussit parfaitement à retransmettre une ambiance de vacances et de dépaysement à travers des couleurs très chaudes et saturées (le bleu turquoise de la mer, le vert éclatant de la végétation). Les décors ainsi que la caméra, désormais plus dynamique et plus proche du sol, renforcent ce sentiment de voyage à Hawaï.
 
