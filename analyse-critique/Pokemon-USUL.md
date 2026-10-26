@@ -55,7 +55,7 @@ Le jeu commence de manière classique : le joueur est dans sa chambre, doit alle
 
 Ce que le jeu multiplie jusqu'à l'excès, ce sont les références appuyées aux anciens jeux, et plus particulièrement à Kanto : un Miaouss original dans le salon, un autographe du Major Bob accroché au mur, un personnage venu tout droit de la 1G, sans oublier les formes régionales qui puisent exclusivement dans le bestiaire de Kanto. Et ce n'est clairement pas la dernière fois que le jeu va jouer cette carte. 
 
-Noir et Blanc avait tenté l'inverse : exclure la quasi-totalité des anciens Pokémon du Pokédex régional pour imposer une identité neuve. Un choix qui avait du panache sur le moment, mais qui s'est ««payé»» sur la durée, le Pokédex d'Unys étant l'un des plus restreints de la série, on finissait par affronter en boucle les mêmes espèces avant de débloquer le reste.  USUL, avec ses 403 entrées régionales, évite ce piège de la répétition simplement en ayant suffisamment de matière à répartir sur les routes et chez les dresseurs. Mais la vraie question dépasse la taille du Pokédex : c'est ce que le jeu choisit de mettre sous le feu des projecteurs. Et sur ce point, le titre fait un choix cohérent : toutes les nouvelles Capacités Z exclusives (Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala, Ultra-Necrozma) sont réservées à des espèces inédites de la 7G, et tous les Pokémon Dominants sont soit des créatures inédites, soit des formes d'Alola, jamais un Pokémon générique recyclé tel quel. Le jeu sait mettre en scène ses nouveautés quand il le veut. 
+Noir et Blanc avait tenté l'inverse : exclure la quasi-totalité des anciens Pokémon du Pokédex régional pour imposer une identité neuve. Un choix qui avait du panache sur le moment, mais qui s'est «payé» sur la durée, le Pokédex d'Unys étant l'un des plus restreints de la série, on finissait par affronter en boucle les mêmes espèces avant de débloquer le reste.  USUL, avec ses 403 entrées régionales, évite ce piège de la répétition simplement en ayant suffisamment de matière à répartir sur les routes et chez les dresseurs. Mais la vraie question dépasse la taille du Pokédex : c'est ce que le jeu choisit de mettre sous le feu des projecteurs. Et sur ce point, le titre fait un choix cohérent : toutes les nouvelles Capacités Z exclusives (Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala, Ultra-Necrozma) sont réservées à des espèces inédites de la 7G, et tous les Pokémon Dominants sont soit des créatures inédites, soit des formes d'Alola, jamais un Pokémon générique recyclé tel quel. Le jeu sait mettre en scène ses nouveautés quand il le veut. 
  
 Le problème ne vient donc pas d'un manque de confiance dans ses propres ajouts : dans sa boucle de gameplay centrale (épreuves, Capacités Z, Dominants), USUL met systématiquement en avant ses créatures inédites ou ses formes régionales. Mais dès qu'on s'éloigne de ce cœur de jeu, la nostalgie revient au galop : le combat post-game contre Red et Blue, l'épisode Rainbow Rocket réunissant les boss du passé, et les innombrables clins d'œil à Kanto essaimés dans les dialogues. USUL avance ainsi avec deux visages : un gameplay principal qui assume pleinement la 7G, et un contenu périphérique, scénario compris, qui ne peut s'empêcher de regarder en arrière. 
 
@@ -159,7 +159,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 
 [[screenshot: img/route-1.jpg, img/397px-Route_1_printemps_NB.png, img/658px-Route_20_N2B2.png]]
 
-> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont que de simples lignes droites, à l'exception de Poni. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
+> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont pour la majorité des cas que de simples lignes droites, à l'exception de Poni. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
 
 | Critère | Noir / Blanc 1 & 2 (Unys) | Ultra-Soleil / Ultra-Lune (Alola) |
 | :--- | :--- | :--- |
@@ -191,7 +191,7 @@ Contrairement à la Méga-Évolution dans *X/Y* (qui est quasi absente chez les 
 
 [[screenshot: img/violette.png, img/doyen.png]]
 
-Pour mesurer le fossé de difficulté et de finition entre la 6G et la 7G dès le premier boss majeur, il suffit de comparer l'équipe du Doyen Pectorius à celle de Violette, la championne de Neuvartault dans *X/Y* :
+Pour mesurer la difficulté et de finition entre la 6G et la 7G dès le premier boss majeur, il suffit de comparer l'équipe du Doyen Pectorius à celle de Violette, la championne de Neuvartault dans *X/Y* :
 
 | Critère | Violette (1er Champion — *X/Y*) | Pectorius (1er Doyen — *USUL*) |
 | :--- | :--- | :--- |
@@ -202,33 +202,34 @@ Pour mesurer le fossé de difficulté et de finition entre la 6G et la 7G dès l
 | **Talents utiles** | Glissade, Écran Poudre | **Isograisse**, **Poing de Fer** |
 | **Objets de soin** | Potion : 1 | **Super Potion** : 1, **Total Soin** : 1 |
 
-#### 📊 Ce que cette comparaison révèle :
 
 1. **L'exploitation de la mécanique phare :** Là où Violette n'utilise absolument pas la Méga-Évolution (qui arrive de toute façon beaucoup trop tard dans *X/Y*), Pectorius utilise la **Capacité Z** via la Combazélite sur son Crabagarre. Le joueur apprend tout de suite à respecter cette mécanique.
-2. **Un vrai palier de difficulté :** Pectorius aligne 3 Pokémon avec des niveaux plus élevés (15-16), des talents stratégiques (Isograisse pour réduire les dégâts Feu/Glace, Poing de Fer pour booster Poing Boost) et de meilleures options de soin. Pour qu'il y ait 3 Pokémon dans l'équipe des champions, il faut attendre Cornélia, la 3e arène.
-3. **Un combat mémorable :** On sent que Game Freak a mieux pensé l'intégration des Capacités Z dans le scénario principal pour offrir un vrai challenge de fin d'île, là où la première arène de Kalos s'expédie en deux minutes sans exploiter la nouveauté de sa génération.
+2. **Un petit palier de difficulté :** Pectorius aligne 3 Pokémon avec des niveaux plus élevés (15-16), des talents stratégiques (Isograisse pour réduire les dégâts Feu/Glace, Poing de Fer pour booster Poing Boost) et de meilleures options de soin. Pour qu'il y ait 3 Pokémon dans l'équipe des champions, il faut attendre Cornélia, la 3e arène.
+3. **Un combat un peu plus mémorable :** On sent que Game Freak a mieux pensé l'intégration des Capacités Z dans le scénario principal pour offrir un meilleurs challenge de fin d'île, là où la première arène de Kalos s'expédie en deux minutes sans exploiter la nouveauté de sa génération.
 
 ---
 
-### <span style="color: #d4af37;">🌴 Les épreuves, des énigmes d'arène</span>
+### <span style="color: #d4af37;">🌴 Les épreuves</span>
 
 Au fond, les épreuves sont des arènes déguisées. Un Capitaine organise un puzzle ou un mini-jeu (l'équivalent du bâtiment d'arène à traverser), le combat final se fait contre un Pokémon Dominant plutôt que contre le Capitaine lui-même, puis le vrai combat de Champion arrive séparément avec le Doyen via la Grande Épreuve : c'est lui qui débloque réellement le passage à l'île suivante, exactement comme un badge débloquait l'accès à la zone suivante dans les jeux précédents.
 
-Le changement de nom masque assez peu la mécanique : même la communication autour de la sortie du jeu n'était pas claire là-dessus, certains joueurs pensant encore que les arènes classiques allaient coexister avec ce nouveau système. Et USUM ajoute même une Arène de Kanto classique en post-game, un signe que Game Freak lui-même semblait sentir le besoin de satisfaire les joueurs pour qui les épreuves ne remplaçaient pas vraiment cette sensation. 
+Le changement de nom masque assez peu la mécanique : même la communication autour de la sortie du jeu n'était pas claire là-dessus, certains joueurs pensant encore que les arènes classiques allaient coexister avec ce nouveau système. Et USUL ajoute même une Arène de Kanto classique en post-game, un signe que Game Freak lui-même semblait sentir le besoin de satisfaire les joueurs pour qui les épreuves ne remplaçaient pas vraiment cette sensation. 
 
 Personnellement, voici ce que je pense des épreuves, individuellement :
 
 > - **Épreuve n° 1 - type Normal :** C'est OK pour une première épreuve, avec 5 combats dont un face à un sbire de la Team Skull.
 > - **Épreuve n° 2 - type Eau :** OK aussi. C'est sympa le moment où le Dominant saute dessus, en plus d'être pas facile avec le talent Aquabulle de Tarenbulle, qui réduit de 50 % la puissance des capacités de type Feu lancées contre ce Pokémon. Il est aussi immunisé contre les brûlures et voit la puissance de ses propres capacités Eau doubler.
-> - **Épreuve n° 3 - type Feu :** Marrant, mais sans fond.
+> - **Épreuve n° 3 - type Feu :** Marrant, mais sans fond, le but est de regarder des Ossatueur d'Alola dansé et répondre à un QCM pour savoir qu'est ce qui a changer, ce qui n'est pas dur.
 > - **Épreuve n° 4 - type Plante :** Peut-être la plus intéressante. Il faut préparer un ragoût pour attirer le Pokémon Dominant, et pour cela, il faut parcourir la Jungle Sombrefeuille à la recherche d'ingrédients pour affronter un Floramantis avec un bonus de +2 en Vitesse. Il possède l'objet Herbe Pouvoir afin de lancer Lame Solaire en 1 tour. Il a aussi Synthèse pour se soigner (en temps normal, cela rend la moitié des PV, mais avec le soleil, cela restaure 2/3 des PV max). Pour cela, il compte soit sur Kecleon, soit sur Guérilande pour utiliser Zénith. Guérilande étant un Pokémon de soutien avec Soin Floral, Zénith et Garde Florale, son talent Flora-Voile permet à ses alliés de type Plante d'être immunisés contre les baisses de statistiques causées par l'adversaire ainsi que contre les problèmes de statut majeurs.
-> - **Épreuve n° 5 - type Électrik :** OK, mais sans plus. 
+> - **Épreuve n° 5 - type Électrik :** OK, mais sans plus, le but c'est de faire la lettre Z avec des Chrysapile et entre chaque alignement un combat. 
 > - **Épreuve n° 6 - type Spectre :** Plutôt cool, j'aime bien l'ambiance des lieux avec le Mimiqui derrière nous, en plus de mettre en avant un de mes Pokémon préférés.
 
 [[screenshot: img/fée.png]]
 
 > - **Épreuve n° 7 - type Dragon :** L'Ékaïser Dominant possède la Baie Seiro et peut appeler un Cizayox avec Pisto-Poing et le talent Technicien pour les Pokémon Fée avec en plus Mur Lumière, car les Pokémon Fée sont globalement spéciaux en 2017 selon Poképédia.
-> - **Épreuve n° 8 - type Fée :** Pour cette épreuve, il faut reconstituer la fleur 7 Couleurs pour Oléa et, pour cela, il faut affronter les Capitaines des Épreuves.
+> - **Épreuve n° 8 - type Fée :** Pour cette épreuve, il faut reconstituer la fleur 7 Couleurs pour Oléa et, pour cela, il faut affronter les Capitaines des Épreuves, éparpier partout dans Alola, qui aurai pu etre pas mal si le joueur avait soins limité et que les advesaire n'avais pas que 3 attaques pour la plus part sauf pour le Escroco de Danh qui lui a la chance d'avoir 4 attaques par exemple.
+
+Bilan : Globalement, c’est correct sans plus. Les épreuves 4 et 8 auraient pu offrir un vrai défi, mais soins illimités et adversaires à 3 capacités limitent leur intérêt. Les épreuves 3 et 6 sont surtout là pour divertir meme si le combat face au Mimiqui peut etre un peu tendu mais rien d'insurmontable, et les épreuves 3 et 5 sont des puzzles faciles avec entre des combats qui rallongent la durée. Le puzzle change à chaque fois, mais le cadre reste celui d’une arène.
 
 ---
 
@@ -499,28 +500,27 @@ USUL : La possibilité de teindre ses vêtements avec les baies de son sac direc
 
 ## 📈📉 PARTIE 5 : Le Grand Changement — Comparaison SL vs USUL
 
-Les versions Ultra sont meilleures que les versions originales (un meilleur post-game, la photo et le Surf Démanta). Ce ne sont que des mini-jeux qui n'améliorent pas ce dont avait besoin le jeu comme le scénario, le rythme, la linéarité, les épreuves, l'optimisation technique ou la mise en avant de Necrozma, faite au détriment de l'histoire de Lilie et Elsa-Mina.
+Les versions Ultra sont meilleures que les versions originales (un meilleur post-game, la photo, Surf Démanta...). Mais ce ne sont que des ajouts annexes, qui n’améliorent pas ce dont le jeu avait réellement besoin : le scénario, le rythme, la linéarité abusive, les épreuves, l’optimisation technique. La mise en avant de Necrozma, elle, est faite au détriment de l’histoire de Lilie et d’Elsa-Mina.
 
-Dans SL, Elsa-Mina est l'un des antagonistes les plus sombres et les mieux écrits de la saga. Traumatisée par la disparition de son mari (Mohn), elle succombe à une obsession maladive pour les Ultra-Chimères, en particulier Zéroïd, dont les toxines altèrent sa santé mentale. Son comportement envers Lilie et Gladïus est toxique, contrôlant et abusif. Sa fusion avec Zéroïd dans l'Ultra-Abysse offrait un climax marquant et une vraie tragédie familiale.
+On découvre dans SL que, par le passé, Elsa-Mina était mariée avec... Mohn, le même personnage qui s’occupe de la Poké Loisir. Lors de ses recherches sur les Ultra-Chimères, il a disparu pendant une expérience permettant de mieux comprendre les UC. Elsa-Mina a repris les recherches de son mari afin de le retrouver. Sauf qu’à force de recherches, elle en devient complètement fanatique au point que sa propre personnalité change.
 
-Dans USUL, le personnage a été lissé : elle devient une sorte d'anti-héroïne incomprise qui cherche juste à protéger Alola contre Necrozma. En voulant la rendre « moins méchante », ses actions passées perdent tout leur sens et la dynamique d'emprise psychologique sur ses enfants tombe à plat.
+Son but ultime se révèle être de libérer les Ultra-Chimères dans la région d’Alola, quitte à ce que les autres disparaissent : elle dit elle-même que cela lui est égal.
 
-#### Le vol de l'évolution de Lilie
+Après le combat dans la salle avec les Pokémon cryogénisés, elle part dans une Ultra-Brèche, dans l’Ultra-Dimension, le monde des Zéroïd, où elle renie sa fille, ce qui signifie que pour Elsa-Mina, sa propre fille n’est pas belle pour elle, donc elle rejette la faute au joueur, se laisse posséder par un Zéroïd et lui lance un combat.
 
-Dans le jeu original, c'est avant tout l'histoire de Lilie. On la voit sortir de sa coquille, prendre confiance en elle (sa fameuse « forme Z ») et finir par affronter sa propre mère dans l'Ultra-Dimension pour libérer sa famille.
+Après sa défaite, Lilie demande à Solgaleo ou Lunala de les aider. Solgaleo/Lunala libère Elsa-Mina en la défusionnant de force : le Zéroïd sort et rentre dans son Ultra Ball, et Elsa-Mina tombe par terre. Elle reprend conscience et retrouve la raison, puis touche la joue et les lèvres de Lilie et lui dit : « Quand est-ce que tu as commencé à être magnifique ? » Plus tard, Gladio prend le rôle de président de la fondation. Lilie part ensuite à Kanto pour soigner sa mère. Pour cela, elle va voir Léo, qui a lui aussi fusionné avec un Pokémon. (J’aime pas trop les réf. forcées pour Kanto, mais ici c’est tout à fait logique.)
 
-Dans USUL :
-- Elsa-Mina part affronter Necrozma seule... et se fait balayer hors-champ.
-- Lilie se retrouve privée de son grand moment de confrontation et de maturité.
-- À la fin de SL, Lilie part pour Kanto afin de soigner sa mère, un départ émouvant qui boucle son indépendance. Dans USUL, elle reste simplement à Alola, ce qui enlève toute la portée poignante de la fin du voyage.
+Dans USUL, tout cela est plus ou moins balayé : Elsa-Mina devient une « héroïne » d’Alola qui veut arrêter Necrozma. Puis, à l’Autel de la Lune ou du Soleil selon le jeu, Elsa-Mina tombe d’une Ultra-Brèche avec Guzma, balayée par Necrozma.
+
+#### Le vol de l’évolution de Lilie
+
+C’est avant tout l’arc de Lilie qui est touché : dans USUL, le développement est beaucoup trop affaibli entre mère et fille. Le changement de vêtements est anecdotique, car elle dit au début du jeu que c’est sa mère qui choisit ses propres vêtements, puis, après qu’Elsa-Mina est partie pour l’Ultra-Dimension, elle change de vêtements ; la confrontation est amenuisée envers sa mère. Dans SL, Elsa-Mina dit à Lilie qu’elle est une « fille indigne », alors que dans USUL, elle lui « pardonne » sur un ton condescendant. Elle ne part plus pour Kanto soigner sa mère. Et comme Elsa-Mina renie moins sa fille, il y a moins de raison, dans l’Ultra-Dimension, d’essayer de la faire réfléchir sur ses actes. Certes, dans USUL, Elsa-Mina félicite Lilie pour l’enlèvement de Cosmog. Mais cela a beaucoup moins de poids que dans SL, où elle reconnaît à la fin du combat que Lilie est devenue belle : une vraie reconsidération, puisqu’Elsa-Mina n’aimait que ce qu’elle jugeait beau.
 
 #### Drame familial vs « Sauver le monde »
 
-SL réussissait quelque chose pour du Pokémon : offrir une histoire intime et centrée sur les personnages. L'enjeu n'était pas de vaincre le gros monstre qui va détruire la région, mais de réparer une famille brisée par le deuil et l'obsession.
+Pour une fois, le but dans SL n’était pas de vaincre un Pokémon légendaire invoqué ou non par des fous, mais de libérer une mère complètement aveuglée par des Ultra-Chimères au point d’en devenir une et d’oublier l’objectif de base : retrouver son mari. De reconstruire une famille complètement cassée.
 
-USUL est repassé sur un schéma très classique : Necrozma vole la lumière, il faut sauver le monde. Même si l'Ultra-Mégalopole et le combat contre Ultra-Necrozma sont visuellement et musicalement incroyables, cela s'est fait au détriment de l'écriture.
-
-En résumé : USUL a échangé un drame familial poignant et nuancé contre un scénario d'action plus traditionnel, très spectaculaire pour le gameplay, mais bien moins marquant sur le plan humain.
+Dans USUL, on retombe dans le même schéma que d’habitude : vaincre un gros légendaire. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
 
 #### Surf Démanta
 
@@ -596,7 +596,7 @@ Sur la console d'origine, le jeu souffre de **ralentissements massifs et de chut
 > **Le rendu sur Émulateur (Azahar) :**  
 > L'utilisation de l'émulateur permet de corriger artificiellement une partie de ces lacunes d'époque. En configurant le jeu en **6x native (2400x1440)** avec l'API **Vulkan**, l'image gagne en netteté. De plus, le fait de retirer les *Shaders* d'origine (les contours noirs épais autour des personnages) permet d'épurer l'image, mettant en valeur la modélisation de Creatures Inc., même si le flou de certaines textures d'époque reste visible.
 > 
-> Cependant, preuve ultime de la mauvaise optimisation historique du titre : **même sur émulateur, des pertes de FPS surviennent encore lors de certains combats**. Le code d'origine de GAME FREAK est si lourd et mal géré que même la puissance brute d'un PC moderne ne suffit pas toujours à lisser complètement les chutes de framerate.
+> Cependant, **même sur émulateur, des pertes de FPS surviennent encore lors de certains combats**. Le code d'origine de GAME FREAK est si mal géré que même la puissance brute d'un PC moderne ne suffit pas toujours à lisser complètement les chutes de framerate. Sur ma 2ds je me souviens pertinemant bien que ca laggé aussi.
 
 
 

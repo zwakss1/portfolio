@@ -150,10 +150,18 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Nettoyage du HTML généré depuis le Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
   <script>
 
+    // Un seul écouteur global pour sauvegarder la position de défilement et celle de l'audio.
     window.addEventListener('beforeunload', () => {
         sessionStorage.setItem('scrollPos_' + window.location.href, window.scrollY);
+
+        const lecteur = document.getElementById("lecteur-audio");
+        if (lecteur) {
+            sessionStorage.setItem('audioPos_' + window.location.href, lecteur.currentTime);
+        }
     });
 
     // Filet de sécurité : si pour une raison X la page reste masquée (ex: fetch qui échoue),
@@ -339,6 +347,29 @@
     }
 
 
+    // Transforme les valeurs de métadonnées en texte sûr avant insertion dans du HTML.
+    function echapperHTML(valeur) {
+      return String(valeur ?? "").replace(/[&<>"']/g, caractere => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      })[caractere]);
+    }
+
+    // N'accepte que les URL HTTP(S), y compris les chemins relatifs du site.
+    function urlMediaSecurisee(valeur) {
+      const url = String(valeur ?? "").trim();
+      if (!url) return "";
+      try {
+        const urlResolue = new URL(url, document.baseURI);
+        return (urlResolue.protocol === "http:" || urlResolue.protocol === "https:") ? url : "";
+      } catch {
+        return "";
+      }
+    }
+
     /* ================================================================
        GÉNÉRATION CARD
        ================================================================ */
@@ -356,27 +387,29 @@
       const tagLabel = conf.label;
       const dotClass = conf.dot;
       const enCours  = meta.statut === "en-cours";
+      const audioUrl = urlMediaSecurisee(meta.audio);
 
       const badgeWip    = enCours ? `<span class="badge-wip">En cours</span>` : "";
-      const metaDate    = meta.date ? `<span class="card-meta-item">${ICONE_CAL} ${meta.date}</span>` : "";
+      const metaDate    = meta.date ? `<span class="card-meta-item">${ICONE_CAL} ${echapperHTML(meta.date)}</span>` : "";
       const metaLecture = meta.lecture && !enCours
-        ? `<span class="card-meta-item">${ICONE_CLOCK} ${meta.lecture} de lecture</span>`
+        ? `<span class="card-meta-item">${ICONE_CLOCK} ${echapperHTML(meta.lecture)} de lecture</span>`
         : enCours ? `<span class="card-meta-item">${ICONE_CLOCK} À venir</span>` : "";
-      const metaGenre   = meta.genre ? `<span class="card-meta-item"><span class="dot-lang ${dotClass}"></span> ${meta.genre}</span>` : "";
+      const metaGenre   = meta.genre ? `<span class="card-meta-item"><span class="dot-lang ${dotClass}"></span> ${echapperHTML(meta.genre)}</span>` : "";
 
       const sousTitreJeu = meta.jeu
-        ? `<span class="card-jeu">— ${meta.jeu}</span>` : "";
+        ? `<span class="card-jeu">— ${echapperHTML(meta.jeu)}</span>` : "";
 
-      const banniereDiv = meta.banniere
-      ? `<img class="card-banniere-bg" src="${meta.banniere}" loading="lazy" decoding="async" alt="" aria-hidden="true">` : "";
+      const banniereUrl = urlMediaSecurisee(meta.banniere);
+      const banniereDiv = banniereUrl
+      ? `<img class="card-banniere-bg" src="${echapperHTML(banniereUrl)}" loading="lazy" decoding="async" alt="" aria-hidden="true">` : "";
       const banniereClass = meta.banniere ? " card-avec-banniere" : "";
 
       return `
-      <a href="#" class="card-analyse${banniereClass}" data-cat="${cat}" data-fichier="${fichier}">
+      <a href="#" class="card-analyse${banniereClass}" data-cat="${echapperHTML(cat)}" data-fichier="${echapperHTML(fichier)}">
         ${banniereDiv}
-        <div class="card-titre">${icone} ${meta.titre} ${badgeWip}</div>
+        <div class="card-titre">${icone} ${echapperHTML(meta.titre)} ${badgeWip}</div>
         ${sousTitreJeu}
-        <div class="card-desc">${meta.description}</div>
+        <div class="card-desc">${echapperHTML(meta.description)}</div>
         <div class="card-meta">${metaGenre} ${metaDate} ${metaLecture}</div>
       </a>`;
     }
@@ -454,7 +487,7 @@
        jouable directement, plutôt qu'un lien de téléchargement.
        ================================================================ */
     function activerLecteursInline(conteneur) {
-      conteneur.querySelectorAll('a[href$=".mp3"]').forEach(lien => {
+    conteneur.querySelectorAll('a[href$=".mp3"]').forEach(lien => {
         const audio = document.createElement("audio");
         audio.controls = true;
         audio.preload = "none";
@@ -462,17 +495,20 @@
         audio.src = lien.getAttribute("href");
         audio.volume = 0.15;
         lien.replaceWith(audio);
-      });
-      document.addEventListener('play', function(e) {
-    const tousLesLecteurs = document.querySelectorAll('audio');
-    
-    tousLesLecteurs.forEach(lecteur => {
+    });
+}
+
+// Un seul écouteur pour toute la page
+document.addEventListener("play", function(e) {
+    if (!(e.target instanceof HTMLAudioElement)) return;
+
+    document.querySelectorAll("audio").forEach(lecteur => {
         if (lecteur !== e.target) {
             lecteur.pause();
         }
     });
 }, true);
-}
+
 
     function activerScrollytelling(conteneur) {
       const REGEX_MARQUEUR = /^\[\[(screenshot|video|youtube):\s*(.+?)\]\]$/;
@@ -536,78 +572,105 @@
 
 function activerFrises(conteneur) {
     Array.from(conteneur.querySelectorAll("p")).forEach(p => {
-        if (p.textContent.includes("[[frise:")) {
-            const lignes = p.innerHTML.split(/<br\s*\/?>|\n/);
-            let estUniquementFrise = true;
-            
-            const friseConteneur = document.createElement("div");
-            friseConteneur.className = "frise-chrono";
+        if (!p.textContent.includes("[[frise:")) return;
 
-            lignes.forEach(ligne => {
-                const l = ligne.trim();
-                if (!l) return;
-                
-                const m = l.match(/^\[\[frise:\s*([^|]+?)\s*\|\s*(.+?)\]\]$/);
-                
-                if (m) {
-                    let dateText = m[1].trim();
-                    let descText = m[2].trim();
+        // innerText conserve les retours à la ligne créés par les <br> Markdown.
+        // On travaille ensuite uniquement avec du texte, jamais avec du HTML fourni.
+        const lignes = p.innerText.split(/\n/);
+        let estUniquementFrise = true;
 
-                    // NOUVEAU : Transforme [[youtube: ID]] en lecteur vidéo dans la carte
-                    descText = descText.replace(/\[\[youtube:\s*([a-zA-Z0-9_-]+)\]\]/g, (match, ytId) => {
-                        return `<div class="video-embed-wrap frise-video">
-                                  <iframe src="https://www.youtube-nocookie.com/embed/${ytId}" title="Vidéo YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>`;
+        const friseConteneur = document.createElement("div");
+        friseConteneur.className = "frise-chrono";
+
+        lignes.forEach(ligne => {
+            const l = ligne.trim();
+            if (!l) return;
+
+            const m = l.match(/^\[\[frise:\s*([^|]+?)\s*\|\s*(.+?)\]\]$/);
+
+            if (m) {
+                const dateText = m[1].trim();
+                const descText = m[2].trim();
+                const youtube = descText.match(/\[\[youtube:\s*([a-zA-Z0-9_-]+)\]\]/);
+                const descriptionSansVideo = descText.replace(/\[\[youtube:\s*[a-zA-Z0-9_-]+\]\]/g, "").trim();
+
+                const item = document.createElement("div");
+                item.className = "frise-item";
+
+                const contenu = document.createElement("div");
+                contenu.className = "frise-content";
+
+                const date = document.createElement("div");
+                date.className = "frise-date";
+                date.textContent = dateText;
+
+                const texte = document.createElement("div");
+                texte.className = "frise-texte";
+
+                // Les marqueurs ;; deviennent une liste à puces.
+                // Chaque élément est ajouté comme du texte, sans interprétation HTML.
+                if (descriptionSansVideo.includes(";;")) {
+                    const liste = document.createElement("ul");
+                    liste.className = "frise-liste";
+
+                    descriptionSansVideo.split(";;").map(s => s.trim()).filter(Boolean).forEach(point => {
+                        const li = document.createElement("li");
+                        li.textContent = point;
+                        liste.appendChild(li);
                     });
 
-                    // NOUVEAU : découpe le texte en liste à puces si l'auteur utilise ";;"
-                    // comme séparateur — permet de structurer une entrée sans avoir besoin
-                    // d'un vrai retour à la ligne (interdit dans une entrée de frise).
-                    let videoHtml = "";
-                    descText = descText.replace(/<div class="video-embed-wrap frise-video">[\s\S]*?<\/div>/, (match) => {
-                        videoHtml = match;
-                        return "";
-                    }).trim();
-
-                    if (descText.includes(";;")) {
-                        const points = descText.split(";;").map(s => s.trim()).filter(Boolean);
-                        descText = `<ul class="frise-liste">${points.map(pt => `<li>${pt}</li>`).join("")}</ul>`;
-                    }
-
-                    descText = descText + videoHtml;
-
-                    const item = document.createElement("div");
-                    item.className = "frise-item";
-                    item.innerHTML = `
-                        <div class="frise-content">
-                            <div class="frise-date">${dateText}</div>
-                            <div class="frise-texte">${descText}</div>
-                        </div>
-                    `;
-                    friseConteneur.appendChild(item);
+                    texte.appendChild(liste);
                 } else {
-                    estUniquementFrise = false; 
+                    texte.textContent = descriptionSansVideo;
                 }
-            });
 
-            if (estUniquementFrise && friseConteneur.children.length > 0) {
-                p.parentNode.insertBefore(friseConteneur, p);
-                p.remove();
-                observerFrise(friseConteneur);
-                activerLigneProgressive(friseConteneur);
+                // L'identifiant YouTube est validé par la regex avant de créer le lecteur.
+                if (youtube) {
+                    const wrap = document.createElement("div");
+                    wrap.className = "video-embed-wrap frise-video";
+
+                    const iframe = document.createElement("iframe");
+                    iframe.src = `https://www.youtube-nocookie.com/embed/${youtube[1]}`;
+                    iframe.title = "Vidéo YouTube";
+                    iframe.loading = "lazy";
+                    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                    iframe.allowFullscreen = true;
+
+                    wrap.appendChild(iframe);
+                    texte.appendChild(wrap);
+                }
+
+                contenu.appendChild(date);
+                contenu.appendChild(texte);
+                item.appendChild(contenu);
+                friseConteneur.appendChild(item);
+            } else {
+                estUniquementFrise = false;
             }
+        });
+
+        if (estUniquementFrise && friseConteneur.children.length > 0) {
+            p.parentNode.insertBefore(friseConteneur, p);
+            p.remove();
+            observerFrise(friseConteneur);
+            activerLigneProgressive(friseConteneur);
         }
     });
 }
+/* Les observateurs sont conservés pour pouvoir être nettoyés quand on quitte
+   un article. Cela évite de garder des références vers d'anciennes frises. */
+const observateursFrises = new Set();
+const frisesActives = new Set();
+let animationFrisesEnAttente = null;
 
-/* Révèle chaque événement de la frise au fur et à mesure du scroll,
-   plutôt que d'afficher tout le bloc d'un coup. */
+/* Révèle chaque événement de la frise au fur et à mesure du scroll. */
 function observerFrise(conteneur) {
     const items = conteneur.querySelectorAll(".frise-item");
     if (!("IntersectionObserver" in window)) {
         items.forEach(i => i.classList.add("frise-visible"));
         return;
     }
+
     const obs = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -615,38 +678,70 @@ function observerFrise(conteneur) {
                 obs.unobserve(entry.target);
             }
         });
+
+        // Quand tous les éléments sont révélés, l'observateur n'est plus utile.
+        if (conteneur.querySelectorAll(".frise-item:not(.frise-visible)").length === 0) {
+            obs.disconnect();
+            observateursFrises.delete(obs);
+        }
     }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+
+    observateursFrises.add(obs);
     items.forEach(item => obs.observe(item));
 }
 
-/* Fait "se dessiner" la ligne de la frise au fil du scroll : la progression
-   ne redescend jamais quand on remonte, seul un rechargement de page la réinitialise. */
-function activerLigneProgressive(conteneur) {
-    let maxProgress = 0;
-    let enAttente = false;
+/* Met à jour toutes les frises avec un seul gestionnaire scroll/resize global. */
+function miseAJourFrises() {
+    frisesActives.forEach(conteneur => {
+        // Élimine les frises appartenant à un article qui n'est plus affiché.
+        if (!conteneur.isConnected) {
+            frisesActives.delete(conteneur);
+            return;
+        }
 
-    function miseAJour() {
         const rect = conteneur.getBoundingClientRect();
+        if (rect.height <= 0) return;
+
         const pointDeReference = window.innerHeight * 0.7;
         let progression = (pointDeReference - rect.top) / rect.height;
         progression = Math.max(0, Math.min(1, progression));
+        const maxProgress = Number(conteneur.dataset.maxFriseProgress || 0);
+
+        // La progression ne redescend jamais quand on remonte dans la page.
         if (progression > maxProgress) {
-            maxProgress = progression;
-            conteneur.style.setProperty("--frise-progress", maxProgress);
+            conteneur.dataset.maxFriseProgress = progression;
+            conteneur.style.setProperty("--frise-progress", progression);
         }
-        enAttente = false;
-    }
+    });
+}
 
-    function onScroll() {
-        if (!enAttente) {
-            requestAnimationFrame(miseAJour);
-            enAttente = true;
-        }
-    }
+function programmerMiseAJourFrises() {
+    if (animationFrisesEnAttente !== null) return;
+    animationFrisesEnAttente = requestAnimationFrame(() => {
+        animationFrisesEnAttente = null;
+        miseAJourFrises();
+    });
+}
 
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll, { passive: true });
-    miseAJour();
+function activerLigneProgressive(conteneur) {
+    frisesActives.add(conteneur);
+    miseAJourFrises();
+}
+
+// Ces deux écouteurs sont installés une seule fois pour toute la page.
+window.addEventListener("scroll", programmerMiseAJourFrises, { passive: true });
+window.addEventListener("resize", programmerMiseAJourFrises, { passive: true });
+
+/* À appeler avant de remplacer le contenu ou de quitter la vue article. */
+function nettoyerAnimationsFrises() {
+    observateursFrises.forEach(obs => obs.disconnect());
+    observateursFrises.clear();
+    frisesActives.clear();
+
+    if (animationFrisesEnAttente !== null) {
+        cancelAnimationFrame(animationFrisesEnAttente);
+        animationFrisesEnAttente = null;
+    }
 }
 
 
@@ -658,6 +753,7 @@ function activerLigneProgressive(conteneur) {
       const tagClass = cat === "mu" ? "tag-mu" : "tag-jv";
       const tagLabel = cat === "mu" ? "🎵 Musique" : "🎮 Jeux vidéo";
       const enCours  = meta.statut === "en-cours";
+      const audioUrl = urlMediaSecurisee(meta.audio);
 
       // Breadcrumb
       document.getElementById("breadcrumb-titre").textContent = meta.titre;
@@ -679,15 +775,16 @@ function activerLigneProgressive(conteneur) {
       }
 
       // Infos (note, genre, date, lecture)
-      const noteHtml = (meta.note && !enCours)
-        ? `<span class="article-info-item note-inline">${ICONE_STAR} ${meta.note}<span style="font-weight:400;opacity:.6">/10</span></span>`
+      const noteValeur = Number.parseFloat(meta.note);
+      const noteHtml = (meta.note && !enCours && Number.isFinite(noteValeur) && noteValeur >= 0 && noteValeur <= 10)
+        ? `<span class="article-info-item note-inline">${ICONE_STAR} ${noteValeur}<span style="font-weight:400;opacity:.6">/10</span></span>`
         : "";
       const genreHtml = meta.genre
-        ? `<span class="article-info-item">${meta.genre}</span>` : "";
+        ? `<span class="article-info-item">${echapperHTML(meta.genre)}</span>` : "";
       const dateHtml = meta.date
-        ? `<span class="article-info-item">${ICONE_CAL} ${meta.date}</span>` : "";
+        ? `<span class="article-info-item">${ICONE_CAL} ${echapperHTML(meta.date)}</span>` : "";
       const lectureHtml = (meta.lecture && !enCours)
-        ? `<span class="article-info-item">${ICONE_CLOCK} ${meta.lecture} de lecture</span>` : "";
+        ? `<span class="article-info-item">${ICONE_CLOCK} ${echapperHTML(meta.lecture)} de lecture</span>` : "";
 
       document.getElementById("article-infos").innerHTML =
         [noteHtml, genreHtml, dateHtml, lectureHtml].filter(Boolean).join('<span class="sep">·</span>');
@@ -703,17 +800,20 @@ function activerLigneProgressive(conteneur) {
 
 // 1. Préparation du contenu
 const contenuSansH1 = contenu.replace(/^#\s+.+$/m, "").trim();
-let htmlFinal = marked.parse(contenuSansH1);
+// Marked transforme le Markdown en HTML ; DOMPurify retire les éléments dangereux.
+let htmlFinal = DOMPurify.sanitize(marked.parse(contenuSansH1));
 
 // 2. Injection du lecteur (si audio présent)
-if (meta.audio) {
+if (audioUrl) {
   htmlFinal = `
     <audio id="lecteur-audio" controls class="lecteur-audio-sticky">
-      <source src="${meta.audio}" type="audio/mpeg">
+      <source src="${echapperHTML(audioUrl)}" type="audio/mpeg">
     </audio>
   ` + htmlFinal;
 }
 
+// Nettoie les animations de l'article précédent avant de remplacer son contenu.
+nettoyerAnimationsFrises();
 document.getElementById("article-corps").innerHTML = htmlFinal;
 
 // 2bis. Activation du scrollytelling (screenshots qui suivent les paragraphes marqués)
@@ -722,7 +822,7 @@ activerLecteursInline(document.getElementById("article-corps"));
 activerFrises(document.getElementById("article-corps"))
 
 // 3. Configuration du lecteur (Volume + Restauration de la position)
-if (meta.audio) {
+if (audioUrl) {
   const lecteur = document.getElementById("lecteur-audio");
   
   // Réglage du volume par défaut
@@ -734,15 +834,6 @@ if (meta.audio) {
       lecteur.currentTime = parseFloat(posSauvegardee);
   }
 }
-
-// 4. Sauvegarde de la position avant de quitter ou rafraîchir
-window.addEventListener('beforeunload', () => {
-    const lecteur = document.getElementById("lecteur-audio");
-    if (lecteur) {
-        sessionStorage.setItem('audioPos_' + window.location.href, lecteur.currentTime);
-    }
-});
-
 
       // Basculer les vues
       document.getElementById("vue-liste").style.display  = "none";
@@ -891,6 +982,7 @@ window.addEventListener('beforeunload', () => {
 
     /* ── Retour vers la liste ── */
     function retourListe(majHash = true) {
+      nettoyerAnimationsFrises();
       document.getElementById("vue-article").style.display = "none";
       document.getElementById("vue-liste").style.display   = "";
       window.scrollTo({ top: 0, behavior: "smooth" });
