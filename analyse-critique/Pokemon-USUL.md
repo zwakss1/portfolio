@@ -43,7 +43,7 @@ Pour ma première critique, j'ai décidé de la faire sur mon jeu vidéo préfé
 
 Avant de commencer, voici la cinématique d'intro du jeu :
 
-On y voit Lilie poursuivie par deux personnes de la Fondation qui en ont après la créature présente dans son sac. Elle se retrouve coincée entre ces deux personnes, mais aussi deux autres personnages à l'aspect futuriste sur lesquels je reviendrai plus tard.
+On y voit Lilie poursuivie par deux personnes de la Fondation qui en ont après la créature présente dans son sac. Elle se retrouve coincée entre ces deux personnes, mais aussi entre deux autres personnages à l'aspect futuriste sur lesquels je reviendrai plus tard.
 
 C'est la première fois que Game Freak fait une cinématique d'intro pour *teaser* quelque chose et mettre le joueur en haleine.
 
@@ -55,11 +55,11 @@ Le jeu commence de manière classique : le joueur est dans sa chambre, doit alle
 
 Ce que le jeu multiplie jusqu'à l'excès, ce sont les références appuyées aux anciens jeux, et plus particulièrement à Kanto : un Miaouss original dans le salon, un autographe du Major Bob accroché au mur, un personnage venu tout droit de la 1G, sans oublier les formes régionales qui puisent exclusivement dans le bestiaire de Kanto. Et ce n'est clairement pas la dernière fois que le jeu va jouer cette carte. 
 
-Noir et Blanc avait tenté l'inverse : exclure la quasi-totalité des anciens Pokémon du Pokédex régional pour imposer une identité neuve. Un choix qui avait du panache sur le moment, mais qui s'est «payé» sur la durée, le Pokédex d'Unys étant l'un des plus restreints de la série, on finissait par affronter en boucle les mêmes espèces avant de débloquer le reste.  USUL, avec ses 403 entrées régionales, évite ce piège de la répétition simplement en ayant suffisamment de matière à répartir sur les routes et chez les dresseurs. Mais la vraie question dépasse la taille du Pokédex : c'est ce que le jeu choisit de mettre sous le feu des projecteurs. Et sur ce point, le titre fait un choix cohérent : toutes les nouvelles Capacités Z exclusives (Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala, Ultra-Necrozma) sont réservées à des espèces inédites de la 7G, et tous les Pokémon Dominants sont soit des créatures inédites, soit des formes d'Alola, jamais un Pokémon générique recyclé tel quel. Le jeu sait mettre en scène ses nouveautés quand il le veut. 
+Noir et Blanc avait tenté l'inverse : exclure la quasi-totalité des anciens Pokémon du Pokédex régional pour imposer une identité neuve. Un choix qui avait du panache sur le moment, mais qui s'est « payé » sur la durée, le Pokédex d'Unys étant l'un des plus restreints de la série, on finissait par affronter en boucle les mêmes espèces avant de débloquer le reste. USUL, avec ses 403 entrées régionales, évite ce piège de la répétition simplement en ayant suffisamment de matière à répartir sur les routes et chez les dresseurs. Mais la vraie question dépasse la taille du Pokédex : c'est ce que le jeu choisit de mettre sous le feu des projecteurs. Et sur ce point, le titre fait un choix cohérent : toutes les nouvelles Capacités Z exclusives (Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala, Ultra-Necrozma) sont réservées à des espèces inédites de la 7G, et tous les Pokémon Dominants sont soit des créatures inédites, soit des formes d'Alola, jamais un Pokémon générique recyclé tel quel. Le jeu sait mettre en scène ses nouveautés quand il le veut. 
  
 Le problème ne vient donc pas d'un manque de confiance dans ses propres ajouts : dans sa boucle de gameplay centrale (épreuves, Capacités Z, Dominants), USUL met systématiquement en avant ses créatures inédites ou ses formes régionales. Mais dès qu'on s'éloigne de ce cœur de jeu, la nostalgie revient au galop : le combat post-game contre Red et Blue, l'épisode Rainbow Rocket réunissant les boss du passé, et les innombrables clins d'œil à Kanto essaimés dans les dialogues. USUL avance ainsi avec deux visages : un gameplay principal qui assume pleinement la 7G, et un contenu périphérique, scénario compris, qui ne peut s'empêcher de regarder en arrière. 
 
-Après être sorti de la maison, le joueur est « libre ». J'expliquerai plus tard, mais le jeu est linéaire comme tous les jeux de la série ; c'est plutôt dans le fond, le contenu, que se situe le problème. Ce n'est pas quelque chose de spécialement lié au jeu, mais qu'on retrouve depuis X/Y et dans tous les jeux principaux (sauf Légendes) jusqu'à la 9G.
+Après être sorti de la maison, le joueur est « libre ». J’expliquerai plus tard, mais le jeu est linéaire comme tous les jeux de la série ; c’est plutôt dans le fond, le contenu, que se situe le problème. Ce n’est pas quelque chose de spécialement lié au jeu, mais qu’on retrouve depuis X/Y et dans tous les jeux principaux (sauf Légendes) jusqu’à la 9G, et dans le cas de la 9G, j’y reviendrai plus tard dans une critique à part.
 
 En suivant la route, le joueur est confronté à un Pokémon qui l'attaque, mais les trois starters viennent le sauver. Ensuite, le professeur Euphorbe arrive, se présente, lui explique deux-trois trucs classiques, puis le joueur peut choisir son starter.
 
@@ -160,7 +160,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 
 ### <span style="color: #ff9640;">Le bridage du level design</span>
 
-> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont, pour la majorité des cas, que de simples lignes droites, à l'exception de Poni. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
+> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont, pour la majorité des cas, que de simples lignes droites, avec exception. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
 
 | Critère | Noir / Blanc 1 & 2 (Unys) | Ultra-Soleil / Ultra-Lune (Alola) |
 | :--- | :--- | :--- |
@@ -170,7 +170,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 | **Sentiment de progression** | Sensation d'ouvrir le monde et d'agrandir la carte. | Sensation d'ouvrir des petits coffres bonus. |
 | **Rythme & Guidage** | Progression autonome une fois le départ franchi. | Interruptions fréquentes par des cinématiques/tutoriels. |
 
-**Mais j'ai aussi un autre exemple encore plus parlant : la Route 6 de NB2 et la Route 11 de USUL.**
+**Mais j'ai aussi un autre exemple encore plus parlant : la Route 6 de NB2 et la Route 11 d'USUL.**
 
 Dont les niveaux des dresseurs et des Pokémon sauvages sont à peu près équivalents.
 
@@ -184,35 +184,41 @@ Dans USUL, en revanche, la route ressemble un peu trop à mon goût à la Route 
 
 Ensuite, côté objets, la récolte est bien différente :
 * **Dans NB2 :** Élixir, Petit Champi, Pierre Lune, Hyper Ball, Pierre Éclat, Baie Pêcha, Protéine, CS03 (Surf), Écaillecœur, PP Plus, Gros Champi et la CT56 (Dégommage).
-* **Dans USUL :** Gros Champi x2, Petit Champi, Rapide Ball, CT74 (Gyroballe), CT66 (Représailles — uniquement dans USUL), sans oublier l'argent récupérable via le talent Ramassage de Mastouf, ainsi qu'1 Morceau d'Étoile, 2 Poussières Étoiles et 1 Cellule de Zygarde.
+* **Dans USUL :** Gros Champi x2, Petit Champi, Rapide Ball, CT74 (Gyroballe), CT66 (Représailles — uniquement dans USUL), 1 Cellule de Zygarde, sans oublier l'argent récupérable via Mastouffe avec 1 Morceau d'Étoile, 2 Poussières Étoiles.
 
-Dans USUL sur cette route il y a 60% des items destiné a la vente et 40% d'utiles contre 83% des items utile contre 17% d'argent. Dont 1 item non present dans SL.
+Dans USUL, sur cette route, il y a 60% des items destinés à la vente et 40% d'utiles, contre 83% des items utiles contre 17% d'argent. Dont 1 item non présent dans SL.
 
-### <span style="color: #2dd4bf;">🐴 Les Poké Montures</span>
+Mais je le précise ici, cette tendance aux routes et au lvl design simplifiés a commencé à partir de XY, sauf que dans la 7G elle se ressent et se voit encore plus.
 
-Les Poké Montures sont une mécanique qui, techniquement, existe depuis XY, mais dans ce jeu, c'était pour traverser la Route 9. Cependant, c'était uniquement pour cette zone, en plus d'être lent et d'avoir des Pokémon sauvages qui ralentissaient encore plus. Ou bien, dans certaines zones spécifiques, on pouvait monter un Chevroum, mais c'était en zone fermée.
+### <span style="color: #ff6f00;">🐴 Les Poké Montures</span>
 
-Dans la 7G, ça revient, mais cette fois, on peut les utiliser librement. Cette fonctionnalité sert principalement à remplacer les Capsules Secrètes, qui étaient pénibles et contraignantes, car forcer les joueurs à remplacer une attaque pour progresser est une mauvaise chose. Mais, en plus, elle n'est pas enlevable tant qu'on n'a pas accès à l'Effaceur de Capacités, alors que c'est notre Pokémon. Cela rallonge l'exploration pour rien, surtout en 4G avec son moteur lent.
+Les Poké Montures sont une mécanique qui, techniquement, existe depuis XY, mais dans celui-ci, c'était pour traverser la Route 9 de XY. Cependant, c'était uniquement pour cette zone, en plus d'être lent et d'avoir des Pokémon sauvages qui ralentissaient encore plus. Ou bien, dans certaines zones spécifiques, on pouvait monter un Chevroum, mais c'était en zone fermée.
 
-Mais, pour être précis, à partir de la 5G, AUCUNE CS, sauf une, n'est obligatoire pour la progression. C'est Coupe, par exemple, dans NB1, au tout début, qui sert justement de tutoriel. Techniquement, ils n'ont pas effacé le problème, mais l'ont plutôt déplacé. Dans XY, d'ailleurs, globalement, dans tout le jeu, ce n'est pas obligatoire, SAUF dans au moins une grotte où il faut Force, mais surtout sur la Route Victoire, où il faut obligatoirement Surf. Et personnellement, j'ai un problème avec ça, même si, heureusement, Surf est une bonne capacité. MAIS le problème revient ET en plus à la fin du jeu, juste avant la Ligue.
+Dans la 7G, ça revient, mais cette fois, on peut les utiliser librement. Cette fonctionnalité sert principalement à remplacer les Capsules Secrètes, qui étaient pénibles et contraignantes, car forcer les joueurs à remplacer une attaque pour progresser est une mauvaise chose. Mais, de plus, elle n'est pas enlevable tant qu'on n'a pas accès à l'Effaceur de Capacités, alors que c'est notre Pokémon. Cela rallonge l'exploration pour rien, surtout en 4G avec son moteur lent.
+
+Mais, pour être précis, dans NB1, AUCUNE CS, sauf une, n’est obligatoire pour la progression. C’est Coupe, au tout début, qui sert justement de tutoriel, mais dans NB2, malheureusement, Force (à la Route Victoire) et Surf (au Chenal 21) sont obligatoires. Techniquement, ils n’ont pas effacé le problème, mais l’ont plutôt soit déplacé pour de l’optionnel pour NB1 et dans le 2 un retour en arrière. Dans XY, d’ailleurs, globalement, dans tout le jeu, ce n’est pas obligatoire, SAUF dans la Cave Connecterre où il faut Force, surf sur la Route 12, mais surtout sur la Route Victoire, où il faut obligatoirement Surf. Et personnellement, j’ai un problème avec ça, même si, heureusement, Surf est une bonne capacité. MAIS le problème revient ET en plus à la fin du jeu, juste avant la Ligue, exactement comme dans NB2 avec Force.
 
 Dans la 7G, les CS n'existent tout simplement plus au profit des Poké Montures, avec :
 
 Tauros : qui sert à aller plus vite et à casser des rochers.
 
-Mastouffe : qui, pareil, va plus vite que la course, mais moins vite que Tauros, et sert de remplacement au Cherch'Objet.
+Mastouffe : qui, pareil, va plus vite que la course, mais moins vite que Tauros, et sert de remplacement du Cherch'Objet.
 
 Lokhlass : remplace Surf.
 
-Bourrinos : une sorte de remplacement au Rhinocorne de la Route 9 de XY, qui permet de marcher et de courir, cette fois, sur des zones rocailleuses.
+Bourrinos : une sorte de remplacement du Rhinocorne de la Route 9 de XY, qui permet de marcher et de courir, cette fois, sur des zones rocailleuses.
 
 Sharpedo : permet de naviguer plus vite, de sauter et de briser des rochers dans l'eau.
 
 Mackogneur : remplace Force.
 
-Pour les utiliser, il faut appuyer sur Y et une interface s'ouvre avec la liste des montures, mais aussi la possibilité de les mettre en raccourci avec la croix directionnelle directement. Pour sortir de sa monture, soit il faut rouvrir l'interface et appuyer sur la monture actuelle, soit appuyer sur le raccourci. Ce qui est trés bien.
+Dracaufeu : remplace Vol.
 
-Malgré tout, j'ai quelques petits reproches, comme Bourrinos, qui sert dans trop peu de zones. Ensuite, Lokhlass sert à pêcher et Sharpedo à aller plus vite et à casser des trucs. Cela me paraît être en conflit : avec Sharpedo, on ne peut pas pêcher, mais avec Lokhlass, si. Mais c'est pénible, car Lokhlass est lent pour eviter de faire fuir les zones de pèches avec l'eau qui bouge, et ne peut pas casser des rochers. Et justement, ces rochers n'apparaissent pas suffisamment à mon goût pour justifier de faire deux Poké Montures séparées.
+Pour les utiliser, il faut appuyer sur Y et une interface s'ouvre avec la liste des montures, mais aussi la possibilité de les mettre en raccourci avec la croix directionnelle directement. Pour sortir de sa monture, soit il faut rouvrir l'interface et appuyer sur la monture actuelle, soit appuyer sur le raccourci. Ce qui est très bien.
+
+Malgré tout, j’ai quelques petits reproches, comme Bourrinos, qui sert dans trop peu de zones. Ensuite, Lokhlass sert à pêcher et Sharpedo à aller plus vite et à casser des trucs. Cela me paraît être en conflit : avec Sharpedo, on ne peut pas pêcher, mais avec Lokhlass, si. Mais c’est laborieux, car Lokhlass est lent pour éviter de faire fuir les zones de pêche avec l’eau qui bouge, et ne peut pas casser des rochers. Et justement, ces rochers n’apparaissent pas suffisamment à mon goût pour justifier de faire deux Poké Montures séparées.
+
+On pourrait aller plus loin dans la réflexion : l’Effaceur de capacités existe toujours alors que les CS n’existent plus. Avant, il fallait aller le voir pour effacer une CS, mais ce PNJ ne sert plus à grand-chose, et en fait, là où je veux en venir, c’était la synergie imbuvable entre CS pas effaçable, aller voir l’Effaceur de capacités, puis aller voir le Maître des capacités pour réapprendre une capacité. Ce qui est un détail, sur l’existence encore de ce PNJ dans la 7G. Et en 8G, l’un de ces rares points positifs, c’est que c’est maintenant gratuit pour réapprendre une attaque, plus besoin d’Écailles Cœur. Et ils ont encore amélioré ça avec Legends Arceus, où maintenant il n’y a plus de Maître des capacités : les changements se font directement depuis le menu du Pokémon, ce qui est, selon moi, normal vu que c’est NOTRE Pokémon.
 
 Mais dans tous les cas, personnellement, je prends totalement ce changement de la suppression des CS contre les Poké Montures.
 
@@ -241,7 +247,7 @@ Contrairement à la Méga-Évolution dans *X/Y* (qui est quasi absente chez les 
 
 [[screenshot: img/violette.png, img/doyen.png]]
 
-Pour mesurer la difficulté et de finition entre la 6G et la 7G dès le premier boss majeur, il suffit de comparer l'équipe du Doyen Pectorius à celle de Violette, la championne de Neuvartault dans *X/Y* :
+Pour mesurer la difficulté et la finition entre la 6G et la 7G dès le premier boss majeur, il suffit de comparer l'équipe du Doyen Pectorius à celle de Violette, la championne de Neuvartault dans *X/Y* :
 
 | Critère | Violette (1er Champion — *X/Y*) | Pectorius (1er Doyen — *USUL*) |
 | :--- | :--- | :--- |
@@ -255,7 +261,7 @@ Pour mesurer la difficulté et de finition entre la 6G et la 7G dès le premier 
 
 1. **L'exploitation de la mécanique phare :** Là où Violette n'utilise absolument pas la Méga-Évolution (qui arrive de toute façon beaucoup trop tard dans *X/Y*), Pectorius utilise la **Capacité Z** via la Combazélite sur son Crabagarre. Le joueur apprend tout de suite à respecter cette mécanique.
 2. **Un petit palier de difficulté :** Pectorius aligne 3 Pokémon avec des niveaux plus élevés (15-16), des talents stratégiques (Isograisse pour réduire les dégâts Feu/Glace, Poing de Fer pour booster Poing Boost) et de meilleures options de soin. Pour qu'il y ait 3 Pokémon dans l'équipe des champions, il faut attendre Cornélia, la 3e arène.
-3. **Un combat un peu plus mémorable :** On sent que Game Freak a mieux pensé l'intégration des Capacités Z dans le scénario principal pour offrir un meilleurs challenge de fin d'île, là où la première arène de Kalos s'expédie en deux minutes sans exploiter la nouveauté de sa génération.
+3. **Un combat un peu plus mémorable :** On sent que Game Freak a mieux pensé l'intégration des Capacités Z dans le scénario principal pour offrir un meilleur challenge de fin d'île, là où la première arène de Kalos s'expédie en deux minutes sans exploiter la nouveauté de sa génération.
 
 ---
 
@@ -269,7 +275,7 @@ Personnellement, voici ce que je pense des épreuves, individuellement :
 
 > - **Épreuve n° 1 - type Normal :** C'est OK pour une première épreuve, avec 5 combats dont un face à un sbire de la Team Skull.
 > - **Épreuve n° 2 - type Eau :** OK aussi. C'est sympa le moment où le Dominant saute dessus, en plus d'être pas facile avec le talent Aquabulle de Tarenbulle, qui réduit de 50 % la puissance des capacités de type Feu lancées contre ce Pokémon. Il est aussi immunisé contre les brûlures et voit la puissance de ses propres capacités Eau doubler.
-> - **Épreuve n° 3 - type Feu :** Marrant, mais sans fond, le but est de regarder des Ossatueur d'Alola dansé et répondre à un QCM pour savoir qu'est ce qui a changer, ce qui n'est pas dur.
+> - **Épreuve n° 3 - type Feu :** Marrant, mais sans fond, le but est de regarder des Ossatueur d'Alola danser et répondre à un QCM pour savoir qu'est-ce qui a changé, ce qui n'est pas dur.
 > - **Épreuve n° 4 - type Plante :** Peut-être la plus intéressante. Il faut préparer un ragoût pour attirer le Pokémon Dominant, et pour cela, il faut parcourir la Jungle Sombrefeuille à la recherche d'ingrédients pour affronter un Floramantis avec un bonus de +2 en Vitesse. Il possède l'objet Herbe Pouvoir afin de lancer Lame Solaire en 1 tour. Il a aussi Synthèse pour se soigner (en temps normal, cela rend la moitié des PV, mais avec le soleil, cela restaure 2/3 des PV max). Pour cela, il compte soit sur Kecleon, soit sur Guérilande pour utiliser Zénith. Guérilande étant un Pokémon de soutien avec Soin Floral, Zénith et Garde Florale, son talent Flora-Voile permet à ses alliés de type Plante d'être immunisés contre les baisses de statistiques causées par l'adversaire ainsi que contre les problèmes de statut majeurs.
 > - **Épreuve n° 5 - type Électrik :** OK, mais sans plus, le but c'est de faire la lettre Z avec des Chrysapile et entre chaque alignement un combat. 
 > - **Épreuve n° 6 - type Spectre :** Plutôt cool, j'aime bien l'ambiance des lieux avec le Mimiqui derrière nous, en plus de mettre en avant un de mes Pokémon préférés.
@@ -277,9 +283,9 @@ Personnellement, voici ce que je pense des épreuves, individuellement :
 [[screenshot: img/fée.png]]
 
 > - **Épreuve n° 7 - type Dragon :** L'Ékaïser Dominant possède la Baie Seiro et peut appeler un Cizayox avec Pisto-Poing et le talent Technicien pour les Pokémon Fée avec en plus Mur Lumière, car les Pokémon Fée sont globalement spéciaux en 2017 selon Poképédia.
-> - **Épreuve n° 8 - type Fée :** Pour cette épreuve, il faut reconstituer la fleur 7 Couleurs pour Oléa et, pour cela, il faut affronter les Capitaines des Épreuves, éparpier partout dans Alola, qui aurai pu etre pas mal si le joueur avait soins limité et que les advesaire n'avais pas que 3 attaques pour la plus part sauf pour le Escroco de Danh qui lui a la chance d'avoir 4 attaques par exemple.
+> - **Épreuve n° 8 - type Fée :** Pour cette épreuve, il faut reconstituer la fleur 7 Couleurs pour Oléa et, pour cela, il faut affronter les Capitaines des Épreuves, éparpillés partout dans Alola, qui aurait pu être pas mal si le joueur avait des soins limités et que les adversaires n'avaient pas que 3 attaques pour la plupart, sauf pour l'Escroco de Danh qui, lui, a la chance d'avoir 4 attaques, par exemple.
 
-Bilan : Globalement, c’est correct sans plus. Les épreuves 4 et 8 auraient pu offrir un vrai défi, mais soins illimités et adversaires à 3 capacités limitent leur intérêt. Les épreuves 3 et 6 sont surtout là pour divertir meme si le combat face au Mimiqui peut etre un peu tendu mais rien d'insurmontable, et les épreuves 3 et 5 sont des puzzles faciles avec entre des combats qui rallongent la durée. Le puzzle change à chaque fois, mais le cadre reste celui d’une arène.
+Bilan : Globalement, c’est correct sans plus. Les épreuves 4 et 8 auraient pu offrir un vrai défi, mais soins illimités et adversaires à 3 capacités limitent leur intérêt. Les épreuves 3 et 6 sont surtout là pour divertir, même si le combat face au Mimiqui peut être un peu tendu, mais rien d'insurmontable, et l'épreuve 5 est un puzzle facile avec entre des combats qui rallongent la durée. Le cadre reste celui d’une arène.
 
 ---
 
@@ -458,7 +464,7 @@ Les Poké Fèves placées dans la caisse permettent l'exploration 2 fois plus vi
 
 Les Pokémon peuvent s'entraîner pour de l'exp et des EV : il faut toucher le panneau planté dans le camp d'exercice et faire glisser les Pokémon à entraîner.
 
-Puis choisir la boisson auprès de Mohn, pour augmenter l'une des 6 stats de base ou pour monter de niveau, et choisir le nombre de sessions qui dure 30 min, mais 
+Puis choisir la boisson auprès de Mohn, pour augmenter l'une des 6 stats de base ou pour monter de niveau, et choisir le nombre de sessions qui durent 30 min, mais 
 grâce à la caisse, les Pokémon font leurs sessions 2 fois plus vite.
 
 
@@ -480,7 +486,7 @@ Mais surtout, cet îlot sert aussi de garderie pour les œufs
 > Personnellement, je trouve que c'est une très bonne fonctionnalité : elle permet de valoriser les Pokémon qui dorment dans le PC, pour farmer des ressources tout en faisant autre chose.
 
 
-### <span style="color: #c084fc;">🏝️ La Place Festival : La Galerie Concorde d'aliexpress</span>
+### <span style="color: #c084fc;">🏝️ La Place Festival : La Galerie Concorde d'AliExpress</span>
 
 La Place Festival est un marché évolutif comme Noir et Blanc 2.
 
@@ -498,7 +504,7 @@ La Place Festival est un marché évolutif comme Noir et Blanc 2.
 
 - L'Origine et la Gestion des Visiteurs
 
-    - Galerie Concorde : Les visiteurs sont soit des PNJ générés par le jeu (tes « fans »), soit de véritables joueurs croisés via la connexion sans fil locale, le C-Gear ou les échanges la GTS (comme le fameux Magnemite Loop). Le joueur doit guider chaque client vers le stand qui correspond à sa demande (ou lui proposer d'ouvrir sa propre échoppe) pour gagner de la popularité.
+    - Galerie Concorde : Les visiteurs sont soit des PNJ générés par le jeu (tes « fans »), soit de véritables joueurs croisés via la connexion sans fil locale, le C-Gear ou les échanges de la GTS (comme le fameux Magnemite Loop). Le joueur doit guider chaque client vers le stand qui correspond à sa demande (ou lui proposer d'ouvrir sa propre échoppe) pour gagner de la popularité.
 
     - Place Festival : Les visiteurs sont générés via la connexion Internet ou StreetPass. Au lieu d'associer un client à une boutique, le joueur gagne des Festipièces (FP) en répondant à de petits questionnaires simples au-dessus de la tête des PNJ ou en participant à des mini-jeux collectifs (les Missions).
 
@@ -562,7 +568,7 @@ Après sa défaite, Lilie demande à Solgaleo ou Lunala de les aider. Solgaleo/L
 
 Dans USUL, tout cela est plus ou moins balayé : Elsa-Mina devient une « héroïne » d’Alola qui veut arrêter Necrozma. Puis, à l’Autel de la Lune ou du Soleil selon le jeu, Elsa-Mina tombe d’une Ultra-Brèche avec Guzma, balayée par Necrozma.
 
-#### Le vol de l’évolution de Lilie
+#### L'affaiblissement de l’évolution de Lilie
 
 C’est avant tout l’arc de Lilie qui est touché : dans USUL, le développement est beaucoup trop affaibli entre mère et fille. Le changement de vêtements est anecdotique, car elle dit au début du jeu que c’est sa mère qui choisit ses propres vêtements, puis, après qu’Elsa-Mina est partie pour l’Ultra-Dimension, elle change de vêtements ; la confrontation est amenuisée envers sa mère. Dans SL, Elsa-Mina dit à Lilie qu’elle est une « fille indigne », alors que dans USUL, elle lui « pardonne » sur un ton condescendant. Elle ne part plus pour Kanto soigner sa mère. Et comme Elsa-Mina renie moins sa fille, il y a moins de raison, dans l’Ultra-Dimension, d’essayer de la faire réfléchir sur ses actes. Certes, dans USUL, Elsa-Mina félicite Lilie pour l’enlèvement de Cosmog. Mais cela a beaucoup moins de poids que dans SL, où elle reconnaît à la fin du combat que Lilie est devenue belle : une vraie reconsidération, puisqu’Elsa-Mina n’aimait que ce qu’elle jugeait beau.
 
@@ -570,7 +576,7 @@ C’est avant tout l’arc de Lilie qui est touché : dans USUL, le développeme
 
 Pour une fois, le but dans SL n’était pas de vaincre un Pokémon légendaire invoqué ou non par des fous, mais de libérer une mère complètement aveuglée par des Ultra-Chimères au point d’en devenir une et d’oublier l’objectif de base : retrouver son mari. De reconstruire une famille complètement cassée.
 
-Dans USUL, on retombe dans le même schéma que d’habitude : vaincre un gros légendaire. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
+Dans USUL, on retombe dans le même schéma que d’habitude : "vaincre un gros légendaire" meme si Le combat contre Necrozma a une justification, il est lié à la lumière d'Alola et au monde de l'Ultra-Mégalopole. Ce n'est pas simplement un Pokémon puissant qu'on doit battre parce qu'il est méchant mais ca affaibli l'intrigue de Lilie, Elsa-Mina. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
 
 #### Surf Démanta
 
@@ -646,7 +652,7 @@ Sur la console d'origine, le jeu souffre de **ralentissements massifs et de chut
 > **Le rendu sur Émulateur (Azahar) :**  
 > L'utilisation de l'émulateur permet de corriger artificiellement une partie de ces lacunes d'époque. En configurant le jeu en **6x native (2400x1440)** avec l'API **Vulkan**, l'image gagne en netteté. De plus, le fait de retirer les *Shaders* d'origine (les contours noirs épais autour des personnages) permet d'épurer l'image, mettant en valeur la modélisation de Creatures Inc., même si le flou de certaines textures d'époque reste visible.
 > 
-> Cependant, **même sur émulateur, des pertes de FPS surviennent encore lors de certains combats**. Le code d'origine de GAME FREAK est si mal géré que même la puissance brute d'un PC moderne ne suffit pas toujours à lisser complètement les chutes de framerate. Sur ma 2ds je me souviens pertinemant bien que ca laggé aussi.
+> Cependant, **même sur émulateur, des pertes de FPS surviennent encore lors de certains combats**. Le code d'origine de GAME FREAK est si mal géré que même la puissance brute d'un PC moderne ne suffit pas toujours à lisser complètement les chutes de framerate. Sur ma 2DS, je me souviens pertinemment bien que ça laguait aussi.
 
 
 
