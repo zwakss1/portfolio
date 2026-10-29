@@ -75,13 +75,19 @@ Euphorbe demande ensuite au joueur de le suivre pour se présenter au Doyen de l
 
 [[screenshot: img/125px-Tili-USUL.png]]
 
-Aussitôt après, accompagnés du professeur, nous rencontrons notre rival, Tili. En connaissant la suite, j'annonce déjà que Tili n'est pas vraiment un bon personnage en tant que tel et s'avère aussi être un mauvais rival.
+Aussitôt après, accompagnés du professeur, nous rencontrons notre rival, Tili. En connaissant la suite, je peux déjà annoncer que Tili n'est pas vraiment un bon personnage en tant que tel et qu'il s'avère également être un mauvais rival.
 
-Pour les raisons suivantes : durant tout le jeu, il n'a pas de lien direct avec le scénario, il reste le même du début à la fin, n'a pas vraiment de caractérisation et est juste enjoué par tout. Il n'a aucun arc narratif. Bref, le jeu semble ne pas lui accorder beaucoup d'importance en tant que personnage. Pourtant, il est le petit-fils du Doyen de Melemele, mais le jeu n'en fait rien.
+Pour les raisons suivantes : durant tout le jeu, il n'a pas de lien direct avec le scénario, reste le même du début à la fin, n'a pas vraiment de caractérisation et se montre simplement enjoué en toutes circonstances. Il n'a aucun arc narratif. Bref, le jeu semble ne pas lui accorder beaucoup d'importance en tant que personnage. Pourtant, il est le petit-fils du Doyen de Mele-Mele, mais le jeu n'en fait rien.
 
-Mais c'est aussi un mauvais rival. Pour vous le montrer, regardons Blue : c'est un personnage plutôt simpliste, mais un excellent rival. Pourquoi ? Parce que Blue a toujours une longueur d'avance sur le joueur et se montre arrogant, impatient et condescendant. Quand le joueur le bat, c'est satisfaisant : on le fait redescendre de son piédestal.
+Mais c'est aussi un mauvais rival. Pour vous le montrer, prenons Blue en exemple : c'est un personnage plutôt simpliste, mais un excellent rival. Pourquoi ? Parce que Blue a toujours une longueur d'avance sur le joueur et se montre arrogant, impatient et condescendant. Quand le joueur le bat, c'est satisfaisant : on le fait redescendre de son piédestal.
 
-Tili, lui, est tout le temps en retard par rapport au joueur. Il passe l'épreuve du Doyen après nous ; on sait qu'il a gagné, mais ce n'est pas montré. Je pense pourtant que cela aurait pu être intéressant de le montrer, au moins cette fois-ci, car il affronte quand même Pectorius, le Doyen de l'île... qui est son grand-père ! De plus, il choisit le starter désavantagé par rapport au nôtre, un standard que ce jeu a d'ailleurs établi pour tous les futurs rivaux de la série.
+Prenons également Bianca : elle est gentille, un peu maladroite, voire parfois un peu bête, mais elle connaît ses limites. Elle reconnaît qu'elle n'est pas aussi forte que le joueur ou Tcheren. Malgré tout, elle s'oppose à son père pour partir en voyage, ce qui est montré plusieurs fois à l'écran. C'est notamment le cas à Méanville, où son père lui refuse la possibilité de devenir une Dresseuse Pokémon. Mais Inezia, la championne de la ville, convainc son père de la laisser voyager.
+
+Mais ce n'est pas tout : N lui dit que tout le monde ne peut pas devenir fort. Elle doit donc maintenant réfléchir au but de ce voyage pour elle. Elle trouve finalement sa réponse en décidant de devenir professeure Pokémon, rôle qu'elle obtient dans NB2 en devenant l'assistante de la professeure Keteleeria.
+
+Tili, lui, est constamment en retard par rapport au joueur. Il passe l'épreuve du Doyen après nous : on sait qu'il a gagné, mais ce n'est pas montré. Je pense pourtant que cela aurait pu être intéressant de le montrer, au moins cette fois-ci, car il affronte quand même Pectorius, le Doyen de l'île… qui est aussi son grand-père !
+
+De plus, il choisit le starter désavantagé par rapport au nôtre, un standard que ce jeu a d'ailleurs établi pour tous les futurs rivaux de la série. Il se cache deux fois derrière Lilie au Foyer Æther, où il dit : « j'en reviens toujours... j'suis censé être dresseur, j'ai tous ces Pokémon pour m'aider et pourtant... C'est Lilie qui m'a protégé, alors qu'elle ne sait même pas se servir d'une Poké Ball ». On se demande alors QUI est le Dresseur des deux. Puis, quand Elsa-Mina part avec Guzma dans une Ultra-Brèche, il se cache de nouveau derrière Lilie. Alors qu'avant de partir à la Fondation Æther il dit : « je m'en veux, si seulement j'étais plus fort... Si j'étais à la hauteur du potentiel de mon Matoufeu, Lilie serait encore avec nous. Alors j'ai décidé de me donner à fond ! ». Bref, même le jeu ne lui donne pas l'heure.
 
 ---
 
@@ -194,25 +200,27 @@ Mais je le précise ici, cette tendance aux routes et au lvl design simplifiés 
 
 Les Poké Montures sont une mécanique qui, techniquement, existe depuis XY, mais dans celui-ci, c'était pour traverser la Route 9 de XY. Cependant, c'était uniquement pour cette zone, en plus d'être lent et d'avoir des Pokémon sauvages qui ralentissaient encore plus. Ou bien, dans certaines zones spécifiques, on pouvait monter un Chevroum, mais c'était en zone fermée.
 
-Dans la 7G, ça revient, mais cette fois, on peut les utiliser librement. Cette fonctionnalité sert principalement à remplacer les Capsules Secrètes, qui étaient pénibles et contraignantes, car forcer les joueurs à remplacer une attaque pour progresser est une mauvaise chose. Mais, de plus, elle n'est pas enlevable tant qu'on n'a pas accès à l'Effaceur de Capacités, alors que c'est notre Pokémon. Cela rallonge l'exploration pour rien, surtout en 4G avec son moteur lent.
+Dans la 7G, ça revient, mais cette fois, on peut les utiliser librement. Cette fonctionnalité sert principalement à remplacer les Capsules Secrètes, qui étaient pénibles et contraignantes, car forcer les joueurs à remplacer une attaque pour progresser est une mauvaise chose.
 
-Mais, pour être précis, dans NB1, AUCUNE CS, sauf une, n’est obligatoire pour la progression. C’est Coupe, au tout début, qui sert justement de tutoriel, mais dans NB2, malheureusement, Force (à la Route Victoire) et Surf (au Chenal 21) sont obligatoires. Techniquement, ils n’ont pas effacé le problème, mais l’ont plutôt soit déplacé pour de l’optionnel pour NB1 et dans le 2 un retour en arrière. Dans XY, d’ailleurs, globalement, dans tout le jeu, ce n’est pas obligatoire, SAUF dans la Cave Connecterre où il faut Force, surf sur la Route 12, mais surtout sur la Route Victoire, où il faut obligatoirement Surf. Et personnellement, j’ai un problème avec ça, même si, heureusement, Surf est une bonne capacité. MAIS le problème revient ET en plus à la fin du jeu, juste avant la Ligue, exactement comme dans NB2 avec Force.
+Mais, pour être précis, dans NB1, AUCUNE CS, sauf une, n’est obligatoire pour la progression. C’est Coupe, au tout début, qui sert justement de tutoriel, mais dans NB2, malheureusement, Force (à la Route Victoire) et Surf (au Chenal 21) sont obligatoires. 
+
+Dans XY, d’ailleurs, globalement, dans tout le jeu, ce n’est pas obligatoire, SAUF dans la Cave Connecterre où il faut Force, Surf sur la Route 12, mais surtout sur la Route Victoire, où il faut obligatoirement Surf. Et personnellement, j’ai un problème avec ça, même si, heureusement, Surf est une bonne capacité. MAIS le problème revient ET en plus à la fin du jeu, juste avant la Ligue, exactement comme dans NB2 avec Force.
 
 Dans la 7G, les CS n'existent tout simplement plus au profit des Poké Montures, avec :
 
-Tauros : qui sert à aller plus vite et à casser des rochers.
+**Tauros : qui sert à aller plus vite et à casser des rochers.**
 
-Mastouffe : qui, pareil, va plus vite que la course, mais moins vite que Tauros, et sert de remplacement du Cherch'Objet.
+**Mastouffe : qui, pareil, va plus vite que la course, mais moins vite que Tauros, et sert de remplacement du Cherch'Objet.**
 
-Lokhlass : remplace Surf.
+**Lokhlass : remplace Surf.**
 
-Bourrinos : une sorte de remplacement du Rhinocorne de la Route 9 de XY, qui permet de marcher et de courir, cette fois, sur des zones rocailleuses.
+**Bourrinos : une sorte de remplacement du Rhinocorne de la Route 9 de XY, qui permet de marcher et de courir, cette fois, sur des zones rocailleuses.**
 
-Sharpedo : permet de naviguer plus vite, de sauter et de briser des rochers dans l'eau.
+**Sharpedo : permet de naviguer plus vite, de sauter et de briser des rochers dans l'eau.**
 
-Mackogneur : remplace Force.
+**Mackogneur : remplace Force.**
 
-Dracaufeu : remplace Vol.
+**Dracaufeu : remplace Vol.**
 
 Pour les utiliser, il faut appuyer sur Y et une interface s'ouvre avec la liste des montures, mais aussi la possibilité de les mettre en raccourci avec la croix directionnelle directement. Pour sortir de sa monture, soit il faut rouvrir l'interface et appuyer sur la monture actuelle, soit appuyer sur le raccourci. Ce qui est très bien.
 
@@ -260,8 +268,8 @@ Pour mesurer la difficulté et la finition entre la 6G et la 7G dès le premier 
 
 
 1. **L'exploitation de la mécanique phare :** Là où Violette n'utilise absolument pas la Méga-Évolution (qui arrive de toute façon beaucoup trop tard dans *X/Y*), Pectorius utilise la **Capacité Z** via la Combazélite sur son Crabagarre. Le joueur apprend tout de suite à respecter cette mécanique.
-2. **Un petit palier de difficulté :** Pectorius aligne 3 Pokémon avec des niveaux plus élevés (15-16), des talents stratégiques (Isograisse pour réduire les dégâts Feu/Glace, Poing de Fer pour booster Poing Boost) et de meilleures options de soin. Pour qu'il y ait 3 Pokémon dans l'équipe des champions, il faut attendre Cornélia, la 3e arène.
-3. **Un combat un peu plus mémorable :** On sent que Game Freak a mieux pensé l'intégration des Capacités Z dans le scénario principal pour offrir un meilleur challenge de fin d'île, là où la première arène de Kalos s'expédie en deux minutes sans exploiter la nouveauté de sa génération.
+2. **Un petit palier de difficulté :** Pectorius aligne 3 Pokémon avec des niveaux plus élevés (15-16), des talents (Isograisse pour réduire les dégâts de type Feu et Glace, Poing de Fer pour augmenter la puissance de Poing Boost) et de meilleures options de soin. Il faut attendre Cornélia, la 3e championne, pour qu'un champion aligne 3 Pokémon dans son équipe. Cependant, les champions rattrapent ensuite leur retard en matière de niveaux et d'attaques.
+3. **Un combat un peu plus mémorable :** On sent que Game Freak a mieux pensé l'intégration des Capacités Z dans le scénario principal pour offrir un meilleur challenge, là où la première arène de Kalos s'expédie en deux minutes sans exploiter la nouveauté de sa génération.
 
 ---
 
@@ -396,6 +404,9 @@ Je n'ai pas de problème avec le niveau 2, donner 20% d'exp en plus c'est bien, 
 
 [[screenshot: img/poke-loisir.png]]
 
+> **Mon avis :**  
+> Too much sur 10
+
 ### <span style="color: #34d399;">🏝️ La Poké Loisir</span>
 
 
@@ -427,7 +438,7 @@ Et c'est ici qu'on peut obtenir des Poké Fèves avec le 1er îlot :
 
 **L'Îlot Relax** : cet îlot abrite l'arbre à Poké Fèves qui laisse tomber des fèves quand on le touche, la vitesse à laquelle il produit des Poké Fèves dépend du niveau de l'îlot et du nombre de Pokémon dans la Boîte PC. Le maximum de Poké Fèves qu'il est possible de récolter en une seule fois est de 256.
 
-Mais elle attire aussi des Pokémon sauvages, des Pokémon qui ont plus de chances d'apparaître grâce aux fèves qu'on met dans la caisse dispo dans chaque îlot, chacune avec ses propres effets.
+Mais il attire aussi des Pokémon sauvages, des Pokémon qui ont plus de chances d'apparaître grâce aux fèves qu'on met dans la caisse dispo dans chaque îlot, chacune avec ses propres effets.
 
 
 **L'Îlot Poupousse**
@@ -538,7 +549,7 @@ USUL : L'obligation de farmer une monnaie virtuelle fermée (les Festipièces) v
 
 N2B2 : Même sans connexion Internet, la Galerie se remplissait de PNJ générés par le jeu chaque jour. On pouvait la monter au niveau maximum en pur solo sans problème.
 
-USUL : Sans connexion en ligne active ou StreetPass, faire monter le niveau de sa Place Festival en solo devenait atrocement long.
+USUL : Sans connexion en ligne active ou StreetPass, faire monter le niveau de sa Place Festival en solo deviens atrocement long.
 
 **L'Agence de Combat (Le mode stratégique Solo) :**
 
@@ -546,11 +557,14 @@ USUL : La Place intègre l'Agence de Combat, qui permet de louer des Pokémon su
 
 **Les Missions Générales & Événements Mondiaux :**
 
-USUL : La Place Festival organisait des mini-jeux collectifs en temps réel (ex: "attraper le plus de Pokémon en 3 minutes") ainsi que des "Missions Mondiales" à l'échelle de la planète organisées par Game Freak (ex: "capturer 100 millions de Pokémon collectivement"). Cela apportait une dimension communautaire très sympa à l'époque de la sortie du jeu.
+USUL : La Place Festival organisait des mini-jeux collectifs en temps réel (ex: "attraper le plus de Pokémon en 3 minutes") ainsi que des "Missions Mondiales" à l'échelle de la planète organisées par Game Freak (ex: "capturer 100 millions de Pokémon collectivement"). Cela apportait une dimension communautaire très sympa à l'époque de la sortie du jeu, mais ça n'existe plus aujourd'hui, donc elle perd un aspect positif.
 
 **Les Ateliers de Teinture (Unicité visuelle) :**
 
 USUL : La possibilité de teindre ses vêtements avec les baies de son sac directement sur la Place ajoutait une touche de personnalisation.
+
+> **Mon avis :**  
+> Perso, j'ai pas envie de m'investir dessus : c'est pas nul, mais c'est pas du tout incroyable non plus, et la Place perd en valeur depuis la fermeture des serveurs. Bref, c'est passable au mieux.
 
 ---
 
@@ -576,7 +590,10 @@ C’est avant tout l’arc de Lilie qui est touché : dans USUL, le développeme
 
 Pour une fois, le but dans SL n’était pas de vaincre un Pokémon légendaire invoqué ou non par des fous, mais de libérer une mère complètement aveuglée par des Ultra-Chimères au point d’en devenir une et d’oublier l’objectif de base : retrouver son mari. De reconstruire une famille complètement cassée.
 
-Dans USUL, on retombe dans le même schéma que d’habitude : "vaincre un gros légendaire" meme si Le combat contre Necrozma a une justification, il est lié à la lumière d'Alola et au monde de l'Ultra-Mégalopole. Ce n'est pas simplement un Pokémon puissant qu'on doit battre parce qu'il est méchant mais ca affaibli l'intrigue de Lilie, Elsa-Mina. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
+Dans USUL, on retombe dans le même schéma que d’habitude : « vaincre un gros légendaire », même si le combat contre Necrozma a une justification : il est lié à la lumière d'Alola et au monde de l'Ultra-Mégalopole. Ce n'est pas simplement un Pokémon puissant qu'on doit battre parce qu'il est méchant, mais ça affaiblit l'intrigue de Lilie et d'Elsa-Mina. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
+
+> **Mon avis :**  
+> Alors en soi, l'intrigue, comme je le dis avec Necrozma, est pas moyenne et encore moins mauvaise, même s'ils auraient pu aller plus loin, par exemple dans l'Ultra-Mégalopole, les Ultra-Dimensions qui sont juste des zones où une UC attend patiemment le joueur, mais c'est nettement mieux que Xerneas/Yveltal, Kyogre/Groudon, même celle de Dialga et Palkia, qui est gâchée par l'écriture d'Hélio, ou encore Zacian/Zamazenta et Éthernatos, aussi gâchés par Shehroz, mais c'est dommage que ça affaiblisse autant celle de Lilie et d'Elsa-Mina.
 
 #### Surf Démanta
 
@@ -595,6 +612,9 @@ Le joueur doit prendre de la vitesse en montant au sommet de la vague avant d'en
 | **Vol Stalgamin** | Bas,<br>Haut,<br>Bas,<br>Haut | Devenir n°1 à la Plage d'Ula-Ula (Ula-Ula). | Démanta plane dans les airs en prenant la pose de Stalgamin. C'est une excellente figure de transition. |
 | **Léviatorpille** | Haut,<br>Gauche,<br>Bas,<br>Droite | Battre les records des 4 plages d'Alola et parler à Rahoule. | La figure ultime. Elle donne un bonus de points massif, mais attention : si elle est enchaînée plusieurs fois de suite pendant le même saut, elle perd une grande partie de sa valeur. |
 | **Vol d'Écremeuh** | Haut,<br>Haut,<br>Bas,<br>Bas | Disponible dès le départ (uniquement en cas d'échec). | Il s'agit de la "figure de secours" en cas de combinaison ratée ou si la vitesse est insuffisante pour faire autre chose. Elle rapporte très peu de points. |
+
+> **Mon avis :**  
+> J'aime bien ce mini-jeu, il est plutôt fun, pas de RNG ou quoi, que du skill, donc c'est pas mal. C'est une alternative si l'Arbre de Combat ou le Dôme Royal ne vous plaisent pas.
 
 
 #### L'Ultra-Exploration
@@ -624,6 +644,9 @@ Il faut savoir que plus la distance parcourue (en années-lumière) dans l'Ultra
 
 Le taux peut ainsi grimper jusqu'à **36%** de chances de tomber sur un Pokémon Chromatique.
 
+> **Mon avis :**  
+> Peut-être l'un des meilleurs ajouts du jeu : on n'a pas l'habitude de ce genre de zone dans Pokémon. Il existe bien le Monde Distorsion, mais on y va 1 fois et c'est tout. Pouvoir attraper des Pokémon légendaires et des UC de cette manière, c'est plus fun que devoir juste aller dans une grotte puis c'est tout : au moins là, il faut un minimum les mériter. Bref, j'aime bien.
+
 ---
 
 ## 🎨 PARTIE 6 : Direction Artistique et Graphismes
@@ -652,7 +675,7 @@ Sur la console d'origine, le jeu souffre de **ralentissements massifs et de chut
 > **Le rendu sur Émulateur (Azahar) :**  
 > L'utilisation de l'émulateur permet de corriger artificiellement une partie de ces lacunes d'époque. En configurant le jeu en **6x native (2400x1440)** avec l'API **Vulkan**, l'image gagne en netteté. De plus, le fait de retirer les *Shaders* d'origine (les contours noirs épais autour des personnages) permet d'épurer l'image, mettant en valeur la modélisation de Creatures Inc., même si le flou de certaines textures d'époque reste visible.
 > 
-> Cependant, **même sur émulateur, des pertes de FPS surviennent encore lors de certains combats**. Le code d'origine de GAME FREAK est si mal géré que même la puissance brute d'un PC moderne ne suffit pas toujours à lisser complètement les chutes de framerate. Sur ma 2DS, je me souviens pertinemment bien que ça laguait aussi.
+> Cependant, **même sur émulateur, des pertes de FPS surviennent encore lors de certains combats.** Ces problèmes, perceptibles dans de très rares cas dès la 6G, se sont aggravés en 7G, puis davantage encore en 8G et en 9G, témoignant de sérieuses lacunes techniques.
 
 
 
@@ -665,6 +688,9 @@ Première découverte personnelle : pas besoin d'appuyer sur B pour fermer une i
 Le jeu ajoute aussi un système de favoris dans le sac pour regrouper les objets les plus utilisés, un raccourci de sauvegarde rapide, ainsi qu'un raccourci pour lancer directement une Poké Ball en combat sans passer par le menu complet du sac. Rien de révolutionnaire, mais ça évite quelques allers-retours inutiles dans les menus.
 
 Enfin, une poche dédiée aux Cristaux Z fait son apparition dans le sac dès la 7G, une nouveauté que ne proposaient ni X/Y ni Rubis Oméga/Saphir Alpha pour les Méga-Gemmes, ces dernières restant mélangées avec les autres objets à tenir.
+
+> **Mon avis :**  
+> Des améliorations bienvenues qui rendent le jeu un peu plus agréable, avec un style très beau, coloré et chaleureux.
 
 ### <span style="color: #e879f9;">🎵 Les musiques</span>
 
