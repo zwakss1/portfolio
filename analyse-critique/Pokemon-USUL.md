@@ -59,7 +59,7 @@ Noir et Blanc avait tenté l'inverse : exclure la quasi-totalité des anciens Po
  
 Le problème ne vient donc pas d'un manque de confiance dans ses propres ajouts : dans sa boucle de gameplay centrale (épreuves, Capacités Z, Dominants), USUL met systématiquement en avant ses créatures inédites ou ses formes régionales. Mais dès qu'on s'éloigne de ce cœur de jeu, la nostalgie revient au galop : le combat post-game contre Red et Blue, l'épisode Rainbow Rocket réunissant les boss du passé, et les innombrables clins d'œil à Kanto essaimés dans les dialogues. USUL avance ainsi avec deux visages : un gameplay principal qui assume pleinement la 7G, et un contenu périphérique, scénario compris, qui ne peut s'empêcher de regarder en arrière. 
 
-Après être sorti de la maison, le joueur est « libre ». J’expliquerai plus tard, mais le jeu est linéaire comme tous les jeux de la série ; c’est plutôt dans le fond, le contenu, que se situe le problème. Ce n’est pas quelque chose de spécialement lié au jeu, mais qu’on retrouve depuis X/Y et dans tous les jeux principaux (sauf Légendes) jusqu’à la 9G, et dans le cas de la 9G, j’y reviendrai plus tard dans une critique à part.
+Après être sorti de la maison, le joueur est « libre ». J'expliquerai plus tard, mais le jeu est linéaire comme tous les jeux de la série ; c'est dans le fond ET la forme que se situe le problème. Ce n'est pas quelque chose de spécialement lié au jeu, mais qu'on retrouve depuis X/Y et dans tous les jeux principaux (sauf Légendes) jusqu'à la 9G, et dans le cas de la 9G, j'y reviendrai plus tard dans une critique à part.
 
 En suivant la route, le joueur est confronté à un Pokémon qui l'attaque, mais les trois starters viennent le sauver. Ensuite, le professeur Euphorbe arrive, se présente, lui explique deux-trois trucs classiques, puis le joueur peut choisir son starter.
 
@@ -95,7 +95,7 @@ De plus, il choisit le starter désavantagé par rapport au nôtre, un standard 
 
 Un peu plus loin, on arrive au village Lili'i avec Tili et Euphorbe. Ce dernier nous explique que les habitants vénèrent des gardiens, chaque île en comportant un : 
 
-- Île de Melemele : Tokorico
+- Île de Mele-Mele : Tokorico
 - Île d'Akala : Tokopiyon
 - Île d'Ula-Ula : Tokotoro
 - Île de Poni : Tokopisco
@@ -140,7 +140,7 @@ Ce Pokédex prend place sur l'écran du bas de la 3DS et apporte diverses foncti
 > - **Le mode « Changement » (Switch) :** après avoir vaincu un Pokémon, le jeu propose de changer de Pokémon en révélant à l'avance celui de l'adversaire.
 > 
 > La mécanique d'affection / amitié (depuis X/Y) pousse le bouchon encore plus loin :
-> - Ton Pokémon esquive un coup critique.
+> - Le Pokémon esquive des attaques.
 > - Il guérit seul de ses altérations d'état (paralysie, sommeil).
 > - Il survit à 1 PV alors qu'il aurait dû être K.O.
 > - L'adversaire n'a **jamais** accès à ces bonus.
@@ -166,7 +166,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 
 ### <span style="color: #ff9640;">Le bridage du level design</span>
 
-> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont, pour la majorité des cas, que de simples lignes droites, avec exception. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
+> Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont, pour la majorité des cas, que de simples lignes droites, avec quelques exceptions. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
 
 | Critère | Noir / Blanc 1 & 2 (Unys) | Ultra-Soleil / Ultra-Lune (Alola) |
 | :--- | :--- | :--- |
@@ -178,7 +178,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 
 **Mais j'ai aussi un autre exemple encore plus parlant : la Route 6 de NB2 et la Route 11 d'USUL.**
 
-Dont les niveaux des dresseurs et des Pokémon sauvages sont à peu près équivalents.
+Les niveaux des dresseurs et des Pokémon sauvages y sont à peu près équivalents.
 
 Sur la Route 6, il y a 8 dresseurs au total, dont 5 qui possèdent 2 Pokémon. Les autres sont des dresseurs thématiques, par exemple un Scientifique avec deux Vivaldaim — un Pokémon qui change d'apparence selon la saison. Cette mécanique est d'ailleurs mise en valeur par la météo et la présence de deux dresseuses avec un Morphéo, ce qui est logique puisqu'on trouve sur la même route le Bureau des Saisons (qui nous offre justement un Vivaldaim), ainsi qu'une Éleveuse qu'il est possible de réaffronter.
 
@@ -189,10 +189,10 @@ Ce n'est pas tout : il y a aussi des herbes sombres où l'on peut rencontrer les
 Dans USUL, en revanche, la route ressemble un peu trop à mon goût à la Route 1. On n'y dénombre que 4 combats (dont un combat Duo, ce qui va encore faire ramer le jeu) : les 3 autres dresseurs n'ont qu'un seul Pokémon chacun, et rien d'autre. Cette route sert simplement de transition vers la Route 12.
 
 Ensuite, côté objets, la récolte est bien différente :
-* **Dans NB2 :** Élixir, Petit Champi, Pierre Lune, Hyper Ball, Pierre Éclat, Baie Pêcha, Protéine, CS03 (Surf), Écaillecœur, PP Plus, Gros Champi et la CT56 (Dégommage).
-* **Dans USUL :** Gros Champi x2, Petit Champi, Rapide Ball, CT74 (Gyroballe), CT66 (Représailles — uniquement dans USUL), 1 Cellule de Zygarde, sans oublier l'argent récupérable via Mastouffe avec 1 Morceau d'Étoile, 2 Poussières Étoiles.
+* **Dans NB2 :** Élixir, Petit Champi, Pierre Lune, Hyper Ball, Pierre Éclat, Baie Pêcha, Protéine, CS03 (Surf), Écaille Cœur, PP Plus, Gros Champi et la CT56 (Dégommage).
+* **Dans USUL :** Gros Champi x2, Petit Champi, Rapide Ball, CT74 (Gyroballe), CT66 (Représailles — uniquement dans USUL), 1 Cellule de Zygarde, sans oublier l'argent récupérable via Mastouffe avec 1 Morceau d'Étoile, 2 Poussières Étoile.
 
-Dans USUL, sur cette route, il y a 60% des items destinés à la vente et 40% d'utiles, contre 83% des items utiles contre 17% d'argent. Dont 1 item non présent dans SL.
+Dans USUL, sur cette route, il y a 60 % des items destinés à la vente et 40 % d'utiles, contre 83 % des items utiles et 17 % d'argent. Dont 1 item non présent dans SL.
 
 Mais je le précise ici, cette tendance aux routes et au lvl design simplifiés a commencé à partir de XY, sauf que dans la 7G elle se ressent et se voit encore plus.
 
@@ -202,9 +202,9 @@ Les Poké Montures sont une mécanique qui, techniquement, existe depuis XY, mai
 
 Dans la 7G, ça revient, mais cette fois, on peut les utiliser librement. Cette fonctionnalité sert principalement à remplacer les Capsules Secrètes, qui étaient pénibles et contraignantes, car forcer les joueurs à remplacer une attaque pour progresser est une mauvaise chose.
 
-Mais, pour être précis, dans NB1, AUCUNE CS, sauf une, n’est obligatoire pour la progression. C’est Coupe, au tout début, qui sert justement de tutoriel, mais dans NB2, malheureusement, Force (à la Route Victoire) et Surf (au Chenal 21) sont obligatoires. 
+Mais, pour être précis, dans NB1, AUCUNE CS, sauf une, n'est obligatoire pour la progression. C'est Coupe, au tout début, qui sert justement de tutoriel, mais dans NB2, malheureusement, Force (à la Route Victoire) et Surf (au Chenal 21) sont obligatoires. 
 
-Dans XY, d’ailleurs, globalement, dans tout le jeu, ce n’est pas obligatoire, SAUF dans la Cave Connecterre où il faut Force, Surf sur la Route 12, mais surtout sur la Route Victoire, où il faut obligatoirement Surf. Et personnellement, j’ai un problème avec ça, même si, heureusement, Surf est une bonne capacité. MAIS le problème revient ET en plus à la fin du jeu, juste avant la Ligue, exactement comme dans NB2 avec Force.
+Dans XY, d'ailleurs, globalement, dans tout le jeu, ce n'est pas obligatoire, SAUF dans la Cave Connecterre où il faut Force, Surf sur la Route 12, mais surtout sur la Route Victoire, où il faut obligatoirement Surf. Et personnellement, j'ai un problème avec ça, même si, heureusement, Surf est une bonne capacité. MAIS le problème revient ET en plus à la fin du jeu, juste avant la Ligue, exactement comme dans NB2 avec Force.
 
 Dans la 7G, les CS n'existent tout simplement plus au profit des Poké Montures, avec :
 
@@ -224,9 +224,9 @@ Dans la 7G, les CS n'existent tout simplement plus au profit des Poké Montures,
 
 Pour les utiliser, il faut appuyer sur Y et une interface s'ouvre avec la liste des montures, mais aussi la possibilité de les mettre en raccourci avec la croix directionnelle directement. Pour sortir de sa monture, soit il faut rouvrir l'interface et appuyer sur la monture actuelle, soit appuyer sur le raccourci. Ce qui est très bien.
 
-Malgré tout, j’ai quelques petits reproches, comme Bourrinos, qui sert dans trop peu de zones. Ensuite, Lokhlass sert à pêcher et Sharpedo à aller plus vite et à casser des trucs. Cela me paraît être en conflit : avec Sharpedo, on ne peut pas pêcher, mais avec Lokhlass, si. Mais c’est laborieux, car Lokhlass est lent pour éviter de faire fuir les zones de pêche avec l’eau qui bouge, et ne peut pas casser des rochers. Et justement, ces rochers n’apparaissent pas suffisamment à mon goût pour justifier de faire deux Poké Montures séparées.
+Malgré tout, j'ai quelques petits reproches, comme Bourrinos, qui sert dans trop peu de zones. Ensuite, Lokhlass sert à pêcher et Sharpedo à aller plus vite et à casser des trucs. Cela me paraît être en conflit : avec Sharpedo, on ne peut pas pêcher, mais avec Lokhlass, si. Mais c'est laborieux, car Lokhlass est lent pour éviter de faire fuir les zones de pêche avec l'eau qui bouge, et ne peut pas casser des rochers. Et justement, ces rochers n'apparaissent pas suffisamment à mon goût pour justifier de faire deux Poké Montures séparées.
 
-On pourrait aller plus loin dans la réflexion : l’Effaceur de capacités existe toujours alors que les CS n’existent plus. Avant, il fallait aller le voir pour effacer une CS, mais ce PNJ ne sert plus à grand-chose, et en fait, là où je veux en venir, c’était la synergie imbuvable entre CS pas effaçable, aller voir l’Effaceur de capacités, puis aller voir le Maître des capacités pour réapprendre une capacité. Ce qui est un détail, sur l’existence encore de ce PNJ dans la 7G. Et en 8G, l’un de ces rares points positifs, c’est que c’est maintenant gratuit pour réapprendre une attaque, plus besoin d’Écailles Cœur. Et ils ont encore amélioré ça avec Legends Arceus, où maintenant il n’y a plus de Maître des capacités : les changements se font directement depuis le menu du Pokémon, ce qui est, selon moi, normal vu que c’est NOTRE Pokémon.
+On pourrait aller plus loin dans la réflexion : l'Effaceur de capacités existe toujours alors que les CS n'existent plus. Avant, il fallait aller le voir pour effacer une CS, mais ce PNJ ne sert plus à grand-chose, et en fait, là où je veux en venir, c'était la synergie imbuvable entre CS pas effaçable, aller voir l'Effaceur de capacités, puis aller voir le Maître des capacités pour réapprendre une capacité. Ce qui est un détail, sur l'existence encore de ce PNJ dans la 7G. Et en 8G, l'un de ces rares points positifs, c'est que c'est maintenant gratuit pour réapprendre une attaque, plus besoin d'Écailles Cœur. Et ils ont encore amélioré ça avec Legends Arceus, où maintenant il n'y a plus de Maître des capacités : les changements se font directement depuis le menu du Pokémon, ce qui est, selon moi, normal vu que c'est NOTRE Pokémon.
 
 Mais dans tous les cas, personnellement, je prends totalement ce changement de la suppression des CS contre les Poké Montures.
 
@@ -239,7 +239,7 @@ Ensuite, en ce qui concerne l'utilisation dans le level design, c'est comme dans
 
 ### <span style="color: #2dd4bf;">💎 Les capacités Z</span>
 
-Les capacités Z sont la mécanique de la 7ème génération. Si le dresseur possède un bracelet Z ou un super bracelet Z et que le Pokémon connaît une capacité du même type que le cristal, alors il peut lancer une capacité puissante. Et USUL en amène de nouvelles pour Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala et Ultra-Necrozma.
+Les capacités Z sont la mécanique de la 7e génération. Si le dresseur possède un bracelet Z ou un super bracelet Z et que le Pokémon connaît une capacité du même type que le cristal, alors il peut lancer une capacité puissante. Et USUL en amène de nouvelles pour Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala et Ultra-Necrozma.
 
 Sur le papier ça a l'air plutôt sympa, mais il y a plusieurs aspects qui le sont moins, à commencer par les animations. Pour les capacités qui ne sont pas customs au Pokémon, par exemple *Combo Hyper-Furie*, l'animation de l'attaque en elle-même est plutôt cool, mais l'animation du Pokémon rend le truc ridicule. Des fois ça passe bien car l'animation du Pokémon, par un heureux hasard, est correcte, mais pour la plupart des Pokémon elle ne matche pas bien ensemble.
 
@@ -282,18 +282,19 @@ Le changement de nom masque assez peu la mécanique : même la communication aut
 Personnellement, voici ce que je pense des épreuves, individuellement :
 
 > - **Épreuve n° 1 - type Normal :** C'est OK pour une première épreuve, avec 5 combats dont un face à un sbire de la Team Skull.
-> - **Épreuve n° 2 - type Eau :** OK aussi. C'est sympa le moment où le Dominant saute dessus, en plus d'être pas facile avec le talent Aquabulle de Tarenbulle, qui réduit de 50 % la puissance des capacités de type Feu lancées contre ce Pokémon. Il est aussi immunisé contre les brûlures et voit la puissance de ses propres capacités Eau doubler.
-> - **Épreuve n° 3 - type Feu :** Marrant, mais sans fond, le but est de regarder des Ossatueur d'Alola danser et répondre à un QCM pour savoir qu'est-ce qui a changé, ce qui n'est pas dur.
-> - **Épreuve n° 4 - type Plante :** Peut-être la plus intéressante. Il faut préparer un ragoût pour attirer le Pokémon Dominant, et pour cela, il faut parcourir la Jungle Sombrefeuille à la recherche d'ingrédients pour affronter un Floramantis avec un bonus de +2 en Vitesse. Il possède l'objet Herbe Pouvoir afin de lancer Lame Solaire en 1 tour. Il a aussi Synthèse pour se soigner (en temps normal, cela rend la moitié des PV, mais avec le soleil, cela restaure 2/3 des PV max). Pour cela, il compte soit sur Kecleon, soit sur Guérilande pour utiliser Zénith. Guérilande étant un Pokémon de soutien avec Soin Floral, Zénith et Garde Florale, son talent Flora-Voile permet à ses alliés de type Plante d'être immunisés contre les baisses de statistiques causées par l'adversaire ainsi que contre les problèmes de statut majeurs.
+> - **Épreuve n° 2 - type Eau :** OK aussi. C'est sympa le moment où le Dominant saute dessus, en plus de ne pas être facile avec le talent Aquabulle de Tarenbulle, qui réduit de 50 % la puissance des capacités de type Feu lancées contre ce Pokémon. Il est aussi immunisé contre les brûlures et voit la puissance de ses propres capacités Eau doubler.
+> - **Épreuve n° 3 - type Feu :** Marrant, mais sans fond, le but est de regarder des Ossatueur d'Alola danser et répondre à un QCM pour savoir ce qui a changé, ce qui n'est pas dur.
+> - **Épreuve n° 4 - type Plante :** Il faut préparer un ragoût pour attirer le Pokémon Dominant, et pour cela, il faut parcourir la Jungle Sombrefeuille à la recherche d'ingrédients pour affronter un Floramantis avec un bonus de +2 en Vitesse. Il possède l'objet Herbe Pouvoir afin de lancer Lame Solaire en 1 tour. Il a aussi Synthèse pour se soigner (en temps normal, cela rend la moitié des PV, mais avec le soleil, cela restaure 2/3 des PV max). Pour cela, il compte soit sur Kecleon, soit sur Guérilande pour utiliser Zénith. Guérilande étant un Pokémon de soutien avec Soin Floral, Zénith et Garde Florale, son talent Flora-Voile permet à ses alliés de type Plante d'être immunisés contre les baisses de statistiques causées par l'adversaire ainsi que contre les problèmes de statut majeurs.
+> C'est une bonne épreuve : le combat n'est pas forcément évident à ce stade du jeu et selon les Pokémon dans l'équipe. Dommage que la partie avant le combat soit trop guidée, avec la caméra qui nous montre tout le temps où aller : ça aurait été mieux de laisser le joueur explorer la forêt comme il lui semble.
 > - **Épreuve n° 5 - type Électrik :** OK, mais sans plus, le but c'est de faire la lettre Z avec des Chrysapile et entre chaque alignement un combat. 
-> - **Épreuve n° 6 - type Spectre :** Plutôt cool, j'aime bien l'ambiance des lieux avec le Mimiqui derrière nous, en plus de mettre en avant un de mes Pokémon préférés.
+> - **Épreuve n° 6 - type Spectre :** Plutôt cool, j'aime bien l'ambiance des lieux avec le Mimiqui derrière nous, en plus de mettre en avant un de mes Pokémon préférés. Avec un combat correct grâce au talent Fantômasque et le 1er Dominant est boosté à +1 dans toutes ses stats.
 
 [[screenshot: img/fée.png]]
 
-> - **Épreuve n° 7 - type Dragon :** L'Ékaïser Dominant possède la Baie Seiro et peut appeler un Cizayox avec Pisto-Poing et le talent Technicien pour les Pokémon Fée avec en plus Mur Lumière, car les Pokémon Fée sont globalement spéciaux en 2017 selon Poképédia.
-> - **Épreuve n° 8 - type Fée :** Pour cette épreuve, il faut reconstituer la fleur 7 Couleurs pour Oléa et, pour cela, il faut affronter les Capitaines des Épreuves, éparpillés partout dans Alola, qui aurait pu être pas mal si le joueur avait des soins limités et que les adversaires n'avaient pas que 3 attaques pour la plupart, sauf pour l'Escroco de Danh qui, lui, a la chance d'avoir 4 attaques, par exemple.
+> - **Épreuve n° 7 - type Dragon :** L'Ékaïser Dominant possède la Baie Seiro et peut appeler un Cizayox avec Pisto-Poing et le talent Technicien contre les Pokémon Fée avec en plus Mur Lumière, car les Pokémon Fée sont globalement spéciaux en 2017 selon Poképédia. De plus, le Dominant possède directement Toxik, qu'il va forcément utiliser face à un type Fée. Ce combat n'est pas facile : forcément, la différence de stats est plutôt importante, avec un potentiel Cizayox à côté.
+> - **Épreuve n° 8 - type Fée :** Pour cette épreuve, il faut reconstituer la fleur 7 Couleurs pour Oléa et, pour cela, il faut affronter les Capitaines des Épreuves, éparpillés partout dans Alola, ce qui aurait pu être pas mal si le joueur avait des soins limités et que les adversaires n'avaient pas que 3 attaques pour la plupart, sauf pour l'Escroco de Danh qui, lui, a la chance d'avoir 4 attaques, par exemple.
 
-Bilan : Globalement, c’est correct sans plus. Les épreuves 4 et 8 auraient pu offrir un vrai défi, mais soins illimités et adversaires à 3 capacités limitent leur intérêt. Les épreuves 3 et 6 sont surtout là pour divertir, même si le combat face au Mimiqui peut être un peu tendu, mais rien d'insurmontable, et l'épreuve 5 est un puzzle facile avec entre des combats qui rallongent la durée. Le cadre reste celui d’une arène.
+Bilan : Globalement, c'est correct sans plus. Les épreuves 4 et 8 auraient pu offrir un vrai défi, mais soins illimités et adversaires à 3 capacités limitent leur intérêt. Les épreuves 3 et 6 sont surtout là pour divertir, même si le combat face au Mimiqui peut être un peu tendu, mais rien d'insurmontable, et l'épreuve 5 est un puzzle facile avec, entre chaque alignement, des combats qui rallongent la durée. Le cadre reste celui d'une arène.
 
 ---
 
@@ -324,7 +325,7 @@ En activant le scanner, un Pokémon rare apparaît pendant **1 heure** sur l'îl
 
 [[screenshot: img/300px-Artwork_-_Poké_Scope.png]]
 
-Une fois arrivés à **Ekaeka**, la grande ville de Melemele, le jeu fait découvrir une nouvelle fonctionnalité : le **Poké Scope**.
+Une fois arrivés à **Ekaeka**, la grande ville de Mele-Mele, le jeu fait découvrir une nouvelle fonctionnalité : le **Poké Scope**.
 
 Le principe est simple : le joueur dispose de **6 essais** pour photographier les Pokémon sauvages. La photo jugée la meilleure est ensuite simulée comme étant diffusée « en ligne » pour recevoir des votes et accumuler des points.
 
@@ -357,7 +358,7 @@ En accumulant des points grâce à la qualité des clichés, le Poké Scope mont
 #### 🌴 Un style unique... mais imposé
 Si le système de customisation est repris de la 6G (*X / Y*), la direction artistique d'Alola lui impose un cadre très strict : **l'ambiance 100 % vacances et plage**. 
 * **Le problème :** Là où *X / Y* proposait une grande variété de styles (chic, dandy, rock, streetwear), USUL enferme le joueur dans un vestiaire estival (t-shirts, bermudas, débardeurs, lunettes de soleil). 
-* Si le style "touriste à Hawaï" ne plaît pas, il sera difficile de trouver son bonheur.
+* Si le style « touriste à Hawaï » ne plaît pas, il sera difficile de trouver son bonheur.
 
 #### ⚖️ Un déséquilibre persistant entre modèles masculins et féminins
 Le traitement de la garde-robe reste très inégal selon le sexe choisi :
@@ -386,7 +387,7 @@ La Poké Détente vient directement de XY (anciennement la Poké Récré), sur l
 
 Soigner ses Pokémon après le combat : Si le Pokémon termine un combat sali ou touché par un problème de statut (brûlure, poison, paralysie, etc.), une option « Soins » apparaît immédiatement sur l'écran tactile. Vous pouvez alors le brosser, le nettoyer ou le sécher pour le remettre sur pied gratuitement, sans dépenser un médicament.
 
-| accessoire  | Effet |
+| Accessoire | Effet |
 | :---: | :--- |
 | **Soins** | Permet de soigner les altérations de statut | 
 | **Peigne** | Permet de coiffer les Pokémon | 
@@ -396,11 +397,11 @@ Soigner ses Pokémon après le combat : Si le Pokémon termine un combat sali ou
 
 [[screenshot: img/affection.png]]
 
-Les Pofiteroles sont remplacées par des Poké-Fèves : Ces fèves s'obtiennent principalement via le Poké Loisir (l'Îlot Pousse-Fèves) ou dans les Centres Pokémon, ce qui évite de devoir farmer des mini-jeux.
+Les Pofiteroles sont remplacées par des Poké Fèves : ces fèves s'obtiennent principalement via le Poké Loisir (l'Îlot Pousse-Fèves) ou dans les Centres Pokémon, ce qui évite de devoir farmer des mini-jeux.
 
 Ces petites choses sont plutôt sympas, mais dans XY est introduite « Affection » (rien à voir avec le bonheur) : une jauge qui monte du niveau 0 à 5 selon le nombre de cœurs obtenus grâce aux caresses, aux fèves et au nettoyage de votre Pokémon après un combat. Voici le tableau, venant du site Pokébip :
 
-Je n'ai pas de problème avec le niveau 2, donner 20% d'exp en plus c'est bien, par contre pouvoir survivre à un KO dès le niveau suivant, y a pas un souci ? En plus, au niveau 4, le Pokémon peut esquiver plus facilement les attaques et peut guérir des problèmes de statut, ensuite le niveau 5, c'est pouvoir faire + de coups critiques, le Pokémon a accès à une ceinture force passive trop facilement en plus des autres qui sont carrément trop.
+Je n'ai pas de problème avec le niveau 2, donner 20 % d'exp en plus c'est bien, par contre pouvoir survivre à un K.O. dès le niveau suivant, y a pas un souci ? En plus, au niveau 4, le Pokémon peut esquiver plus facilement les attaques et peut guérir des problèmes de statut, ensuite le niveau 5, c'est pouvoir faire + de coups critiques, le Pokémon a accès à une Ceinture Force passive trop facilement en plus des autres qui sont carrément trop.
 
 [[screenshot: img/poke-loisir.png]]
 
@@ -483,15 +484,15 @@ grâce à la caisse, les Pokémon font leurs sessions 2 fois plus vite.
 
 [[screenshot: img/ilot-bubulle.png]]
 
-Cet îlot permet d'augmenter le bonheur passivement, par contre il ne faut pas laisser les Pokémon plus de 24h d'affilée.
+Cet îlot permet d'augmenter le bonheur passivement, par contre il ne faut pas laisser les Pokémon plus de 24 h d'affilée.
 
-Mais surtout, cet îlot sert aussi de garderie pour les œufs 
+Mais surtout, cet îlot sert aussi de garderie pour les œufs :
 
-- Les Œufs accumulent des "pas" passivement au fil du temps sans avoir besoin d'enfourcher Tauros pour faire des allers-retours.
+- Les Œufs accumulent des « pas » passivement au fil du temps sans avoir besoin d'enfourcher Tauros pour faire des allers-retours.
 
 - Quand un Œuf est prêt à éclore, un point d'exclamation apparaît au-dessus de lui.
 
-> **Toutes les images des îlots viennent de pokebip.**
+> **Toutes les images des îlots viennent de Pokébip.**
 
 > **Mon avis sur le Poké Loisir :**  
 > Personnellement, je trouve que c'est une très bonne fonctionnalité : elle permet de valoriser les Pokémon qui dorment dans le PC, pour farmer des ressources tout en faisant autre chose.
@@ -499,13 +500,13 @@ Mais surtout, cet îlot sert aussi de garderie pour les œufs
 
 ### <span style="color: #c084fc;">🏝️ La Place Festival : La Galerie Concorde d'AliExpress</span>
 
-La Place Festival est un marché évolutif comme Noir et Blanc 2.
+La Place Festival est un marché évolutif comme dans Noir et Blanc 2.
 
 - L'Intégration dans le Monde et le Mode d'Accès
 
    - Galerie Concorde : C'est un lieu physique réel situé directement sur la carte d'Unys (la rue couverte entre la Route 4 et Méanville). Le joueur y passe naturellement à pied au cours de son aventure.
 
-   - Place Festival : C'est une dimension / zone virtuelle isolée. Pour y accéder, il faut obligatoirement passer par le menu du jeu (ou l'écran tactile), ce qui déclenche un temps de chargement et coupe le joueur de son exploration sur Alola.
+   - Place Festival : C'est une dimension / zone virtuelle isolée. Pour y accéder, il faut obligatoirement passer par le menu du jeu (ou l'écran tactile), ce qui déclenche un temps de chargement et coupe le joueur de son exploration d'Alola.
 
 - Le Rôle Multijoueur et les Fonctionnalités en Ligne
 
@@ -543,13 +544,13 @@ USUL : Le château central et les stands restent visuellement très similaires d
 
 N2B2 : Tout s'achète en Pokédollars (avec des remises par rang). Cela redonnait une vraie utilité à l'argent accumulé durant le scénario et le post-game.
 
-USUL : L'obligation de farmer une monnaie virtuelle fermée (les Festipièces) via des mini-jeux ou des dialogues répétitifs crée un sentiment de "grind" artificiel.
+USUL : L'obligation de farmer une monnaie virtuelle fermée (les Festipièces) via des mini-jeux ou des dialogues répétitifs crée un sentiment de « grind » artificiel.
 
 **Une meilleure autonomie en Solo :**
 
 N2B2 : Même sans connexion Internet, la Galerie se remplissait de PNJ générés par le jeu chaque jour. On pouvait la monter au niveau maximum en pur solo sans problème.
 
-USUL : Sans connexion en ligne active ou StreetPass, faire monter le niveau de sa Place Festival en solo deviens atrocement long.
+USUL : Sans connexion en ligne active ou StreetPass, faire monter le niveau de sa Place Festival en solo devient atrocement long.
 
 **L'Agence de Combat (Le mode stratégique Solo) :**
 
@@ -557,7 +558,7 @@ USUL : La Place intègre l'Agence de Combat, qui permet de louer des Pokémon su
 
 **Les Missions Générales & Événements Mondiaux :**
 
-USUL : La Place Festival organisait des mini-jeux collectifs en temps réel (ex: "attraper le plus de Pokémon en 3 minutes") ainsi que des "Missions Mondiales" à l'échelle de la planète organisées par Game Freak (ex: "capturer 100 millions de Pokémon collectivement"). Cela apportait une dimension communautaire très sympa à l'époque de la sortie du jeu, mais ça n'existe plus aujourd'hui, donc elle perd un aspect positif.
+USUL : La Place Festival organisait des mini-jeux collectifs en temps réel (ex : « attraper le plus de Pokémon en 3 minutes ») ainsi que des « Missions Mondiales » à l'échelle de la planète organisées par Game Freak (ex : « capturer 100 millions de Pokémon collectivement »). Cela apportait une dimension communautaire très sympa à l'époque de la sortie du jeu, mais ça n'existe plus aujourd'hui, donc elle perd un aspect positif.
 
 **Les Ateliers de Teinture (Unicité visuelle) :**
 
@@ -570,36 +571,36 @@ USUL : La possibilité de teindre ses vêtements avec les baies de son sac direc
 
 ## 📈📉 PARTIE 5 : Le Grand Changement — Comparaison SL vs USUL
 
-Les versions Ultra sont meilleures que les versions originales (un meilleur post-game, la photo, Surf Démanta...). Mais ce ne sont que des ajouts annexes, qui n’améliorent pas ce dont le jeu avait réellement besoin : le scénario, le rythme, la linéarité abusive, les épreuves, l’optimisation technique. La mise en avant de Necrozma, elle, est faite au détriment de l’histoire de Lilie et d’Elsa-Mina.
+Les versions Ultra sont meilleures que les versions originales (un meilleur post-game, la photo, Surf Démanta...). Mais ce ne sont que des ajouts annexes, qui n'améliorent pas ce dont le jeu avait réellement besoin : le scénario, le rythme, la linéarité abusive, les épreuves, l'optimisation technique. La mise en avant de Necrozma, elle, est faite au détriment de l'histoire de Lilie et d'Elsa-Mina.
 
-On découvre dans SL que, par le passé, Elsa-Mina était mariée avec... Mohn, le même personnage qui s’occupe de la Poké Loisir. Lors de ses recherches sur les Ultra-Chimères, il a disparu pendant une expérience permettant de mieux comprendre les UC. Elsa-Mina a repris les recherches de son mari afin de le retrouver. Sauf qu’à force de recherches, elle en devient complètement fanatique au point que sa propre personnalité change.
+On découvre dans SL que, par le passé, Elsa-Mina était mariée avec... Mohn, le même personnage qui s'occupe de la Poké Loisir. Lors de ses recherches sur les Ultra-Chimères, il a disparu pendant une expérience permettant de mieux comprendre les UC. Elsa-Mina a repris les recherches de son mari afin de le retrouver. Sauf qu'à force de recherches, elle en devient complètement fanatique au point que sa propre personnalité change.
 
-Son but ultime se révèle être de libérer les Ultra-Chimères dans la région d’Alola, quitte à ce que les autres disparaissent : elle dit elle-même que cela lui est égal.
+Son but ultime se révèle être de libérer les Ultra-Chimères dans la région d'Alola, quitte à ce que les autres disparaissent : elle dit elle-même que cela lui est égal.
 
-Après le combat dans la salle avec les Pokémon cryogénisés, elle part dans une Ultra-Brèche, dans l’Ultra-Dimension, le monde des Zéroïd, où elle renie sa fille, ce qui signifie que pour Elsa-Mina, sa propre fille n’est pas belle pour elle, donc elle rejette la faute au joueur, se laisse posséder par un Zéroïd et lui lance un combat.
+Après le combat dans la salle avec les Pokémon cryogénisés, elle part dans une Ultra-Brèche, dans l'Ultra-Dimension, le monde des Zéroïd, où elle renie sa fille, ce qui signifie que pour Elsa-Mina, sa propre fille n'est pas belle pour elle, donc elle rejette la faute au joueur, se laisse posséder par un Zéroïd et lui lance un combat.
 
-Après sa défaite, Lilie demande à Solgaleo ou Lunala de les aider. Solgaleo/Lunala libère Elsa-Mina en la défusionnant de force : le Zéroïd sort et rentre dans son Ultra Ball, et Elsa-Mina tombe par terre. Elle reprend conscience et retrouve la raison, puis touche la joue et les lèvres de Lilie et lui dit : « Quand est-ce que tu as commencé à être magnifique ? » Plus tard, Gladio prend le rôle de président de la fondation. Lilie part ensuite à Kanto pour soigner sa mère. Pour cela, elle va voir Léo, qui a lui aussi fusionné avec un Pokémon. (J’aime pas trop les réf. forcées pour Kanto, mais ici c’est tout à fait logique.)
+Après sa défaite, Lilie demande à Solgaleo ou Lunala de les aider. Solgaleo/Lunala libère Elsa-Mina en la défusionnant de force : le Zéroïd sort et rentre dans son Ultra Ball, et Elsa-Mina tombe par terre. Elle reprend conscience et retrouve la raison, puis touche la joue et les lèvres de Lilie et lui dit : « Quand est-ce que tu as commencé à être magnifique ? » Plus tard, Gladio prend le rôle de président de la Fondation. Lilie part ensuite à Kanto pour soigner sa mère. Pour cela, elle va voir Léo, qui a lui aussi fusionné avec un Pokémon. (J'aime pas trop les réf. forcées pour Kanto, mais ici c'est tout à fait logique.)
 
-Dans USUL, tout cela est plus ou moins balayé : Elsa-Mina devient une « héroïne » d’Alola qui veut arrêter Necrozma. Puis, à l’Autel de la Lune ou du Soleil selon le jeu, Elsa-Mina tombe d’une Ultra-Brèche avec Guzma, balayée par Necrozma.
+Dans USUL, tout cela est plus ou moins balayé : Elsa-Mina devient une « héroïne » d'Alola qui veut arrêter Necrozma. Puis, à l'Autel de la Lune ou du Soleil selon le jeu, Elsa-Mina tombe d'une Ultra-Brèche avec Guzma, balayée par Necrozma.
 
-#### L'affaiblissement de l’évolution de Lilie
+#### L'affaiblissement de l'évolution de Lilie
 
-C’est avant tout l’arc de Lilie qui est touché : dans USUL, le développement est beaucoup trop affaibli entre mère et fille. Le changement de vêtements est anecdotique, car elle dit au début du jeu que c’est sa mère qui choisit ses propres vêtements, puis, après qu’Elsa-Mina est partie pour l’Ultra-Dimension, elle change de vêtements ; la confrontation est amenuisée envers sa mère. Dans SL, Elsa-Mina dit à Lilie qu’elle est une « fille indigne », alors que dans USUL, elle lui « pardonne » sur un ton condescendant. Elle ne part plus pour Kanto soigner sa mère. Et comme Elsa-Mina renie moins sa fille, il y a moins de raison, dans l’Ultra-Dimension, d’essayer de la faire réfléchir sur ses actes. Certes, dans USUL, Elsa-Mina félicite Lilie pour l’enlèvement de Cosmog. Mais cela a beaucoup moins de poids que dans SL, où elle reconnaît à la fin du combat que Lilie est devenue belle : une vraie reconsidération, puisqu’Elsa-Mina n’aimait que ce qu’elle jugeait beau.
+C'est avant tout l'arc de Lilie qui est touché : dans USUL, le développement est beaucoup trop affaibli entre mère et fille. Le changement de vêtements est anecdotique, car elle dit au début du jeu que c'est sa mère qui choisit ses propres vêtements, puis, après qu'Elsa-Mina est partie pour l'Ultra-Dimension, elle change de vêtements ; la confrontation est amenuisée envers sa mère. Dans SL, Elsa-Mina dit à Lilie qu'elle est une « fille indigne », alors que dans USUL, elle lui « pardonne » sur un ton condescendant. Elle ne part plus pour Kanto soigner sa mère. Et comme Elsa-Mina renie moins sa fille, il y a moins de raison, dans l'Ultra-Dimension, d'essayer de la faire réfléchir sur ses actes. Certes, dans USUL, Elsa-Mina félicite Lilie pour l'enlèvement de Cosmog. Mais cela a beaucoup moins de poids que dans SL, où elle reconnaît à la fin du combat que Lilie est devenue belle : une vraie reconsidération, puisqu'Elsa-Mina n'aimait que ce qu'elle jugeait beau.
 
 #### Drame familial vs « Sauver le monde »
 
-Pour une fois, le but dans SL n’était pas de vaincre un Pokémon légendaire invoqué ou non par des fous, mais de libérer une mère complètement aveuglée par des Ultra-Chimères au point d’en devenir une et d’oublier l’objectif de base : retrouver son mari. De reconstruire une famille complètement cassée.
+Pour une fois, le but dans SL n'était pas de vaincre un Pokémon légendaire invoqué ou non par des fous, mais de libérer une mère complètement aveuglée par des Ultra-Chimères au point d'en devenir une et d'oublier l'objectif de base : retrouver son mari. De reconstruire une famille complètement cassée.
 
-Dans USUL, on retombe dans le même schéma que d’habitude : « vaincre un gros légendaire », même si le combat contre Necrozma a une justification : il est lié à la lumière d'Alola et au monde de l'Ultra-Mégalopole. Ce n'est pas simplement un Pokémon puissant qu'on doit battre parce qu'il est méchant, mais ça affaiblit l'intrigue de Lilie et d'Elsa-Mina. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
+Dans USUL, on retombe dans le même schéma que d'habitude : « vaincre un gros légendaire », même si le combat contre Necrozma a une justification : il est lié à la lumière d'Alola et au monde de l'Ultra-Mégalopole. Ce n'est pas simplement un Pokémon puissant qu'on doit battre parce qu'il est méchant, mais ça affaiblit l'intrigue de Lilie et d'Elsa-Mina. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
 
 > **Mon avis :**  
-> Alors en soi, l'intrigue, comme je le dis avec Necrozma, est pas moyenne et encore moins mauvaise, même s'ils auraient pu aller plus loin, par exemple dans l'Ultra-Mégalopole, les Ultra-Dimensions qui sont juste des zones où une UC attend patiemment le joueur, mais c'est nettement mieux que Xerneas/Yveltal, Kyogre/Groudon, même celle de Dialga et Palkia, qui est gâchée par l'écriture d'Hélio, ou encore Zacian/Zamazenta et Éthernatos, aussi gâchés par Shehroz, mais c'est dommage que ça affaiblisse autant celle de Lilie et d'Elsa-Mina.
+> Alors en soi, l'intrigue, comme je le dis avec Necrozma, n'est pas moyenne et encore moins mauvaise, même s'ils auraient pu aller plus loin, par exemple dans l'Ultra-Mégalopole, les Ultra-Dimensions qui sont juste des zones où une UC attend patiemment le joueur, mais c'est nettement mieux que Xerneas/Yveltal, Kyogre/Groudon, même celle de Dialga et Palkia, qui est gâchée par l'écriture d'Hélio, ou encore Zacian/Zamazenta et Éthernatos, aussi gâchés par Shehroz, mais c'est dommage que ça affaiblisse autant celle de Lilie et d'Elsa-Mina.
 
 #### Surf Démanta
 
 [[screenshot: img/Surf_Démanta.png]]
 
-Le surf Démanta est un mini-jeu introduit dans USUL. Le but est de faire le plus de figures possible pour augmenter son score à la fin. On gagne des Points de Coolitude en fonction de son score avec par exemple 50 PCo en réalisant un score minimum de 145 000.
+Le Surf Démanta est un mini-jeu introduit dans USUL. Le but est de faire le plus de figures possible pour augmenter son score à la fin. On gagne des Points de Coolitude en fonction de son score avec par exemple 50 PCo en réalisant un score minimum de 145 000.
 
 Le joueur doit prendre de la vitesse en montant au sommet de la vague avant d'en redescendre. Il existe plusieurs paliers de vitesse : l'un d'eux voit Démanta être entouré d'un halo jaune, le palier suivant, le dernier, entoure le Pokémon d'un halo orange. Et plus Démanta va vite, plus il peut sauter haut, la hauteur de la vague jouant aussi sur la hauteur du saut. Voici un tableau de toutes les figures :
 
@@ -607,11 +608,11 @@ Le joueur doit prendre de la vitesse en montant au sommet de la vague avant d'en
 | :--- | :--- | :--- | :--- |
 | **Vrille Serpang** | Droite,<br>Droite,<br>Droite | Disponible dès le départ. | Une vrille de base à droite. Facile à placer sur les petits sauts avec une vitesse blanche ou jaune. |
 | **Vrille Rosabyss** | Gauche,<br>Gauche,<br>Gauche | Disponible dès le départ. | Le miroir de la Vrille Serpang, exécutée vers la gauche. |
-| **Salto Lanturn** | Bas, Bas, Bas<br>/<br>Haut, Haut, Haut | Devenir n°1 à la Plage Big Wave (Melemele). | Un salto complet. Il demande un peu plus de hauteur que les vrilles de base pour être validé sans s'écraser. |
+| **Salto Lanturn** | Bas, Bas, Bas<br>/<br>Haut, Haut, Haut | Devenir n°1 à la Plage Big Wave (Mele-Mele). | Un salto complet. Il demande un peu plus de hauteur que les vrilles de base pour être validé sans s'écraser. |
 | **Vrille Oratoria** | Haut,<br>Droite,<br>Bas,<br>Gauche | Devenir n°1 à la Plage d'Ho'ohale (Akala). | Une figure complexe qui mime le style gracieux d'Oratoria. Elle prend du temps à s'exécuter mais rapporte énormément de points, surtout avec une vitesse orange. |
 | **Vol Stalgamin** | Bas,<br>Haut,<br>Bas,<br>Haut | Devenir n°1 à la Plage d'Ula-Ula (Ula-Ula). | Démanta plane dans les airs en prenant la pose de Stalgamin. C'est une excellente figure de transition. |
 | **Léviatorpille** | Haut,<br>Gauche,<br>Bas,<br>Droite | Battre les records des 4 plages d'Alola et parler à Rahoule. | La figure ultime. Elle donne un bonus de points massif, mais attention : si elle est enchaînée plusieurs fois de suite pendant le même saut, elle perd une grande partie de sa valeur. |
-| **Vol d'Écremeuh** | Haut,<br>Haut,<br>Bas,<br>Bas | Disponible dès le départ (uniquement en cas d'échec). | Il s'agit de la "figure de secours" en cas de combinaison ratée ou si la vitesse est insuffisante pour faire autre chose. Elle rapporte très peu de points. |
+| **Vol d'Écremeuh** | Haut,<br>Haut,<br>Bas,<br>Bas | Disponible dès le départ (uniquement en cas d'échec). | Il s'agit de la « figure de secours » en cas de combinaison ratée ou si la vitesse est insuffisante pour faire autre chose. Elle rapporte très peu de points. |
 
 > **Mon avis :**  
 > J'aime bien ce mini-jeu, il est plutôt fun, pas de RNG ou quoi, que du skill, donc c'est pas mal. C'est une alternative si l'Arbre de Combat ou le Dôme Royal ne vous plaisent pas.
@@ -642,7 +643,7 @@ Il faut savoir que plus la distance parcourue (en années-lumière) dans l'Ultra
 
 [[screenshot: img/chromatique.png]]
 
-Le taux peut ainsi grimper jusqu'à **36%** de chances de tomber sur un Pokémon Chromatique.
+Le taux peut ainsi grimper jusqu'à **36 %** de chances de tomber sur un Pokémon chromatique.
 
 > **Mon avis :**  
 > Peut-être l'un des meilleurs ajouts du jeu : on n'a pas l'habitude de ce genre de zone dans Pokémon. Il existe bien le Monde Distorsion, mais on y va 1 fois et c'est tout. Pouvoir attraper des Pokémon légendaires et des UC de cette manière, c'est plus fun que devoir juste aller dans une grotte puis c'est tout : au moins là, il faut un minimum les mériter. Bref, j'aime bien.
@@ -662,7 +663,7 @@ La direction artistique réussit parfaitement à retransmettre une ambiance de v
 Cependant, la mise en scène souffre d'un point noir majeur : l'absence totale d'expressions faciales chez le protagoniste. Peu importe la gravité de la situation — que le monde soit menacé par Necrozma ou qu'un personnage traverse un moment tragique, le héros affiche constamment un sourire vide et figé. C'est un défaut que l'on retrouve d'ailleurs dans la totalité des jeux principaux.
 
 
-Pour l'anecdote, bien que GAME FREAK ait promis pour les générations suivantes (notamment la 8G) un travail approfondi sur l'expressivité des visages, ce syndrome du protagoniste inexpressif est resté un problème récurrent dans la série, avec des animations hors cinématique plates et sans vie. De plus, ce syndrome impacte aussi les autres personnages. C'est peut-être un peu moins flagrant sur eux, mais en revanche, toutes les animations des personnages, secondaires ou non, restent particulièrement robotiques.
+Pour l'anecdote, bien que Game Freak ait promis pour les générations suivantes (notamment la 8G) un travail approfondi sur l'expressivité des visages, ce syndrome du protagoniste inexpressif est resté un problème récurrent dans la série, avec des animations hors cinématique plates et sans vie. De plus, ce syndrome impacte aussi les autres personnages. C'est peut-être un peu moins flagrant sur eux, mais en revanche, toutes les animations des personnages, secondaires ou non, restent particulièrement robotiques.
 
 Même aujourd'hui, pour moi, ça reste quand même le plus beau jeu Pokémon de la série principale.
 
