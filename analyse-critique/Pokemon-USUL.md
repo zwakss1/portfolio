@@ -47,7 +47,7 @@ On y voit Lilie poursuivie par deux personnes de la Fondation qui en ont après 
 
 C'est la première fois que Game Freak fait une cinématique d'intro pour *teaser* quelque chose et mettre le joueur en haleine.
 
-Ce jeu se veut innovant, sauf que ce n'est pas le cas (et je le démontrerai au fur et à mesure de cette critique), mais il ne mérite pas non plus la haine qu'il a reçue au début. Bref...
+Ce jeu se veut innovant, sauf que ce n'est pas le cas. Sa structure reste celle des jeux précédents, mais il ne mérite pas non plus la haine qu'il a reçue au début. Bref...
 
 Le jeu commence de manière classique : le joueur est dans sa chambre, doit aller parler à sa mère, qui lui demande de mettre son sac et son bob, puis laisse le joueur sortir pour découvrir les Pokémon d'Alola.
 
@@ -176,6 +176,8 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 | **Sentiment de progression** | Sensation d'ouvrir le monde et d'agrandir la carte. | Sensation d'ouvrir des petits coffres bonus. |
 | **Rythme & Guidage** | Progression autonome une fois le départ franchi. | Interruptions fréquentes par des cinématiques/tutoriels. |
 
+Dans NB 1 le jeu laisse à Maillard le choix au joueur d'aller faire la forêt d’Empoigne, la partie extérieure avant l'arène, ou encore le Désert Délassant à Volucité et d'autres. Dans USUL soit c'est très amaigri soit ça n’existe plus et ça crée des routes où c'est juste tout droit sans rien autour pour casser cette monotonie de route droite.
+
 **Mais j'ai aussi un autre exemple encore plus parlant : la Route 6 de NB2 et la Route 11 d'USUL.**
 
 Les niveaux des dresseurs et des Pokémon sauvages y sont à peu près équivalents.
@@ -194,7 +196,7 @@ Ensuite, côté objets, la récolte est bien différente :
 
 Dans USUL, sur cette route, il y a 60 % des items destinés à la vente et 40 % d'utiles, contre 83 % des items utiles et 17 % d'argent. Dont 1 item non présent dans SL.
 
-Mais je le précise ici, cette tendance aux routes et au lvl design simplifiés a commencé à partir de XY, sauf que dans la 7G elle se ressent et se voit encore plus.
+Mais je le précise ici, cette tendance aux routes et au lvl design simplifiés a commencé à partir de XY, sauf que dans la 7G elle se ressent et se voit encore plus, sans parler de EB.
 
 ### <span style="color: #ff6f00;">🐴 Les Poké Montures</span>
 
@@ -399,14 +401,14 @@ Soigner ses Pokémon après le combat : Si le Pokémon termine un combat sali ou
 
 Les Pofiteroles sont remplacées par des Poké Fèves : ces fèves s'obtiennent principalement via le Poké Loisir (l'Îlot Pousse-Fèves) ou dans les Centres Pokémon, ce qui évite de devoir farmer des mini-jeux.
 
-Ces petites choses sont plutôt sympas, mais dans XY est introduite « Affection » (rien à voir avec le bonheur) : une jauge qui monte du niveau 0 à 5 selon le nombre de cœurs obtenus grâce aux caresses, aux fèves et au nettoyage de votre Pokémon après un combat. Voici le tableau, venant du site Pokébip :
+Ces petites choses sont plutôt sympas, mais dans XY est introduite « Affection » (rien à voir avec le bonheur) : une jauge qui monte du niveau 0 à 5 selon le nombre de cœurs obtenus grâce aux caresses, aux fèves et au nettoyage du Pokémon après un combat. Voici le tableau, venant du site Pokébip :
 
 Je n'ai pas de problème avec le niveau 2, donner 20 % d'exp en plus c'est bien, par contre pouvoir survivre à un K.O. dès le niveau suivant, y a pas un souci ? En plus, au niveau 4, le Pokémon peut esquiver plus facilement les attaques et peut guérir des problèmes de statut, ensuite le niveau 5, c'est pouvoir faire + de coups critiques, le Pokémon a accès à une Ceinture Force passive trop facilement en plus des autres qui sont carrément trop.
 
 [[screenshot: img/poke-loisir.png]]
 
 > **Mon avis :**  
-> Too much sur 10
+> Too much sur 10, c'est beaucoup trop pour le joueur.
 
 ### <span style="color: #34d399;">🏝️ La Poké Loisir</span>
 
@@ -552,9 +554,32 @@ N2B2 : Même sans connexion Internet, la Galerie se remplissait de PNJ généré
 
 USUL : Sans connexion en ligne active ou StreetPass, faire monter le niveau de sa Place Festival en solo devient atrocement long.
 
-**L'Agence de Combat (Le mode stratégique Solo) :**
+**L'Agence de Combat :**
 
-USUL : La Place intègre l'Agence de Combat, qui permet de louer des Pokémon surpuissants (souvent stratégiques ou Légendaires) pour faire des séries de combats solo. C'est un excellent ajout qui n'existait tout simplement pas dans la Galerie Concorde et qui donne une raison d'y revenir régulièrement.
+USUL : La Place intègre l'Agence de Combat, qui permet de louer des Pokémon surpuissants (souvent stratégiques ou Légendaires) pour faire des séries de combats solo. C'est un excellent ajout qui n'existait tout simplement pas dans la Galerie Concorde et qui donne une raison d'y revenir régulièrement. Avec une grosse contrainte : les deux partenaires seront des PNJ, il n’y a plus de online actif, il est donc impossible d'utiliser les Pokémon entraînés par de vraies personnes.
+
+Le but de ce mode de jeu est de composer une équipe empruntée, par des vrais joueurs rencontrés ou PNJ.
+
+Il faut accomplir des missions et chaque mission se déroule en 3 combats à la suite, en 3v3.
+
+**1. choisir un Pokémon parmi 3 propositions aléatoires.**
+
+**2. choisir 2 partenaires (PNJ ou joueur), qui apportent chacun un Pokémon.**
+
+**3. battre les 3 dresseurs successivement.**
+
+**4. On a la possibilité de modifier l'équipe entre les combats.**
+
+Ensuite les grades de **0 à 50**, le grade 0 les Pokémon sont **niveau 50** et au **grade 50 niveau 100**. Avec des boss pour les grades 10, 20, 30, 40 et 50.
+
+Les récompenses
+C'est notamment intéressant pour les objets rares :
+- **Super Bonbons** lors des montées de grade.
+- **Festipièces** après les combats.
+- **Capsules d'Or** après les victoires contre les boss.
+À partir du grade 50, chaque mission réussie rapporte également une **Capsule d'Or**.
+
+C'est vraiment bien, on dirait une sorte d'usine de combat, dommage que le mode soit autant nerfé par la suppression du online. Car quand on utilise un Pokémon d'un PNJ, les Pokémon sont toujours niveau 50, si on réussit à aller au grade 50, les Pokémon des adversaires seront niveau 100, il y aura donc 50 niveaux de différence.
 
 **Les Missions Générales & Événements Mondiaux :**
 
@@ -594,7 +619,7 @@ Pour une fois, le but dans SL n'était pas de vaincre un Pokémon légendaire in
 Dans USUL, on retombe dans le même schéma que d'habitude : « vaincre un gros légendaire », même si le combat contre Necrozma a une justification : il est lié à la lumière d'Alola et au monde de l'Ultra-Mégalopole. Ce n'est pas simplement un Pokémon puissant qu'on doit battre parce qu'il est méchant, mais ça affaiblit l'intrigue de Lilie et d'Elsa-Mina. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
 
 > **Mon avis :**  
-> Alors en soi, l'intrigue, comme je le dis avec Necrozma, n'est pas moyenne et encore moins mauvaise, même s'ils auraient pu aller plus loin, par exemple dans l'Ultra-Mégalopole, les Ultra-Dimensions qui sont juste des zones où une UC attend patiemment le joueur, mais c'est nettement mieux que Xerneas/Yveltal, Kyogre/Groudon, même celle de Dialga et Palkia, qui est gâchée par l'écriture d'Hélio, ou encore Zacian/Zamazenta et Éthernatos, aussi gâchés par Shehroz, mais c'est dommage que ça affaiblisse autant celle de Lilie et d'Elsa-Mina.
+> Alors en soi, l'intrigue, comme je le dis avec Necrozma, n'est pas moyenne et encore moins mauvaise, même s'ils auraient pu aller plus loin, par exemple dans l'Ultra-Mégalopole, les Ultra-Dimensions qui sont juste des zones où une UC attend patiemment le joueur, sa reste c'est nettement mieux que Xerneas/Yveltal, Kyogre/Groudon, même celle de Dialga et Palkia, qui est gâchée par l'écriture d'Hélio, ou encore Zacian/Zamazenta et Éthernatos, aussi gâchés par Shehroz, mais c'est dommage que ça affaiblisse autant celle de Lilie et d'Elsa-Mina.
 
 #### Surf Démanta
 
