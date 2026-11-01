@@ -530,21 +530,61 @@ document.addEventListener("play", function(e) {
         bloc.appendChild(cible);
 
         if (type === "screenshot") {
-          // Plusieurs images séparées par des virgules : [[screenshot: a.png, b.png]]
-          // Toutes regroupées dans un conteneur "stack" pour être empilées
-          // proprement (et non superposées au même endroit).
-          const stack = document.createElement("div");
-          stack.className = "screenshot-stack";
-          valeur.split(",").map(s => s.trim()).filter(Boolean).forEach(src => {
-            const img = document.createElement("img");
-            img.src = src;
-            img.alt = "Capture d'écran de l'analyse";
-            img.className = "screenshot-img";
-            img.loading = "lazy";
-            img.addEventListener("click", () => ouvrirLightbox(src));
-            stack.appendChild(img);
-          });
-          bloc.appendChild(stack);
+  const stack = document.createElement("div");
+  stack.className = "screenshot-stack";
+  const sources = valeur.split(",").map(s => s.trim()).filter(Boolean);
+
+  const imgs = sources.map(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = "Capture d'écran de l'analyse";
+    img.className = "screenshot-img";
+    img.addEventListener("click", () => ouvrirLightbox(src));
+    return img;
+  });
+
+  if (imgs.length === 1) {
+    imgs[0].loading = "lazy";
+    stack.appendChild(imgs[0]);
+  } else {
+    // Carrousel : une seule image visible à la fois, flèches + compteur
+    stack.classList.add("screenshot-carrousel");
+
+    const piste = document.createElement("div");
+    piste.className = "carrousel-piste";
+    imgs.forEach(img => piste.appendChild(img));
+
+    const btnPrec = document.createElement("button");
+    btnPrec.className = "carrousel-fleche carrousel-prec";
+    btnPrec.type = "button";
+    btnPrec.setAttribute("aria-label", "Image précédente");
+    btnPrec.textContent = "‹";
+
+    const btnSuiv = document.createElement("button");
+    btnSuiv.className = "carrousel-fleche carrousel-suiv";
+    btnSuiv.type = "button";
+    btnSuiv.setAttribute("aria-label", "Image suivante");
+    btnSuiv.textContent = "›";
+
+    const compteur = document.createElement("div");
+    compteur.className = "carrousel-compteur";
+
+    let index = 0;
+    const afficher = (n) => {
+      index = (n + imgs.length) % imgs.length;
+      imgs.forEach((img, i) => img.classList.toggle("actif", i === index));
+      compteur.textContent = (index + 1) + " / " + imgs.length;
+    };
+    btnPrec.addEventListener("click", () => afficher(index - 1));
+    btnSuiv.addEventListener("click", () => afficher(index + 1));
+
+    piste.append(btnPrec, btnSuiv);
+    stack.append(piste, compteur);
+    afficher(0);
+  }
+  bloc.appendChild(stack);
+
+} else if (type === "video") {
 
         } else if (type === "video") {
           const video = document.createElement("video");

@@ -33,6 +33,10 @@ Pour ma première critique, j'ai décidé de la faire sur mon jeu vidéo préfé
 - **Vulkan**
 - **Aucun filtre de texture**
 
+### certaines images de cette analyse proviennent de: 
+
+- **Pokébip** et **Poképédia**
+
 ---
 
 ## 📖 PARTIE 1 : L'Introduction et l'Écriture des Personnages
@@ -160,13 +164,14 @@ Enfin, on arrive au premier « donjon » du jeu : **l'École Pokémon**. Le prof
 
 Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : elle envoie un Pokémon niveau 10 fort contre notre Pokémon de départ. Je me suis donc retrouvé face à un **Brindibou** qui m'a battu deux fois. J'ai dû aller capturer un **Tadmorv d'Alola** pour l'empoisonner, avant de pouvoir achever le combat avec mon Otaquin.
 
-[[screenshot: img/route-1.jpg, img/397px-Route_1_printemps_NB.png, img/658px-Route_20_N2B2.png]]
 
 ---
 
 ### <span style="color: #ff9640;">Le bridage du level design</span>
 
 > Je pense qu'à ce stade, vous avez compris que le jeu nous bride énormément, que ce soit par ses cinématiques ou son gameplay. La plupart des routes et des villes sont verrouillées, ce qui casse complètement le rythme et la liberté du joueur. Pourtant, avec le cadre d'un archipel, on aurait pu s'attendre à ce que le jeu nous lâche la bride pour marquer le coup. Malheureusement, il veut absolument imposer son propre tempo, ce qui impacte directement l'expérience de jeu. Les routes ne sont, pour la majorité des cas, que de simples lignes droites, avec quelques exceptions. Voici un exemple parlant avec les premières routes de Noir & Blanc 1 et 2 par rapport à celles d'Alola :
+
+[[screenshot: img/route-1.jpg, img/397px-Route_1_printemps_NB.png, img/658px-Route_20_N2B2.png]]
 
 | Critère | Noir / Blanc 1 & 2 (Unys) | Ultra-Soleil / Ultra-Lune (Alola) |
 | :--- | :--- | :--- |
@@ -182,9 +187,9 @@ Dans NB 1 le jeu laisse à Maillard le choix au joueur d'aller faire la forêt d
 
 Les niveaux des dresseurs et des Pokémon sauvages y sont à peu près équivalents.
 
-Sur la Route 6, il y a 8 dresseurs au total, dont 5 qui possèdent 2 Pokémon. Les autres sont des dresseurs thématiques, par exemple un Scientifique avec deux Vivaldaim — un Pokémon qui change d'apparence selon la saison. Cette mécanique est d'ailleurs mise en valeur par la météo et la présence de deux dresseuses avec un Morphéo, ce qui est logique puisqu'on trouve sur la même route le Bureau des Saisons (qui nous offre justement un Vivaldaim), ainsi qu'une Éleveuse qu'il est possible de réaffronter.
-
 [[screenshot: img/800px-Route_11_USUL.png, img/29route6.jpg]]
+
+Sur la Route 6, il y a 8 dresseurs au total, dont 5 qui possèdent 2 Pokémon. Les autres sont des dresseurs thématiques, par exemple un Scientifique avec deux Vivaldaim — un Pokémon qui change d'apparence selon la saison. Cette mécanique est d'ailleurs mise en valeur par la météo et la présence de deux dresseuses avec un Morphéo, ce qui est logique puisqu'on trouve sur la même route le Bureau des Saisons (qui nous offre justement un Vivaldaim), ainsi qu'une Éleveuse qu'il est possible de réaffronter.
 
 Ce n'est pas tout : il y a aussi des herbes sombres où l'on peut rencontrer les mêmes Pokémon que dans les herbes normales, mais en plus forts. On y trouve également deux grottes : la Grotte Électrolithe menant à Parsemille, et un accès par Surf (offert sur cette route) vers la Grotte Parsemille. Cette dernière fait office de petit donjon qui, en post-ligue, permet d'accéder à la Route Bardane, menant elle-même au Mont Foré, au Port Yoneuve ou aux Ruines Enfouies.
 
@@ -197,6 +202,22 @@ Ensuite, côté objets, la récolte est bien différente :
 Dans USUL, sur cette route, il y a 60 % des items destinés à la vente et 40 % d'utiles, contre 83 % des items utiles et 17 % d'argent. Dont 1 item non présent dans SL.
 
 Mais je le précise ici, cette tendance aux routes et au lvl design simplifiés a commencé à partir de XY, sauf que dans la 7G elle se ressent et se voit encore plus, sans parler de EB.
+
+[[screenshot: img/route-victoireNB1.jpg, img/route-victoireHGSS.png, img/route-victoireémeraude.png, img/mont-lanakilaUSUL.jpg]]
+
+Un dernier exemple, les Routes Victoire : alors oui, dans la forme, USUL et SL n'en ont pas, mais le mont Lanakila joue ce rôle.
+
+On commence avec Noir et Blanc 1, qui propose une sorte de pyramide verticale à gravir grâce à son réseau de grottes un peu spaghetti, avec une partie extérieure et une partie intérieure, de nombreux étages et des connexions entre l'extérieur et l'intérieur, mais sans pour autant aller jusqu'à devenir un labyrinthe. On y trouve des dresseurs et des objets au sol, le tout sans énigme. Si j'ai un petit reproche à faire, ce serait le Kungfouine du Karatéka : ça ne fait pas très sérieux. Certes, il évolue au niveau 50, mais Game Freak a déjà dérogé à ses propres règles en faisant évoluer des Pokémon en dessous de leur niveau d'évolution normal, comme le Chaffreux de Mars, niveau 17, dans Platine. Mais globalement, comme dans HGSS et Émeraude, le parcours est guidé, peut-être un peu moins grâce aux différentes sorties vers l'extérieur, qui peuvent donner une sensation de labyrinthe.
+
+Dans HGSS, on est dans la lignée d'Émeraude : une sorte de labyrinthe qui, dans le fond, reste guidé grâce aux murs, rochers et rebords. En réalité, c'est donc davantage un parcours avec des trous et des échelles qui mènent à des objets, mais rien de plus. Il n'y a même pas de dresseurs, ce qui est plutôt pénible dans un jeu avec une courbe d'expérience douteuse.
+
+Dans Émeraude, il y a 17 dresseurs, ce qui est beaucoup. Et, comme je le disais, c'est dans la même veine que HGSS : une grotte qui se fait passer pour un labyrinthe, mais qui n'en est finalement pas vraiment un, puisqu'il suffit de suivre le chemin. Il y a même deux trous qui ramènent au même endroit, le deuxième étant simplement un peu plus loin. Et voilà, c'est tout. Mais au moins, en jeu, ça donne l'impression d'être dans un labyrinthe.
+
+Enfin, dans USUL, c'est très droit, comme beaucoup de routes du jeu, qui sont en plus assez longues. On retrouve un ou deux embranchements, comme dans les autres jeux, mais il n'y a pas de changements d'étage susceptibles de donner une sensation de labyrinthe. Il y a 14 dresseurs, dont 3 combats Duo, avec notamment, comme dans NB1, un Kungfouine, mais qui est cette fois au niveau 51, ainsi qu'un Excelangue au niveau 52, ce qui n'est quand même pas très sérieux. Et Necrozma attend qu'on vienne le capturer.
+
+Pour conclure, je ne reproche pas à USUL d'avoir des routes linéaires, car Noir et Blanc 1 et 2 le sont également, tout comme HGSS, XY, Émeraude... Ce que je reproche à USUL, c'est que le joueur est constamment bloqué, que ce soit par le level design, des barrières, des PNJ, etc. Oui, il y a des zones annexes, mais elles sont plus rares, plus courtes, plus pauvres et moins développées, et donc moins intéressantes à parcourir. Les routes principales sont globalement plus pauvres dans USUL.
+
+---
 
 ### <span style="color: #ff6f00;">🐴 Les Poké Montures</span>
 
@@ -290,9 +311,9 @@ Personnellement, voici ce que je pense des épreuves, individuellement :
 > C'est une bonne épreuve : le combat n'est pas forcément évident à ce stade du jeu et selon les Pokémon dans l'équipe. Dommage que la partie avant le combat soit trop guidée, avec la caméra qui nous montre tout le temps où aller : ça aurait été mieux de laisser le joueur explorer la forêt comme il lui semble.
 > - **Épreuve n° 5 - type Électrik :** OK, mais sans plus, le but c'est de faire la lettre Z avec des Chrysapile et entre chaque alignement un combat. 
 > - **Épreuve n° 6 - type Spectre :** Plutôt cool, j'aime bien l'ambiance des lieux avec le Mimiqui derrière nous, en plus de mettre en avant un de mes Pokémon préférés. Avec un combat correct grâce au talent Fantômasque et le 1er Dominant est boosté à +1 dans toutes ses stats.
-
-[[screenshot: img/fée.png]]
-
+>
+>[[screenshot: img/fée.png]]
+>
 > - **Épreuve n° 7 - type Dragon :** L'Ékaïser Dominant possède la Baie Seiro et peut appeler un Cizayox avec Pisto-Poing et le talent Technicien contre les Pokémon Fée avec en plus Mur Lumière, car les Pokémon Fée sont globalement spéciaux en 2017 selon Poképédia. De plus, le Dominant possède directement Toxik, qu'il va forcément utiliser face à un type Fée. Ce combat n'est pas facile : forcément, la différence de stats est plutôt importante, avec un potentiel Cizayox à côté.
 > - **Épreuve n° 8 - type Fée :** Pour cette épreuve, il faut reconstituer la fleur 7 Couleurs pour Oléa et, pour cela, il faut affronter les Capitaines des Épreuves, éparpillés partout dans Alola, ce qui aurait pu être pas mal si le joueur avait des soins limités et que les adversaires n'avaient pas que 3 attaques pour la plupart, sauf pour l'Escroco de Danh qui, lui, a la chance d'avoir 4 attaques, par exemple.
 
@@ -494,11 +515,11 @@ Mais surtout, cet îlot sert aussi de garderie pour les œufs :
 
 - Quand un Œuf est prêt à éclore, un point d'exclamation apparaît au-dessus de lui.
 
-> **Toutes les images des îlots viennent de Pokébip.**
-
 > **Mon avis sur le Poké Loisir :**  
 > Personnellement, je trouve que c'est une très bonne fonctionnalité : elle permet de valoriser les Pokémon qui dorment dans le PC, pour farmer des ressources tout en faisant autre chose.
 
+
+---
 
 ### <span style="color: #c084fc;">🏝️ La Place Festival : La Galerie Concorde d'AliExpress</span>
 
@@ -508,7 +529,7 @@ La Place Festival est un marché évolutif comme dans Noir et Blanc 2.
 
    - Galerie Concorde : C'est un lieu physique réel situé directement sur la carte d'Unys (la rue couverte entre la Route 4 et Méanville). Le joueur y passe naturellement à pied au cours de son aventure.
 
-   - Place Festival : C'est une dimension / zone virtuelle isolée. Pour y accéder, il faut obligatoirement passer par le menu du jeu (ou l'écran tactile), ce qui déclenche un temps de chargement et coupe le joueur de son exploration d'Alola.
+   - Place Festival : C'est une dimension / zone virtuelle isolée. Pour y accéder, il faut passer par le menu du jeu (ou l'écran tactile). Ici j'ai aucun problème les 2 méthode me vont.
 
 - Le Rôle Multijoueur et les Fonctionnalités en Ligne
 
@@ -518,7 +539,7 @@ La Place Festival est un marché évolutif comme dans Noir et Blanc 2.
 
 - L'Origine et la Gestion des Visiteurs
 
-    - Galerie Concorde : Les visiteurs sont soit des PNJ générés par le jeu (tes « fans »), soit de véritables joueurs croisés via la connexion sans fil locale, le C-Gear ou les échanges de la GTS (comme le fameux Magnemite Loop). Le joueur doit guider chaque client vers le stand qui correspond à sa demande (ou lui proposer d'ouvrir sa propre échoppe) pour gagner de la popularité.
+    - Galerie Concorde : Les visiteurs sont soit des PNJ générés par le jeu (des « fans »), soit de véritables joueurs croisés via la connexion sans fil locale, le C-Gear ou les échanges de la GTS (comme le fameux Magnemite Loop). Le joueur doit guider chaque client vers le stand qui correspond à sa demande (ou lui proposer d'ouvrir sa propre échoppe) pour gagner de la popularité.
 
     - Place Festival : Les visiteurs sont générés via la connexion Internet ou StreetPass. Au lieu d'associer un client à une boutique, le joueur gagne des Festipièces (FP) en répondant à de petits questionnaires simples au-dessus de la tête des PNJ ou en participant à des mini-jeux collectifs (les Missions).
 

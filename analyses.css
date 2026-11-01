@@ -669,6 +669,50 @@ html.theme-light .screenshot-img {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
+/* ── Carrousel de screenshots ── */
+.screenshot-carrousel {
+    margin: 16px auto;
+    max-width: 420px;
+}
+.carrousel-piste {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.carrousel-piste .screenshot-img {
+    display: none;
+}
+.carrousel-piste .screenshot-img.actif {
+    display: block;
+}
+.carrousel-fleche {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.85;
+    z-index: 2;
+}
+.carrousel-fleche:hover { opacity: 1; background: var(--couleur-accent); }
+.carrousel-prec { left: 6px; }
+.carrousel-suiv { right: 6px; }
+.carrousel-compteur {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 13px;
+    font-family: 'Consolas', monospace;
+    color: var(--md-citation);
+}
+
 /* ── Lightbox : zoom plein écran au clic sur une image ── */
 .lightbox-overlay {
     position: fixed;
@@ -715,8 +759,9 @@ html.theme-light .screenshot-img {
         top: 0;
         left: 100%;
         margin: 0 0 0 40px;
-        width: 300px;
+        width: 200px;
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 16px;
     }
@@ -725,6 +770,23 @@ html.theme-light .screenshot-img {
         max-width: none;
         max-height: 400px;
         margin: 0;
+    }
+}
+
+/* Média placé à l'intérieur d'une citation : pas de trou dans la boîte */
+.article-corps blockquote .screenshot-bloc,
+.article-corps blockquote .video-bloc {
+    margin: 0;
+}
+.article-corps blockquote ul:has(+ .screenshot-bloc),
+.article-corps blockquote ul:has(+ .video-bloc) {
+    margin-bottom: 0;
+}
+
+@media (min-width: 1150px) {
+    /* compense le padding-right (20px) de la citation */
+    .article-corps blockquote .screenshot-stack {
+        margin-left: 60px;
     }
 }
 
