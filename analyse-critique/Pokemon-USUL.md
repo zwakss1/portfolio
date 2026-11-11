@@ -33,7 +33,7 @@ Pour ma première critique, j'ai décidé de la faire sur mon jeu vidéo préfé
 - **Vulkan**
 - **Aucun filtre de texture**
 
-### certaines images de cette analyse proviennent de: 
+### Certaines images de cette analyse proviennent de : 
 
 - **Pokébip** et **Poképédia**
 
@@ -149,7 +149,7 @@ Ce Pokédex prend place sur l'écran du bas de la 3DS et apporte diverses foncti
 > - Il survit à 1 PV alors qu'il aurait dû être K.O.
 > - L'adversaire n'a **jamais** accès à ces bonus.
 > 
-> Pas besoin d'être un grand analyste pour comprendre que le joueur a toujours l'avantage.
+> Pas besoin d'être un grand analyste pour comprendre que le joueur a toujours l'avantage. Mais perso sur l’entièreté de l’aventure je n'ai jamais eu de bonus d'affection pas une seule attaque esquivée parce que mon pokémon m'aime. Ce qui n’était pas le cas dans DEPS, où vers le milieu d'aventure mes pokemon esquivaient des attaques, soignaient leurs altérations d'état, survivaient au KO...
 
 Le Motisma-Dex sert aussi à afficher la carte et un marqueur pour montrer le prochain objectif.
 
@@ -181,7 +181,7 @@ Personnellement, je n'ai pas eu de difficulté, sauf face à cette dernière : e
 | **Sentiment de progression** | Sensation d'ouvrir le monde et d'agrandir la carte. | Sensation d'ouvrir des petits coffres bonus. |
 | **Rythme & Guidage** | Progression autonome une fois le départ franchi. | Interruptions fréquentes par des cinématiques/tutoriels. |
 
-Dans NB 1 le jeu laisse à Maillard le choix au joueur d'aller faire la forêt d’Empoigne, la partie extérieure avant l'arène, ou encore le Désert Délassant à Volucité et d'autres. Dans USUL soit c'est très amaigri soit ça n’existe plus et ça crée des routes où c'est juste tout droit sans rien autour pour casser cette monotonie de route droite.
+Dans NB 1 à Maillard, le jeu laisse le choix au joueur d'aller faire la forêt d’Empoigne, la partie extérieure avant l'arène, ou encore le Désert Délassant à Volucité et d'autres. Dans USUL soit c'est très amaigri soit ça n’existe plus et ça crée des routes où c'est juste tout droit sans rien autour pour casser cette monotonie de route droite.
 
 **Mais j'ai aussi un autre exemple encore plus parlant : la Route 6 de NB2 et la Route 11 d'USUL.**
 
@@ -207,15 +207,13 @@ Mais je le précise ici, cette tendance aux routes et au lvl design simplifiés 
 
 Un dernier exemple, les Routes Victoire : alors oui, dans la forme, USUL et SL n'en ont pas, mais le mont Lanakila joue ce rôle.
 
-On commence avec Noir et Blanc 1, qui propose une sorte de pyramide verticale à gravir grâce à son réseau de grottes un peu spaghetti, avec une partie extérieure et une partie intérieure, de nombreux étages et des connexions entre l'extérieur et l'intérieur, mais sans pour autant aller jusqu'à devenir un labyrinthe. On y trouve des dresseurs et des objets au sol, le tout sans énigme. Si j'ai un petit reproche à faire, ce serait le Kungfouine du Karatéka : ça ne fait pas très sérieux. Certes, il évolue au niveau 50, mais Game Freak a déjà dérogé à ses propres règles en faisant évoluer des Pokémon en dessous de leur niveau d'évolution normal, comme le Chaffreux de Mars, niveau 17, dans Platine. Mais globalement, comme dans HGSS et Émeraude, le parcours est guidé, peut-être un peu moins grâce aux différentes sorties vers l'extérieur, qui peuvent donner une sensation de labyrinthe.
+On commence avec Noir et Blanc 1, qui propose une sorte de pyramide verticale à gravir grâce à son réseau de grottes un peu spaghetti, avec une partie extérieure et une partie intérieure, de nombreux étages et des connexions entre les deux, ce qui rend la structure moins immédiatement lisible, mais sans pour autant aller jusqu’à devenir un labyrinthe. On y trouve des dresseurs et des objets au sol, le tout sans énigme. Si j'ai un petit reproche à faire, ce serait le Kungfouine du Karatéka : ça ne fait pas très sérieux. Certes, il évolue au niveau 50, mais Game Freak a déjà dérogé à ses propres règles en faisant évoluer des Pokémon en dessous de leur niveau d'évolution normal, comme le Chaffreux de Mars, niveau 17, dans Platine. Mais globalement, comme dans HGSS et Émeraude, ça peut donner une sensation de labyrinthe.
 
-Dans HGSS, on est dans la lignée d'Émeraude : une sorte de labyrinthe qui, dans le fond, reste guidé grâce aux murs, rochers et rebords. En réalité, c'est donc davantage un parcours avec des trous et des échelles qui mènent à des objets, mais rien de plus. Il n'y a même pas de dresseurs, ce qui est plutôt pénible dans un jeu avec une courbe d'expérience douteuse.
-
-Dans Émeraude, il y a 17 dresseurs, ce qui est beaucoup. Et, comme je le disais, c'est dans la même veine que HGSS : une grotte qui se fait passer pour un labyrinthe, mais qui n'en est finalement pas vraiment un, puisqu'il suffit de suivre le chemin. Il y a même deux trous qui ramènent au même endroit, le deuxième étant simplement un peu plus loin. Et voilà, c'est tout. Mais au moins, en jeu, ça donne l'impression d'être dans un labyrinthe.
+Dans HGSS et Émeraude, c’est une sorte de labyrinthe qui, dans le fond, reste guidé grâce aux murs, rochers et rebords. En réalité, c’est donc davantage un parcours avec des trous, des échelles, des rochers à bouger/casser avec Force/Éclate-Roc et Surf/Cascade dans Émeraude, qui mènent à des objets ou à la suite. Dans Émeraude, il y a 17 dresseurs, ou 16 si on ne compte pas le combat contre Timmy, et dans HGSS aucun dresseur, ce qui est plutôt pénible dans un jeu avec une courbe d’expérience douteuse. Et pour les CS dans HGSS, seulement Force est obligatoire. Globalement, ça donne l’impression d’être dans un labyrinthe, mais, en vrai, non.
 
 Enfin, dans USUL, c'est très droit, comme beaucoup de routes du jeu, qui sont en plus assez longues. On retrouve un ou deux embranchements, comme dans les autres jeux, mais il n'y a pas de changements d'étage susceptibles de donner une sensation de labyrinthe. Il y a 14 dresseurs, dont 3 combats Duo, avec notamment, comme dans NB1, un Kungfouine, mais qui est cette fois au niveau 51, ainsi qu'un Excelangue au niveau 52, ce qui n'est quand même pas très sérieux. Et Necrozma attend qu'on vienne le capturer.
 
-Pour conclure, je ne reproche pas à USUL d'avoir des routes linéaires, car Noir et Blanc 1 et 2 le sont également, tout comme HGSS, XY, Émeraude... Ce que je reproche à USUL, c'est que le joueur est constamment bloqué, que ce soit par le level design, des barrières, des PNJ, etc. Oui, il y a des zones annexes, mais elles sont plus rares, plus courtes, plus pauvres et moins développées, et donc moins intéressantes à parcourir. Les routes principales sont globalement plus pauvres dans USUL.
+Pour conclure, je ne reproche pas à USUL d'avoir des routes linéaires, car Noir et Blanc 1 et 2 le sont également, tout comme HGSS, XY, Émeraude... Ce que je reproche à USUL, c'est que le joueur est constamment bloqué, que ce soit par le level design, des barrières, des PNJ, etc. Oui, il y a des zones annexes, mais elles sont plus rares, plus courtes, plus pauvres et moins développées, et donc moins intéressantes à parcourir. Les routes principales sont globalement plus pauvres dans USUL. Les routes du Mont Lanakila sont des lignes droites et rien d'autre.
 
 ---
 
@@ -253,7 +251,7 @@ On pourrait aller plus loin dans la réflexion : l'Effaceur de capacités existe
 
 Mais dans tous les cas, personnellement, je prends totalement ce changement de la suppression des CS contre les Poké Montures.
 
-Ensuite, en ce qui concerne l'utilisation dans le level design, c'est comme dans les jeux précédents : elles reprennent exactement les mêmes usages. Des fois, c'est pour récupérer des objets, des fois, c'est pour accéder à une zone annexe ou pour poursuivre l'aventure.
+Enfin, en ce qui concerne leur utilisation dans le level design, les Poké-Montures reprennent globalement les mêmes usages que dans les jeux précédents. Elles servent parfois à récupérer des objets, à accéder à une zone annexe ou simplement à poursuivre l'aventure. Cependant, selon moi, Game Freak n'exploite pas suffisamment les possibilités qu'elles offrent. Le Mont Lanakila en est un bon exemple : il s'agit du dernier grand donjon avant la Ligue, mais l'utilisation de Mackogneur se limite essentiellement à pousser trois rochers. Le jeu aurait pu proposer une utilisation plus poussée des différentes montures, notamment en intégrant davantage de chemins secondaires ou d'obstacles à franchir.
 
 
 ---
@@ -262,11 +260,11 @@ Ensuite, en ce qui concerne l'utilisation dans le level design, c'est comme dans
 
 ### <span style="color: #2dd4bf;">💎 Les capacités Z</span>
 
-Les capacités Z sont la mécanique de la 7e génération. Si le dresseur possède un bracelet Z ou un super bracelet Z et que le Pokémon connaît une capacité du même type que le cristal, alors il peut lancer une capacité puissante. Et USUL en amène de nouvelles pour Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala et Ultra-Necrozma.
+Les capacités Z sont la mécanique de la 7e génération. Si le dresseur possède un bracelet Z ou un super bracelet Z et que le Pokémon connaît une capacité du même type que le cristal, alors il peut lancer une capacité puissante. Et USUL en amène de nouvelles pour Ékaïser, Mimiqui, Lougaroc, Solgaleo, Lunala et Ultra-Necrozma...
 
 Sur le papier ça a l'air plutôt sympa, mais il y a plusieurs aspects qui le sont moins, à commencer par les animations. Pour les capacités qui ne sont pas customs au Pokémon, par exemple *Combo Hyper-Furie*, l'animation de l'attaque en elle-même est plutôt cool, mais l'animation du Pokémon rend le truc ridicule. Des fois ça passe bien car l'animation du Pokémon, par un heureux hasard, est correcte, mais pour la plupart des Pokémon elle ne matche pas bien ensemble.
 
-Autre point déjà plus pénible : TOUTES les capacités Z sont impassables, vous allez devoir à chaque fois les regarder. Et pour moi, c'est pour cela que cette mécanique est oubliable pour beaucoup. S'ils s'étaient plus concentrés sur les capacités Z signatures et une option pour passer, ça rendrait déjà cette mécanique bien meilleure.
+Autre point déjà plus pénible : TOUTES les capacités Z sont impassables, on doit à chaque fois les regarder. Et pour moi, c'est pour cela que cette mécanique est oubliable pour beaucoup. S'ils s'étaient plus concentrés sur les capacités Z signatures et une option pour passer, ça rendrait déjà cette mécanique bien meilleure.
 
 Mais attention, elles sont quand même meilleures que les Méga-Évolutions dans leur utilisation, de pas grand-chose, mais quand même.
 
@@ -340,7 +338,7 @@ En activant le scanner, un Pokémon rare apparaît pendant **1 heure** sur l'îl
 > **Astuce :** L'activation du Scanner des Îles réinitialise la mémoire des QR Codes déjà scannés. Il est donc possible de scanner 10 codes, lancer le scanner, puis scanner à nouveau exactement ces 10 mêmes codes pour la fois suivante.
 
 > **Mon avis sur le Scanner des Îles :**  
-> J'aime bien cette mécanique. En plus de donner l'habitat d'un Pokémon, pouvoir trouver des Pokémon introuvables avec une capacité Œuf est plutôt sympa, sans compter que le Scanner QR permet aussi d'obtenir Magearna en fin de jeu via un code spécifique.
+> J'aime bien cette mécanique. En plus de donner l'habitat d'un Pokémon, pouvoir trouver des Pokémon introuvables et avec une capacité Œuf est plutôt sympa, sans compter que le Scanner QR permet aussi d'obtenir Magearna en fin de jeu via un code spécifique, 1h est largement assez pour capturer le pokémon.
 
 ---
 
@@ -429,7 +427,7 @@ Je n'ai pas de problème avec le niveau 2, donner 20 % d'exp en plus c'est bien,
 [[screenshot: img/poke-loisir.png]]
 
 > **Mon avis :**  
-> Too much sur 10, c'est beaucoup trop pour le joueur.
+> Too much sur 10. Les bonus sont de trop pour le joueur. C'est cool de devoir s'occuper de ses Pokémon, mais les bonus qu'offre la Poké Détente sont de trop.
 
 ### <span style="color: #34d399;">🏝️ La Poké Loisir</span>
 
@@ -516,8 +514,7 @@ Mais surtout, cet îlot sert aussi de garderie pour les œufs :
 - Quand un Œuf est prêt à éclore, un point d'exclamation apparaît au-dessus de lui.
 
 > **Mon avis sur le Poké Loisir :**  
-> Personnellement, je trouve que c'est une très bonne fonctionnalité : elle permet de valoriser les Pokémon qui dorment dans le PC, pour farmer des ressources tout en faisant autre chose.
-
+> Personnellement, je trouve que c'est une très bonne fonctionnalité : elle permet de valoriser les Pokémon qui dorment dans le PC pour farmer des ressources tout en faisant autre chose. Par exemple, l'Îlot Biscoteaux au niveau 3 permet de monter 18 Pokémon en même temps avec +4 EV par session en 15 min, si les fèves dans la caisse sont les bonnes. Pour maxer une statistique (252 EV), il faut 63 sessions... C'est clairement fait pour monter des boîtes entières de Pokémon : les Îlots ont été globalement pensés que pour du farm passif pendant qu'on fait autre chose, et rien d'autre. Est-ce que c'est mauvais ? En soi, je ne pense pas, car pour monter un Pokémon rapidement en post-game, le jeu te donne en explorant tous les Objets Pouvoir, et avec les appels à l'aide (SOS), ça prend environ 10 ou 15 min pour monter une stat à 252.
 
 ---
 
@@ -529,7 +526,7 @@ La Place Festival est un marché évolutif comme dans Noir et Blanc 2.
 
    - Galerie Concorde : C'est un lieu physique réel situé directement sur la carte d'Unys (la rue couverte entre la Route 4 et Méanville). Le joueur y passe naturellement à pied au cours de son aventure.
 
-   - Place Festival : C'est une dimension / zone virtuelle isolée. Pour y accéder, il faut passer par le menu du jeu (ou l'écran tactile). Ici j'ai aucun problème les 2 méthode me vont.
+   - Place Festival : C'est une dimension / zone virtuelle isolée. Pour y accéder, il faut passer par le menu du jeu (ou l'écran tactile). Ici j'ai aucun problème les 2 méthodes me vont.
 
 - Le Rôle Multijoueur et les Fonctionnalités en Ligne
 
@@ -543,7 +540,7 @@ La Place Festival est un marché évolutif comme dans Noir et Blanc 2.
 
     - Place Festival : Les visiteurs sont générés via la connexion Internet ou StreetPass. Au lieu d'associer un client à une boutique, le joueur gagne des Festipièces (FP) en répondant à de petits questionnaires simples au-dessus de la tête des PNJ ou en participant à des mini-jeux collectifs (les Missions).
 
-| Boutique / Fonctionnalité | Galerie Concorde (N2B2) | Place Festival (USUL) |
+| Boutique / Fonctionnalité | Galerie Concorde (NB2) | Place Festival (USUL) |
 | :---: | :---: | :---: |
 | **Monnaie utilisée** | Pokédollars habituels (avec réductions par rang) | Festipièces (FP) exclusives |
 | **Salle de Sport / Dojo** | Augmentation directe des EV et du Niveau | Tables d'orientation (Entraînement des EV) |
@@ -559,19 +556,19 @@ La Place Festival est un marché évolutif comme dans Noir et Blanc 2.
 
 **Une progression vivante et gratifiante :**
 
-N2B2 : La Galerie change véritablement d'aspect visuel au fur et à mesure que son niveau augmente (les lumières s'allument, des tapis sont déroulés, de nouveaux décors apparaissent, et la musique devient de plus en plus épique). On a un vrai sentiment de construction et de réussite.
+NB2 : La Galerie change véritablement d'aspect visuel au fur et à mesure que son niveau augmente (les lumières s'allument, des tapis sont déroulés, de nouveaux décors apparaissent, et la musique devient de plus en plus épique). On a un vrai sentiment de construction et de réussite.
 
 USUL : Le château central et les stands restent visuellement très similaires du niveau 1 au niveau 100, ce qui rend l'ascension beaucoup plus monotone.
 
 **L'économie du jeu respectée (Pas de monnaie parallèle) :**
 
-N2B2 : Tout s'achète en Pokédollars (avec des remises par rang). Cela redonnait une vraie utilité à l'argent accumulé durant le scénario et le post-game.
+NB2 : Tout s'achète en Pokédollars (avec des remises par rang). Cela redonnait une vraie utilité à l'argent accumulé durant le scénario et le post-game.
 
 USUL : L'obligation de farmer une monnaie virtuelle fermée (les Festipièces) via des mini-jeux ou des dialogues répétitifs crée un sentiment de « grind » artificiel.
 
 **Une meilleure autonomie en Solo :**
 
-N2B2 : Même sans connexion Internet, la Galerie se remplissait de PNJ générés par le jeu chaque jour. On pouvait la monter au niveau maximum en pur solo sans problème.
+NB2 : Même sans connexion Internet, la Galerie se remplissait de PNJ générés par le jeu chaque jour. On pouvait la monter au niveau maximum en pur solo sans problème.
 
 USUL : Sans connexion en ligne active ou StreetPass, faire monter le niveau de sa Place Festival en solo devient atrocement long.
 
@@ -617,7 +614,7 @@ USUL : La possibilité de teindre ses vêtements avec les baies de son sac direc
 
 ## 📈📉 PARTIE 5 : Le Grand Changement — Comparaison SL vs USUL
 
-Les versions Ultra sont meilleures que les versions originales (un meilleur post-game, la photo, Surf Démanta...). Mais ce ne sont que des ajouts annexes, qui n'améliorent pas ce dont le jeu avait réellement besoin : le scénario, le rythme, la linéarité abusive, les épreuves, l'optimisation technique. La mise en avant de Necrozma, elle, est faite au détriment de l'histoire de Lilie et d'Elsa-Mina.
+Les versions Ultra sont meilleures que les versions originales (un meilleur post-game, la photo, Surf Démanta...). Mais ce ne sont que des ajouts annexes, qui n'améliorent pas ce dont le jeu avait réellement besoin : le scénario, le rythme, la linéarité abusive avec pas-grand-chose autour voire rien, les épreuves, l'optimisation technique. La mise en avant de Necrozma, elle, est faite au détriment de l'histoire de Lilie et d'Elsa-Mina.
 
 On découvre dans SL que, par le passé, Elsa-Mina était mariée avec... Mohn, le même personnage qui s'occupe de la Poké Loisir. Lors de ses recherches sur les Ultra-Chimères, il a disparu pendant une expérience permettant de mieux comprendre les UC. Elsa-Mina a repris les recherches de son mari afin de le retrouver. Sauf qu'à force de recherches, elle en devient complètement fanatique au point que sa propre personnalité change.
 
@@ -640,7 +637,7 @@ Pour une fois, le but dans SL n'était pas de vaincre un Pokémon légendaire in
 Dans USUL, on retombe dans le même schéma que d'habitude : « vaincre un gros légendaire », même si le combat contre Necrozma a une justification : il est lié à la lumière d'Alola et au monde de l'Ultra-Mégalopole. Ce n'est pas simplement un Pokémon puissant qu'on doit battre parce qu'il est méchant, mais ça affaiblit l'intrigue de Lilie et d'Elsa-Mina. Elsa-Mina devient juste une femme condescendante, sûre qu'elle va sauver ses enfants et le monde avec Cosmog alors que dans SL elle s'en sert pour invoquer des UC partout dans Alola, dans USUL c'est Necrozma qui invoque des UC.
 
 > **Mon avis :**  
-> Alors en soi, l'intrigue, comme je le dis avec Necrozma, n'est pas moyenne et encore moins mauvaise, même s'ils auraient pu aller plus loin, par exemple dans l'Ultra-Mégalopole, les Ultra-Dimensions qui sont juste des zones où une UC attend patiemment le joueur, sa reste c'est nettement mieux que Xerneas/Yveltal, Kyogre/Groudon, même celle de Dialga et Palkia, qui est gâchée par l'écriture d'Hélio, ou encore Zacian/Zamazenta et Éthernatos, aussi gâchés par Shehroz, mais c'est dommage que ça affaiblisse autant celle de Lilie et d'Elsa-Mina.
+> Alors en soi, l'intrigue, comme je le dis avec Necrozma, n'est pas moyenne et encore moins mauvaise, alors qu’ils auraient pu aller plus loin, par exemple dans l'Ultra-Mégalopole, les Ultra-Dimensions qui sont juste des zones où une UC attend patiemment le joueur, ça reste nettement mieux que Xerneas/Yveltal, Kyogre/Groudon, même celle de Dialga et Palkia, qui est gâchée par l'écriture d'Hélio, ou encore Zacian/Zamazenta et Éthernatos, aussi gâchés par Shehroz, mais c'est dommage que ça affaiblisse autant celle de Lilie et d'Elsa-Mina.
 
 #### Surf Démanta
 
@@ -696,7 +693,65 @@ Le taux peut ainsi grimper jusqu'à **36 %** de chances de tomber sur un Pokémo
 
 ---
 
-## 🎨 PARTIE 6 : Direction Artistique et Graphismes
+## 🌴 PARTIE 6 : Post-Game 
+
+Après la Ligue, Ultra Commando vient nous rendre visite et dit que des Pierroteknik ou des Ama-Ama (selon la version) sont présents dans la Forêt de Poni. On y va et on capture sans difficulté, car les Ultra-Balls ont un taux extrême face aux UC, et voilà, sans plus. Ça sert aussi à donner accès à la Plaine de Poni, au Jardin de Poni, à l'Arbre de Combat, à la Caverne Coda pour Zygarde, à beaucoup d'objets strat comme l'Orbe Vie, à tous les items pour monter les EV facilement, à la Méga-Évolution donnée par Dexio après sa défaite, à l'Ékaïzélite...
+
+[[screenshot: img/424px-Team_Rainbow_Rocket.png]]
+
+Mais surtout, après avoir capturé l'Ultra-Chimère, l'épisode Rainbow Rocket :
+
+Ça démarre sur la Place Festival, où ils ont pris contrôle des lieux. On y va avec Chrys, cette partie-là est essentiellement un tuto pour l'Agence de Combat. On bat un sbire de la Rainbow Rocket et on revient chez nous.
+
+Ensuite, le Miaouss de notre mère allume la TV et on voit un discours d'Elsa-Mina sur le nuage noir qui a englouti Poni suscite des inquiétudes, mais à la fin de son discours, une brèche s'ouvre dans le ciel, un sbire de la Team Rainbow Rocket fait tomber le caméraman par terre, et Giovanni prend contrôle de la fondation et embarque Elsa-Mina avec lui. On y va avec Lilie. On combat des dresseurs, oui, avec Lilie qui participe, et on arrive devant la porte où Saubohne nous bloque, car il veut que la Team RR investisse dans la fondation pour sa propre carrière, bref. Ce combat était pénible, car je me suis pris tous les Hypnose et Spore de l'Hypnomade et du Lampignon, c'était horrible.
+
+On entre dans le Château Rocket, mais on est bloqué, car le téléporteur est verrouillé. Des sbires viennent, ne ferment pas les portes derrière eux, et avec Guzma on fait un combat, on gagne, et 2 chemins s'offrent à nous : celui de droite, qui est un puzzle avec des dalles de couleur à refaire dans le bon ordre. C'est pas facile, car les sbires nous parlent quand on a fait 50 % de l'ordre, et au dernier, on nous fait carrément un 2e combat pendant, mais que si on rate l'ordre de couleurs, on ne les réaffronte pas, ils nous parlent juste. C'est plutôt fun. Et à gauche, un labyrinthe de téléporteurs pour arriver face à :
+
+ >Arthur de la Team Aqua, d'un monde où il allait accomplir son rêve, mais englouti par un tsunami, et il s'est retrouvé dans ce monde, et dit qu'il voudrait remodeler le monde à son goût. Il veut utiliser Kyogre pour faire un déluge qui inondera les continents, parce que... la vie naît des océans et donc c'est bien pour les futures générations. Bref, les seules menaces du combat, c'est le Nostenfer, car il est rapide, peut apeurer avec Lame d'Air et Vibrobscur, mais aussi Toxik, et enfin Kyogre qui a Hydrocanon boosté par la pluie, la précision de Fatal-Foudre augmentée sous la pluie et Pouvoir Antique qui peut potentiellement le booster dans toutes les stats, mais perso c'était rapide.
+
+ >Puis, sur le chemin de droite, Max de la Team Magma, c'est plutôt un combat miroir d'Arthur, avec le même Nostenfer, le même Grahyèna, mais le Grotadmorv et Sharpedo de Max sont remplacés par Smogogo et Camérupt. Pareil, les menaces sont les mêmes : Groudon et Nostenfer. Ce combat m'a pas posé de difficulté. Ce Max vient d'un monde où il a été englouti dans une crevasse au moment où il allait atteindre son rêve, mais il s'est retrouvé ici. Il veut faire comme Arthur, mais bouillir les océans au profit des continents.
+
+Après leur défaite, on retrouve Guzma en train de se battre contre 2 sbires, mais les tiens, et Arthur et Max arrivent, veulent se battre entre eux, mais retournent dans leurs dimensions respectives, et 2 autres chemins s'ouvrent : à gauche, c'est un labyrinthe de téléporteurs avec des sbires plutôt fun aussi, et à droite, des puzzles de statues Miaouss où faut pas passer dans leur champ de vision pour arriver face à :
+
+ >Lysandre de la Team Flare, d'un monde où il était sur le point d'annihiler les « imbéciles » qui n'étaient pas de la Team Flare avec l'arme suprême, mais s'est retrouvé ici. Il propose 2 boutons : l'un arrête l'arme suprême et l'autre l'active, mais en vérité, qu'importe le choix, ça activera toujours l'arme, et pour la désactiver, il faut le battre en combat. Il a un Shaofouine qui fera toujours Bluff en 1re attaque, mais surtout un Méga-Léviator et Xerneas avec Géo-Contrôle. Le Xerneas aurait pu sweep mon équipe, mais mon Malamandre a tenu à 2 PV, donc j'ai capacité Z de type Poison et fait Machination le tour d'avant, donc one-shot.
+
+ >Et, au chemin de gauche, Hélio de la Team Galaxie, qui voulait créer un monde parfait sans esprit, mais une ombre gigantesque l'a amené ici. Au combat, il a un Dialga qui est un problème vu les stats qu'il a, mais je suis passé au 1er essai quand même. Il nous donne la clé Galaxy et on ouvre le téléporteur qui mène vers la salle où est Giovanni.
+
+On arrive devant, mais Ghetis nous barre la route. Il utilise des termes comme « guère, médiocres séides, aisé, belle enfant... ». Il a été envoyé dans ce monde mon pour, selon lui, « voyager à travers chaque monde existant pour libérer les Pokémon que les humains maintiennent en esclavage ! », et il se sert de Giovanni pour qu'il se dresse au sommet de toute création. Il dit même qu'il est « tellement plus aisé de manipuler un balourd aux désirs primaires qu'une grotesque parodie d'être humain sans âme ! », mais bref, il ne m'a posé aucun problème en combat malgré son Zekrom.
+
+Après sa défaite, il vrille complètement et dit par exemple « un insecte, un moins que rien, un anonyme... parvient à me défaire... Quelle... abjection ! » et qu'il est le démiurge... et, sous la colère, agresse Lilie et la prend en otage, et demande de déposer les Poké Balls, mais Nikolaï le ramène dans son monde. Il veut nous aider à rendre le Paradis Æther à son état d'origine, il dit que trop de mondes s'entremêlent et que la tâche est de taille, même pour lui. Pour ça, il faut aller vaincre Giovanni :
+
+ On arrive devant lui, il nous dit qu'il a utilisé la puissance d'une UC pour plonger Elsa-Mina dans un sommeil profond. Le but de Giovanni est de contrôler tous les mondes existants grâce à une armée d'UC. On le combat et il était particulièrement pénible pour moi, à cause de son Triopikeur avec Piège de Roc, Nidoqueen et Nidoking, qui pour mon équipe étaient pénibles avec Cradovague, direct Poison, et leur talent Point Poison, qui a 30 % de chances d'empoisonner si le Pokémon a reçu une attaque directe, MAIS surtout le Méga-Mewtwo X avec une base stats de 780, mais surtout 130 en vitesse, avec Psykoud'Boul, Séisme, Lame de Roc et Vampipoing. Ça m'a pris plusieurs tentatives, mais je passe et pars ailleurs en disant que la RR est immortelle. Vicky nous donne 55 Maxi-Pépites et fin.
+
+Comme je l'ai dit au début, on a accès à l'Arbre de Combat, mais avant on affronte Red ou Blue en 6V6. Rien de compliqué, je bats Red et on peut accéder à l'Arbre :
+
+[[screenshot: img/arbreCombat.png]]
+
+L'Arbre de Combat est une Maison de Combat de XY et ROSA avec 3 modes de jeu :
+  - Solo, du 3V3 avec Red au 20e combat
+  - Duo, du 2v2 comme dans le format VGC avec Blue au 20e combat
+  - Multi, 2 joueurs contre 2 avec chacun 2 Pokémon, avec Red & Blue au 20e combat
+
+À la fin de chaque mode, un format « Super » s'ouvre avec une plus haute difficulté :
+  - Super Solo, Red vous attend au 50e combat
+  - Super Duo, Blue vous attend au 50e combat
+  - Super Multi, Red & Blue vous attendent au 50e combat
+
+Chaque combat rapporte des PCo, qui sont une monnaie pour acheter des attaques, des objets strat et d'évolution, mais surtout des Méga-Gemmes, avec aussi des récompenses quotidiennes selon la plus longue série de victoires effectuée au dernier jour où on est venu à l'Arbre de Combat.
+
+Tous les 10 combats en mode Super, on peut affronter différents dresseurs comme Professeur Euphorbe, Apocyne dans US et Guzma dans UL, Nikolaï, Cynthia, Timmy...
+
+> **Mon avis sur le Post-Game :**  
+> Personnellement, je trouve qu’il est bien et mieux que celui de SL, l'épisode RR n’est certes que de la nostalgie mais vu qu’il y a de la substance je pardonne, les puzzles, je les ai trouvés personnellement fun, les combats étaient plutôt simples pour moi mais les Pokémon légendaires restent des pokémon Légendaires avec de grosses stats surtout Mewtwo X ou Y (selon la version) avec des statistiques de vitesse et d’attaque très élevées, Kyogre et Groudon peuvent être problématiques avec la météo mais rien d'insurmontable.
+>
+>Certains sbires avaient une strat rien de fou mais par exemple il y a un sbire dont la strat est Toxik et faire des abris, un sbire c'est faire bouclier, placé les pics toxique, puis avec son Persian faire bluff, faire des abris,un Hypnomade avec Cage éclair et Attraction, un Spectrum qui est juste là pour spam Prélèvement Destin, un Grotadmorv avec Coud’Boue, Toxik et Lilliput... L’idée est ambitieuse, l’exécution est faite simplement : c’est un boss rush avec des puzzles et des combats entre.
+>
+>L'arbre de combat qui est un bon challenge avec des méga, CT et objets strat en récompense tout en combattant des têtes connues, plutôt difficile avec les méga ET capacités Z présentes chez les adversaires. 
+>Toute la partie à Poni à explorer, les UC et légendaires à capturer dans les brèches, Agence de Combat. Bref, le Post-Game est vraiment bien.
+
+
+
+## 🎨 PARTIE 7 : Direction Artistique et Graphismes
 
 ### <span style="color: #fb923c;">👁️ Les choix visuels et l'ambiance d'Alola</span>
 
@@ -736,7 +791,7 @@ Le jeu ajoute aussi un système de favoris dans le sac pour regrouper les objets
 
 Enfin, une poche dédiée aux Cristaux Z fait son apparition dans le sac dès la 7G, une nouveauté que ne proposaient ni X/Y ni Rubis Oméga/Saphir Alpha pour les Méga-Gemmes, ces dernières restant mélangées avec les autres objets à tenir.
 
-> **Mon avis :**  
+> **Mon avis :**
 > Des améliorations bienvenues qui rendent le jeu un peu plus agréable, avec un style très beau, coloré et chaleureux.
 
 ### <span style="color: #e879f9;">🎵 Les musiques</span>
